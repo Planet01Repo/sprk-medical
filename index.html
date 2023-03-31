@@ -1,0 +1,2008 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEHA</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- LOADING FONTS AND ICONS -->
+    <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="css/progressbar.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        :root {
+            /* primary colors */
+            --theme-color-dark-blue: #0a3a5a;
+            --theme-color-green: #5dbca3;
+            --theme-color-light-green: #8bccbe;
+            --theme-color-light-green-bg: #8bccbe8c;
+            --theme-color-blue: #2544be;
+            --theme-color-blue-bg: #00b3ea4f;
+
+
+            /* secondary colors */
+            --theme-color-light-blue: #00b5ea;
+            --theme-color-burgundy: #973359;
+            --theme-color-peach: #de6f4e;
+            --theme-color-yellow: #faae61;
+
+            /* neutrals colors */
+            --theme-color-dark-gray: #787878;
+            --theme-color-medium-gray: #A8A8A8;
+            --theme-color-gray: #D2D2D2;
+            --theme-color-light-gray: #E6E6E6;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel-container {
+            display: flex;
+            width: 500%;
+            height: 90vh;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-slide {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 1.5s;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+        }
+
+        .carousel-slide img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .carousel-slide video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .carousel-prev,
+        .carousel-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            /* border-radius: 50%; */
+            background-color: rgb(255 255 255 / 50%);
+            color: #6e6e6e;
+            border: none;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .carousel-prev:hover,
+        .carousel-next:hover {
+            /* border-radius: 50%; */
+            background-color: rgba(216, 216, 216, 0.5);
+        }
+
+        .carousel-prev {
+            left: 10px;
+            z-index: 3;
+        }
+
+        .carousel-next {
+            right: 10px;
+            z-index: 3;
+        }
+
+        .slide {
+            position: relative;
+        }
+
+        .slide:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.1) 60%);
+            /* adjust opacity as needed */
+            z-index: 1;
+        }
+
+
+        .slide-text {
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-170%, -50%);
+            text-align: left;
+            color: #fff;
+            z-index: 2;
+        }
+
+
+        .slide-text h2 {
+            font-size: 4rem;
+            margin: 0;
+            line-height: 70px;
+        }
+
+        .slide-text p {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: rgb(102, 102, 102);
+        }
+
+        p.blue-text {
+            background-color: var(--theme-color-blue-bg);
+            font-size: 14px !important;
+            color: var(--theme-color-light-blue);
+            font-weight: 600;
+            width: 100%;
+            padding: 3px 8px;
+        }
+
+        .blue-text-div {
+            width: fit-content;
+            margin-bottom: 10px;
+        }
+
+        .search-box-container {
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            /* bottom: -20%; */
+            margin: 2rem auto;
+            z-index: 10;
+        }
+
+        .row.search-box-div {
+            max-width: 60%;
+            margin: 0 auto;
+            background: white;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -10px rgba(0, 0, 0, .4);
+            position: relative;
+            bottom: 14rem;
+        }
+
+
+        section.about.pq-bg-grey.pq-dark-bg-side-right {
+            margin-top: 0rem;
+        }
+
+        i.fa.fa-search.search-icon {
+            position: absolute;
+            z-index: 2;
+            margin-top: 22px;
+            font-size: 1.3rem;
+        }
+
+        input.search-bar {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #969696;
+            padding-left: 3rem;
+            height: 65px;
+            font-weight: 500;
+            color: #6e6e6e;
+            transition: .5s;
+        }
+
+        input.search-bar:focus {
+            border-bottom: 2px solid #00b5ea;
+        }
+
+        .search-bar::placeholder {
+            font-size: 1.1rem;
+            color: #6e6e6e;
+            font-weight: 500;
+        }
+
+        button.search-btn {
+            width: 100%;
+            height: 65px;
+            border: none;
+            background: #00b5ea;
+            color: white;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        button.search-btn:hover {
+            background: var(--theme-color-dark-blue);
+        }
+
+        .recommended-pills-section {
+            display: contents;
+        }
+
+        .search-pill {
+            width: fit-content;
+            padding: 6px 14px;
+            background: #e0e0e0;
+            border-radius: 2rem;
+            transition: .3s;
+        }
+
+        .search-pill:hover {
+            background: var(--theme-color-light-blue);
+            color: white;
+        }
+
+        .recommended-pills-section a {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #6e6e6e;
+            margin: 6px 6px;
+        }
+
+        video[poster] {
+            object-fit: cover
+        }
+
+
+        .patient-story-learn-more-btn {
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev {
+            border-radius: 3px;
+            outline: none;
+            text-align: center;
+            text-indent: inherit;
+            position: absolute;
+            left: -8%;
+            cursor: pointer;
+            top: 40%;
+            /* position: relative; */
+            font-size: 16px;
+            line-height: 1;
+            padding: 20px 25px !important;
+            margin: 0 10px;
+            background: var(--theme-color-dark-blue);
+            color: var(--white-color);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .owl-carousel .owl-nav button.owl-next {
+            border-radius: 3px;
+            outline: none;
+            text-align: center;
+            text-indent: inherit;
+            cursor: pointer;
+            /* position: relative; */
+            left: 101%;
+            font-size: 16px;
+            position: absolute;
+            line-height: 1;
+            right: 0;
+            padding: 20px 25px !important;
+            margin: 0 10px;
+            background: var(--theme-color-dark-blue);
+            color: var(--white-color);
+            transition: all 0.5s ease-in-out;
+            top: 40%;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev:hover,
+        .owl-carousel .owl-nav button.owl-next:hover {
+            background: var(--theme-color-light-blue);
+        }
+
+
+        .service-image {
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            -webkit-filter: brightness(0) invert(100%);
+            filter: brightness(0) invert(100%);
+        }
+
+        .service-image-round {
+            width: fit-content;
+            padding: 0.8rem;
+            background: var(--theme-color-light-blue);
+            border-radius: 50%;
+        }
+
+        .service-card:hover>.service-image-round {
+            border: 2px solid white;
+        }
+
+        .pq-services {
+            margin-top: 160px;
+            padding-bottom: 275px;
+        }
+
+
+        .service-card {
+            border: 2px solid #00b5ea;
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            width: 320px;
+            background-image: url('rev/assets/service-bg.png');
+            background-position: 95% 90%;
+            background-size: 30%;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            transition: .2s;
+            height: 230px;
+        }
+
+        p.service-title.text-capitalize {
+            padding-top: 1rem;
+            line-height: 28px;
+            font-size: 19px;
+            font-weight: 600;
+            color: #6e6e6e;
+        }
+
+        .service-carousel {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .service-card:hover {
+            background-image: url('rev/assets/service-bg-hover.png');
+            background-color: var(--theme-color-light-blue);
+        }
+
+        .service-card:hover>p.service-title.text-capitalize {
+            color: white;
+        }
+
+        .pq-client {
+            margin-bottom: 200px;
+        }
+
+        .container.partners-container {
+            padding-bottom: 80px;
+        }
+
+        .pq-client-img,
+        .pq-footer-logo {
+            -webkit-filter: brightness(0) invert(100%);
+            filter: brightness(0) invert(100%);
+        }
+
+        .padding-xaxis {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+
+        #wa_button {
+            bottom: 25px;
+            left: 10rem;
+            position: fixed;
+            z-index: 999;
+        }
+
+        .img-circle {
+            background-color: #25D366;
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+        }
+
+        .circlephone {
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            border: 2px solid #25D366;
+            width: 100px;
+            height: 100px;
+            bottom: -5px;
+            right: 28px;
+            position: absolute;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            opacity: .5;
+            -webkit-animation: circle-anim 2.4s infinite ease-in-out !important;
+            -moz-animation: circle-anim 2.4s infinite ease-in-out !important;
+            -ms-animation: circle-anim 2.4s infinite ease-in-out !important;
+            -o-animation: circle-anim 2.4s infinite ease-in-out !important;
+            animation: circle-anim 2.4s infinite ease-in-out !important;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all 0.5s;
+        }
+
+        .circle-fill {
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            background-color: #25D366;
+            width: 90px;
+            height: 90px;
+            bottom: 0px;
+            right: 33px;
+            position: absolute;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+            -moz-animation: circle-fill-anim 2.3s infinite ease-in-out;
+            -ms-animation: circle-fill-anim 2.3s infinite ease-in-out;
+            -o-animation: circle-fill-anim 2.3s infinite ease-in-out;
+            animation: circle-fill-anim 2.3s infinite ease-in-out;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all 0.5s;
+        }
+
+        .img-circle {
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            width: 60px;
+            height: 60px;
+            bottom: 14px;
+            right: 49px;
+            position: absolute;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            opacity: .9;
+        }
+
+        .img-circleblock {
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            width: 60px;
+            height: 60px;
+            background-image: url(//ipic.su/img/img7/fs/logo.1589099168.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            animation-name: tossing;
+            -webkit-animation-name: tossing;
+            animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        .img-circle:hover {
+            opacity: 1;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(0.95);
+                opacity: 1;
+            }
+
+            50% {
+                -webkit-transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(0.95);
+                opacity: 1;
+            }
+        }
+
+        @keyframes tossing {
+            0% {
+                transform: rotate(-8deg);
+            }
+
+            50% {
+                transform: rotate(8deg);
+            }
+
+            100% {
+                transform: rotate(-8deg);
+            }
+        }
+
+        @-webkit-keyframes tossing {
+            0% {
+                -webkit-transform: rotate(-8deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(8deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(-8deg);
+            }
+        }
+
+        @-moz-keyframes circle-anim {
+            0% {
+                -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
+                opacity: .1;
+                -moz-opacity: .1;
+                -webkit-opacity: .1;
+                -o-opacity: .1;
+            }
+
+            30% {
+                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .5;
+                -moz-opacity: .5;
+                -webkit-opacity: .5;
+                -o-opacity: .5;
+            }
+
+            100% {
+                -moz-transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .6;
+                -moz-opacity: .6;
+                -webkit-opacity: .6;
+                -o-opacity: .1;
+            }
+        }
+
+        @-webkit-keyframes circle-anim {
+            0% {
+                -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
+                -webkit-opacity: .1;
+            }
+
+            30% {
+                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+                -webkit-opacity: .5;
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+                -webkit-opacity: .1;
+            }
+        }
+
+        @-o-keyframes circle-anim {
+            0% {
+                -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
+                -o-opacity: .1;
+            }
+
+            30% {
+                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+                -o-opacity: .5;
+            }
+
+            100% {
+                -o-transform: rotate(0deg) scale(1) skew(1deg);
+                -o-opacity: .1;
+            }
+        }
+
+        @keyframes circle-anim {
+            0% {
+                transform: rotate(0deg) scale(0.5) skew(1deg);
+                opacity: .1;
+            }
+
+            30% {
+                transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .5;
+            }
+
+            100% {
+                transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .1;
+            }
+        }
+
+        @-moz-keyframes circle-fill-anim {
+            0% {
+                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+
+            50% {
+                -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
+                opacity: .2;
+            }
+
+            100% {
+                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+        }
+
+        @-webkit-keyframes circle-fill-anim {
+            0% {
+                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+
+            50% {
+                -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .2;
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+        }
+
+        @-o-keyframes circle-fill-anim {
+            0% {
+                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+
+            50% {
+                -o-transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .2;
+            }
+
+            100% {
+                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+        }
+
+        @keyframes circle-fill-anim {
+            0% {
+                transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+
+            50% {
+                transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .2;
+            }
+
+            100% {
+                transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2;
+            }
+        }
+
+
+        .top-bar {
+            height: 50px;
+            padding: 0 2.1rem !important;
+            background: var(--theme-color-dark-blue);
+            color: white;
+        }
+
+        .top-bar li a {
+            color: white !important;
+            text-transform: capitalize !important;
+            font-size: 13px !important;
+        }
+
+        .top-bar a i {
+            color: white !important;
+        }
+
+       .top-bar li i {
+            color: white !important;
+            font-size: 16px;
+        }
+
+        .bottom-nav {
+            padding: 0 2rem 0px 3rem !important;
+        }
+
+        .pq-section {
+            margin-top: 5rem;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--loading start-->
+    <div id="pq-loading">
+        <div id="pq-loading-center">
+            <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading">
+        </div>
+    </div>
+    <!--loading End-->
+
+    <!-- whatsapp floating icon start-->
+    <div><a href="https://api.whatsapp.com/send?phone=80050&amp;text=Hey." id="wa_button" target="_blank">
+            <div class="circlephone" style="transform-origin: center;"></div>
+            <div class="circle-fill" style="transform-origin: center;"></div>
+            <div class="img-circle" style="transform-origin: center;">
+                <div class="img-circleblock" style="transform-origin: center;"></div>
+            </div>
+        </a>
+    </div>
+    <!-- whatsapp floating icon end-->
+
+    <!--=================================
+      header start-->
+    <header id="pq-header" class="pq-header-default ">
+        <div class="pq-bottom-header pq-has-sticky">
+            <div class="container-fluid padding-xaxis">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark top-bar">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="">Patient Portal</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Conferences</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Careers</a>
+                                        </li>
+
+
+                                        <li class="menu-item">
+                                            <a href="#">Media Center</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:80050">80050</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-menu-search-block">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
+                                <div class="pq-search-form">
+                                    <form role="search" method="get" class="search-form" action=".html">
+                                        <label>
+                                            <span class="screen-reader-text">Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Search …" value=""
+                                                name="s">
+                                        </label>
+                                        <button type="submit" class="search-submit"><span
+                                                class="screen-reader-text">Search</span></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <span class="ps-4 fw-bold">
+                                AR|EN
+                            </span>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bottom-nav">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item current-menu-item">
+                                            <a href="contact-us.html">Home</a>
+                                        </li>
+
+
+
+                                        <li class="menu-item">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Hospitals</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Specialties</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Doctors</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Seha App</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="make-appoinment.html" class="pq-button">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text text-uppercase">book an appointment</span>
+                                    <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--==============
+         Header end 
+         =================-->
+
+    <!-- START Home 1 REVOLUTION SLIDER 6.5.19 
+
+  ================================= -->
+    <p class="rs-p-wp-fix"></p>
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="slide">
+                    <video autoplay loop muted>
+                        <source src="videos/home/video.mp4" type="video/mp4">
+                    </video>
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide">
+                    <img src="rev/assets/malaffi.jpg" alt="">
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide">
+                    <img src="rev/assets/Map.png" alt="">
+
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide">
+                    <img src="rev/assets/telecommunication.jpg" alt="">
+
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide">
+                    <img src="rev/assets/History.jpg" alt="">
+
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <button class="carousel-prev"><i class="fas fa-angle-left fa-xs"></i></button>
+        <button class="carousel-next"><i class="fas fa-angle-right fa-xs"></i></button>
+    </div>
+
+
+    <!--=================================
+         END REVOLUTION SLIDER
+         ================================= -->
+
+    <!-- search box -->
+    <div class="search-box-container">
+        <div class="row search-box-div">
+            <div class="col-9">
+                <form action="">
+                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                    <input type="search" class="search-bar" name="" id="" placeholder="Keyword...">
+                </form>
+            </div>
+            <div class="col-3">
+                <button class="search-btn text-uppercase">search</button>
+            </div>
+
+            <div class="recommended-pills-section">
+                <a href="">
+                    <div class="search-pill">
+                        book appointment
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="search-pill">
+                        find a doctor
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="search-pill">
+                        hospital & clinics
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="search-pill">
+                        online pharmacy service
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="search-pill">
+                        special offers
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="search-pill">
+                        online pharmacy service
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--search box End-->
+
+    <!--Section about start-->
+    <section class="about pq-bg-grey pq-dark-bg-side-right">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 col-xl-5 pb-lg-0 pb-5">
+                    <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">About
+                            Us</span>
+                        <h5 class="pq-section-title">An Integrated And Patient-Centric Company</h5>
+                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that
+                            are delivered by highly specialized healthcare professionals.&nbsp;</p>
+                    </div>
+
+                    <a class="pq-button pq-button-flat mt-4" href="about-us.html">
+                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                class="ion ion-plus-round"></i> </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xl-5 pe-lg-3 pq-img-none">
+                    <img src="images/1.jpeg" class="img-fluid" alt="servicebox">
+                </div>
+                <div
+                    class="col-xl-2 col-lg-12 col-md-12 py-xl-0 py-5 align-self-center pq-form-counter pq-bg-primary-dark">
+                    <div class="pq-counter pq-style-2">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info text-center">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span
+                                        class="pq-counter-prefix">+</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span
+                                        class="pq-counter-prefix">+</span>
+                                </div>
+                                <p class="pq-counter-description">BEDS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pq-counter pq-style-2">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info text-center">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span
+                                        class="pq-counter-prefix">+</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span
+                                        class="pq-counter-prefix">+</span>
+                                </div>
+                                <p class="pq-counter-description">CLINICS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pq-counter pq-style-2">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info text-center">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span
+                                        class="pq-counter-prefix">+</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span
+                                        class="pq-counter-prefix">+</span>
+                                </div>
+                                <p class="pq-counter-description">HOSPITALS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section about End-->
+
+
+
+
+
+    <!--Section patient stories start-->
+    <section class="pq-bg-primary pb-lg-0 pq-bg-img-1 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">Patient
+                            stories</span>
+                        <h5 class="pq-section-title pq-text-white">All The Great Work That We Done</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 pq-mb-130">
+
+                    <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="false" data-desk_num="4"
+                        data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
+                        data-loop="false" data-margin="30">
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-21.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-portfoliobox pq-style-1">
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                    <a href="home-visit.html">
+                                        <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                    </a>
+                                </div>
+                                <div class="pq-portfolio-info">
+                                    <a href="home-visit.html"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Iusto, aspernatur.</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="patient-story-learn-more-btn">
+                        <a class="pq-button pq-button-flat mt-4" href="about-us.html">
+                            <div class="pq-button-block"> <span class="pq-button-text">Learn More</span> <i
+                                    class="ion ion-plus-round"></i> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section patient stories End-->
+
+    <!-- section services start -->
+    <section class="pq-services pq-bg-grey  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">Our
+                            Specialties</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid service-carousel">
+            <div class="row">
+                <div class="col-lg-12 pq-mb-130">
+
+                    <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_lg="4"
+                        data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1"
+                        data-autoplay="true" data-loop="true" animateIn="true" data-margin="30">
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/ANESTHESIOLOGY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    ANESTHESIOLOGY
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/DERMATOLOGY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    DERMATOLOGY
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/FAMILY-MEDICINE.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    FAMILY MEDICINE
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/MEDICINE.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    MEDICINE
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/NEUROSURGERY.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    NEUROSURGERY
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/OPHTHALMOLOGY.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    OPHTHALMOLOGY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/OTOLARYNGOLOGY.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    OTOLARYNGOLOGY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/PHYSICAL-&-REHABILITATION-MEDICINE.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    PHYSICAL & REHABILITATION MEDICINE
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/CLINICAL-IMAGING.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    CLINICAL IMAGING
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/UROLOGY.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    UROLOGY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/DENTISTRY.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    DENTISTRY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/EMERGENCY-MEDICINE.png');">
+                                    </div>
+                                </div>
+
+                                <p class="service-title text-capitalize">
+                                    EMERGENCY MEDICINE
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/LABORATORY-MEDICINE.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    LABORATORY MEDICINE
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/NEUROLOGY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    NEUROLOGY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/OBSTETRICS-&-GYNECOLOGY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    OBSTETRICS & GYNECOLOGY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/ORTHOPEDICS.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    ORTHOPEDICS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/PEDIATRICS.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    PEDIATRICS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/PSYCHIATRY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    PSYCHIATRY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/SURGERY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    SURGERY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+
+                            <div class="service-card">
+                                <div class="service-image-round">
+
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/NEPHROLOGY.png');">
+                                    </div>
+                                </div>
+                                <p class="service-title text-capitalize">
+                                    NEPHROLOGY
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section services end -->
+
+    <!-- google map section start -->
+    <section class="gmap-sec pq-bg-secondary">
+        <div class="container">
+        <div class="row">
+            <div class="col-4">
+                    <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">Our
+                            Facilities</span>
+                        <h5 class="pq-section-title">THE UAE’S LARGEST HEALTHCARE NETWORK</h5>
+                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that
+                            are delivered by highly specialized healthcare professionals.&nbsp;</p>
+                    </div>
+            </div>
+            <div class="col-8">
+                <div class="gmap-img">
+            <img src="rev/assets/gMap.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+    </section>
+    <!-- google map section end -->
+
+
+
+    <!--Section insurance partners Start-->
+    <div class="pq-client pq-bg-primary pb-lg-0 pq-bg-img-1">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">Insurance
+                            Partners</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container partners-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="5"
+                        data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
+                        data-loop="true" data-margin="30">
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/1.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/2.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/3.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/3.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/4.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/4.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/5.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/5.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/1.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pq-clientbox pq-style-1">
+                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/2.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Section insurance partners End-->
+
+
+
+    <!-- =========================
+     Footer start
+     ============================== -->
+
+    <footer id="pq-footer">
+        <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="" type="submit" value="Sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pq-footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Our Courses</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="about-us.html">Blog</a></li>
+                                        <li><a href="our-services.html">FAQ's</a></li>
+                                        <li><a href="our-process.html">International Patients</a></li>
+                                        <li><a href="doctor-1.html">Insurance Partners</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="our-doctor.html">Patients Rights & Responsibilities</a></li>
+                                        <li><a href="home-visit.html">Corporate Social Responsibility</a></li>
+                                        <li><a href="make-appoinment.html">Transparency Charter</a></li>
+                                        <li><a href="our-plan.html">Submit a complaint (TAMM)</a></li>
+                                        <li><a href="our-plan.html">Tenders & Contracts</a></li>
+                                        <li><a href="our-plan.html">Recruitment Fraud Alert</a></li>
+                                        <li><a href="our-plan.html">Employee Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Contact Us</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="pq-contact">
+                                            <li> <a href="tel:80050"><i class="fas fa-phone"></i>
+                                                    <span> 80050</span>
+                                                </a> </li>
+                                            <li> <a href="mailto:sehaae@seha.itw-hosting.net"><i
+                                                        class="fas fa-envelope"></i><span>sehaae@seha.itw-hosting.net</span></a>
+                                            </li>
+                                            <li> <i class="fas fa-map-marker"></i> <span>
+                                                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street (32nd
+                                                    Street), Abu Dhabi, United Arab Emirates​.</span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
+                                    alt="medicate-footer-logo">
+                                <p>Follow us on social media and be the first to know about our latest announcements.
+                                </p>
+
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/SEHAHealth/"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/sehahealth/"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://twitter.com/sehahealth"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/sehahealth/"><i
+                                                    class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/SEHAHealth"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> ©️ Copyright 2023 SEHA – Abu
+                                Dhabi Health Services Co. All Rights Reserved.</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+
+
+    <script>
+        jQuery(window).on('load', function (e) {
+            jQuery(".pq-applyform .form-btn").click(function () {
+                var first_name = jQuery('#first-name').val();
+                var doctor_name = jQuery('#doctor-name').val();
+                var disease_name = jQuery('#disease-name').val();
+                var email = jQuery('#e-mail').val();
+
+                var result;
+
+                jQuery('.pq-applyform .pq-message').remove();
+                jQuery('.pq-applyform .pq-thank-you-message').remove();
+
+                if (first_name == '' || first_name == undefined) {
+                    jQuery(
+                            "<span class='pq-name-error-message pq-message'>Please fill the field</span>"
+                        )
+                        .insertAfter('.pq-applyform .name-field');
+                    result = false;
+                } else {
+                    jQuery('.pq-name-error-message').remove();
+                    result = true;
+                }
+
+                if (email == '' || email == undefined) {
+                    jQuery(
+                            "<span class='pq-email-error-message pq-message'>Please fill the field</span>"
+                        )
+                        .insertAfter('.pq-applyform .e-mail-field');
+                    result = false;
+                } else {
+                    jQuery('.pq-email-error-message').remove();
+                    result = true;
+                }
+
+                if (doctor_name == '' || doctor_name == undefined) {
+                    jQuery(
+                            "<span class='pq-doctor-name-error-message pq-message'>Please fill the field</span>"
+                        )
+                        .insertAfter('.pq-applyform .doctor-name-field');
+                    result = false;
+                } else {
+                    jQuery('.pq-doctor-name-error-message').remove();
+                    result = true;
+                }
+
+                if (disease_name == '' || disease_name == undefined) {
+                    jQuery(
+                            "<span class='pq-disease-name-error-message pq-message'>Please fill the field</span>"
+                        )
+                        .insertAfter('.pq-applyform #disease-name');
+                    result = false;
+                } else {
+                    jQuery('.pq-disease-name-error-message').remove();
+                    result = true;
+                }
+
+                if (result == true) {
+                    var email = jQuery("#email").text();
+                    event.preventDefault();
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: {
+                            'email': email
+                        },
+                        success: function () {
+                            jQuery(
+                                    "<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>"
+                                )
+                                .insertAfter('.pq-applyform .pq-button');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const carouselContainer = carousel.querySelector('.carousel-container');
+        const carouselSlides = carousel.querySelectorAll('.carousel-slide');
+        const prevButton = carousel.querySelector('.carousel-prev');
+        const nextButton = carousel.querySelector('.carousel-next');
+
+        let currentSlide = 0;
+        const slideWidth = carouselSlides[0].offsetWidth;
+
+        carouselSlides.forEach((slide, index) => {
+            if (index === 0) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+
+        function moveCarousel() {
+            carouselSlides.forEach((slide, index) => {
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+
+                }
+            });
+            carouselContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = carouselSlides.length - 1;
+            }
+            moveCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide++;
+            if (currentSlide >= carouselSlides.length) {
+                currentSlide = 0;
+            }
+            moveCarousel();
+        });
+
+        $('.pq-portfolio-info').css({
+            opacity: 1,
+            bottom: '30px'
+        });
+
+
+        $('.pq-portfoliobox.pq-style-1').hover(function () {
+            $(this).find('.video-hover')[0].play();
+            $(this).find('.pq-portfolio-info').css({
+                opacity: 0,
+                bottom: '0px'
+            });
+        }, function () {
+            $(this).find('.video-hover')[0].load();
+            $(this).find('.pq-portfolio-info').css({
+                opacity: 1,
+                bottom: '30px'
+            });
+        });
+    </script>
+</body>
+
+</html>
