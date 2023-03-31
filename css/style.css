@@ -2759,7 +2759,7 @@ Breadcrumb
 }
 
 .pq-breadcrumb-container .breadcrumb li.active {
-  color: var(--primary-color);
+  color: var(--theme-color-light-blue);
 }
 
 .pq-breadcrumb-container .breadcrumb li a {
@@ -3845,7 +3845,7 @@ Fancybox
 
 .pq-fancy-box.pq-style-3:hover,
 .pq-active .pq-fancy-box.pq-style-3 {
-  background: var(--primary-color);
+  background: var(--theme-color-dark-blue);
 }
 
 .pq-fancy-box.pq-style-3 .pq-fancy-box-icon i {
