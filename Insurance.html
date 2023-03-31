@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SEHA</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- owl caouesel -->
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+    </script>
+     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+       </script>
+    <style>
+        main {
+            margin: 10%;
+            /* display: flex; */
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+        }
+
+        .flip-card-front {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            -moz-backface-visibility: hidden;
+        }
+
+        .flip-card:focus {
+            outline: 0;
+        }
+
+        .flip-card:hover .flip-card-inner,
+        .flip-card:focus .flip-card-inner {
+            transform: rotateY(180deg);
+
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .flip-card-front {
+            background: white;
+            border: 1px solid #2490eb;
+            color: black;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* cursor: pointer; */
+        }
+
+        .flip-card-back {
+            /* cursor: pointer; */
+            color: white;
+            transform: rotateY(180deg);
+            z-index: 1;
+            justify-content: center;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .flip-card-back .img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            /* background: #5e769c; */
+        }
+
+        .flip-card-back:hover .img img {
+            /* opacity: 1; */
+            width: 100%;
+        }
+
+        .flip-card-back .img:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background: #356d92;
+            opacity: 0.9;
+            border-radius: 10px;
+            /* cursor: pointer; */
+        }
+        .content {
+            opacity: 1;
+            z-index: 1;
+            /* position: relative; */
+            z-index: 9;
+            margin: 1px;
+            position: relative;
+            padding-top: 40%;
+            justify-content: center;
+            color: white;
+        }
+        .heading-card h3 {
+            font-size: 22px;
+            opacity: 1;
+            /* color: white; */
+        }
+        .content h5{
+            color: white;
+        }
+        .pills1,
+        .pills2,
+        .pills3,
+        .pills4,
+        .pills5 {
+            height: 29vh;
+            width: 220px;
+            border: 1px solid #E6E6E6 !important;
+            line-height: 20px;
+            margin: 10px;
+            padding: 45px;
+        }
+
+        .pills1:hover,
+        .pills2:hover,
+        .pills3:hover,
+        .pills4:hover,
+        .pills5:hover {
+            background-color: #0a3a5a;
+            color: white !important;
+        }
+
+        .pills1 span,
+        .pills2 span,
+        .pills3 span,
+        .pills4 span,
+        .pills5 span {
+            /* color: grey; */
+            /* padding-top: 10px; */
+            font-size: 14px;
+
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link,
+        .nav-pills .nav-link span.active {
+            background-color: #0a3a5a;
+            color: white !important;
+        }
+
+        .pills1 img,
+        .pills2 img,
+        .pills3 img,
+        .pills4 img,
+        .pills5 img {
+            width: 40px;
+            margin-bottom: 20px;
+        }
+        :focus {
+            outline: 0 !important;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+        .acc-btn:focus {
+            background-color: #fff !important;
+            color: black;
+        }
+
+        .accordion-item {
+            border-left: none !important;
+            border-right: none !important;
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+
+        .acc-b {
+            padding-left: 50px;
+            padding-right: 80px;
+        }
+
+        .acc {
+            margin-top: 50px;
+        }
+
+        .accordion-button:not(.show) {
+            color: white;
+            background-color: #0a3a5a;
+            padding-left: 50px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            color: white;
+            background-color: transparent !important;
+            background-image: url('images/faq/arrow-up.ico');
+        }
+
+        .accordion-button::after {
+            background-image: url('images/faq/arrow-n.ico');
+            font-weight: lighter;
+        }
+
+        .acc-btn h2 {
+            font-size: 20px;
+            padding-left: 35px;
+            color: #0a3a5a;
+        }
+        .top-heading{
+            text-align: center;
+        }
+        .top-heading h1{
+            font-size: 44px;
+            padding-bottom: 20px;
+        }
+        .top-heading p{
+            width: 70%;
+            text-align: center;
+            margin-left: 12%;
+        }
+        /* owl carousel sots nono */
+        .owl-dots{
+            display: none;
+        }
+        .carousel .inn-car{
+            padding: 5%;
+        }
+        .owl-stage{
+            cursor: grab;
+        }
+
+        .top-bar {
+            height: 50px;
+            padding: 0 2.1rem !important;
+            background: var(--theme-color-dark-blue);
+            color: white;
+        }
+
+        .top-bar li a {
+            color: white !important;
+            text-transform: capitalize !important;
+            font-size: 13px !important;
+        }
+
+        .top-bar a i {
+            color: white !important;
+        }
+
+       .top-bar li i {
+            color: white !important;
+            font-size: 16px;
+        }
+
+        .bottom-nav {
+            padding: 0 2rem 0px 3rem !important;
+        }
+
+        .padding-none {
+            padding: 0px;
+        }
+
+        .pq-client-img,
+        .pq-footer-logo {
+            -webkit-filter: brightness(0) invert(100%);
+            filter: brightness(0) invert(100%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--=================================
+         loading start-->
+    <div id="pq-loading">
+                <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+    </div>
+    <!--=================================
+         loading end-->
+    <!--=================================
+         header start-->
+    <header id="pq-header" class="pq-header-default ">
+        <div class="pq-bottom-header pq-has-sticky">
+            <div class="container-fluid padding-xaxis">
+                <div class="row">
+                    <div class="col-12 padding-none">
+                        <nav class="navbar navbar-expand-lg navbar-dark top-bar">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Conferences</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Careers</a>
+                                        </li>
+
+
+                                        <li class="menu-item">
+                                            <a href="#">Media Center</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:80050">80050</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-menu-search-block">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
+                                <div class="pq-search-form">
+                                    <form role="search" method="get" class="search-form" action=".html">
+                                        <label>
+                                            <span class="screen-reader-text">Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Search …" value=""
+                                                name="s">
+                                        </label>
+                                        <button type="submit" class="search-submit"><span
+                                                class="screen-reader-text">Search</span></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <span class="ps-4 fw-bold">
+                                AR|EN
+                            </span>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12 padding-none">
+                        <nav class="navbar navbar-expand-lg navbar-light bottom-nav">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+
+
+
+                                        <li class="menu-item">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Hospitals</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Specialties</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Doctors</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Seha App</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="make-appoinment.html" class="pq-button">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text text-uppercase">book an appointment</span>
+                                    <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=================================
+         header end-->
+    <!--=================================
+         Banner start-->
+    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h2>Insurance Partners</h2>
+                        </div>
+                        <div class="pq-breadcrumb-container mt-2">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i
+                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item active">FAQ</li>
+                            </ol>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=================================
+         Banner end-->
+
+
+
+
+
+
+
+    <main>
+
+        <div class="top-heading">
+            <h1>Insurance Parteners</h1>
+            <p>We partner with a number of health insurers to offer healthcare coverage for our patients. To check if your insurance plan covers treatment and services at Healhtpoint, you can speak with your insurer directly or with one of our front office staff by calling 800 203.</p>
+        </div>
+        <div class="carousel">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag inn-car">
+            <div  class="item" >
+            <!-- one -->
+            <div class="flip-card" tabIndex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                        </div>
+                        <div class="heading-card">
+                            <h3>ADNIC Platinum</h3>
+                        </div>
+                        <span>hover me </span>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Platinum <br>
+                                Gold Plus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            </div>
+            <div class="item" > 
+            <!-- two -->
+            <div class="flip-card" tabIndex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                        </div>
+                        <div class="heading-card">
+                            <h3>ADNIC Platinum</h3>
+                        </div>
+                        <span>hover me </span>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Platinum <br>
+                                Gold Plus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            </div>
+            <div class="item" > 
+            
+                 <!-- three -->
+            <div class="flip-card" tabIndex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                        </div>
+                        <div class="heading-card">
+                            <h3>ADNIC Platinum</h3>
+                        </div>
+                        <span>hover me </span>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Platinum <br>
+                                Gold Plus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="item" > 
+            <!-- four -->
+                
+                <div class="flip-card" tabIndex="0">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="img">
+                                <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                            </div>
+                            <div class="heading-card">
+                                <h3>ADNIC Platinum</h3>
+                            </div>
+                            <span>hover me </span>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="img">
+                                <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="content">
+                                <h5>Platinum <br>
+                                    Gold Plus</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="item" >
+            <!-- five -->
+            <div class="flip-card" tabIndex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                        </div>
+                        <div class="heading-card">
+                            <h3>ADNIC Platinum</h3>
+                        </div>
+                        <span>hover me </span>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Platinum <br>
+                                Gold Plus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            </div>
+            <div class="item" >
+                
+            <!-- Six -->
+            <div class="flip-card" tabIndex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                        </div>
+                        <div class="heading-card">
+                            <h3>ADNIC Platinum</h3>
+                        </div>
+                        <span>hover me </span>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Platinum <br>
+                                Gold Plus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+            <div class="item" > 
+            
+                   <!-- Seven -->
+            <div class="flip-card" tabIndex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" style=" width: 60px; " alt="">
+                        </div>
+                        <div class="heading-card">
+                            <h3>ADNIC Platinum</h3>
+                        </div>
+                        <span>hover me </span>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img">
+                            <img src="images/insurance/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Platinum <br>
+                                Gold Plus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items:4, 
+            // items change number for slider display on desktop
+            
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:4000,
+                autoplayHoverPause:true
+            });
+
+          </script>
+        </div>
+          <div class="top-heading" style="margin-top: 5%; margin-bottom: 5%;">
+            <h1>Frequently Asked Questions</h1>
+            
+        </div>
+        <section class="faqs" style="padding: 0;"> 
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active pills1" id="pills-general-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general"
+                        aria-selected="true"> <img src="images/insurance/info-icon.png" alt=""> <br><span> Insurance Information</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pills2" id="pills-other-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other"
+                        aria-selected="false"><img src="images/insurance/info-icon.png" alt="">
+                        <br><span>Inpatient Services</span> </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pills3" id="pills-billing-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-billing" type="button" role="tab" aria-controls="pills-billing"
+                        aria-selected="false"> <img src="images/insurance/info-icon.png" alt=""> <br> <span>
+                            Outpatient Services</span></button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Insurance info  -->
+                <div class="tab-pane fade show active" id="pills-general" role="tabpanel"
+                aria-labelledby="pills-general-tab" tabindex="0">
+                <div class="accordion acc" id="accordionExample">
+                    <div class="accordion-item acc-i">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What medical specialties will be transferred from SKMC to SSMC?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show body-with-shadow"
+                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                Adult medical services including: Cardiology, Orthopedic, Gastrointestinal,
+                                Hematology and Oncology. </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                When it will happen?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse body-with-shadow"
+                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                Starting from 15th November, all new appointments and follow up for the above
+                                specialties will be provided at SSMC, however some services will be provided as
+                                transition period. All patients will be contacted and given the opportunity to
+                                choose for their connivance to reschedule their appointments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="headingthree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsethree" aria-expanded="false"
+                                aria-controls="collapsethree">
+                                What does group practice mean?
+                            </button>
+                        </h2>
+                        <div id="collapsethree" class="accordion-collapse collapse body-with-shadow"
+                            aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                Clinical services will be provided by one team of clinicians in different sites
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Am I going to see the same physician?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse body-with-shadow"
+                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                SEHA pays a great attention for continuity of medical care, patients will be seen by
+                                the same treating physician.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                How would I get my follow-up appointment if the specialty is moved to SSMC?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse body-with-shadow"
+                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                Patients will be contacted and re-scheduled by SEHA call center and SSMC staff to
+                                book their appointments as per their convenient on the newly added clinics.
+                                <br>
+                                Patients shall continue to receive the same high standard of medical care as
+                                previously received at SKMC.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Does that mean ED will be closed or limited to specific clinical specialties?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse body-with-shadow"
+                            aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                ED at SKMC will remain open and treat patients as usual.
+                                <br>
+                                In fact, SEHA is planning to upgrade SKMC ED and license it as Trauma level II to
+                                continue serve the community.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Insurance info -->
+
+
+                <!-- Inpatient Services  -->
+                <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab"
+                tabindex="0">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item acc-item">
+                        <h2 class="accordion-header  style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                What is SEHA?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                The Abu Dhabi Health Services Company (SEHA) is the largest health services network in the UAE, providing quality care for residents and utilizing leading-edge technologies to deliver exceptional patient services and outcomes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item acc-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                When and why was SEHA created?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                The Abu Dhabi Healthcare Company (SEHA) was established by Emiri Decree No 10 of 2007, as an independent public joint stock company. It is the owner and operator of all public hospitals and clinics in Abu Dhabi and was set-up to provide the UAE residents and citizens integrated and outstanding healthcare services with the highest international quality and safety standards.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item acc-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                What is the difference between Department of Health (DoH) Abu Dhabi and SEHA?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                SEHA is responsible for the management of public healthcare hospitals and centers, while the Department of Health – Abu Dhabi regulates the public and private healthcare sector.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item acc-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                How does SEHA deliver on the UAE government’s vision for the country’s healthcare sector?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                As the largest healthcare service provider in the UAE, SEHA is committed to creating accessible and world-class facilities in line with the vision of the Abu Dhabi government.
+                                <br>
+                                In keeping with the Abu Dhabi Government’s strategy to identify best global practices and explore competitive ideas, we have also entered several partnerships with international healthcare institutions including our recent joint venture with the Mayo Clinic. Their world-renowned capabilities have significantly contributed to SEHA’s growth and development. In addition, these partnerships have helped knowledge transfer, education, and enhanced healthcare systems management to promote excellence and achieve a leadership position in the industry.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item acc-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                How many hospitals and clinics are there within your network?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                Today, the SEHA Health System consists of 13 hospitals with 2,644 beds, 46 Primary Healthcare Clinic, 10 Disease Prevention and Screening Centers, 3 Mobile Clinics, 1 School Clinic, 2 Blood banks, 4 Dental Centers, 2 Employee Healthcare Center, and 1 Vaccination Center.
+
+                            <br><br>
+
+                                Our facilities accommodate 114,000 inpatients annually and conduct 54,000 surgeries, as well as treat more than five million outpatients.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item acc-item">
+                        <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                Are SEHA hospitals only for the UAE nationals?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-b">
+                                As the largest healthcare service provider in the UAE, we are committed to providing world-class healthcare services to the UAE nationals, residents and medical tourism patients with the appropriate insurance coverage and/or through the suitable patient referral channels. For patients with insurance, we recommend speaking to the specific SEHA facility to check your coverage.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Inpatient Services  END -->
+
+                <!-- Outpatient Services  -->
+                <div class="tab-pane fade" id="pills-billing" role="tabpanel" aria-labelledby="pills-billing-tab"
+                    tabindex="0">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Am I Covered For Vaccinations At Healthpoint?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Generally, routine vaccinations are not covered by insurance. When coverage is available, it is usually on a reimbursement basis – i.e., the patient pays Healthpoint and can request reimbursement thereafter. Please contact your insurance provider for more information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Am I Covered For Dental Services At Healthpoint?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Am I Covered For Laser Treatment At Healthpoint?
+                                </div>
+                            </div>
+                        </div>
+                      
+
+                       
+                    </div>
+
+                </div>
+                <!-- Outpatient Services END -->
+
+              </div>
+              
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <!--=================================  Footer start  ============================== -->
+    <footer id="pq-footer">
+        <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="" type="submit" value="Sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pq-footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Our Courses</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="about-us.html">Blog</a></li>
+                                        <li><a href="faq.html">FAQ's</a></li>
+                                        <li><a href="our-process.html">International Patients</a></li>
+                                        <li><a href="Insurance.html">Insurance Partners</a></li>
+                                        <li><a href="our-doctor.html">Patients Rights & Responsibilities</a></li>
+                                        <li><a href="home-visit.html">Corporate Social Responsibility</a></li>
+                                        <li><a href="make-appoinment.html">Transparency Charter</a></li>
+                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit a complaint (TAMM)</a></li>
+                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders & Contracts</a></li>
+                                        <li><a href="our-plan.html">Recruitment Fraud Alert</a></li>
+                                        <li><a href="https://portal.seha.ae/">Employee Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Contact Us</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="pq-contact">
+                                            <li> <a href="tel:80050"><i class="fas fa-phone"></i>
+                                                    <span> 80050</span>
+                                                </a> </li>
+                                            <li> <a href="mailto:sehaae@seha.itw-hosting.net"><i
+                                                        class="fas fa-envelope"></i><span>sehaae@seha.itw-hosting.net</span></a>
+                                            </li>
+                                            <li> <i class="fas fa-map-marker"></i> <span>
+                                                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street (32nd
+                                                    Street), Abu Dhabi, United Arab Emirates​.</span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
+                                    alt="medicate-footer-logo">
+                                <p>Follow us on social media and be the first to know about our latest announcements.
+                                </p>
+
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/SEHAHealth/"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/sehahealth/"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://twitter.com/sehahealth"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/sehahealth/"><i
+                                                    class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/SEHAHealth"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> ©️ Copyright 2023 SEHA – Abu
+                                Dhabi Health Services Co. All Rights Reserved.</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Footer End-->
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
+    <script>
+                $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10000000000,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:4, 
+        // items change number for slider display on desktop
+        
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true
+        });
+    </script>
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

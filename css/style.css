@@ -412,7 +412,7 @@ select.form-control {
   right: 30px;
   margin: 0px;
   color: var(--white-color);
-  background: var(--theme-color-green);
+  background: var(--theme-color-light-blue);
   z-index: 999;
   font-size: 16px;
   width: 50px;
@@ -422,7 +422,7 @@ select.form-control {
 }
 
 #back-to-top .topbtn:hover {
-  background: #29a181;
+  background: var(--theme-color-dark-blue);
 }
 
 #back-to-top .topbtn i {

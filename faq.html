@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SEHA</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <style>
+
+        .top-bar {
+            height: 50px;
+            padding: 0 2.1rem !important;
+            background: var(--theme-color-dark-blue);
+            color: white;
+        }
+
+        .top-bar li a {
+            color: white !important;
+            text-transform: capitalize !important;
+            font-size: 13px !important;
+        }
+
+        .top-bar a i {
+            color: white !important;
+        }
+
+       .top-bar li i {
+            color: white !important;
+            font-size: 16px;
+        }
+
+        .bottom-nav {
+            padding: 0 2rem 0px 3rem !important;
+        }
+        .faqs {
+    max-width: 80%;
+    margin: 0 auto;
+    /* margin-left: 9%; */
+}
+
+        .pills1,
+        .pills2,
+        .pills3,
+        .pills4,
+        .pills5 {
+            height: 29vh;
+            width: 220px;
+            border: 1px solid #E6E6E6 !important;
+            line-height: 20px;
+            margin: 10px;
+            padding: 45px;
+        }
+
+        .nav-link {
+            color: #787878;
+        }
+
+        .pills1:hover,
+        .pills2:hover,
+        .pills3:hover,
+        .pills4:hover,
+        .pills5:hover {
+            background-color: #0a3a5a;
+            color: white !important;
+        }
+
+        .pills1 img,
+        .pills2 img,
+        .pills3 img,
+        .pills4 img,
+        .pills5 img {
+            width: 40px;
+            margin-bottom: 20px;
+        }
+
+        .pills1 span,
+        .pills2 span,
+        .pills3 span,
+        .pills4 span,
+        .pills5 span {
+            /* color: grey; */
+            /* padding-top: 10px; */
+            font-size: 14px;
+
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link,
+        .nav-pills .nav-link span.active {
+            background-color: #0a3a5a;
+            color: white !important;
+        }
+
+
+               ul#pills-tab {
+    width: 80%;
+    margin: 0 auto;
+}
+        .accordion-f {
+            border-top: 0 !important;
+            border-bottom: 0 !important;
+        }
+
+        :focus {
+            outline: 0 !important;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+
+        .acc-btn:focus {
+            background-color: #fff !important;
+            color: black;
+        }
+
+        .accordion-item {
+            border-left: none !important;
+            border-right: none !important;
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+
+        .acc-b {
+            padding-left: 50px;
+            padding-right: 80px;
+        }
+
+        .acc {
+            margin-top: 50px;
+        }
+
+        .accordion-button:not(.show) {
+            color: white;
+            background-color: #0a3a5a;
+            padding-left: 50px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            color: white;
+            background-color: transparent !important;
+            background-image: url('images/faq/arrow-up.ico');
+        }
+
+        .accordion-button::after {
+            background-image: url('images/faq/arrow-n.ico');
+            font-weight: lighter;
+        }
+
+        .acc-btn h2 {
+            font-size: 20px;
+            padding-left: 35px;
+            color: #0a3a5a;
+        }
+
+        .m-cards {
+            display: flex;
+            text-align: center;
+            /* margin-left: 10%; */
+            max-width: 69%;
+            /* width: 80%; */
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 300px;
+            height: 40vh;
+            padding: 30px;
+            text-align: center;
+            margin: 15px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            transition: transform .2s;
+            /* Animation */
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card1 .c-title h3 {
+            font-size: 19px;
+            color: #0a3a5a;
+        }
+
+        .card1 .c-desc p {
+            font-size: 14px;
+            line-height: 22px;
+            margin: 0;
+        }
+
+        .c-head {
+            text-align: center;
+        }
+
+        .c-btn {
+            display: flex;
+            text-align: center;
+            margin-left: 29%;
+            margin-top: 0;
+        }
+
+        .c-btn span {
+            text-decoration: none;
+            background-color: white;
+            color: #0a3a5a;
+            padding-right: 10px;
+        }
+
+        .c-head h2 {
+            color: black;
+            font-weight: bolder;
+            font-size: 40px;
+            padding-bottom: 40px;
+        }
+
+        .cards-s {
+            padding: 0 !important;
+            margin: 0;
+            margin-bottom: 100px;
+        }
+
+        .padding-none {
+            padding: 0px;
+        }
+
+        .pq-client-img,
+        .pq-footer-logo {
+            -webkit-filter: brightness(0) invert(100%);
+            filter: brightness(0) invert(100%);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!--=================================
+         loading start-->
+    <div id="pq-loading">
+        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+    </div>
+    <!--=================================
+         loading end-->
+    <!--=================================
+         header start-->
+    <header id="pq-header" class="pq-header-default ">
+        <div class="pq-bottom-header pq-has-sticky">
+            <div class="container-fluid padding-xaxis">
+                <div class="row">
+                    <div class="col-12 padding-none">
+                        <nav class="navbar navbar-expand-lg navbar-dark top-bar">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Conferences</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Careers</a>
+                                        </li>
+
+
+                                        <li class="menu-item">
+                                            <a href="#">Media Center</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:80050">80050</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-menu-search-block">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
+                                <div class="pq-search-form">
+                                    <form role="search" method="get" class="search-form" action=".html">
+                                        <label>
+                                            <span class="screen-reader-text">Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Search …" value=""
+                                                name="s">
+                                        </label>
+                                        <button type="submit" class="search-submit"><span
+                                                class="screen-reader-text">Search</span></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <span class="ps-4 fw-bold">
+                                AR|EN
+                            </span>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12 padding-none">
+                        <nav class="navbar navbar-expand-lg navbar-light bottom-nav">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+
+
+
+                                        <li class="menu-item">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Hospitals</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Specialties</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Doctors</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Seha App</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="make-appoinment.html" class="pq-button">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text text-uppercase">book an appointment</span>
+                                    <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=================================
+         header end-->
+    <!--=================================
+         Banner start-->
+    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h2>FAQ</h2>
+                        </div>
+                        <div class="pq-breadcrumb-container mt-2">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i
+                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item active">FAQ</li>
+                            </ol>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=================================
+         Banner end-->
+    <main>
+        <section class="faqs">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active pills1" id="pills-general-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general"
+                        aria-selected="true"> <img src="images/faq/info-icon.png" alt=""> <br><span> CLINICAL
+                            SERVICE LINE SHIFT BETWEEN SKMC AND SSMC</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pills2" id="pills-other-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other"
+                        aria-selected="false"><img src="images/faq/info-icon.png" alt="">
+                        <br><span>GENERAL</span> </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pills3" id="pills-billing-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-billing" type="button" role="tab" aria-controls="pills-billing"
+                        aria-selected="false"> <img src="images/faq/info-icon.png" alt=""> <br> <span>
+                            SERVICES</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pills4" id="pills-rights-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-rights" type="button" role="tab" aria-controls="pills-rights"
+                        aria-selected="false"><img src="images/faq/info-icon.png" alt=""> <br> <span>CUSTOMER
+                            CARE</span> </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link pills4" id="pills-portal-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-portal" type="button" role="tab" aria-controls="pills-portal"
+                        aria-selected="false"><img src="images/faq/info-icon.png" alt=""> <br> <span>LOCATION & CONTACT
+                        </span> </button>
+                </li>
+                <!-- <li class="nav-item" role="presentation">
+                    <button class="nav-link pills5" id="pills-portal-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-portal" type="button" role="tab" aria-controls="pills-portal"
+                        aria-selected="false"><img src="images/faq/info-icon.png" alt=""> <br> <span>
+                            LOCATION & CONTACT</span></button>
+                </li> -->
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <!-- CLINICAL SERVICE LINE  -->
+                <div class="tab-pane fade show active" id="pills-general" role="tabpanel"
+                    aria-labelledby="pills-general-tab" tabindex="0">
+                    <div class="accordion acc" id="accordionExample">
+                        <div class="accordion-item acc-i">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                                id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What medical specialties will be transferred from SKMC to SSMC?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show body-with-shadow"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Adult medical services including: Cardiology, Orthopedic, Gastrointestinal,
+                                    Hematology and Oncology. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                                id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    When it will happen?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse body-with-shadow"
+                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Starting from 15th November, all new appointments and follow up for the above
+                                    specialties will be provided at SSMC, however some services will be provided as
+                                    transition period. All patients will be contacted and given the opportunity to
+                                    choose for their connivance to reschedule their appointments.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                                id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                                    What does group practice mean?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse body-with-shadow"
+                                aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Clinical services will be provided by one team of clinicians in different sites
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                                id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Am I going to see the same physician?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse body-with-shadow"
+                                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    SEHA pays a great attention for continuity of medical care, patients will be seen by
+                                    the same treating physician.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                                id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How would I get my follow-up appointment if the specialty is moved to SSMC?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse body-with-shadow"
+                                aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Patients will be contacted and re-scheduled by SEHA call center and SSMC staff to
+                                    book their appointments as per their convenient on the newly added clinics.
+                                    <br>
+                                    Patients shall continue to receive the same high standard of medical care as
+                                    previously received at SKMC.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                                id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Does that mean ED will be closed or limited to specific clinical specialties?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse body-with-shadow"
+                                aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    ED at SKMC will remain open and treat patients as usual.
+                                    <br>
+                                    In fact, SEHA is planning to upgrade SKMC ED and license it as Trauma level II to
+                                    continue serve the community.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CLINICAL SERVICE LINE END  -->
+
+
+                <!-- GENERAL -->
+
+                <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab"
+                    tabindex="0">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;""
+                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is SEHA?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse "
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    The Abu Dhabi Health Services Company (SEHA) is the largest health services network
+                                    in the UAE, providing quality care for residents and utilizing leading-edge
+                                    technologies to deliver exceptional patient services and outcomes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    When and why was SEHA created?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    The Abu Dhabi Healthcare Company (SEHA) was established by Emiri Decree No 10 of
+                                    2007, as an independent public joint stock company. It is the owner and operator of
+                                    all public hospitals and clinics in Abu Dhabi and was set-up to provide the UAE
+                                    residents and citizens integrated and outstanding healthcare services with the
+                                    highest international quality and safety standards.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is the difference between Department of Health (DoH) Abu Dhabi and SEHA?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    SEHA is responsible for the management of public healthcare hospitals and centers,
+                                    while the Department of Health – Abu Dhabi regulates the public and private
+                                    healthcare sector.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How does SEHA deliver on the UAE government’s vision for the country’s healthcare
+                                    sector?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    As the largest healthcare service provider in the UAE, SEHA is committed to creating
+                                    accessible and world-class facilities in line with the vision of the Abu Dhabi
+                                    government.
+                                    <br>
+                                    In keeping with the Abu Dhabi Government’s strategy to identify best global
+                                    practices and explore competitive ideas, we have also entered several partnerships
+                                    with international healthcare institutions including our recent joint venture with
+                                    the Mayo Clinic. Their world-renowned capabilities have significantly contributed to
+                                    SEHA’s growth and development. In addition, these partnerships have helped knowledge
+                                    transfer, education, and enhanced healthcare systems management to promote
+                                    excellence and achieve a leadership position in the industry.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How many hospitals and clinics are there within your network?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Today, the SEHA Health System consists of 13 hospitals with 2,644 beds, 46 Primary
+                                    Healthcare Clinic, 10 Disease Prevention and Screening Centers, 3 Mobile Clinics, 1
+                                    School Clinic, 2 Blood banks, 4 Dental Centers, 2 Employee Healthcare Center, and 1
+                                    Vaccination Center.
+
+                                    <br><br>
+
+                                    Our facilities accommodate 114,000 inpatients annually and conduct 54,000 surgeries,
+                                    as well as treat more than five million outpatients.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Are SEHA hospitals only for the UAE nationals?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    As the largest healthcare service provider in the UAE, we are committed to providing
+                                    world-class healthcare services to the UAE nationals, residents and medical tourism
+                                    patients with the appropriate insurance coverage and/or through the suitable patient
+                                    referral channels. For patients with insurance, we recommend speaking to the
+                                    specific SEHA facility to check your coverage.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- GENERAL END -->
+
+                <!-- SERVICES  -->
+                <div class="tab-pane fade" id="pills-billing" role="tabpanel" aria-labelledby="pills-billing-tab"
+                    tabindex="0">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What complex care does SEHA provide?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    As the cornerstone of Abu Dhabi’s healthcare system and the largest network provider
+                                    in the UAE, SEHA has built an extensive foundation to ensure that every need in the
+                                    community is met. All services, specialties and complex care required by the people
+                                    of Abu Dhabi are available and provided throughout SEHA’s network of hospitals and
+                                    centers.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What specialties does SEHA provide?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    SEHA’s healthcare network provides coverage across 16 different specialties
+                                    including inpatient and outpatient medical services including internal medicine,
+                                    pediatrics, gynecology & obstetrics, general surgery, anesthesia, pharmacy services,
+                                    laboratory and diagnostic radiology.
+                                    <br>
+                                    <br>
+                                    For more details <a href="#"> click here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Which insurance works at your hospitals?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    SEHA has strong strategic alliances with major health insurance providers, contact
+                                    the desired facility for more information.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Does SEHA accept patients from outside Abu Dhabi and elsewhere in the world?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    SEHA is committed to providing world-class healthcare services to medical tourism
+                                    patients with the appropriate insurance coverage and/or through the suitable patient
+                                    referral channels.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can I use Thiqa card in all SEHA’s facilities?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Yes. All SEHA hospitals and clinics use Thiqa to cover medical expenses in Abu
+                                    Dhabi. Thiqa is a contracted project by Daman (Health Insurance Company) to provide
+                                    the best healthcare services to the citizens.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Which hospitals and facilities are part of SEHA?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    <strong> Sheikh Shakhbout Medical City</strong>
+                                    <br>
+                                    Sheikh Shakhbout Medical City (SSMC) is the UAE’s largest hospital. Established as
+                                    part of the Abu Dhabi Economic Vision 2030 to elevate healthcare services in the
+                                    Emirate, the 741-bed medical complex is a cornerstone of Abu Dhabi’s healthcare
+                                    services. The hospital provides world leading quality and safety standards with the
+                                    patient experience and excellence at the heart of its approach. SSMC has 30
+                                    different specialties and employs the most advanced medical diagnostic equipment and
+                                    devices. Located in the Al Mafraq area of the Emirate of Abu Dhabi, SSMC’s buildings
+                                    and surrounding areas have been designed in accordance with international building
+                                    development standards. In November 2019, SEHA partnered with U.S. non-profit
+                                    organization, Mayo Clinic to establish a joint venture to operate SSMC.
+                                    <br>
+                                    <strong> Corniche Hospital </strong>
+                                    <br>
+                                    Corniche Hospital is an iconic organization, serving the Abu Dhabi community for
+                                    over 40 years. The Hospital is the UAE’s leading tertiary Women & Newborn hospital
+                                    providing high quality and specialized services to women and newborns.
+                                    Corniche provides a comprehensive range of inpatient and outpatient obstetrics,
+                                    gynecology, and neonatology services including fetal medicine – the most
+                                    sophisticated Neonatal Intensive Care Unit in the region, fertility services and
+                                    advanced laparoscopy.
+
+                                    <br><br><br>
+
+                                    <strong> Sheikh Khalifa Medical City </strong>
+                                    <br>
+                                    Sheikh Khalifa Medical City (SKMC) is a flagship tertiary hospital in the UAE and
+                                    the largest teaching medical center in the city of Abu Dhabi.
+                                    The hospital has pioneered multiple innovative medical technologies locally and
+                                    regionally, establishing itself as a market leader and setting new benchmarks for
+                                    the sector. Major achievements include; the first Transplant Center in the UAE and
+                                    the sole provider of Paediatric transplant services in the Emirate of Abu Dhabi, the
+                                    largest Cardiac Science program for Paediatrics and adults and the only Paediatric
+                                    Cardiac Surgery Program in Abu Dhabi, the first accredited Chest Pain Center in the
+                                    region and outside the United States.
+                                    <br>
+                                    SKMC is committed to providing exceptional and comprehensive adult surgical and
+                                    medical services in its inpatient and outpatient facilities. SKMC also manages a
+                                    Biosafety Level 3 Laboratory (BSL3) and a 125-bed Behavioural Sciences Pavilion, the
+                                    largest mental care facility that provides adults and Paediatrics services.
+                                    <br><br><br>
+
+
+                                    <strong> SEHA Kidney Care </strong>
+                                    <br>
+                                    SEHA Kidney Care (SKC) has three dialysis centers dispersed in the Emirate of Abu
+                                    Dhabi: Tawam Dialysis Center, Sheikh Khalifa Medical Dialysis Center, Mafraq
+                                    Dialysis Center, in addition, there are 11 units which serve nine different areas in
+                                    Abu Dhabi.
+                                    <br>
+                                    These centers and units provide hemodialysis and peritoneal dialysis.
+                                    SKC treats 1,123 patients every week, averaging over 160,000 treatment sessions
+                                    annually.
+                                    <br>
+                                    <br>
+                                    <strong> Ambulatory Healthcare Services</strong>
+                                    <br>
+                                    Ambulatory Healthcare Services (AHS), a SEHA Health System Facility, is the gateway
+                                    to healthcare services in Abu Dhabi. As one of SEHA’S key strategic objectives, AHS
+                                    is also focused on providing easy access to high quality curative, specialized, and
+                                    preventive services.
+                                    <br>
+                                    AHS currently manage:
+                                    <br>
+                                    <ul>
+                                        <li style="list-style-type: disc;">38 healthcare centers which include: two
+                                            diagnostic and screening centers / two children’s specialty centers / two
+                                            well baby vaccination centers / four dental specialty centers / one
+                                            occupational health center /31 healthcare centers providing family medicine
+                                            and specialty services
+                                        </li>
+                                        <li style="list-style-type: disc;">
+                                            10 Disease Prevention & Screening Centers
+
+                                        </li>
+                                        <li style="list-style-type: disc;">
+                                            School Health Services at 255 public schools
+                                        </li>
+                                        <li style="list-style-type: disc;">
+                                            Three Mobile Clinic Solutions
+
+                                        </li>
+                                        <li style="list-style-type: disc;">
+                                            One Mobile Mammography Clinic
+                                        </li>
+                                        <li style="list-style-type: disc;">
+                                            One Homecare Center
+                                        </li>
+                                    </ul>
+                                    <br><br>
+
+                                    <strong> Al Zafaranah and Oud Al Touba Diagnostic & Screening Centers</strong>
+                                    <br>
+                                    A leading healthcare facility, providing a comprehensive screening checkup in less
+                                    than three hours.
+                                    <br>
+                                    <br>
+                                    <strong> Al Mushrif and Al Towayya Children’s Specialty Centers</strong>
+                                    <br>
+                                    The centers offer specialist Paediatric care and are equipped with the most
+                                    cutting-edge medical and diagnostic equipment. Specialties include general
+                                    pediatrics, infectious diseases, dermatology, endocrinology, nephrology (kidney
+                                    diseases), ophthalmology, ear nose and throat, pulmonology, surgery, dental,
+                                    cardiology, immunology and allergy, neurology, orthopedics, rheumatology,
+                                    gastroenterology, psychiatry, and psychology.
+
+                                    <br><br><br>
+
+                                    <strong> Al Rahba Hospital </strong>
+                                    <br>
+                                    Established in 2003, Al Rahba Hospital is a 166-bed advanced secondary care
+                                    facility. Since 2008 has been managed by Johns Hopkins Medicine International, a
+                                    leading U.S. healthcare and medical institution. In 2006, Al Rahba became the first
+                                    public hospital in the UAE to be accredited by Joint Commission International (JCI).
+                                    <br>
+                                    Al Rahba’s advanced emergency department serves more than 200 patients daily,
+                                    harnessing advanced technology such as a multi-slice CT scanner, designed to provide
+                                    specialist care in trauma cases. The Outpatient Department has 18 specialties.
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <strong> Tawam Hospital</strong>
+                                    <br>
+                                    Tawam Hospital is a premier 774 bed tertiary care facility located in Al Ain and is
+                                    one of the largest hospitals in the UAE. The hospital is managed by Johns Hopkins
+                                    Medicine International, a leading U.S. healthcare and medical institution.
+                                    <br>
+                                    Tawam offers services in specialties including oncology, neonatal care, emergency
+                                    medicine, intensive care, surgery, urology, family medicine, fertility services,
+                                    neurosurgery, nephrology, pediatrics, pain management, internal medicine and
+                                    obstetrics and gynecology.
+                                    <br>
+                                    Tawam Hospital actively recruits and engages a national workforce, with an average
+                                    Emiratization rate of 22%.
+                                    <br><br><br>
+
+
+                                    <strong> Al Ain Hospital</strong>
+                                    <br>
+                                    Al Ain Hospital is one of the largest hospitals in Al Ain City, and was established
+                                    over 45 years ago. With 402 beds, Al Ain Hospital provides specialized acute care,
+                                    emergency medical care and the UAE’s first acute Stroke Unit as part of its 35
+                                    medical departments. Al Ain Hospital has been accredited by Joint Commission
+                                    International since 2010.
+                                    <br>
+                                    The hospital serves as an academic medical centre, in collaboration with the Faculty
+                                    of Medicine and Health Sciences at UAE University. Furthermore, the hospital also
+                                    provides medical residency training programs for Internal Medicine, Obstetrics &
+                                    Gynaecology and Behavioural Sciences. It is the only facility in the region offering
+                                    inpatient behavioural sciences and psychological community care.
+                                    <br><br><br>
+
+
+                                    <strong> Al Dhafra Hospitals</strong>
+                                    <br>
+                                    Al Dhafra hospitals is a premier medical institution located in Al Dhafra,
+                                    encompassing six hospitals which are Madinat Zayed, Ghayathi, Marfa, Delma, and
+                                    Liwa. In addition, the institution also includes four clinics which are Bida Mutawa,
+                                    Abu Al-Abyad Clinic, Sir Bani Yas Clinic, and Al Dhafra Family Medicine Center
+                                    (DFMC).
+                                    <br>
+                                    Together, these hospitals and clinic provide coverage across 16 different
+                                    specialties including inpatient and outpatient medical services covering different
+                                    fields and specialties, including internal medicine, pediatrics, gynecology &
+                                    obstetrics, general surgery, anesthesia, pharmacy services, laboratory and
+                                    diagnostic radiology.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- SERVICES END -->
+
+                <!-- CUSTOMER CARE -->
+                <div class="tab-pane fade" id="pills-rights" role="tabpanel" aria-labelledby="pills-rights-tab"
+                    tabindex="0">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;""
+                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How can I make a complaint?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse "
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    If you feel the services you have received through SEHA have not met your
+                                    expectations, we want to hear from you so we can address your concerns and make
+                                    improvements. You can contact us at 80050 and we will get back to you within 48
+                                    hours.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can my complaint be anonymous?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    No. Anonymous complaints cannot be accepted.
+                                    <br>
+                                    For us to investigate and respond accurately, we need to know who you are and the
+                                    details of your complaint. This will help us to conduct a thorough investigation and
+                                    get back to you at the contact number you would provide.
+                                    <br>
+                                    Please be assured that your personal data and health records will be treated in line
+                                    with best practice data protection policies.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Will SEHA provide a full detailed investigation and feedback on the concerns raised?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    ​Yes. A follow up call will be made to the complainant. SEHA’s Clinical Affairs
+                                    Department is responsible for conducting the investigation into clinical issues and
+                                    conveys final investigation outcomes to the complainant according to prescribed
+                                    policies and procedures in effect from time to time and as may be required by law.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-portal" role="tabpanel" aria-labelledby="pills-portal-tab"
+                    tabindex="0">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;""
+                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Where is SEHA company located?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse "
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+
+                                    Abu Dhabi Health Services Company (SEHA)
+                                    <br>
+                                    Executive Building
+                                    <br>
+                                    Das Tower, 9th Floor,
+                                    <br>
+                                    Sultan Bin Zayad Street (32nd Street), Khalidia
+                                    <br>
+                                    Abu Dhabi, UAE
+                                    <br>
+                                    Tel: +971 2 410 2000
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What are SEHA’s office hours for direct/phone contact?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Sunday through Thursday except holidays
+                                    <br>
+                                    07:00 – 15:00 (Except during Ramadan, 08:00 – 14:00)
+                                    <br>
+                                    Appointment required
+                                    <br>
+                                    The UAE is +4 GMT and does not observe Summertime adjustments
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item acc-item">
+                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What if I have a question that is not covered here? </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body acc-b">
+                                    Contact us directly <br>
+                                    Abu Dhabi Health Services Company (SEHA) <br>
+                                    Abu Dhabi, UAE <br>
+                                    Tel: +971 2 410 2000 <br>
+                                    Fax: +971 2 410 2311 <br>
+                                    P.O. Box: 109090 <br>
+                                    Email: care@seha.ae <br>
+                                    <a href="#"> www.seha.ae </a> <br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+        <section class="cards-s">
+            <div class="c-head">
+                <h2> Patients & Visitors</h2>
+            </div>
+            <div class="m-cards">
+                <div class="card">
+                    <div class="card1 c-1">
+                        <div class="card-img">
+                            <img src="images/faq/info-icon.png" alt="" style="width:40px" width="10px">
+                        </div>
+                        <div class="c-title">
+                            <h3>Insurance Parteners</h3>
+                        </div>
+                        <div class="c-desc">
+                            <p>We partner with a number of health insurers to offer healthcare coverage for our
+                                patients.</p>
+                        </div>
+                        <div class="c-btn" style="margin-top: 55px;">
+                            <span>learn more</span>
+                            <div class="img"><img src="images/faq/right-arrow.png" style="width:20px;" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <div class="card-img">
+                            <img src="images/faq/info-icon.png" alt="" style="width:40px" width="10px">
+                        </div>
+                        <div class="c-title">
+                            <h3>Location & Opening Hours</h3>
+                        </div>
+                        <div class="c-desc">
+                            <p>Conveniently located in Abu Dhabi Zayed Sports City, Healthpoint is easily accessible and
+                                can be reached by public transport or car.</p>
+                        </div>
+                        <div class="c-btn" style="margin-top: 10px;">
+                            <span>learn more</span>
+                            <div class="img"><img src="images/faq/right-arrow.png" style="width:20px;" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <div class="card-img">
+                            <img src="images/faq/info-icon.png" alt="" style="width:40px" width="10px">
+                        </div>
+                        <div class="c-title">
+                            <h3>Facilities & Services
+                            </h3>
+                        </div>
+                        <div class="c-desc">
+                            <p>We are committed to providing five-star service to our patients.</p>
+                        </div>
+                        <div class="c-btn" style="margin-top: 80px;">
+                            <span>learn more</span>
+                            <div class="img"><img src="images/faq/right-arrow.png" style="width:20px;" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <div class="card-img">
+                            <img src="images/faq/info-icon.png" alt="" style="width:40px" width="10px">
+                        </div>
+                        <div class="c-title">
+                            <h3>Request Information</h3>
+                        </div>
+                        <div class="c-desc">
+                            <p>Get In Touch with Us</p>
+                        </div>
+                        <div class="c-btn" style="margin-top: 100px;">
+                            <span>learn more</span>
+                            <div class="img"><img src="images/faq/right-arrow.png" style="width:20px;" alt=""> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <!--=================================
+          Footer start
+   ============================== -->
+    <footer id="pq-footer">
+        <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="" type="submit" value="Sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pq-footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Our Courses</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="about-us.html">Blog</a></li>
+                                        <li><a href="faq.html">FAQ's</a></li>
+                                        <li><a href="our-process.html">International Patients</a></li>
+                                        <li><a href="Insurance.html">Insurance Partners</a></li>
+                                        <li><a href="our-doctor.html">Patients Rights & Responsibilities</a></li>
+                                        <li><a href="home-visit.html">Corporate Social Responsibility</a></li>
+                                        <li><a href="make-appoinment.html">Transparency Charter</a></li>
+                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit a complaint (TAMM)</a></li>
+                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders & Contracts</a></li>
+                                        <li><a href="our-plan.html">Recruitment Fraud Alert</a></li>
+                                        <li><a href="https://portal.seha.ae/">Employee Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Contact Us</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="pq-contact">
+                                            <li> <a href="tel:80050"><i class="fas fa-phone"></i>
+                                                    <span> 80050</span>
+                                                </a> </li>
+                                            <li> <a href="mailto:sehaae@seha.itw-hosting.net"><i
+                                                        class="fas fa-envelope"></i><span>sehaae@seha.itw-hosting.net</span></a>
+                                            </li>
+                                            <li> <i class="fas fa-map-marker"></i> <span>
+                                                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street (32nd
+                                                    Street), Abu Dhabi, United Arab Emirates​.</span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
+                                    alt="medicate-footer-logo">
+                                <p>Follow us on social media and be the first to know about our latest announcements.
+                                </p>
+
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/SEHAHealth/"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/sehahealth/"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://twitter.com/sehahealth"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/sehahealth/"><i
+                                                    class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/SEHAHealth"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> ©️ Copyright 2023 SEHA – Abu
+                                Dhabi Health Services Co. All Rights Reserved.</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
