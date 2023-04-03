@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SEHA</title>
-      <!-- Favicon Icon -->
-      <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
@@ -32,35 +32,78 @@
         html {
             overflow-x: hidden;
         }
-
+        
+        .about-us-section h5 {
+            padding-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .about-us-section p {
+            text-align: justify;
+            line-height: 1.5em;
+            padding-bottom: 15px;
+        }
+        
+        .who-we-are {
+            padding-right: 30px;
+        }
+        
+        .who-we-are h1 {
+            font-size: 55px;
+            padding-bottom: 35px;
+        }
+        
+        .strategy-mission h1 {
+            font-size: 55px;
+            padding-bottom: 40px;
+        }
+        
+        .strategy-mission p {
+            font-size: 15px;
+            line-height: 1.8em;
+            margin-bottom: 15px !important;
+            text-align: justify;
+            padding-right: 35px;
+        }
+        
+        p.history-main-para {
+            color: #fff !important;
+            font-size: 16px;
+            text-align: center;
+            width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 15px;
+        }
+        
         .custom-process-step::before {
             top: 3% !important;
         }
-
+        
         .para-wrapper {
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 7;
             -webkit-box-orient: vertical;
         }
-
+        
         .para-wrapper p {
             text-align: justify !important;
         }
-
+        
         .custom-team-info {
             padding: 20px;
             max-width: 400px;
             margin: 50px auto;
         }
-
+        
         .range {
             position: relative;
             /* width: 550px; */
             width: 100%;
             height: 5px;
         }
-
+        
         .range input {
             width: 100%;
             position: absolute;
@@ -70,7 +113,7 @@
             border: none !important;
             padding: unset !important;
         }
-
+        
         .range input::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 18px;
@@ -81,7 +124,7 @@
             cursor: pointer;
             border: 0 !important;
         }
-
+        
         .range input::-moz-range-thumb {
             width: 18px;
             height: 18px;
@@ -91,7 +134,7 @@
             cursor: pointer;
             border: 0 !important;
         }
-
+        
         .range input::-ms-thumb {
             width: 18px;
             height: 18px;
@@ -101,33 +144,33 @@
             cursor: pointer;
             border: 0 !important;
         }
-
+        
         .range input::-webkit-slider-runnable-track {
             width: 100%;
             height: 2px;
             cursor: pointer;
             background: #fff;
         }
-
+        
         .range input::-moz-range-track {
             width: 100%;
             height: 2px;
             cursor: pointer;
             background: #fff;
         }
-
+        
         .range input::-ms-track {
             width: 100%;
             height: 2px;
             cursor: pointer;
             background: #fff;
         }
-
+        
         .range input:focus {
             background: none;
             outline: none;
         }
-
+        
         .range input::-ms-track {
             width: 100%;
             cursor: pointer;
@@ -135,13 +178,13 @@
             border-color: transparent;
             color: transparent;
         }
-
+        
         .range-labels {
             margin: 18px -41px 0;
             padding: 0;
             list-style: none;
         }
-
+        
         .range-labels li {
             position: relative;
             float: left;
@@ -151,7 +194,7 @@
             font-size: 14px;
             cursor: pointer;
         }
-
+        
         .range-labels li::before {
             position: absolute;
             top: -25px;
@@ -164,58 +207,54 @@
             background: #fff;
             border-radius: 50%;
         }
-
+        
         .range-labels .active {
             color: #00b5ea;
         }
-
+        
         .range-labels .selected::before {
             background: #00b5ea;
         }
-
+        
         .range-labels .active.selected::before {
             display: none;
         }
-
         /* media-queries */
-
+        
         @media (max-width: 1250px) {
             .about-us-section {
                 padding-top: 85px !important;
             }
-
             .who-we-are p {
                 font-size: 14px !important;
                 margin-bottom: 5px !important;
             }
-
             .strategy-mission p {
                 font-size: 14px !important;
             }
         }
-
         /* timeline */
-
+        
         .timeline-container {
             width: 100%;
             overflow: hidden;
         }
-
+        
         .time-pad {
             padding: 1rem;
         }
-
+        
         .timeline-blocks {
             width: 900%;
             margin: 0;
         }
-
+        
         .timeline-blocks li {
             display: inline-block;
             width: 100vw;
             max-width: 11%;
         }
-
+        
         .timeline-block {
             width: 90%;
             max-width: 800px;
@@ -223,14 +262,14 @@
             display: flex;
             align-items: center;
         }
-
+        
         .timeline {
             text-align: center;
             width: 100%;
             margin: 75px auto 0 auto;
             z-index: 2;
         }
-
+        
         .timeline:before {
             background: #ffffff;
             content: ' ';
@@ -242,7 +281,7 @@
             position: absolute;
             z-index: -1;
         }
-
+        
         .timeline li {
             border-radius: 30px;
             display: inline-block;
@@ -254,39 +293,38 @@
             margin: 26px 50px 26px 50px;
             cursor: pointer;
         }
-
+        
         .timeline-status {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
+        
         .timeline-status li {
             display: inline-block;
             margin: 10px 45px 10px 45px;
             color: #fff;
         }
-
+        
         .timeline-image {
             float: left;
             width: 50%;
             height: 100%;
         }
-
+        
         .timeline-description {
             text-align: center;
             float: left;
             width: 50%;
             height: 200px;
         }
-
+        
         .timeline-active {
             background: #52B3D9 !important;
             transition: background .2s;
         }
-
-        :root {
-
+        
+         :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -294,50 +332,48 @@
             --theme-color-light-green-bg: #8bccbe8c;
             --theme-color-blue: #2544be;
             --theme-color-blue-bg: #00b3ea4f;
-
             /* secondary colors */
             --theme-color-light-blue: #00b5ea;
             --theme-color-burgundy: #973359;
             --theme-color-peach: #de6f4e;
             --theme-color-yellow: #faae61;
-
             /* neutrals colors */
             --theme-color-dark-gray: #787878;
             --theme-color-medium-gray: #A8A8A8;
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-
+        
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white !important;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
+        
         .bottom-nav {
             padding: 0 2rem 0px 3rem !important;
         }
-
+        
         .padding-none {
             padding: 0px;
         }
-
+        
         .pq-client-img,
         .pq-footer-logo {
             -webkit-filter: brightness(0) invert(100%);
@@ -350,7 +386,7 @@
     <!--=================================
          loading start-->
     <div id="pq-loading">
-                            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
     </div>
     <!--=================================
          loading end-->
@@ -453,9 +489,7 @@
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </nav>
@@ -503,37 +537,23 @@
                     <div class="who-we-are">
                         <div class="content">
                             <div class="title-heading pb-3">
-                                <h1 style="font-size:55px; padding-bottom: 20px;">Who we are</h1>
+                                <h1>Who we are</h1>
                             </div>
                             <div class="first-content">
-                                <h5 style="font-size:20px">THE LARGEST HEALTHCARE NETWORK IN THE UAE</h5>
-                                <p style="font-size:15px; margin-bottom: 10px !important;">Abu Dhabi Healthcare Company
-                                    (SEHA) is the largest and most comprehensive healthcare network in the UAE and was
-                                    established by Emiri Decree No. 10 of 2007.</p>
+                                <h5>THE LARGEST HEALTHCARE NETWORK IN THE UAE</h5>
+                                <p style="font-size:15px; margin-bottom: 10px !important;">Abu Dhabi Healthcare Company (SEHA) is the largest and most comprehensive healthcare network in the UAE and was established by Emiri Decree No. 10 of 2007.</p>
                             </div>
                             <div class="second-content">
-                                <h5 style="font-size:20px">WORLD-CLASS HEALTHCARE SERVICES</h5>
-                                <p style="font-size:15px ;margin-bottom: 10px !important;">The company owns and operates
-                                    all the public hospitals and clinics of the Emirate of Abu Dhabi and was set-up to
-                                    provide UAE residents and citizens with integrated and outstanding healthcare
-                                    services following the highest
-                                    international quality and safety standards. SEHA is a key player in Abu Dhabi’s
-                                    wider healthcare sector reform and is responsible for public healthcare centers and
-                                    hospitals as it aims to make the public healthcare
-                                    delivery comparable to the finest healthcare systems in the world. SEHA is part of
-                                    ADQ, one of the region’s largest holding companies with a diverse portfolio of major
-                                    enterprises spanning key sectors of Abu Dhabi’s
+                                <h5>WORLD-CLASS HEALTHCARE SERVICES</h5>
+                                <p style="font-size:15px ;margin-bottom: 10px !important;">The company owns and operates all the public hospitals and clinics of the Emirate of Abu Dhabi and was set-up to provide UAE residents and citizens with integrated and outstanding healthcare services following the highest
+                                    international quality and safety standards. SEHA is a key player in Abu Dhabi’s wider healthcare sector reform and is responsible for public healthcare centers and hospitals as it aims to make the public healthcare
+                                    delivery comparable to the finest healthcare systems in the world. SEHA is part of ADQ, one of the region’s largest holding companies with a diverse portfolio of major enterprises spanning key sectors of Abu Dhabi’s
                                     non-oil economy.</p>
                             </div>
                             <div class="third-content">
-                                <h5 style="font-size:20px">CUTTING-EDGE TECHNOLOGY</h5>
-                                <p style="font-size:15px;margin-bottom: 10px !important;">SEHA is committed to
-                                    delivering world-class healthcare services using the most advanced diagnostics and
-                                    systems. By partnering with global leaders in healthcare, SEHA continues to enhance
-                                    the experience of patients in Abu
-                                    Dhabi. Current partners include Mayo Clinic. These partnerships have significantly
-                                    contributed to SEHA’s growth and development in knowledge transfer, education,
-                                    promoting healthcare excellence, and achieving goals
+                                <h5>CUTTING-EDGE TECHNOLOGY</h5>
+                                <p style="font-size:15px;margin-bottom: 10px !important;">SEHA is committed to delivering world-class healthcare services using the most advanced diagnostics and systems. By partnering with global leaders in healthcare, SEHA continues to enhance the experience of patients in Abu
+                                    Dhabi. Current partners include Mayo Clinic. These partnerships have significantly contributed to SEHA’s growth and development in knowledge transfer, education, promoting healthcare excellence, and achieving goals
                                     with competitive advantage.</p>
                             </div>
                         </div>
@@ -541,8 +561,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="about-us-img">
-                        <img src="images/About-us/who-we-are.jpg" class="img-fluid pq-image1 wow fadeInRight" alt="home"
-                            style="visibility: visible; animation-name: fadeInRight;">
+                        <img src="images/About-us/who-we-are.jpg" class="img-fluid pq-image1 wow fadeInRight" alt="home" style="visibility: visible; animation-name: fadeInRight;">
                         <img src="images/About-us/3.jpg" class="img-fluid pq-image2 wow fadeInRight" alt="home" style="visibility: visible; animation-name: fadeInRight;width: 55%;
                         top: 50%">
                     </div>
@@ -555,15 +574,13 @@
          about-us end-->
 
 
-    <section class="" style="background:#0a3a5a !important; padding-top: 0; ">
+    <section class="history-section" style="background:#0a3a5a !important; padding-top: 0; ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12">
                     <div class="pq-section pq-style-1 text-center pt-5">
                         <h1 class="pt-5" style="font-size:55px; padding-bottom: 20px; color:#fff">History</h1>
-                        <p style="color: #fff; font-size: 16px; text-align: center; width: 800px; margin-right: auto;
-                        margin-left: auto;">With a legacy stretching as far back as 1975, SEHA Healthcare has been
-                            chalking out distinct strategies that reflect its continuing leadership in the market.</p>
+                        <p class="history-main-para">With a legacy stretching as far back as 1975, SEHA Healthcare has been chalking out distinct strategies that reflect its continuing leadership in the market.</p>
                     </div>
                 </div>
             </div>
@@ -576,11 +593,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2015
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -590,11 +604,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2016
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -604,11 +615,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2017
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -618,11 +626,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2018
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -632,11 +637,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2019
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -646,11 +648,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2020
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -660,11 +659,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2021
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -674,11 +670,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2022
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -688,11 +681,8 @@
                                 <div class="timeline-description">
                                     <h2 class="timeline-description-year" style="color:#fff">2023
                                         <h2>
-                                            <p class="timline-description-system"
-                                                style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
-                                                SEHA became the first company from Abu Dhabi to list on the London Stock
-                                                Exchange in 2012 and is now part of the premium FTSE 100 Index, a share
-                                                index of 100 companies with the highest market capitalisation.</p>
+                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                                SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
                         </li>
@@ -735,25 +725,20 @@
     </section>
 
     <!-- strategy or mision -->
-    <section class="strategy-mission-section" style="background-color: #E6E6E6;padding-bottom:90px; padding-top:90px">
+    <section class="strategy-mission-section" style="padding-bottom:90px; padding-top:90px">
         <div class="container">
             <div class="row">
                 <div class="col-7">
                     <div class="strategy-mission">
                         <div class="content">
                             <div class="title-heading ">
-                                <h1 style="font-size:55px; padding-bottom: 20px;">Strategy & Vision</h1>
-                                <p style="font-size:15px">At NMC Healthcare, we guarantee personalised care, genuine
-                                    concern and a sincere commitment to the overall well-being of society. We believe
-                                    that healthcare is simply not about detecting, diagnosing, informing or treating
-                                    an individual but it is about helping people to lead a wholesome and healthy life.
-                                    We are committed to serving the communities where we do business and pledge to
-                                    provide our customers with hope ‐ Hope of a Healthy and
+                                <h1>Strategy & Vision</h1>
+                                <p>At NMC Healthcare, we guarantee personalised care, genuine concern and a sincere commitment to the overall well-being of society. We believe that healthcare is simply not about detecting, diagnosing, informing or treating
+                                    an individual but it is about helping people to lead a wholesome and healthy life. We are committed to serving the communities where we do business and pledge to provide our customers with hope ‐ Hope of a Healthy and
                                     Happy Life.</p>
-                                <p style="font-size:15px">As the expression goes, 'The journey of a thousand miles
-                                    begins with a single step', our incredible journey also began with our first step in
-                                    1974, when we established a small clinic and pharmacy in Abu Dhabi under the
-                                    name New Medical Centre (NMC).</p>
+                                <p>As the expression goes, 'The journey of a thousand miles begins with a single step', our incredible journey also began with our first step in 1974, when we established a small clinic and pharmacy in Abu Dhabi under the
+                                    name New Medical Centre ( NMC).
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -766,15 +751,100 @@
     </section>
     <!-- strategy or mision end-->
 
+    <!-- leadership-team -->
+    <section class="team" style="background-color: #E6E6E6;padding-top:0px">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 style="font-size:55px; padding-bottom: 20px; color:#000; text-align: center; padding-top:75px">Our Leadership Team</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 pb-dot-mt-0">
+                    <div class="owl-carousel owl-theme" data-nav="false" data-desk_num="3" data-lap_num="3" data-tab_num="2" data-mob_num="2" data-mob_sm="1" data-autoplay="false" data-loop="false" data-margin="30">
+                        <div class="item">
+                            <div class="pq-team-box pq-style-1">
+                                <div class="pq-team-img">
+                                    <img src="images/About-us/Saeed001d-411x499.jpg" class="img-fluid" alt="team-image">
+                                </div>
+                                <div class="pq-team-info custom-team-info">
+                                    <h5 class="pq-member-name" style="font-size:22px;">Saeed Jaber Al Kuwaiti</h5>
+                                    <h6 style="font-size:16px; color: #0a3a5a;">Group Chief Executive Officer</h6>
+                                    <div class="para-wrapper">
+                                        <p style="font-size: 13px;line-height: 1.4rem;text-align: center;">With over 24 years of experience, Saeed Al Kuwaiti brings a rich legacy in healthcare and financial management to his new role. His previous positions include working as Chief Executive Officer at Tawam Hospital
+                                            and Al Mafraq Hospital, part of SEHA’s network, where he was responsible for many of the network’s successes and achievements. Notably, over the last decade Mr. Al Kuwaiti has played a significant part in enhancing
+                                            the overall position of Tawam Hospital as a center of excellence in oncology.
+                                        </p>
+                                    </div>
+                                    <a class="pq-button pq-button-link " style="color: #0a3a5a; margin-top: 5px; display: flex; justify-content: end;" href=" ">
+                                        <div class="pq-button-block ">
+                                            <span class="pq-button-text" style="color: #0a3a5a; font-size: 13px; margin-right: 5px; text-transform: unset;">Read
+                                                More</span> <i class="ion ion-plus-round " style="font-size: 12px;"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pq-team-box pq-style-1 ">
+                                <div class="pq-team-img ">
+                                    <img src="images/About-us/Saeed001d-411x499.jpg " class="img-fluid " alt="team-image ">
+                                </div>
+                                <div class="pq-team-info custom-team-info ">
+                                    <h5 class="pq-member-name " style="font-size:22px; ">Dr. Anwar Sallam</h5>
+                                    <h6 style="font-size:16px;color: #0a3a5a; ">Group Chief Medical Officer</h6>
+                                    <div class="para-wrapper ">
+                                        <p style="font-size: 13px;line-height: 1.4rem;text-align: center; ">Part of the SEHA network since 2012, Dr. Anwar Sallam now serves as Group Chief Medical Officer, where he oversees the effective management across facilities, ensuring that patients receive the highest standard
+                                            of care. As part of his role, Dr. Anwar promotes a culture of safety and quality, collaborates with other healthcare partners for the effective implementation of policies, operational effectiveness, and contributes
+                                            to strategic planning to drive the network’s transformation strategy. In addition to Dr. Anwar’s position of leadership at SEHA, he is a practicing Consultant Pediatric Pulmonologist, educator for future generations
+                                            of medical students, and member of the International Care Committee at the Department of Health – Abu Dhabi.</p>
+                                    </div>
+                                    <a class="pq-button pq-button-link " style="color: #0a3a5a; margin-top: 5px; display: flex; justify-content: end;" href=" ">
+                                        <div class="pq-button-block ">
+                                            <span class="pq-button-text" style="color: #0a3a5a; font-size: 13px; margin-right: 5px; text-transform: unset;">Read
+                                                More</span> <i class="ion ion-plus-round " style="font-size: 12px;"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pq-team-box pq-style-1 ">
+                                <div class="pq-team-img ">
+                                    <img src="images/About-us/Saeed001d-411x499.jpg " class="img-fluid " alt="team-image ">
+                                </div>
+                                <div class="pq-team-info custom-team-info ">
+                                    <h5 class="pq-member-name " style="font-size:22px; ">Saif Daoud Al Siksek</h5>
+                                    <h6 style="font-size:16px;color: #0a3a5a; ">Group Chief Information Officer</h6>
+                                    <div class="para-wrapper ">
+                                        <p style="font-size: 13px;line-height: 1.4rem;text-align: center; ">Saif is an experienced management professional with a record of fast-track, performance-based progression, and outstanding strategic planning and project management qualifications. He is accomplished and deeply
+                                            skilled in planning, infrastructure, and technology management, with over a decade of interaction with C-Suite management. During his career at SEHA, he has accumulated several notable achievements, including
+                                            – creating and implementing a pandemic-ready Digital Transformation Strategy & Roadmap for SEHA; implementing Robotic Process Automation at SEHA within business applications supporting RCM, HR, IT, and other
+                                            functions within the organization; and playing a key role in the creation and roll-out of the SEHA mobile app, oracle fusion upgrade, and many more.
+                                        </p>
+                                    </div>
+                                    <a class="pq-button pq-button-link " style="color: #0a3a5a; margin-top: 5px; display: flex; justify-content: end;" href=" ">
+                                        <div class="pq-button-block ">
+                                            <span class="pq-button-text" style="color: #0a3a5a; font-size: 13px; margin-right: 5px; text-transform: unset;">Read
+                                                More</span> <i class="ion ion-plus-round " style="font-size: 12px;"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end leadership-team -->
 
 
     <!-- awards and recongnition -->
-    <section class="awards-recongnition-section" style="padding-top:90px">
+    <section class="awards-recongnition-section" style="padding-top:90px;padding-bottom:150px !important">
         <div class="container">
             <div class="award-recongnition">
                 <div class="award-recongnition-heading pb-5">
-                    <h1 style="font-size:55px; padding-bottom: 20px; color:#000; text-align: center;">Awards &
-                        Recognition</h1>
+                    <h1 style="font-size:55px; padding-bottom: 20px; color:#000; text-align: center;">Awards & Recognition
+                    </h1>
                 </div>
                 <div class="row" style="display:flex; justify-content:center;">
                     <div class="col-xl-2 col-md-2">
@@ -800,16 +870,14 @@
                     </div>
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
-                            <div class=""><img src="images/About-us/Service-Olympian-Award.jpg" class="img-fluid"
-                                    alt="Images"></div>
+                            <div class=""><img src="images/About-us/Service-Olympian-Award.jpg" class="img-fluid" alt="Images"></div>
                             <h5 class="text-center pt-3" style="font-size: 18px !important;">Gold Stevie Award</h5>
                             <h6 class="text-center" style="font-size:16px">2016</h6>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
-                            <div class=""><img src="images/About-us/Service-Olympian-Award.jpg" class="img-fluid"
-                                    alt="Images"></div>
+                            <div class=""><img src="images/About-us/Service-Olympian-Award.jpg" class="img-fluid" alt="Images"></div>
                             <h5 class="text-center pt-3" style="font-size: 18px !important;">Gold Stevie Award</h5>
                             <h6 class="text-center" style="font-size:16px">2016</h6>
                         </div>
@@ -820,126 +888,6 @@
     </section>
     <!-- end of award and recongnition -->
 
-    <!-- leadership-team -->
-    <section class="team" style="background-color: #E6E6E6;padding-top:0px">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1 style="font-size:55px; padding-bottom: 20px; color:#000; text-align: center; padding-top:75px">OUR
-                    LEADERSHIP TEAM</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 pb-dot-mt-0">
-                    <div class="owl-carousel owl-theme" data-nav="false" data-desk_num="3" data-lap_num="3"
-                        data-tab_num="2" data-mob_num="2" data-mob_sm="1" data-autoplay="false" data-loop="false"
-                        data-margin="30">
-                        <div class="item">
-                            <div class="pq-team-box pq-style-1">
-                                <div class="pq-team-img">
-                                    <img src="images/About-us/Saeed001d-411x499.jpg" class="img-fluid" alt="team-image">
-                                </div>
-                                <div class="pq-team-info custom-team-info">
-                                    <h5 class="pq-member-name" style="font-size:22px;">SAEED JABER AL KUWAITI</h5>
-                                    <h6 style="font-size:16px; color: #0a3a5a;">Group Chief Executive Officer</h6>
-                                    <div class="para-wrapper">
-                                        <p style="font-size: 13px;line-height: 1.4rem;text-align: center;">With over 24
-                                            years of experience, Saeed Al Kuwaiti brings a rich legacy in healthcare and
-                                            financial management to his new role. His previous positions include working
-                                            as Chief Executive Officer at Tawam Hospital
-                                            and Al Mafraq Hospital, part of SEHA’s network, where he was responsible for
-                                            many of the network’s successes and achievements. Notably, over the last
-                                            decade Mr. Al Kuwaiti has played a significant part in enhancing
-                                            the overall position of Tawam Hospital as a center of excellence in
-                                            oncology.</p>
-                                    </div>
-                                    <a class="pq-button pq-button-link "
-                                        style="color: #0a3a5a; margin-top: 5px; display: flex; justify-content: end;"
-                                        href=" ">
-                                        <div class="pq-button-block ">
-                                            <span class="pq-button-text"
-                                                style="color: #0a3a5a; font-size: 13px; margin-right: 5px; text-transform: unset;">Read
-                                                More</span> <i class="ion ion-plus-round " style="font-size: 12px;"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="pq-team-box pq-style-1 ">
-                                <div class="pq-team-img ">
-                                    <img src="images/About-us/Saeed001d-411x499.jpg " class="img-fluid "
-                                        alt="team-image ">
-                                </div>
-                                <div class="pq-team-info custom-team-info ">
-                                    <h5 class="pq-member-name " style="font-size:22px; ">Dr. Anwar Sallam</h5>
-                                    <h6 style="font-size:16px;color: #0a3a5a; ">Group Chief Medical Officer</h6>
-                                    <div class="para-wrapper ">
-                                        <p style="font-size: 13px;line-height: 1.4rem;text-align: center; ">Part of the
-                                            SEHA network since 2012, Dr. Anwar Sallam now serves as Group Chief Medical
-                                            Officer, where he oversees the effective management across facilities,
-                                            ensuring that patients receive the highest standard
-                                            of care. As part of his role, Dr. Anwar promotes a culture of safety and
-                                            quality, collaborates with other healthcare partners for the effective
-                                            implementation of policies, operational effectiveness, and contributes
-                                            to strategic planning to drive the network’s transformation strategy. In
-                                            addition to Dr. Anwar’s position of leadership at SEHA, he is a practicing
-                                            Consultant Pediatric Pulmonologist, educator for future generations
-                                            of medical students, and member of the International Care Committee at the
-                                            Department of Health – Abu Dhabi.</p>
-                                    </div>
-                                    <a class="pq-button pq-button-link "
-                                        style="color: #0a3a5a; margin-top: 5px; display: flex; justify-content: end;"
-                                        href=" ">
-                                        <div class="pq-button-block ">
-                                            <span class="pq-button-text"
-                                                style="color: #0a3a5a; font-size: 13px; margin-right: 5px; text-transform: unset;">Read
-                                                More</span> <i class="ion ion-plus-round " style="font-size: 12px;"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="pq-team-box pq-style-1 ">
-                                <div class="pq-team-img ">
-                                    <img src="images/About-us/Saeed001d-411x499.jpg " class="img-fluid "
-                                        alt="team-image ">
-                                </div>
-                                <div class="pq-team-info custom-team-info ">
-                                    <h5 class="pq-member-name " style="font-size:22px; ">Saif Daoud Al Siksek</h5>
-                                    <h6 style="font-size:16px;color: #0a3a5a; ">Group Chief Information Officer</h6>
-                                    <div class="para-wrapper ">
-                                        <p style="font-size: 13px;line-height: 1.4rem;text-align: center; ">Saif is an
-                                            experienced management professional with a record of fast-track,
-                                            performance-based progression, and outstanding strategic planning and
-                                            project management qualifications. He is accomplished and deeply
-                                            skilled in planning, infrastructure, and technology management, with over a
-                                            decade of interaction with C-Suite management. During his career at SEHA, he
-                                            has accumulated several notable achievements, including
-                                            – creating and implementing a pandemic-ready Digital Transformation Strategy
-                                            & Roadmap for SEHA; implementing Robotic Process Automation at SEHA within
-                                            business applications supporting RCM, HR, IT, and other
-                                            functions within the organization; and playing a key role in the creation
-                                            and roll-out of the SEHA mobile app, oracle fusion upgrade, and many more.
-                                        </p>
-                                    </div>
-                                    <a class="pq-button pq-button-link "
-                                        style="color: #0a3a5a; margin-top: 5px; display: flex; justify-content: end;"
-                                        href=" ">
-                                        <div class="pq-button-block ">
-                                            <span class="pq-button-text"
-                                                style="color: #0a3a5a; font-size: 13px; margin-right: 5px; text-transform: unset;">Read
-                                                More</span> <i class="ion ion-plus-round " style="font-size: 12px;"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end leadership-team -->
 
 
 
@@ -955,8 +903,7 @@
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
-                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
                                             </div>
@@ -966,8 +913,7 @@
                                         <div class="pq-subscribe-from">
                                             <form id="form" class="form">
                                                 <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
-                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
                                                     <input class="" type="submit" value="Sign up">
                                                 </div>
                                             </form>
@@ -1026,8 +972,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block">
-                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
-                                    alt="medicate-footer-logo">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                                 <p>Follow us on social media and be the first to know about our latest announcements.
                                 </p>
 
@@ -1063,8 +1008,8 @@
     <!--Footer End-->
     <!--Back To Top start-->
     <div id="back-to-top">
-            <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
-      </div>
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
     <!--Back To Top End-->
     <!--jquery js-->
     <script src="js/jquery.min.js "></script>
