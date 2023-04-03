@@ -646,24 +646,24 @@ section {
 Button Core
 ==================================================*/
 .pq-button {
-  position: relative;
-  width: auto;
-  background: var(--theme-color-light-blue);
-  color: var(--white-color);
-  letter-spacing: 0.04em;
-  font-family: var(--title-fonts);
-  font-size: 14px;
-  font-weight: 600;
-  padding: 12px 30px;
-  text-transform: uppercase;
-  line-height: 2;
-  vertical-align: middle;
-  border: none;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+    position: relative;
+    width: auto;
+    background: var(--theme-color-light-blue);
+    color: var(--white-color);
+    letter-spacing: 0.04em;
+    font-family: var(--title-fonts);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 26px;
+    text-transform: uppercase;
+    line-height: 2;
+    vertical-align: middle;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .pq-button .pq-button-block {
@@ -1834,14 +1834,14 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav {
 }
 
 header#pq-header .pq-bottom-header .navbar .navbar-nav li {
-  position: relative;
-  display: inline-block;
-  float: left;
-  margin-right: 40px;
-  color: var(--dark-color);
-  line-height: 90px;
-  font-weight: 400;
-  font-family: var(--title-fonts);
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 25px;
+    color: var(--dark-color);
+    line-height: 90px;
+    font-weight: 400;
+    font-family: var(--title-fonts);
 }
 
 header#pq-header .pq-bottom-header .navbar .navbar-nav li:last-child {
@@ -1851,7 +1851,7 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav li:last-child {
 header#pq-header .pq-bottom-header .navbar .navbar-nav li a {
   color: var(--dark-color);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 22px;
 }
@@ -3010,13 +3010,14 @@ footer#pq-footer .pq-footer-block:first-child {
 }
 
 footer#pq-footer .pq-footer-style-1 ul#menu-useful-links.menu li {
-  width: 49%;
-  display: inline-block;
-  margin: 0 0 12px 0;
+    width: 100%;
+    /* display: inline-block; */
+    /* margin: 0 0 12px 0; */
 }
 
 footer#pq-footer .pq-footer-style-1 ul.menu li a:first-child {
   padding-top: 0;
+  font-size: 14px;
 }
 
 #pq-footer .pq-footer1 ul li a {
@@ -3053,8 +3054,12 @@ footer#pq-footer .pq-footer-style-1 ul.pq-contact li i {
   margin-right: 20px;
 }
 
-footer#pq-footer .pq-footer-style-1 ul li {
+/* footer#pq-footer .pq-footer-style-1 ul li {
   margin: 0 0 15px 0;
+} */
+
+.fs-14 {
+  font-size: 14px;
 }
 
 .pq-footer-recent-post .pq-footer-recent-post-info .pq-post-date {
