@@ -267,6 +267,14 @@ dl dd:last-child {
   margin-bottom: 0px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+p {
+  text-align: justify !important;
+}
+
 /*============ Table =================*/
 table {
   border: 2px solid var(--grey-color);
