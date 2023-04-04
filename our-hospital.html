@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
     <style>
-
         :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
@@ -54,37 +53,37 @@
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-        
+
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-        
+
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-        
+
         .top-bar a i {
-            color: white ;
+            color: white;
         }
-        
+
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-        
+
         .bottom-nav {
             padding: 0 2rem 0px 3rem !important;
         }
-        
+
         .padding-none {
             padding: 0px;
         }
-        
+
         .pq-client-img,
         .pq-footer-logo {
             -webkit-filter: brightness(0) invert(100%);
@@ -112,7 +111,7 @@
             font-size: 16px;
         }
 
-.pq-menu-search-block #search-bar-container {
+        .pq-menu-search-block #search-bar-container {
             display: none;
             position: fixed;
             top: 0;
@@ -130,6 +129,7 @@
             justify-content: center;
             animation: fade-in 0.5s forwards;
         }
+
         .pq-menu-search-block #search-bar-container.transition {
             animation: fade-out 0.5s forwards;
         }
@@ -143,7 +143,8 @@
                 opacity: 1;
             }
         }
-         @keyframes fade-out {
+
+        @keyframes fade-out {
             from {
                 opacity: 1;
             }
@@ -176,7 +177,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        
+
 
 
         @keyframes slide-down {
@@ -212,57 +213,59 @@
         }
 
         img.header-img {
-    width: 30px;
-    padding-bottom: 2px;
-}
+            width: 30px;
+            padding-bottom: 2px;
+        }
+
         .seha-paragraph {
             font-size: 18px;
         }
-        
+
         .custom-search-btn {
             margin-top: 30px;
             background-color: #00b5ea !important;
             border-color: #00b5ea !important;
         }
-        
+
         .custom-search-btn::placeholder {
             color: #fff;
             opacity: 1;
             /* Firefox */
         }
-        
-         :-ms-input.custom-search-btn-placeholder {
+
+        :-ms-input.custom-search-btn-placeholder {
             /* Internet Explorer 10-11 */
             color: #fff;
         }
-        
-         ::-ms-input.custom-search-btn-placeholder {
+
+        ::-ms-input.custom-search-btn-placeholder {
             /* Microsoft Edge */
             color: #fff;
         }
+
         /* .social-container {
             width: 400px;
             margin: 40vh auto;
             text-align: center;
         } */
-        
+
         .our-hospital-section .card {
             border-radius: 0 !important;
         }
-        
+
         .social-icons {
             padding: 0;
             list-style: none;
             margin: 1em 0em 0em 0em;
         }
-        
+
         .social-icons li {
             display: inline-block;
             margin: 0.15em;
             position: relative;
             font-size: 1em;
         }
-        
+
         .social-icons i {
             color: #fff;
             position: absolute;
@@ -272,11 +275,11 @@
             left: 21px;
             transition: all 265ms ease-out; */
         }
-        
+
         .social-icons a {
             display: inline-block;
         }
-        
+
         .social-icons a:before {
             transform: scale(1);
             -ms-transform: scale(1);
@@ -290,17 +293,17 @@
             background: #00b5ea;
             transition: all 265ms ease-out;
         }
-        
+
         .hospital-card-image {
             height: 100%;
             border-radius: 0 !important;
         }
-        
+
         .read-more-right-btn {
             text-decoration: underline;
             font-size: 15px;
         }
-        
+
         .get-appoitment-right-btn {
             background: #00b5ea !important;
             border: 1px solid #00b5ea !important;
@@ -316,11 +319,11 @@
             align-items: center;
             text-align: center;
         }
-        
+
         a.get-appoitment-right-btn {
             color: #fff !important;
         }
-        
+
         .number-info a,
         .location-info a,
         .email-info a,
@@ -328,10 +331,15 @@
         h5.card-title {
             color: #000;
         }
-        
+
         .get-appoitment-right-btn {
             font-size: 14px;
         }
+
+        section.our-hospital-section {
+            padding: 4rem 0 7rem 0;
+        }
+
         /*         
         .social-icons a:hover:before {
             transform: scale(0);
@@ -414,7 +422,8 @@
 
                             <a href="#">
                                 <span class="ps-4 fw-bold text-white">
-                                    AR <img class="header-img" src="rev/assets/saudi-arabia.png" alt=""> | EN <img class="header-img" src="rev/assets/united-kingdom.png" alt="">
+                                    AR <img class="header-img" src="rev/assets/saudi-arabia.png" alt=""> | EN <img
+                                        class="header-img" src="rev/assets/united-kingdom.png" alt="">
                                 </span>
                             </a>
                         </nav>
@@ -424,7 +433,7 @@
 
                 <div class="row">
                     <div class="container">
-                        
+
                     </div>
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light bottom-nav max-width-75">
@@ -486,12 +495,14 @@
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
                             <h1>seha facilities</h1>
-                            <h4 class="seha-paragraph">The largest healthcare network in the UAE with 13 high-end hospitals.</h4>
+                            <h4 class="seha-paragraph">The largest healthcare network in the UAE with 13 high-end
+                                hospitals.</h4>
                         </div>
                     </nav>
                 </div>
                 <div class="col-lg-4">
-                    <div class="pq-breadcrumb-img text-right wow fadeInRight animated" style="visibility: visible;"></div>
+                    <div class="pq-breadcrumb-img text-right wow fadeInRight animated" style="visibility: visible;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -501,9 +512,6 @@
         <div class="container-fluid p-0">
             <form action="#" class="pq-applyform pq-bg-primary-dark p-xl-5 p-4" novalidate>
                 <div class="container">
-                    <div class="our-hospital pb-4">
-                        <h3 class="text-light">Our Hospitals</h3>
-                    </div>
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                             <label class="text-light">City</label>
@@ -516,7 +524,8 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                             <label class="text-light">Speciality</label>
-                            <input type="text" id="phone-number" class="form-control phone-number-field mb-0" placeholder="Speciality" required>
+                            <input type="text" id="phone-number" class="form-control phone-number-field mb-0"
+                                placeholder="Speciality" required>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                             <label class="text-light">Hospital</label>
@@ -532,7 +541,9 @@
                                 <div class="pq-button-block ">
                                     <!-- <span class="pq-button-text me-0">make an appointment</span> -->
                                     <!-- <input class="form-control me-2 mb-0 custom-search-btn" type="search" placeholder="Search" aria-label="Search"> -->
-                                    <input type="text" class="form-control me-2 mb-0 custom-search-btn" placeholder="&#xF002;  Search" style="font-family: Arial, 'Font Awesome 5 Free'" />
+                                    <input type="text" class="form-control me-2 mb-0 custom-search-btn"
+                                        placeholder="&#xF002;  Search"
+                                        style="font-family: Arial, 'Font Awesome 5 Free'" />
                                 </div>
                             </a>
                         </div>
@@ -551,7 +562,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/photo_salma-1000x577.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/photo_salma-1000x577.jpg"
+                                    class="img-fluid hospital-card-image" alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -559,15 +571,20 @@
                                         <h5 class="card-title">Salma Rehabilitation Hospital</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Salama bint Butti St. Main Island, Abu Dhabi, UAE</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Salama bint
+                                                    Butti St. Main Island, Abu Dhabi, UAE</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>97126662929</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>97126662929</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>info@salmahospital.com</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>info@salmahospital.com</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -588,18 +605,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -620,15 +645,20 @@
                                         <h5 class="card-title">Sheikh Khalifa Medical City</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Karama Street, Al Tibbiya,  Abu Dhabi City</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Karama Street,
+                                                    Al Tibbiya, Abu Dhabi City</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>028190000</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>028190000</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>skmccontact@seha.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>skmccontact@seha.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -649,18 +679,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -681,15 +719,21 @@
                                         <h5 class="card-title">Sheikh Shakhbout Medical City</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Al Mafraq, Abu Dhabi - Ghweifat International Highway - Next to Mafraq Hospital and Fatima College of Health Sciences</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Al Mafraq, Abu
+                                                    Dhabi - Ghweifat International Highway - Next to Mafraq Hospital and
+                                                    Fatima College of Health Sciences</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>023144444</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>023144444</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>ssmc@ssmcabudhabi.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>ssmc@ssmcabudhabi.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -710,18 +754,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -734,7 +786,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/al-rahba.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/al-rahba.jpg" class="img-fluid hospital-card-image"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -742,15 +795,22 @@
                                         <h5 class="card-title">Al Rahba Hospital</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Al Mafraq, Abu Dhabi - Ghweifat International Highway - Next to Mafraq Hospital and Fatima College of Health Sciences</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Al Mafraq, Abu
+                                                    Dhabi - Ghweifat International Highway - Next to Mafraq Hospital and
+                                                    Fatima College of Health Sciences</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>025064444</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>025064444</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>Street E 11, Old Al Rahba, Al Rahba, Abu Dhabi</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>Street E 11, Old Al
+                                                    Rahba, Al Rahba, Abu Dhabi</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -771,18 +831,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -795,7 +863,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/Corniche.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/Corniche.jpg" class="img-fluid hospital-card-image"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -803,12 +872,16 @@
                                         <h5 class="card-title">Corniche Hospital</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Corniche Road East, Salam Street, Near Sheraton Hotels & Resort Abu Dhabi</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Corniche Road
+                                                    East, Salam Street, Near Sheraton Hotels & Resort Abu Dhabi</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>028117777</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>028117777</a>
                                             </div>
                                             <!-- <div class="email-info ms-4">
                                                 <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>Corniche Road East, Salam Street, Near Sheraton Hotels & Resort Abu Dhabi</a>
@@ -832,18 +905,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -856,7 +937,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/Al-ain-hospital.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/Al-ain-hospital.jpg" class="img-fluid hospital-card-image"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -864,15 +946,20 @@
                                         <h5 class="card-title">Al Ain Hospital</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Al Jimi District, Shakhboot Ibn Sultan Street, Al Ain</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Al Jimi
+                                                    District, Shakhboot Ibn Sultan Street, Al Ain</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>037022000</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>037022000</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>alaincontact@seha.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>alaincontact@seha.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -893,18 +980,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -917,7 +1012,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/tawam.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/tawam.jpg" class="img-fluid hospital-card-image"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -925,15 +1021,20 @@
                                         <h5 class="card-title">Tawam Hospital</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Tawam, Near Abela Supermarket, Al Ain</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Tawam, Near
+                                                    Abela Supermarket, Al Ain</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>037677444</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>037677444</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>TawamContact@seha.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>TawamContact@seha.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -954,18 +1055,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -978,7 +1087,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/madinet-zayed.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/madinet-zayed.jpg" class="img-fluid hospital-card-image"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -986,15 +1096,20 @@
                                         <h5 class="card-title">Al Dhafra Hospitals</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Mohamed Kalaf AlMazrouei Street, Madinat Zayed, Western Region, Abu Dhabi</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Mohamed Kalaf
+                                                    AlMazrouei Street, Madinat Zayed, Western Region, Abu Dhabi</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>028070000</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>028070000</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>AldhafraContact@seha.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>AldhafraContact@seha.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -1015,18 +1130,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1047,15 +1170,21 @@
                                         <h5 class="card-title">Ambulatory Healthcare Services</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Ambulatory Healthcare Services Building, Behind Ministry of Labor, Al Salam Street, Abu Dhabi</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Ambulatory
+                                                    Healthcare Services Building, Behind Ministry of Labor, Al Salam
+                                                    Street, Abu Dhabi</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>80050</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>80050</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>AHSContact@seha.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>AHSContact@seha.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -1076,18 +1205,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1100,7 +1237,8 @@
                     <div class="card mb-3 b-0">
                         <div class="row">
                             <div class="col-md-3">
-                                <img src="images/ourhospitals/1K3A9581-FILEminimizer-1000x577.jpg" class="img-fluid hospital-card-image" alt="...">
+                                <img src="images/ourhospitals/1K3A9581-FILEminimizer-1000x577.jpg"
+                                    class="img-fluid hospital-card-image" alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body d-flex align-items-center">
@@ -1108,15 +1246,20 @@
                                         <h5 class="card-title">SEHA Kidney Care</h5>
                                         <div class="card-text">
                                             <div class="location-info">
-                                                <a rel="noopener" target="_blank" href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i class="fas fa-map-marker-alt me-2"></i></span>Al Mafraq, next to Sheikh Shakhbout Medical City, Abu Dhabi.</a>
+                                                <a rel="noopener" target="_blank"
+                                                    href="https://www.google.com/maps?sll=24.445725,54.410752&amp;q=24.4457252,54.410751600000026&amp;z=12"><span><i
+                                                            class="fas fa-map-marker-alt me-2"></i></span>Al Mafraq,
+                                                    next to Sheikh Shakhbout Medical City, Abu Dhabi.</a>
                                             </div>
                                         </div>
                                         <div class="card-text d-flex">
                                             <div class="number-info">
-                                                <a href="tel:97126662929"><span><i class="fas fa-phone-volume me-2"></i></span>025012992</a>
+                                                <a href="tel:97126662929"><span><i
+                                                            class="fas fa-phone-volume me-2"></i></span>025012992</a>
                                             </div>
                                             <div class="email-info ms-4">
-                                                <a href="mailto:info@salmahospital.com"><span><i class="fas fa-envelope me-2"></i></span>sdscontact@seha.ae</a>
+                                                <a href="mailto:info@salmahospital.com"><span><i
+                                                            class="fas fa-envelope me-2"></i></span>sdscontact@seha.ae</a>
                                             </div>
                                         </div>
                                         <div class="card-text">
@@ -1137,18 +1280,26 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="get-direction">
-                                                    <a class="get-direction-link" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="fas fa-directions me-2"></i></span>Get Direction</a>
+                                                    <a class="get-direction-link" data-nonce="80ddf10040"
+                                                        data-id="14337" href="#"><span><i
+                                                                class="fas fa-directions me-2"></i></span>Get
+                                                        Direction</a>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-left pt-3">
                                                 <div class="read-more">
-                                                    <a class="read-more-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><span><i class="far fa-plus me-2"></i></span>READ MORE</a>
+                                                    <a class="read-more-right-btn" data-nonce="80ddf10040"
+                                                        data-id="14337" href="our-doctor.html"><span><i
+                                                                class="far fa-plus me-2"></i></span>READ MORE</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-left pt-3">
                                             <div class="get-appointment">
-                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040" data-id="14337" href="#"><i class="fas fa-calendar-check me-2"></i></span> Request an Appointment</a>
+                                                <a class="get-appoitment-right-btn" data-nonce="80ddf10040"
+                                                    data-id="14337" href="#"><i
+                                                        class="fas fa-calendar-check me-2"></i></span> Request an
+                                                    Appointment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1323,8 +1474,8 @@
 
 
     <script>
-        jQuery(window).on('load', function(e) {
-            jQuery(".pq-applyform .form-btn").click(function() {
+        jQuery(window).on('load', function (e) {
+            jQuery(".pq-applyform .form-btn").click(function () {
                 var patient_name = jQuery('#patient-name').val();
                 var phone = jQuery('#phone-number').val();
                 var email = jQuery('#e-mail').val();
@@ -1332,7 +1483,9 @@
                 jQuery('.pq-applyform .pq-message').remove();
 
                 if (patient_name == '' || patient_name == undefined) {
-                    jQuery("<span class='pq-patient-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .patient-name-field');
+                    jQuery(
+                            "<span class='pq-patient-name-error-message pq-message'>Please fill the field</span>")
+                        .insertAfter('.pq-applyform .patient-name-field');
                     result = false;
                 } else {
                     jQuery('.pq-patient-name-error-message').remove();
@@ -1340,7 +1493,9 @@
                 }
 
                 if (phone == '' || phone == undefined) {
-                    jQuery("<span class='pq-phone-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .phone-number-field');
+                    jQuery(
+                            "<span class='pq-phone-error-message pq-message'>Please fill the field</span>")
+                        .insertAfter('.pq-applyform .phone-number-field');
                     result = false;
                 } else {
                     jQuery('.pq-phone-error-message').remove();
@@ -1348,7 +1503,9 @@
                 }
 
                 if (email == '' || email == undefined) {
-                    jQuery("<span class='pq-email-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .e-mail-field');
+                    jQuery(
+                            "<span class='pq-email-error-message pq-message'>Please fill the field</span>")
+                        .insertAfter('.pq-applyform .e-mail-field');
                     result = false;
                 } else {
                     jQuery('.pq-email-error-message').remove();
@@ -1356,7 +1513,8 @@
                 }
 
                 if (result == true) {
-                    jQuery("<span class='pq-thank-you-message pq-text-white ms-3'>Thank You</span>").insertAfter('.pq-applyform .pq-button');
+                    jQuery("<span class='pq-thank-you-message pq-text-white ms-3'>Thank You</span>")
+                        .insertAfter('.pq-applyform .pq-button');
                 }
             });
         });
