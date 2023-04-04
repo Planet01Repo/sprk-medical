@@ -34,7 +34,7 @@
     </script>
     <style>
         main {
-            margin: 10%;
+            padding: 2rem 10% 7% 10%;
             /* display: flex; */
         }
 
@@ -502,6 +502,10 @@
         span.ps-4.fw-bold.text-white {
             font-size: 13px;
         }
+
+        .insurance-head {
+            color: var(--theme-color-dark-blue);
+        }
     </style>
 
 </head>
@@ -602,7 +606,7 @@
                                             <a href="about-us.html">About Us</a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="#">Our Hospitals</a>
+                                            <a href="our-hospital.html">Our Hospitals</a>
                                         </li>
                                         <li class="menu-item ">
                                             <a href="#">Our Specialties</a>
@@ -675,8 +679,7 @@
     <main>
 
         <div class="top-heading">
-            <h1>Insurance Partners</h1>
-            <p>We partner with a number of health insurers to offer healthcare coverage for our patients. To check if
+            <p class="lh-22 fw-bold text-center insurance-head">We partner with a number of health insurers to offer healthcare coverage for our patients. To check if
                 your insurance plan covers treatment and services at Healhtpoint, you can speak with your insurer
                 directly or with one of our front office staff by calling 800 203.</p>
         </div>
@@ -881,319 +884,6 @@
                 });
             </script>
         </div>
-        <div class="top-heading" style="margin-top: 5%; margin-bottom: 5%;">
-            <h1>Frequently Asked Questions</h1>
-
-        </div>
-        <section class="faqs" style="padding: 0;">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link pills1" id="pills-general-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general"
-                        aria-selected="true"> <img src="images/insurance/info-icon.png" alt=""> <br><span class="f-color"> Insurance
-                            Information</span></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link pills2" id="pills-other-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-other" type="button" role="tab" aria-controls="pills-other"
-                        aria-selected="false"><img src="images/insurance/info-icon.png" alt="">
-                        <br><span class="f-color">Inpatient Services</span> </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link pills3" id="pills-billing-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-billing" type="button" role="tab" aria-controls="pills-billing"
-                        aria-selected="false"> <img src="images/insurance/info-icon.png" alt=""> <br> <span class="f-color">
-                            Outpatient Services</span></button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <!-- Insurance info  -->
-                <div class="tab-pane fade show active" id="pills-general" role="tabpanel"
-                    aria-labelledby="pills-general-tab" tabindex="0">
-                    <div class="accordion acc" id="accordionExample">
-                        <div class="accordion-item acc-i">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                                id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What medical specialties will be transferred from SKMC to SSMC?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show body-with-shadow"
-                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    Adult medical services including: Cardiology, Orthopedic, Gastrointestinal,
-                                    Hematology and Oncology. </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                                id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    When it will happen?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse body-with-shadow"
-                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    Starting from 15th November, all new appointments and follow up for the above
-                                    specialties will be provided at SSMC, however some services will be provided as
-                                    transition period. All patients will be contacted and given the opportunity to
-                                    choose for their connivance to reschedule their appointments.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                                id="headingthree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
-                                    What does group practice mean?
-                                </button>
-                            </h2>
-                            <div id="collapsethree" class="accordion-collapse collapse body-with-shadow"
-                                aria-labelledby="headingthree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    Clinical services will be provided by one team of clinicians in different sites
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                                id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Am I going to see the same physician?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse body-with-shadow"
-                                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    SEHA pays a great attention for continuity of medical care, patients will be seen by
-                                    the same treating physician.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                                id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How would I get my follow-up appointment if the specialty is moved to SSMC?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse body-with-shadow"
-                                aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    Patients will be contacted and re-scheduled by SEHA call center and SSMC staff to
-                                    book their appointments as per their convenient on the newly added clinics.
-                                    <br>
-                                    Patients shall continue to receive the same high standard of medical care as
-                                    previously received at SKMC.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                                id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Does that mean ED will be closed or limited to specific clinical specialties?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse body-with-shadow"
-                                aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    ED at SKMC will remain open and treat patients as usual.
-                                    <br>
-                                    In fact, SEHA is planning to upgrade SKMC ED and license it as Trauma level II to
-                                    continue serve the community.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Insurance info -->
-
-
-                <!-- Inpatient Services  -->
-                <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab"
-                    tabindex="0">
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;""
-                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    What is SEHA?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse "
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    The Abu Dhabi Health Services Company (SEHA) is the largest health services network
-                                    in the UAE, providing quality care for residents and utilizing leading-edge
-                                    technologies to deliver exceptional patient services and outcomes.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    When and why was SEHA created?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    The Abu Dhabi Healthcare Company (SEHA) was established by Emiri Decree No 10 of
-                                    2007, as an independent public joint stock company. It is the owner and operator of
-                                    all public hospitals and clinics in Abu Dhabi and was set-up to provide the UAE
-                                    residents and citizens integrated and outstanding healthcare services with the
-                                    highest international quality and safety standards.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    What is the difference between Department of Health (DoH) Abu Dhabi and SEHA?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    SEHA is responsible for the management of public healthcare hospitals and centers,
-                                    while the Department of Health – Abu Dhabi regulates the public and private
-                                    healthcare sector.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    How does SEHA deliver on the UAE government’s vision for the country’s healthcare
-                                    sector?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    As the largest healthcare service provider in the UAE, SEHA is committed to creating
-                                    accessible and world-class facilities in line with the vision of the Abu Dhabi
-                                    government.
-                                    <br>
-                                    In keeping with the Abu Dhabi Government’s strategy to identify best global
-                                    practices and explore competitive ideas, we have also entered several partnerships
-                                    with international healthcare institutions including our recent joint venture with
-                                    the Mayo Clinic. Their world-renowned capabilities have significantly contributed to
-                                    SEHA’s growth and development. In addition, these partnerships have helped knowledge
-                                    transfer, education, and enhanced healthcare systems management to promote
-                                    excellence and achieve a leadership position in the industry.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How many hospitals and clinics are there within your network?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    Today, the SEHA Health System consists of 13 hospitals with 2,644 beds, 46 Primary
-                                    Healthcare Clinic, 10 Disease Prevention and Screening Centers, 3 Mobile Clinics, 1
-                                    School Clinic, 2 Blood banks, 4 Dental Centers, 2 Employee Healthcare Center, and 1
-                                    Vaccination Center.
-
-                                    <br><br>
-
-                                    Our facilities accommodate 114,000 inpatients annually and conduct 54,000 surgeries,
-                                    as well as treat more than five million outpatients.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Are SEHA hospitals only for the UAE nationals?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body acc-b">
-                                    As the largest healthcare service provider in the UAE, we are committed to providing
-                                    world-class healthcare services to the UAE nationals, residents and medical tourism
-                                    patients with the appropriate insurance coverage and/or through the suitable patient
-                                    referral channels. For patients with insurance, we recommend speaking to the
-                                    specific SEHA facility to check your coverage.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Inpatient Services  END -->
-
-                <!-- Outpatient Services  -->
-                <div class="tab-pane fade" id="pills-billing" role="tabpanel" aria-labelledby="pills-billing-tab"
-                    tabindex="0">
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Am I Covered For Vaccinations At Healthpoint?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Generally, routine vaccinations are not covered by insurance. When coverage is
-                                    available, it is usually on a reimbursement basis – i.e., the patient pays
-                                    Healthpoint and can request reimbursement thereafter. Please contact your insurance
-                                    provider for more information.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Am I Covered For Dental Services At Healthpoint?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Am I Covered For Laser Treatment At Healthpoint?
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-                <!-- Outpatient Services END -->
-
-            </div>
-
-        </section>
     </main>
 
 
@@ -1247,7 +937,7 @@
                                     <ul id="menu-useful-links" class="menu">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
                                         <li><a href="careers.html">Careers</a></li>
                                         <li><a href="#">Media center</a></li>
                                         <li><a href="#">Patient Stories</a></li>

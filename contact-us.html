@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SEHA</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v5-font-face.min.css"
+        integrity="sha512-W+lqPhhunEwz9brBt8usGl0j+mtLGggjFC/9RHzyFyDKe/SSkCgQ08Y9ZZSNYez5biH7IhJU66+iUiQagtSm8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/723b864a31.js" crossorigin="anonymous"></script>
+    <!-- load more btn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="load-more-button.js"></script>
+    <style>
+
+        :root {
+            /* primary colors */
+            --theme-color-dark-blue: #0a3a5a;
+            --theme-color-green: #5dbca3;
+            --theme-color-light-green: #8bccbe;
+            --theme-color-light-green-bg: #8bccbe8c;
+            --theme-color-blue: #2544be;
+            --theme-color-blue-bg: #00b3ea4f;
+            /* secondary colors */
+            --theme-color-light-blue: #00b5ea;
+            --theme-color-burgundy: #973359;
+            --theme-color-peach: #de6f4e;
+            --theme-color-yellow: #faae61;
+            /* neutrals colors */
+            --theme-color-dark-gray: #787878;
+            --theme-color-medium-gray: #A8A8A8;
+            --theme-color-gray: #D2D2D2;
+            --theme-color-light-gray: #E6E6E6;
+        }
+        
+        .top-bar {
+            height: 50px;
+            padding: 0 2.1rem !important;
+            background: var(--theme-color-dark-blue);
+            color: white;
+        }
+        
+        .top-bar li a {
+            color: white !important;
+            text-transform: capitalize !important;
+            font-size: 13px !important;
+        }
+        
+        .top-bar a i {
+            color: white ;
+        }
+        
+        .top-bar li i {
+            color: white !important;
+            font-size: 16px;
+        }
+        
+        .bottom-nav {
+            padding: 0 2rem 0px 3rem !important;
+        }
+        
+        .padding-none {
+            padding: 0px;
+        }
+        
+        .pq-client-img,
+        .pq-footer-logo {
+            -webkit-filter: brightness(0) invert(100%);
+            filter: brightness(0) invert(100%);
+        }
+
+        .top-bar {
+            height: 50px;
+            background: var(--theme-color-dark-blue);
+            color: white;
+        }
+
+        .top-bar li a {
+            color: white !important;
+            text-transform: capitalize !important;
+            font-size: 13px !important;
+        }
+
+        .top-bar a i {
+            color: white;
+        }
+
+        .top-bar li i {
+            color: white !important;
+            font-size: 16px;
+        }
+
+.pq-menu-search-block #search-bar-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a3a5afa;
+            z-index: 9999;
+            opacity: 0;
+        }
+
+        .pq-menu-search-block #search-bar-container.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fade-in 0.5s forwards;
+        }
+        .pq-menu-search-block #search-bar-container.transition {
+            animation: fade-out 0.5s forwards;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+         @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .pq-menu-search-block .search-bar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 50px 15px 20px 15px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+
+
+        @keyframes slide-down {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+
+        .pq-menu-search-block #close-search {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .search-close {
+            color: black !important;
+        }
+
+        .max-width-75 {
+            max-width: 75%;
+            margin: 0 auto;
+        }
+        .bg-color-dark-blue {
+            background-color: var(--theme-color-dark-blue);
+        }
+
+        img.header-img {
+    width: 30px;
+    padding-bottom: 2px;
+}
+        h2 {
+            color: black;
+        }
+
+        .c-head {
+            background-color: var(--theme-color-light-blue);
+            color: white;
+            text-align: left;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        .c-head h3 {
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .select {
+            border: 1px solid #666666;
+            border-radius: 6px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .contact-hover-box {
+            text-align: left;
+            margin-top: 20px;
+
+        }
+        .contact-hover-box .pq-fancy-box {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 4px;
+        }
+
+        .box-c {
+            padding: 21px 27px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .box-c .pq-fancy-box-title {
+            padding: 0px;
+        }
+
+        .box-c .pq-fancybox-description {
+            padding-top: 7px;
+            padding-bottom: 0px;
+        }
+
+        .box-c .pq-button-block {
+            margin-top: 13px;
+        }
+
+        .interior {
+            position: relative;
+            z-index: 1;
+        }
+
+        #loadMore a {
+            background: var(--theme-color-light-blue);
+            border-radius: 3px;
+            color: white;
+            display: inline-block;
+            padding: 10px 30px;
+            transition: all 0.25s ease-out;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #loadMore {
+            margin: 40px;
+        }
+
+        .fcf-body {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 4px;
+            padding: 40px;
+            margin: 20px;
+            width: 95%;
+            text-align: center;
+        }
+
+        .fcf-h3 {
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .fcf-form-group .fcf-input-group .fcf-form-control {
+            margin: 10px;
+        }
+        .pq-contact-us{
+            margin: 40px;
+            padding: 0;
+            padding-bottom: 60px;
+        }
+
+        [type="submit"] {
+    background: var(--theme-color-light-blue);
+}
+    </style>
+</head>
+
+<body>
+    <!--=================================
+         loading start-->
+    <div id="pq-loading">
+        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+    </div>
+    <!--=================================
+         loading end-->
+    <!--=================================
+         header start-->
+    <header id="pq-header" class="pq-header-default ">
+        <div class="pq-bottom-header pq-has-sticky">
+            <div class="container-fluid padding-xaxis">
+                <div class="row">
+                    <div class="col-12 bg-color-dark-blue">
+                        <nav class="navbar navbar-expand-lg navbar-dark top-bar max-width-75 ">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
+                                        </li>
+
+
+                                        <li class="menu-item">
+                                            <a href="#">Conferences</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="careers.html">Careers</a>
+                                        </li>
+
+
+                                        <li class="menu-item">
+                                            <a href="#">Media Center</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:80050">80050</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-menu-search-block">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
+                                <div id="search-bar-container">
+                                    <div class="search-bar">
+                                        <a href="javascript:void(0);" id="close-search"> <i
+                                                class="fa fa-close search-close"></i> </a>
+                                        <form role="search" method="get" class="search-form" action=".html">
+                                            <label>
+                                                <span class="screen-reader-text">Search for:</span>
+                                                <input type="search" class="search-field" placeholder="Search …"
+                                                    value="" name="s">
+                                            </label>
+                                            <button type="submit" class="search-submit"><span
+                                                    class="screen-reader-text">Search</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="#">
+                                <span class="ps-4 fw-bold text-white">
+                                    AR <img class="header-img" src="rev/assets/saudi-arabia.png" alt=""> | EN <img class="header-img" src="rev/assets/united-kingdom.png" alt="">
+                                </span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="container">
+                        
+                    </div>
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bottom-nav max-width-75">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item current-menu-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+
+
+
+                                        <li class="menu-item">
+                                            <a href="about-us.html">About Us</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="our-hospital.html">Our Hospitals</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Specialties</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="#">Our Doctors</a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="#">Seha App</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="book-an-appointment.html" class="pq-button">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text text-uppercase">book an appointment</span>
+                                    <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=================================
+         header end-->
+    <!--=================================
+         Banner start-->
+    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h2>Contact Us</h2>
+                        </div>
+                        <div class="pq-breadcrumb-container mt-2">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i
+                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item active">Contact Us</li>
+                            </ol>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=================================
+         Banner end-->
+    <!--=================================
+         conatct-us start-->
+    <section class="pq-contact-us">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 ">
+                    <div class="interior">
+                        <div class="pq-contact-box-info">
+                            <div class="row">
+                                <div class="col">
+                                    <form>
+                                        <select class="select">
+                                            <option value="Select">Select</option>
+                                            <option value="United Arab Emirates">United Arab Emirates</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <select class="select ">
+                                            <option value="Select" data-icon="glyphicon-glass">Select City<i
+                                                    class='fas fa-angle-down'
+                                                    style='font-size:36px; color:black;'></i>
+                                            </option>
+                                            <option value="Abu Dhabi">Abu Dhabi</option>
+                                            <option value="Ajman">Ajman</option>
+                                            <option value="Dubai">Dubai </option>
+                                            <option value="Fujairah">
+                                                Fujairah </option>
+                                            <option value="Ras Al Khaima ">Ras Al Khaima </option>
+                                            <option value="Sharjah">
+                                                Sharjah </option>
+                                            <option value="Umm al Quwain "> Umm al Quwain </option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="c-head ">
+                                <h3>Abu Dhabi </h3>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">SALMA REHABILITATION HOSPITAL</h5>
+                                        <p class="pq-fancybox-description">
+
+                                            Salama bint Butti St. Main Island, Abu Dhabi, UAE
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 97126662929
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            info@salmahospital.com
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">SHEIKH KHALIFA MEDICAL CITY</h5>
+                                        <p class="pq-fancybox-description">
+                                            Karama Street, Al Tibbiya, Abu Dhabi City
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 028190000
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            skmccontact@seha.com
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">SHIEKH SHAKHBOUT MEDICAL CITY</h5>
+                                        <p class="pq-fancybox-description">
+
+                                            Al Mafraq, Abu Dhabi - Ghweifat International Highway - Next to Mafraq
+                                            Hospital and Fatima College of Health Sciences
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 023144444
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            ssmc@ssmcabudhabi.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">Al Rahba HospitalAL RAHBA HOSPITAL
+                                            AL RAHBA HOSPITAL</h5>
+                                        <p class="pq-fancybox-description">
+                                            Street E 11, Old Al Rahba, Al Rahba, Abu Dhabi
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 025064444
+
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            alrahbacontact@seha.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">CORNICHE HOSPITAL</h5>
+                                        <p class="pq-fancybox-description">
+
+                                            Corniche Road East, Salam Street, Near Sheraton Hotels & Resort Abu Dhabi
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 028117777
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">AL AIN HOSPITAL</h5>
+                                        <p class="pq-fancybox-description">
+                                            Al Jimi District, Shakhboot Ibn Sultan Street, Al Ain
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 037022000
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            alaincontact@seha.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">TAWAM HOSPITAL</h5>
+                                        <p class="pq-fancybox-description">
+                                            Tawam, Near Abela Supermarket, Al Ain
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 037677444
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            TawamContact@seha.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">AL DHAFRA HOSPITALS</h5>
+                                        <p class="pq-fancybox-description">
+                                            Mohamed Kalaf AlMazrouei Street, Madinat Zayed, Western Region, Abu Dhabi
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 028070000
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            AldhafraContact@seha.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">AMBULATORY HEALTHCARE SERVICES</h5>
+                                        <p class="pq-fancybox-description">
+                                            Ambulatory Healthcare Services Building, Behind Ministry of Labor, Al Salam
+                                            Street, Abu Dhabi
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 80050
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            AHSContact@seha.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hover-box blogBox moreBox" style="display: none;">
+                                <div class="pq-fancy-box  box-c">
+                                    <div class=" left">
+                                        <h5 class="pq-fancy-box-title">SEHA KIDNEY CARE</h5>
+                                        <p class="pq-fancybox-description">
+                                            Al Mafraq, next to Sheikh Shakhbout Medical City, Abu Dhabi.
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; 025012992
+                                        </p>
+                                        <p class="pq-fancybox-description">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                                            sdscontact@seha.ae
+                                        </p>
+                                        <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                            <div class="pq-button-block"><i class="fa fa-location-arrow"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                                    class="pq-button-text">Location </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="loadMore">
+                                <a href="#">Load More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 mt-lg-0">
+                    <div class="pq-contact-box-info">
+                        <img src="images/contact-us/map.jpg" style="width: 700px;" alt="">
+                    </div>
+
+                    <div class="fcf-body">
+
+                        <div id="fcf-form">
+                            <h3 class="fcf-h3">Get in touch with us</h3>
+
+                            <form id="fcf-form-id" class="fcf-form-class" method="post"
+                                action="contact-form-process.php">
+
+                                <div class="fcf-form-group">
+                                    <div class="fcf-input-group">
+                                        <input type="text" placeholder="your full name " id="Name"
+                                            name="Name" class="fcf-form-control" required>
+                                    </div>
+                                </div>
+                                <div class="fcf-form-group">
+                                    <div class="fcf-input-group">
+                                        <input type="number" id="phone"placeholder=" phone number "
+                                            name="phone" class="fcf-form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="fcf-form-group">
+                                    <div class="fcf-input-group">
+                                        <input type="email" id="Email"placeholder=" email " name="Email"
+                                            class="fcf-form-control" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="fcf-form-group">
+                                    <div class="fcf-input-group">
+                                        <textarea id="Message" name="Message" placeholder=" Message "class="fcf-form-control" rows="6"
+                                            maxlength="3000" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="fcf-form-group">
+                                    <button type="submit" id="fcf-button"
+                                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=================================
+         contact-us end-->
+    <!--=================================
+         get-in-touch start-->
+
+    <footer id="pq-footer">
+        <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="max-width-75">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="" type="submit" value="Sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pq-footer-top">
+                <div class="max-width-75">
+                    <div class="row">
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">General</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                        <li><a href="#">Media center</a></li>
+                                        <li><a href="#">Patient Stories</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="faq.html">FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Resources</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="#">Patient Portal</a></li>
+                                        <li><a href="#">Hospitals</a></li>
+                                        <li><a href="#">Specialties</a></li>
+                                        <li><a href="#">Doctors</a></li>
+                                        <li><a href="#">Inernational Patients</a></li>
+                                        <li><a href="Insurance.html">Insurance Partners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Misc.</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="#">Patient Rights & Responsibilities</a></li>
+                                        <li><a href="corporate-social-responsibility.html">Corporate Social
+                                                Responsibility</a></li>
+                                        <li><a href="transparency-charter.html">Transparency Charter</a></li>
+                                        <li><a
+                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                                a complaint (TAMM)</a></li>
+                                        <li><a
+                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                                & Contracts</a></li>
+                                        <li><a href="fraud-alert.html">Recruitment Fraud Alert</a></li>
+                                        <li><a href="https://portal.seha.ae/">Employee Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
+                                    alt="medicate-footer-logo">
+                                <p class="mb-1 fs-14">Abu Dhabi Health Services Co.
+                                </p>
+                                <i class="fas fa-map-marker"></i> <span class="fs-14">
+                                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street (32nd
+                                    Street), Abu Dhabi, United Arab Emirates​.</span>
+
+
+                                <div class="pq-footer-social mt-2">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/SEHAHealth/"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/sehahealth/"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://twitter.com/sehahealth"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/company/sehahealth/"><i
+                                                    class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/SEHAHealth"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> ©️ Copyright 2023 SEHA – Abu
+                                Dhabi Health Services Co. All Rights Reserved.</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- load more  -->
+    <script>
+        if ($(".blogBox:hidden").length != 0) {
+            $("#loadMore").show();
+        }
+        $("#loadMore").on('click', function(e) {
+            e.preventDefault();
+            $(".moreBox:hidden").slice(0, 4).slideDown();
+            if ($(".moreBox:hidden").length == 0) {
+                $("#loadMore").fadeOut('slow');
+            }
+        });
+    </script>
+    <!--Footer End-->
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/723b864a31.js" crossorigin="anonymous"></script>
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+
+     <script>
+        const searchBtn = document.querySelector('#pq-seacrh-btn');
+        const searchBarContainer = document.querySelector('#search-bar-container');
+        const closeBtn = document.querySelector('#close-search');
+
+        searchBtn.addEventListener('click', function () {
+            searchBarContainer.style.display = 'flex';
+            setTimeout(function () {
+                searchBarContainer.classList.add('show');
+            }, 10); // adjust the time to match the duration of the animation
+        });
+
+        closeBtn.addEventListener('click', function () {
+            searchBarContainer.classList.remove('show');
+            searchBarContainer.classList.add('transition');
+            setTimeout(function () {
+                searchBarContainer.style.display = 'none';
+                searchBarContainer.classList.remove('transition');
+            }, 500); // adjust the time to match the duration of the animation
+        });
+    </script>
+</body>
+
+</html>
