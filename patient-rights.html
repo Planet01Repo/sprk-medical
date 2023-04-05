@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SEHA</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="images/FavIcon.jpg">
+      <!-- Favicon Icon -->
+      <link rel="shortcut icon" href="images/FavIcon.jpg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
@@ -23,44 +23,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <style>
-        .custom-appointment-form label {
-            color: #fff;
-        }
+</head>
 
-        ::-webkit-input-placeholder {
-            /* Edge */
-            font-size: 14px;
-            color: #E6E6E6;
-        }
-
-        :-ms-input-placeholder {
-            /* Internet Explorer */
-            font-size: 14px;
-            color: #E6E6E6;
-        }
-
-        ::placeholder {
-            font-size: 14px;
-            color: #E6E6E6;
-        }
-
-        .custom-appointment-form select,
-        .custom-appointment-form input,
-        .custom-appointment-form textarea {
-            font-size: 14px;
-        }
-
-        .custom-bg-appointment {
-            background-image: url(images/Whoweare/doc.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-
-        :root {
-
+<style>
+    :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -68,13 +34,11 @@
             --theme-color-light-green-bg: #8bccbe8c;
             --theme-color-blue: #2544be;
             --theme-color-blue-bg: #00b3ea4f;
-
             /* secondary colors */
             --theme-color-light-blue: #00b5ea;
             --theme-color-burgundy: #973359;
             --theme-color-peach: #de6f4e;
             --theme-color-yellow: #faae61;
-
             /* neutrals colors */
             --theme-color-dark-gray: #787878;
             --theme-color-medium-gray: #A8A8A8;
@@ -117,8 +81,6 @@
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-
-
 
         .top-bar {
             height: 50px;
@@ -246,19 +208,80 @@
             width: 30px;
             padding-bottom: 2px;
         }
+    .acc-title,
+    .acc-title:focus,
+    .accordion-button:not(.show) {
+        background: var(--primary-color);
+        border-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-radius: 0px !important;
+        color: white;
+        padding-left: 36px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
 
-        span.ps-4.fw-bold.text-white {
-            font-size: 13px;
-        }
-    </style>
-</head>
+    .acc-body {
+        padding-left: 2%;
+        border: 1px solid rgba(180, 166, 166, 0.514);
+        margin-top: -25px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    :focus {
+        outline: 0 !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    }
+
+    .accordion-item {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
+    .acc-btn:focus {
+        color: white;
+    }
+
+    .c-head {
+        text-align: left;
+        margin: 50px;
+        margin-left: 0px;
+    }
+    
+    .rights {
+    margin: 0;
+    padding: 0;
+    margin-top: 0rem;
+    margin-bottom: 150px;
+}
+
+    .acc-btn:not(.collapsed)::after {
+        color: white;
+        background-color: transparent !important;
+        background-image: url('images/patient-rights/arrow-n.ico');
+    }
+
+    .acc-btn::after {
+        background-image: url('images/patient-rights/arrow-n.ico');
+        font-weight: lighter;
+    }
+
+    .accordion-item li {
+        line-height: 22px;
+    }
+</style>
 
 <body>
     <!--=================================
          loading start-->
     <div id="pq-loading">
-        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
-    </div>
+            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+      </div>
     <!--=================================
          loading end-->
     <!--=================================
@@ -383,21 +406,25 @@
             </div>
         </div>
     </header>
-    <div class="pq-breadcrumb" style="background-image:url('images/About-us/appoinment_banner.jpg');">
+    <!--=================================
+         header end-->
+    <!--=================================
+         Banner start-->
+    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
-                            <h2>Book An Appointment
-                            </h2>
+                            <h2>Patient Rights & responsibilities </h2>
                         </div>
-                        <!-- <div class="pq-breadcrumb-container mt-2">
+                        <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Make Appointments </li>
+                                <li class="breadcrumb-item"><a href="index.html"><i
+                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item active" >PATIENT RIGHTS & RESPONSIBILITIES</li>
                             </ol>
-                        </div> -->
+                        </div>
                     </nav>
                 </div>
                 <div class="col-lg-4">
@@ -409,235 +436,135 @@
     <!--=================================
          Banner end-->
     <!--=================================
-         appoinment-form start-->
-    <div class="appoinment-form  appointment-page custom-bg-appointment"
-        style="padding-top: 90px; padding-bottom: 90px;">
+         common-quaries start-->
+    <section class="rights">
         <div class="container">
-            <!-- <div class="appointment-heading ms-2">
-                <h1 style="font-size:45px; padding-bottom: 55px; font-weight: 600;">Book an Appointment</h1>
-            </div> -->
             <div class="row">
-                <div class="col-xl-6">
-                    <div class="appoinment-box" style="background-color: #00b5ea;">
-                        <form action="#" class="pq-applyform" novalidate>
-                            <div class="pq-appointment custom-appointment-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Full Name*</label>
-                                        <input type="text" id="name" name="name"
-                                            class="form-control pq-bg-white name-field" placeholder="Enter Full Name"
-                                            required>
-                                        <!-- <label> <span class="pq-appointment-title">  </span> <span class="form-control-wrap your-country">
-                                                            <select name="your-country" class="form-select" aria-invalid="false">
-                                                            <option value="Gynaecology">Gynaecology</option>
-                                                            <option value="Cardiology">Cardiology</option>
-                                                            <option value="Orthopaedics">Orthopaedics</option>
-                                                            <option value="Medicine">Medicine</option>
-                                                         </select>
-                                                      </span> </label> -->
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Email Address*</label>
-                                        <input type="text" id="name" name="name"
-                                            class="form-control pq-bg-white name-field"
-                                            placeholder="Enter Email Address" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Phone Number*</label>
-                                        <input type="text" id="phone-number" name="Phone"
-                                            class="form-control pq-bg-white phone-number-field" aria-invalid="false"
-                                            placeholder="Phone" required>
-                                    </div>
-                                </div>
-                                <hr style="border:1px solid #ffffff; margin-bottom:30px">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Location* <span class="pq-appointment-title"> </span> <span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Hospital*<span class="pq-appointment-title"></span><span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select" style="font-size:13px !important">Select
-                                                    </option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Speciality* <span class="pq-appointment-title"> </span> <span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Doctor<span class="pq-appointment-title"
-                                                style="font-size:13px"></span><span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Preferred Date*</label>
-                                        <input type="date" value="" class="form-control pq-bg-white"
-                                            aria-invalid="false">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <label>Any notes for the doctor's office</label>
-                                        <textarea cols="40" id="message" rows="10" aria-invalid="false"
-                                            class="form-control pq-bg-white"
-                                            placeholder="Type Appintment Note"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12" style="display:flex">
-                                        <input type="checkbox" style="height:100%">
-                                        <label for="agree" style="font-size: 13px;margin-top:20px; margin-left: 10px;">I
-                                            understand that this is only an appointment request and will be scheduled
-                                            only after a confirmation call from SEHA helpdesk.</label>
-                                    </div>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="your_site_key" style="margin-top:30px"></div>
-                                <br />
-                                <div class="col-lg-12">
-                                    <a class="pq-button form-btn" role="button"
-                                        style="width:100%;background-color: #0a3a5a;" type="button"
-                                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <div class="pq-button-block" style="justify-content: center;">
-                                            <span class="pq-button-text me-0">SUBMIT</span>
-                                            <!-- Button trigger modal -->
-
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Confirmation
-                                                            </h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="card-content pt-2">
-                                                                <div class="text-center"><img
-                                                                        src="images/About-us/info-icon.jpg"
-                                                                        style="width:100px;height:100px"></div>
-                                                                <p class="text-dark fw-regular fs-5 text-center">Are you
-                                                                    sure you want to submit</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                                            <button type="button" class="btn btn-primary" type="submit"
-                                                                onclick="fireSweetAlert()"
-                                                                style="background-color:#0a3a5a !important;border-color: #0a3a5a !important;">Confirm</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="c-head">
+                    <h2>Patient Rights & responsibilities</h2>
                 </div>
-                <div class="col-xl-6 mt-5">
-                    <div class="appointment-right-content"
-                        style="display: flex;align-items: right;justify-content: center;">
-                        <div class="appointment-title-heading me-1" style="margin-right: 40px;">
-                            <h4 style="color: #00b5ea;font-size:30px !important;">Book in Advance Save Your Time</h4>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button acc-title acc-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                As a patient you have the right to:
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-body">
+                                <ol>
+                                    <li>Receive information about the availability of care, services and how to access
+                                        them appropriately.</li>
+                                    <li>Receive protection if you are a vulnerable child, adult or elderly person
+                                        including people of determination.</li>
+                                    <li>Receive care regardless of race, creed, color, national origin, gender, age or
+                                        disability.</li>
+                                    <li>Have your personal dignity, privacy, culture, psychosocial and personal values,
+                                        beliefs and preferences respected.</li>
+                                    <li>Be in a clean and safe environment.</li>
+                                    <li>Have your pain assessed and managed in a timely manner.</li>
+                                    <li>
+                                        Access spiritual care services available in our community.
+                                    </li>
+                                    <li>Access interpretation services.</li>
+                                    <li>Be free from all forms of harassment or assault.</li>
+                                    <li>
+                                        Receive visitors, unless it would compromise your treatment.
+                                    </li>
+                                    <li>Be informed of your medical condition(s), treatment plan, anticipated outcomes
+                                        in a way you or your family/ caregiver can understand including:
+                                        <ul >
+                                            <li style="list-style-type: disc;">Risks and benefits associated with treatment</li>
+                                            <li style="list-style-type: disc;">A plan for continuity of care following discharge</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Know the names/ titles of your healthcare providers.
+                                    </li>
+                                    <li>Request for a change of provider or second opinion.</li>
+                                    <li>
+                                        Request a medical report and access your medical record as permitted by law.
+                                    </li>
+                                    <li>Be informed about your financial responsibilities.</li>
+                                    <li>
+                                        Refuse, discontinue treatment or leave against doctor’s advice as permitted by
+                                        law.
+                                    </li>
+                                    <li>Provide your written consent prior any video recordings or other images are
+                                        taken.</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <div style="display: flex;align-items: right;justify-content: center;">
-                        <ul class="pq-list-check pq-text-dark mt-3 mb-4" style="width: 480px;">
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Request Appointment with any Doctor</span>
-                                <p class="lh-22 ps-3">Request appointments with any doctors in all specialities across
-                                    all seha hospitals.
-                                </p>
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Book for Family & Friends</span>
-                                <p class="lh-22 ps-3">You will be able to book a doctor for your near and dear ones.</p>
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Guaranteed Booking Confirmation</span>
-                                <p class="lh-22 ps-3">Recieve a call from our helpdesk to confirm your appointments.</p>
-                            </li>
-                        </ul>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button  acc-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                As a patient, it is your responsibility to:
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body  acc-body">
+                                <ol>
+                                    <li>Bring your insurance card and an identification card with you every visit.</li>
+                                    <li>
+                                        Keep scheduled appointments, arrive on time or let us know in advance if you
+                                        would like to reschedule.
+                                    </li>
+                                    <li>Sign a general consent for treatment after having the scope and limits fully
+                                        explained. Children under 18 years old should be accompanied by a consenting
+                                        adult family member.</li>
+                                    <li>
+                                        Give us complete and accurate information about your health, including medical
+                                        history and medications.
+                                    </li>
+                                    <li>
+                                        Let us know if you don’t understand the information we give you about your
+                                        condition or treatment.
+                                    </li>
+                                    <li>
+                                        Inform us of changes in your condition or symptoms, including pain that you
+                                        have.
+                                    </li>
+                                    <li>
+                                        Follow regulations regarding patient/ visitor conduct, no smoking and visitation
+                                        timings.
+                                    </li>
+                                    <li>
+                                        Show respect and courtesy to staff and other patients.
+                                    </li>
+                                    <li>
+                                        Take responsibility for the outcome(s) if you decide not to follow the
+                                        healthcare provider instructions and/ or treatment plan and recommendations.
+                                    </li>
+                                    <li>
+                                        Speak up and communicate your concerns to any employee as soon as possible.
+                                    </li>
+                                    <li>
+                                        Pay your bills or make arrangements to meet the financial obligations arising
+                                        from your care.
+                                    </li>
+                                    <li>
+                                        Leave your valuables at home or entrust to Security Department.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="appointment-img text-center"> <img src="images/appoinment.png" alt="" class="img-a img-fluid" style="opacity:0.5"></div> -->
+                </div>
+            </div>
+        </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--=================================
-         appoinment-form end-->
-    <!--=================================
-         contact-healthcare start-->
-    <section class="contact-us pq-bg-img-1" style="margin-bottom:150px; background-color:#0a3a5a !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7">
-                    <h6 class="pq-title">A great place of medical hospital center &amp; health care</h6>
-                </div>
-                <div class="col-xl-5 d-xl-flex justify-content-xl-end align-items-center text-left mt-xl-0 mt-4">
-                    <a class="pq-button pq-button-flat" href="contact-us.html" style="background-color: #00b5ea;">
-                        <div class="pq-button-block"> <span class="pq-button-text">Contact Us</span> <i
-                                class="ion ion-plus-round"></i> </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+
+
     </section>
-    <!--=================================
-         contact-healthcare end-->
-    <!--=================================
-      testimonial start -->
-
-    <!--=================================
-         our-client end-->
-    <!--=================================
-         our-blog start-->
-
-    <!--=================================
-         our-blog end-->
-    <!--=================================
-         footer start-->
+    <!--
+          Footer start
+   ==============================-->
     <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">
@@ -773,7 +700,6 @@
     <div id="back-to-top">
         <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--Back To Top End-->
     <!--jquery js-->
     <script src="js/jquery.min.js"></script>
@@ -793,18 +719,7 @@
     <script src="js/wow.min.js"></script>
     <!--custom js-->
     <script src="js/custom.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function fireSweetAlert() {
-            Swal.fire(
-                'Thank You',
-                'Your information has been successfully submitted.',
-                'success'
-            )
-        }
-    </script>
-
-    <script>
+     <script>
         const searchBtn = document.querySelector('#pq-seacrh-btn');
         const searchBarContainer = document.querySelector('#search-bar-container');
         const closeBtn = document.querySelector('#close-search');

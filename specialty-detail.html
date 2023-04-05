@@ -6,12 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SEHA</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="images/FavIcon.jpg">
+      <!-- Favicon Icon -->
+      <link rel="shortcut icon" href="images/FavIcon.jpg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="css/progressbar.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
     <!-- Magnefic Popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup.min.css">
     <!-- Icons CSS -->
@@ -23,44 +27,91 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <style>
-        .custom-appointment-form label {
+        html {
+            overflow-x: hidden;
+        }
+        
+        .bg-banner-image {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .detail-speciality-content {
+            padding: 50px 0px !important;
+        }
+        
+        .speciality_detail_heading {
+            color: #0a3a5a;
+            font-weight: 600;
+            font-size: 45px;
+        }
+        
+        .speciality_detail_para {
+            color: #787878;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.6em;
+            margin-bottom: 20px !important;
+            margin-top: 20px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .detail-content {
+            margin-top: 40px;
+        }
+        
+        .detail-content h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0a3a5a;
+        }
+        
+        .detail-content p {
+            color: #787878;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.6em;
+            margin-bottom: 10px !important;
+            margin-top: 0px !important;
+        }
+        
+        .speciality_doctors {
+            padding: 0px 0px 100px 0px !important;
+        }
+        
+        .speciality_doctors .form-select:focus,
+        .speciality_doctors .form-control:focus {
+            border-color: #00b5ea !important;
+            box-shadow: 0 0 0 0.12rem #00b5ea !important;
+        }
+        
+        .custom-search-btn {
+            margin-top: 30px;
+            background-color: #00b5ea !important;
+            border-color: #00b5ea !important;
+        }
+        
+        .custom-search-btn::placeholder {
+            color: #fff;
+            opacity: 1;
+            /* Firefox */
+        }
+        
+         :-ms-input.custom-search-btn-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff;
+        }
+        
+         ::-ms-input.custom-search-btn-placeholder {
+            /* Microsoft Edge */
             color: #fff;
         }
 
-        ::-webkit-input-placeholder {
-            /* Edge */
-            font-size: 14px;
-            color: #E6E6E6;
-        }
-
-        :-ms-input-placeholder {
-            /* Internet Explorer */
-            font-size: 14px;
-            color: #E6E6E6;
-        }
-
-        ::placeholder {
-            font-size: 14px;
-            color: #E6E6E6;
-        }
-
-        .custom-appointment-form select,
-        .custom-appointment-form input,
-        .custom-appointment-form textarea {
-            font-size: 14px;
-        }
-
-        .custom-bg-appointment {
-            background-image: url(images/Whoweare/doc.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-
         :root {
-
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -68,59 +119,44 @@
             --theme-color-light-green-bg: #8bccbe8c;
             --theme-color-blue: #2544be;
             --theme-color-blue-bg: #00b3ea4f;
-
             /* secondary colors */
             --theme-color-light-blue: #00b5ea;
             --theme-color-burgundy: #973359;
             --theme-color-peach: #de6f4e;
             --theme-color-yellow: #faae61;
-
             /* neutrals colors */
             --theme-color-dark-gray: #787878;
             --theme-color-medium-gray: #A8A8A8;
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
+            .main-banner-image {
+                  background-image: url('images/blog/breadcrumb.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  max-height: 400px;
+            }
 
-        .top-bar {
-            height: 50px;
-            padding: 0 2.1rem !important;
-            background: var(--theme-color-dark-blue);
-            color: white;
-        }
+            .main-heading {
+                  line-height: 4rem !important;
+            }
 
-        .top-bar li a {
-            color: white !important;
-            text-transform: capitalize !important;
-            font-size: 13px !important;
-        }
+            .backlink {
+                  font-size: 13px;
+                  color: var(--theme-color-light-blue);
+                  margin: 0 0 25px 0;
+                  display: inline-block;
+            }
 
-        .top-bar a i {
-            color: white;
-        }
+            p {
+                  margin: 0 0 10px;
+            }
 
-        .top-bar li i {
-            color: white !important;
-            font-size: 16px;
-        }
-
-        .bottom-nav {
-            padding: 0 2rem 0px 3rem !important;
-        }
-
-        .padding-none {
-            padding: 0px;
-        }
-
-        .pq-client-img,
-        .pq-footer-logo {
-            -webkit-filter: brightness(0) invert(100%);
-            filter: brightness(0) invert(100%);
-        }
-
-
-
-        .top-bar {
+            p {
+                  margin-top: 0;
+                  margin-bottom: 1rem;
+            }
+            .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
@@ -246,10 +282,6 @@
             width: 30px;
             padding-bottom: 2px;
         }
-
-        span.ps-4.fw-bold.text-white {
-            font-size: 13px;
-        }
     </style>
 </head>
 
@@ -257,8 +289,8 @@
     <!--=================================
          loading start-->
     <div id="pq-loading">
-        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
-    </div>
+            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+      </div>
     <!--=================================
          loading end-->
     <!--=================================
@@ -383,21 +415,23 @@
             </div>
         </div>
     </header>
-    <div class="pq-breadcrumb" style="background-image:url('images/About-us/appoinment_banner.jpg');">
+    <!--=================================
+         header end-->
+    <!--=================================
+         Banner start-->
+    <div class="pq-breadcrumb bg-banner-image" style="background-image:url('images/banner-image.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h2>Book An Appointment
-                            </h2>
+                        <div class="container">
+                            <div class="row pb-5">
+                                <div class="col-12">
+                                    <h2 class="speciality_detail_heading text-center">ANESTHESIOLOGY</h2>
+                                    <p class="speciality_detail_para">The anesthesiology department provides care and pain therapy to adult and pediatric patients.</p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- <div class="pq-breadcrumb-container mt-2">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Make Appointments </li>
-                            </ol>
-                        </div> -->
                     </nav>
                 </div>
                 <div class="col-lg-4">
@@ -406,238 +440,161 @@
             </div>
         </div>
     </div>
-    <!--=================================
-         Banner end-->
-    <!--=================================
-         appoinment-form start-->
-    <div class="appoinment-form  appointment-page custom-bg-appointment"
-        style="padding-top: 90px; padding-bottom: 90px;">
+    <section class="detail-speciality-content">
         <div class="container">
-            <!-- <div class="appointment-heading ms-2">
-                <h1 style="font-size:45px; padding-bottom: 55px; font-weight: 600;">Book an Appointment</h1>
-            </div> -->
             <div class="row">
-                <div class="col-xl-6">
-                    <div class="appoinment-box" style="background-color: #00b5ea;">
-                        <form action="#" class="pq-applyform" novalidate>
-                            <div class="pq-appointment custom-appointment-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Full Name*</label>
-                                        <input type="text" id="name" name="name"
-                                            class="form-control pq-bg-white name-field" placeholder="Enter Full Name"
-                                            required>
-                                        <!-- <label> <span class="pq-appointment-title">  </span> <span class="form-control-wrap your-country">
-                                                            <select name="your-country" class="form-select" aria-invalid="false">
-                                                            <option value="Gynaecology">Gynaecology</option>
-                                                            <option value="Cardiology">Cardiology</option>
-                                                            <option value="Orthopaedics">Orthopaedics</option>
-                                                            <option value="Medicine">Medicine</option>
-                                                         </select>
-                                                      </span> </label> -->
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Email Address*</label>
-                                        <input type="text" id="name" name="name"
-                                            class="form-control pq-bg-white name-field"
-                                            placeholder="Enter Email Address" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Phone Number*</label>
-                                        <input type="text" id="phone-number" name="Phone"
-                                            class="form-control pq-bg-white phone-number-field" aria-invalid="false"
-                                            placeholder="Phone" required>
-                                    </div>
-                                </div>
-                                <hr style="border:1px solid #ffffff; margin-bottom:30px">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Location* <span class="pq-appointment-title"> </span> <span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Hospital*<span class="pq-appointment-title"></span><span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select" style="font-size:13px !important">Select
-                                                    </option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Speciality* <span class="pq-appointment-title"> </span> <span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Doctor<span class="pq-appointment-title"
-                                                style="font-size:13px"></span><span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Preferred Date*</label>
-                                        <input type="date" value="" class="form-control pq-bg-white"
-                                            aria-invalid="false">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <label>Any notes for the doctor's office</label>
-                                        <textarea cols="40" id="message" rows="10" aria-invalid="false"
-                                            class="form-control pq-bg-white"
-                                            placeholder="Type Appintment Note"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12" style="display:flex">
-                                        <input type="checkbox" style="height:100%">
-                                        <label for="agree" style="font-size: 13px;margin-top:20px; margin-left: 10px;">I
-                                            understand that this is only an appointment request and will be scheduled
-                                            only after a confirmation call from SEHA helpdesk.</label>
-                                    </div>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="your_site_key" style="margin-top:30px"></div>
-                                <br />
-                                <div class="col-lg-12">
-                                    <a class="pq-button form-btn" role="button"
-                                        style="width:100%;background-color: #0a3a5a;" type="button"
-                                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <div class="pq-button-block" style="justify-content: center;">
-                                            <span class="pq-button-text me-0">SUBMIT</span>
-                                            <!-- Button trigger modal -->
-
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Confirmation
-                                                            </h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="card-content pt-2">
-                                                                <div class="text-center"><img
-                                                                        src="images/About-us/info-icon.jpg"
-                                                                        style="width:100px;height:100px"></div>
-                                                                <p class="text-dark fw-regular fs-5 text-center">Are you
-                                                                    sure you want to submit</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                                            <button type="button" class="btn btn-primary" type="submit"
-                                                                onclick="fireSweetAlert()"
-                                                                style="background-color:#0a3a5a !important;border-color: #0a3a5a !important;">Confirm</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
+                <div class="col-12">
+                    <div class="detail-content">
+                        <h3>CRITICAL CARE</h3>
+                        <p>Critical care anesthesiologists supervise, coordinate, and manage the patient’s care with the ICU team and work closely with surgeons and specialty consultants as needed.</p>
+                        <h3>CARDIAC</h3>
+                        <p>Cardiac anesthesiologists are devoted to the preoperative, intraoperative and postoperative care of patients undergoing cardiothoracic surgery and related invasive procedures.</p>
+                        <h3>OBSTETRIC</h3>
+                        <p>Obstetric anesthesiologists provide peripartum pain relief for labor and anesthesia for cesarean deliveries.</p>
+                        <h3>PAIN MANAGEMENT</h3>
+                        <p>Pain management anesthesiologists offer a full spectrum of treatment options for preventing and treating acute and chronic pain.</p>
+                        <h3>HOSPICE & PALLIATIVE</h3>
+                        <p>Hospice & palliative anesthesiologists supervise, coordinate, and manage the patient care when a cure is not possible and ensure appropriate care during the last months of life.</p>
+                        <h3> PEDIATRIC</h3>
+                        <p>Pediatric anesthesiologists provide general anesthesia, sedation and pain management needs for infants and children.</p>
                     </div>
-                </div>
-                <div class="col-xl-6 mt-5">
-                    <div class="appointment-right-content"
-                        style="display: flex;align-items: right;justify-content: center;">
-                        <div class="appointment-title-heading me-1" style="margin-right: 40px;">
-                            <h4 style="color: #00b5ea;font-size:30px !important;">Book in Advance Save Your Time</h4>
-                        </div>
-                    </div>
-                    <div style="display: flex;align-items: right;justify-content: center;">
-                        <ul class="pq-list-check pq-text-dark mt-3 mb-4" style="width: 480px;">
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Request Appointment with any Doctor</span>
-                                <p class="lh-22 ps-3">Request appointments with any doctors in all specialities across
-                                    all seha hospitals.
-                                </p>
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Book for Family & Friends</span>
-                                <p class="lh-22 ps-3">You will be able to book a doctor for your near and dear ones.</p>
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Guaranteed Booking Confirmation</span>
-                                <p class="lh-22 ps-3">Recieve a call from our helpdesk to confirm your appointments.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div class="appointment-img text-center"> <img src="images/appoinment.png" alt="" class="img-a img-fluid" style="opacity:0.5"></div> -->
 
                 </div>
             </div>
         </div>
-    </div>
-    <!--=================================
-         appoinment-form end-->
-    <!--=================================
-         contact-healthcare start-->
-    <section class="contact-us pq-bg-img-1" style="margin-bottom:150px; background-color:#0a3a5a !important;">
+    </section>
+    <!--=================================    our-team start-->
+    <section class="speciality_doctors">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-7">
-                    <h6 class="pq-title">A great place of medical hospital center &amp; health care</h6>
+            <div class="row pb-3">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-left">
+                        <h5 class="pq-section-title">Our Doctors</h5>
+                    </div>
                 </div>
-                <div class="col-xl-5 d-xl-flex justify-content-xl-end align-items-center text-left mt-xl-0 mt-4">
-                    <a class="pq-button pq-button-flat" href="contact-us.html" style="background-color: #00b5ea;">
-                        <div class="pq-button-block"> <span class="pq-button-text">Contact Us</span> <i
-                                class="ion ion-plus-round"></i> </div>
+            </div>
+            <div class="row d-flex  pb-5">
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                    <label class="text-dark">Speciality</label>
+                    <select class="form-select">
+                       <option selected>Select Speciality</option>
+                       <option value="1">Naiden Smith</option>
+                       <option value="2">Danial Frankie</option>
+                       <option value="3">Jason Roy</option>
+                   </select>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                    <label class="text-dark">Gender</label>
+                    <select class="form-select">
+                     <option selected>Select Gender</option>
+                     <option value="1">Male</option>
+                     <option value="2">Female</option>
+                 </select>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                    <label class="text-dark">Keyword</label>
+                    <input type="text" id="phone-number" class="form-control phone-number-field mb-0" placeholder="Search Keyword" required>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <a class="">
+                        <div class="pq-button-block ">
+                            <input type="text" class="form-control me-2 mb-0 custom-search-btn text-center" placeholder="Search" />
+                        </div>
                     </a>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="pq-team pq-team-style-1 pb-lg-5 ">
+                        <div class="pq-team-box pq-style-1">
+                            <div class="pq-team-img"> <img src="images/team/2.jpg" class="img-fluid" alt="team-image">
+
+                            </div>
+                            <div class="pq-team-info">
+                                <h5 class="pq-member-name">
+                                    <a href="our-doctor.html">
+                                    Naidan Smith </a>
+                                </h5> <span class="pq-team-designation">Pediatric Clinic</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6  col-sm-12 mt-lg-0 mt-md-0 mt-4">
+                    <div class="pq-team-box pq-style-1">
+                        <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
+
+                        </div>
+                        <div class="pq-team-info">
+                            <h5 class="pq-member-name">
+                                <a href="our-doctor.html">
+                                 Danial Frankie</a>
+                            </h5> <span class="pq-team-designation"> Doctor</span> </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+                    <div class="pq-team-box pq-style-1">
+                        <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
+
+                        </div>
+                        <div class="pq-team-info">
+                            <h5 class="pq-member-name">
+                                <a href="our-doctor.html">
+                                 Jason Roy</a>
+                            </h5> <span class="pq-team-designation"> Neurology</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
+                    <div class="pq-team-box pq-style-1">
+                        <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
+
+                        </div>
+                        <div class="pq-team-info">
+                            <h5 class="pq-member-name">
+                                <a href="our-doctor.html">
+                                 Jason Roy</a>
+                            </h5> <span class="pq-team-designation"> Gynecology</span> </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12  mt-lg-0 mt-md-0 mt-4">
+                    <div class="pq-team-box pq-style-1">
+                        <div class="pq-team-img"> <img src="images/team/1.jpg" class="img-fluid" alt="team-image">
+
+                        </div>
+                        <div class="pq-team-info">
+                            <h5 class="pq-member-name">
+                                <a href="our-doctor.html">
+                                 Naidan Smith</a>
+                            </h5> <span class="pq-team-designation"> Gynecology</span> </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+                    <div class="pq-team-box pq-style-1">
+                        <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
+
+                        </div>
+                        <div class="pq-team-info">
+                            <h5 class="pq-member-name">
+                                <a href="our-doctor.html">
+                                 Rihana Roy</a>
+                            </h5> <span class="pq-team-designation"> Gynecology</span> </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--=================================
-         contact-healthcare end-->
+               our-team end-->
     <!--=================================
-      testimonial start -->
+         Banner end-->
 
     <!--=================================
-         our-client end-->
-    <!--=================================
-         our-blog start-->
+         tab start-->
 
-    <!--=================================
-         our-blog end-->
-    <!--=================================
-         footer start-->
+
+    <!-- =================================
+        Footer start
+   ============================== -->
     <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">
@@ -773,7 +730,6 @@
     <div id="back-to-top">
         <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--Back To Top End-->
     <!--jquery js-->
     <script src="js/jquery.min.js"></script>
@@ -793,16 +749,6 @@
     <script src="js/wow.min.js"></script>
     <!--custom js-->
     <script src="js/custom.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function fireSweetAlert() {
-            Swal.fire(
-                'Thank You',
-                'Your information has been successfully submitted.',
-                'success'
-            )
-        }
-    </script>
 
     <script>
         const searchBtn = document.querySelector('#pq-seacrh-btn');
