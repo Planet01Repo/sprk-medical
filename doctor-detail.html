@@ -317,6 +317,37 @@
             /* Microsoft Edge */
             color: #fff;
         }
+
+        .list-group-horizontal>.list-group-item+.list-group-item {
+            border-bottom: none;
+            border-top: none;
+        }
+
+        .list-group-horizontal>.list-group-item:first-child {
+            border-bottom: none;
+            border-top: none;
+            border-left: none;
+        }
+
+        .list-group-horizontal>.list-group-item:last-child {
+            border-right: none;
+        }
+
+        .list-group-horizontal li {
+            font-weight: 600;
+        }
+
+        section {
+            padding: 40px 0 !important;
+        }
+
+        .pq-pb-210 {
+            padding-bottom: 210px !important;
+        }
+
+        .ion-checkmark {
+            color: var(--theme-color-light-blue);
+        }
     </style>
 </head>
 
@@ -419,10 +450,10 @@
                                             <a href="our-hospital.html">Our Hospitals</a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="#">Our Specialties</a>
+                                            <a href="specialty.html">Our Specialties</a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="#">Our Doctors</a>
+                                            <a href="our-doctors.html">Our Doctors</a>
                                         </li>
 
                                         <li class="menu-item">
@@ -454,27 +485,20 @@
          header end-->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/ourhospitals/banner_salma.png');">
+    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
-                        <div class="container">
-                            <div class="row pb-5">
-                                <div class="col-12">
-                                    <h2 class="text-center">SALMA REHABILITATION HOSPITAL</h2>
-                                </div>
-                            </div>
-                            <div class="row row-height d-flex justify-content-center align-items-center">
-                                <div class="col-md-8">
-                                    <div class="search">
-                                        <i class="fa fa-search"></i>
-                                        <input type="text" class="form-control"
-                                            placeholder="Search by Doctor or Speciality">
-                                        <button class="btn btn-primary">Search</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="pq-breadcrumb-title">
+                            <h2>Doctor Detail</h2>
+                        </div>
+                        <div class="pq-breadcrumb-container mt-2">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i
+                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item active">Doctor Detail</li>
+                            </ol>
                         </div>
                     </nav>
                 </div>
@@ -485,198 +509,218 @@
         </div>
     </div>
     <!--=================================
-         Banner end-->
-
+         banner end-->
     <!--=================================
-         tab start-->
-    <section class="about custom_our_doctor_about">
+         single-team start-->
+    <section class="single-team pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-4">
+                    <div class="pq-patient-img"> <img src="images/single-team.jpg" class="img-fluid" alt=""> </div>
+                </div>
+                <div class="col-xl-8 mt-xl-0 mt-4 ps-xl-5">
+                    <div class="pq-section pq-style-1 text-left"> <span class="pq-section-sub-title">Outpatient
+                            Surgery</span>
+                        <h5 class="pq-section-title">Alex Jhon Martin</h5>
+                        <p class="lh-22 fs-15"> With more than 40 years of clinical experience, Dr A. P. Ahmed is one of
+                            the few well-known specialists in the field of Internal Medicine & Diabetology. He worked
+                            with many renowned institutions in India, US, UK and KSA, providing him the opportunity to
+                            gain extensive experience and to practice different techniques in his area.. </p>
+                    </div>
+                    <div class="pq-icon-box-3  d-lg-flex d-md-flex  mb-2">
+                        <div class="pq-icon-box-icon-3"> <i aria-hidden="true" class="ion ion-ios-telephone"></i> </div>
+                        <div class="pq-icon-box-content-3">
+                            <h3 class="pq-icon-box-title-3">
+                                <span>
+                                    +1-234-2346 </span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="pq-icon-box-3 d-lg-flex d-md-flex mb-2">
+                        <div class="pq-icon-box-icon-3 "> <i aria-hidden="true" class="ion ion-ios-email"></i> </div>
+                        <div class="pq-icon-box-content-3 ">
+                            <h3 class="pq-icon-box-title-3">
+                                <span>
+                                    info@peacefulthemes.com </span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="pq-icon-box-3 d-lg-flex d-md-flex mb-2 ">
+                        <div class="pq-icon-box-icon-3 "> <i aria-hidden="true" class="ion ion-link"></i> </div>
+                        <div class="pq-icon-box-content-3 ">
+                            <h3 class="pq-icon-box-title-3 ">
+                                <span>
+                                    peacefulqode.com </span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="pq-title-text mt-4 ">
+                        <h5>Follow Me:</h5>
+                    </div>
+                    <div class="pq-social-icon ">
+                        <ul class="d-flex ">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=================================
+         our-patient end-->
+    <!--=================================
+         section start-->
+    <section class=" pb-0">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="pq-section pq-style-1 text-center">
-                        <h3 class="">We Provide Various Directions</h3>
+                <div class="col-md-12">
+                    <div class="text-container pb-2">
+                        <h2 class="">Personal experience</h2>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="pq-tabs-1">
-                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist"> <a
-                            class="pq-tabs nav-item nav-link active" id="nav-home-0" data-bs-toggle="tab" href="#nav-0"
-                            role="tab" aria-controls="nav-home-0" aria-selected="true"><i
-                                class=" flaticon-medical-doctor"></i><span>Angioplasty</span></a> <a
-                            class="pq-tabs nav-item nav-link " id="nav-home-1" data-bs-toggle="tab" href="#nav-1"
-                            role="tab" aria-controls="nav-home-1" aria-selected="true"><i
-                                class=" flaticon-doctor"></i><span>Neurology</span></a> <a
-                            class="pq-tabs nav-item nav-link " id="nav-home-2" data-bs-toggle="tab" href="#nav-2"
-                            role="tab" aria-controls="nav-home-2" aria-selected="true"><i
-                                class=" flaticon-care"></i><span>Eye Care</span></a> <a
-                            class="pq-tabs nav-item nav-link " id="nav-home-3" data-bs-toggle="tab" href="#nav-3"
-                            role="tab" aria-controls="nav-home-3" aria-selected="true"><i
-                                class=" flaticon-examination"></i><span>Cardiology</span></a> <a
-                            class="pq-tabs nav-item nav-link " id="nav-home-4" data-bs-toggle="tab" href="#nav-4"
-                            role="tab" aria-controls="nav-home-4" aria-selected="true"><i
-                                class=" flaticon-doctor-1"></i><span>Orthopaedics</span></a> </div>
-                </div>
+                <p class="fs-15 lh-22">With more than 40 years of clinical experience, Dr A. P. Ahmed is one of the few
+                    well-known specialists in the field of Internal Medicine & Diabetology. He worked with many renowned
+                    institutions in India, US, UK and KSA, providing him the opportunity to gain extensive experience
+                    and to practice different techniques in his area. Throughout his career, he received multiple awards
+                    and recognitions. He is a senior member of Diabetics Association of India and held a title as the
+                    President of Post Graduate Physicians of Calicut.. </p>
             </div>
         </div>
     </section>
+    <!--=================================
+         section end-->
 
-
-    <section class="content-section">
+    <!--=================================
+         section start-->
+    <section class=" pb-0">
         <div class="container">
-            <div class="row align-items-center pq-reveser flex-md-column-reverse flex-lg-row">
-                <div class="col-lg-7 col-md-12 pe-xl-5 mt-4 mt-lg-0">
-                    <div class="pq-section pq-style-1 text-left">
-                        <h6 class="pq-section-title">SALMA REHABILITATION HOSPITAL</h6>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-container pb-2">
+                        <h2 class="">Qualifications</h2>
                     </div>
-                    <div class="mt-4">
-                        <p>Salma Rehabilitation Hospital is part of the SEHA network and is the only rehabilitation and
-                            long-term care provider for the network. We provide specialized medical care to patients
-                            with chronic illness or disability, those who
-                            cannot be cared for in their home environment, or those who require sub-acute, post-acute
-                            rehabilitation, or long-term care.</p>
-                        <p>Our medical facilities are managed by highly-experienced physicians, rehabilitation
-                            specialists, therapists, and nurses using state-of-the-art medical equipment, set in a
-                            world-class hospitality environment.</p>
-                        <p> At Salma, we take a holistic and multi-disciplinary approach to healthcare services, working
-                            as a team to provide exceptional care and rehabilitative services to all our patients. We
-                            are accredited by JCI (Joint Commission International)
-                            and are poised to be accredited by CARF (Commission on Accreditation of Rehabilitation
-                            Facilities).</p>
-                    </div>
-
                 </div>
-                <div class="col-lg-5 col-md-12">
-                    <img src="images/ourhospitals/adultcare+seha+logo+new.jpg" alt="">
-                </div>
+                <!-- Some borders are removed -->
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">Licensed Specialist in Internal Medicine – Department of Health (Abu
+                        Dhabi), United Arab Emirates</li>
+                    <li class="list-group-item">M.B.B.S (MADRAS)</li>
+                    <li class="list-group-item">FRCP (EDINBURGH)</li>
+                    <li class="list-group-item">MRCP (UK)</li>
+                    <li class="list-group-item">DTIM (LIVERPOOL)</li>
+                    <li class="list-group-item">FICA (USA) Diabetologist</li>
+                </ul>
             </div>
         </div>
     </section>
+    <!--=================================
+         section end-->
 
-
-
-    <!--=================================    our-team start-->
-    <section class="our-team custom_our_doctors">
+    <!--=================================
+         section start-->
+    <section class=" pb-0">
         <div class="container">
-            <div class="row pb-3">
-                <div class="col-lg-12">
-                    <div class="pq-section pq-style-1 text-left">
-                        <h5 class="pq-section-title">Our Doctors</h5>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-container pb-2">
+                        <h2 class="">Specialties</h2>
                     </div>
                 </div>
+                <!-- Some borders are removed -->
+                <!-- Horizontal under breakpoint -->
+                <!-- Some borders are removed -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i aria-hidden="true" class="ion ion-checkmark pe-2"></i>Endocrinology,
+                        Diabetology and Disorders</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="ion ion-checkmark pe-2"></i>Treatment and
+                        Management of Hypertension, Cholesterol and Chronic Conditions</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="ion ion-checkmark pe-2"></i>Treatment of
+                        Infectious Diseases</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="ion ion-checkmark pe-2"></i>Specialised
+                        Care for Respiratory, Renal, Gastrointestinal Diseases</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="ion ion-checkmark pe-2"></i>Cardiac
+                        Investigations</li>
+                    <li class="list-group-item"><i aria-hidden="true" class="ion ion-checkmark pe-2"></i>Asthma and
+                        Allergy Treatment</li>
+                </ul>
             </div>
-            <div class="row d-flex  pb-5">
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
-                    <label class="text-dark">Speciality</label>
-                    <select class="form-select">
-                        <option selected>Select Speciality</option>
-                        <option value="1">Naiden Smith</option>
-                        <option value="2">Danial Frankie</option>
-                        <option value="3">Jason Roy</option>
-                    </select>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <label class="text-dark">Gender</label>
-                    <select class="form-select">
-                        <option selected>Select Gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                    </select>
-                </div>
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
-                    <label class="text-dark">Keyword</label>
-                    <input type="text" id="phone-number" class="form-control phone-number-field mb-0"
-                        placeholder="Search Keyword" required>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-                    <a class="">
-                        <div class="pq-button-block ">
-                            <input type="text" class="form-control me-2 mb-0 custom-search-btn text-center"
-                                placeholder="Search" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row justify-content-center ">
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="pq-team pq-team-style-1 pb-lg-5 ">
-                        <div class="pq-team-box pq-style-1">
-                            <div class="pq-team-img"> <img src="images/team/2.jpg" class="img-fluid" alt="team-image">
+        </div>
+    </section>
+    <!--=================================
+         section end-->
 
+
+    <!--=================================
+         section start-->
+    <section class="pt-0 pq-pb-210">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-6 pe-xl-5">
+                    <div class="experience-container">
+                        <h2 class="mb-2">Expertise Skills</h2>
+                        <p class="lh-22"> It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. </p>
+                        <div class="pq-progressbar-box pq-progressbar-style-1" data-h="5">
+                            <div class="pq-progressbar-content"> <span class="progress-title">Client Satisfaction</span>
+                                <span class="progress-value">80% </span>
+                                <div class="pq-progress-bar"> <span data-width="80" class="show-progress"></span> </div>
                             </div>
-                            <div class="pq-team-info">
-                                <h5 class="pq-member-name">
-                                    <a href="our-doctor.html">
-                                        Naidan Smith </a>
-                                </h5> <span class="pq-team-designation">Pediatric Clinic</span>
+                            <div class="pq-progressbar-content"> <span class="progress-title">Medic Success</span> <span
+                                    class="progress-value">87% </span>
+                                <div class="pq-progress-bar"> <span data-width="87" class="show-progress"></span> </div>
+                            </div>
+                            <div class="pq-progressbar-content"> <span class="progress-title">Client Referral</span>
+                                <span class="progress-value">75% </span>
+                                <div class="pq-progress-bar"> <span data-width="75" class="show-progress"></span> </div>
+                            </div>
+                            <div class="pq-progressbar-content"> <span class="progress-title">Travel Satisfaction</span>
+                                <span class="progress-value">65% </span>
+                                <div class="pq-progress-bar"> <span data-width="65" class="show-progress"></span> </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6  col-sm-12 mt-lg-0 mt-md-0 mt-4">
-                    <div class="pq-team-box pq-style-1">
-                        <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
-
-                        </div>
-                        <div class="pq-team-info">
-                            <h5 class="pq-member-name">
-                                <a href="our-doctor.html">
-                                    Danial Frankie</a>
-                            </h5> <span class="pq-team-designation"> Doctor</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                    <div class="pq-team-box pq-style-1">
-                        <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
-
-                        </div>
-                        <div class="pq-team-info">
-                            <h5 class="pq-member-name">
-                                <a href="our-doctor.html">
-                                    Jason Roy</a>
-                            </h5> <span class="pq-team-designation"> Neurology</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
-                    <div class="pq-team-box pq-style-1">
-                        <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
-
-                        </div>
-                        <div class="pq-team-info">
-                            <h5 class="pq-member-name">
-                                <a href="our-doctor.html">
-                                    Jason Roy</a>
-                            </h5> <span class="pq-team-designation"> Gynecology</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12  mt-lg-0 mt-md-0 mt-4">
-                    <div class="pq-team-box pq-style-1">
-                        <div class="pq-team-img"> <img src="images/team/1.jpg" class="img-fluid" alt="team-image">
-
-                        </div>
-                        <div class="pq-team-info">
-                            <h5 class="pq-member-name">
-                                <a href="our-doctor.html">
-                                    Naidan Smith</a>
-                            </h5> <span class="pq-team-designation"> Gynecology</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                    <div class="pq-team-box pq-style-1">
-                        <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
-
-                        </div>
-                        <div class="pq-team-info">
-                            <h5 class="pq-member-name">
-                                <a href="our-doctor.html">
-                                    Rihana Roy</a>
-                            </h5> <span class="pq-team-designation"> Gynecology</span>
+                <div class="col-xl-6 ">
+                    <div class="pq-form-container">
+                        <h2 class="pq-form-title mb-4">Book An Appointment</h2>
+                        <div class="pq-applyform-whitebg">
+                            <form class="pq-applyform" novalidate>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" name="your-name" id="first-name" class="name-field"
+                                            aria-required="true" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" name="gender" id="gender" class="gender-field"
+                                            aria-required="true" placeholder="Gender" required>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" name="phone-number" id="phone-number"
+                                            class="phone-number-field" value="" aria-required="true"
+                                            placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" name="your-email" id="e-mail" class="e-mail-field" value=""
+                                            aria-required="true" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea name="your-message" id="message" cols="40" rows="10"
+                                            aria-required="true" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <a class="pq-button form-btn">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text">Send Message</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -738,7 +782,7 @@
                                         <li><a href="careers.html">Careers</a></li>
                                         <li><a href="#">Media center</a></li>
                                         <li><a href="#">Patient Stories</a></li>
-                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="blogs.html">Blog</a></li>
                                         <li><a href="faq.html">FAQ's</a></li>
                                     </ul>
                                 </div>
@@ -764,7 +808,7 @@
                                 <h4 class="footer-title">Misc.</h4>
                                 <div class="menu-useful-links-container">
                                     <ul id="menu-useful-links" class="menu">
-                                        <li><a href="#">Patient Rights & Responsibilities</a></li>
+                                        <li><a href="patient-rights.html">Patient Rights & Responsibilities</a></li>
                                         <li><a href="corporate-social-responsibility.html">Corporate Social
                                                 Responsibility</a></li>
                                         <li><a href="transparency-charter.html">Transparency Charter</a></li>

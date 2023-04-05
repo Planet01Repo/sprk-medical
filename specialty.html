@@ -6,12 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SEHA</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="images/FavIcon.jpg">
+      <!-- Favicon Icon -->
+      <link rel="shortcut icon" href="images/FavIcon.jpg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="css/progressbar.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
     <!-- Magnefic Popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup.min.css">
     <!-- Icons CSS -->
@@ -23,44 +27,128 @@
     <link rel="stylesheet" href="css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <style>
-        .custom-appointment-form label {
-            color: #fff;
+        html {
+            overflow-x: hidden;
         }
-
-        ::-webkit-input-placeholder {
-            /* Edge */
-            font-size: 14px;
-            color: #E6E6E6;
+        
+        .row-height {
+            height: 100%;
         }
-
-        :-ms-input-placeholder {
-            /* Internet Explorer */
-            font-size: 14px;
-            color: #E6E6E6;
+        
+        .search {
+            position: relative;
+            box-shadow: 0 0 40px rgba(51, 51, 51, .1);
         }
-
-        ::placeholder {
-            font-size: 14px;
-            color: #E6E6E6;
+        
+        .search input {
+            height: 60px;
+            text-indent: 25px;
+            margin-bottom: unset !important;
+            background-color: #d7d6d69e !important;
         }
-
-        .custom-appointment-form select,
-        .custom-appointment-form input,
-        .custom-appointment-form textarea {
-            font-size: 14px;
+        
+        .search-card {
+            border: 2px solid #00b5ea;
         }
-
-        .custom-bg-appointment {
-            background-image: url(images/Whoweare/doc.png);
+        
+        .search input:focus {
+            box-shadow: none;
+            border: 1px solid #e7e7e7;
+        }
+        
+        .search input:hover {
+            box-shadow: none;
+            border: 1px solid #e7e7e7;
+        }
+        
+        .search .fa-search {
+            position: absolute;
+            top: 23px;
+            left: 16px;
+            color: #0a3a5a;
+        }
+        
+        .search button:hover {
+            background: #236794 !important;
+        }
+        
+        .search button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 50px;
+            width: 110px;
+            background: #0a3a5a;
+            border-color: #0a3a5a;
+        }
+        
+        .speciality_heading {
+            color: #0a3a5a;
+            font-weight: 600;
+            font-size: 45px;
+        }
+        
+        .speciality_para {
+            color: #0a3a5a;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.6em;
+            margin-bottom: 20px !important;
+            margin-top: 10px;
+            width: 930px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .custom_speciality .card {
+            padding: 30px 20px 30px 20px !important;
+            text-align: left;
+            height: 200px;
+        }
+        
+        .cards-column {
+            margin-bottom: 50px;
+        }
+        
+        .cards-column .card {
+            border: 2px solid #00b5ea;
+            background-image: url(images/ourhospitals/download.svg);
             background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            background-position: right;
+        }
+        
+        .card-speciality-title {
+            margin-top: 20px !important;
+            font-size: 22px;
+        }
+        
+        .card-speciality-text {
+            font-size: 15px;
+            line-height: 1.5em;
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+        }
+        
+        .top-left-icon {
+            height: 80px;
+            width: 80px;
+            left: 70px;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+        
+        .title-tag {
+            text-decoration: none !important;
+        }
+        
+        .title-tag:hover {
+            color: #00b5ea !important;
         }
 
         :root {
-
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -68,59 +156,44 @@
             --theme-color-light-green-bg: #8bccbe8c;
             --theme-color-blue: #2544be;
             --theme-color-blue-bg: #00b3ea4f;
-
             /* secondary colors */
             --theme-color-light-blue: #00b5ea;
             --theme-color-burgundy: #973359;
             --theme-color-peach: #de6f4e;
             --theme-color-yellow: #faae61;
-
             /* neutrals colors */
             --theme-color-dark-gray: #787878;
             --theme-color-medium-gray: #A8A8A8;
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
+            .main-banner-image {
+                  background-image: url('images/blog/breadcrumb.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  max-height: 400px;
+            }
 
-        .top-bar {
-            height: 50px;
-            padding: 0 2.1rem !important;
-            background: var(--theme-color-dark-blue);
-            color: white;
-        }
+            .main-heading {
+                  line-height: 4rem !important;
+            }
 
-        .top-bar li a {
-            color: white !important;
-            text-transform: capitalize !important;
-            font-size: 13px !important;
-        }
+            .backlink {
+                  font-size: 13px;
+                  color: var(--theme-color-light-blue);
+                  margin: 0 0 25px 0;
+                  display: inline-block;
+            }
 
-        .top-bar a i {
-            color: white;
-        }
+            p {
+                  margin: 0 0 10px;
+            }
 
-        .top-bar li i {
-            color: white !important;
-            font-size: 16px;
-        }
-
-        .bottom-nav {
-            padding: 0 2rem 0px 3rem !important;
-        }
-
-        .padding-none {
-            padding: 0px;
-        }
-
-        .pq-client-img,
-        .pq-footer-logo {
-            -webkit-filter: brightness(0) invert(100%);
-            filter: brightness(0) invert(100%);
-        }
-
-
-
-        .top-bar {
+            p {
+                  margin-top: 0;
+                  margin-bottom: 1rem;
+            }
+            .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
@@ -246,19 +319,15 @@
             width: 30px;
             padding-bottom: 2px;
         }
-
-        span.ps-4.fw-bold.text-white {
-            font-size: 13px;
-        }
     </style>
 </head>
 
 <body>
     <!--=================================
          loading start-->
-    <div id="pq-loading">
-        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
-    </div>
+     <div id="pq-loading">
+            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+      </div>
     <!--=================================
          loading end-->
     <!--=================================
@@ -383,21 +452,37 @@
             </div>
         </div>
     </header>
-    <div class="pq-breadcrumb" style="background-image:url('images/About-us/appoinment_banner.jpg');">
+    <!--=================================
+         header end-->
+    <!--=================================
+         Banner start-->
+    <div class="pq-breadcrumb" style="background-image:url('images/services.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h2>Book An Appointment
-                            </h2>
+                        <div class="container">
+                            <div class="row pb-5">
+                                <div class="col-12">
+                                    <h2 class="speciality_heading text-center">OUR SPECIALITY</h2>
+                                    <p class="speciality_para">At Healthpoint, we understand the importance of healthcare professionals working with one another across all clinical and support services to achieve the best possible results for our patients. This integrated healthcare
+                                        approach ensures that each patient receives well-rounded healthcare advice, whatever the requirement may be.</p>
+                                </div>
+                            </div>
+                            <div class="card search-card">
+                                <div class="card-body">
+                                    <div class="row row-height d-flex justify-content-center align-items-center">
+                                        <div class="col-md-12">
+                                            <div class="search">
+                                                <i class="fa fa-search"></i>
+                                                <input type="text" class="form-control" placeholder="Search for services">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- <div class="pq-breadcrumb-container mt-2">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Make Appointments </li>
-                            </ol>
-                        </div> -->
                     </nav>
                 </div>
                 <div class="col-lg-4">
@@ -408,236 +493,316 @@
     </div>
     <!--=================================
          Banner end-->
-    <!--=================================
-         appoinment-form start-->
-    <div class="appoinment-form  appointment-page custom-bg-appointment"
-        style="padding-top: 90px; padding-bottom: 90px;">
-        <div class="container">
-            <!-- <div class="appointment-heading ms-2">
-                <h1 style="font-size:45px; padding-bottom: 55px; font-weight: 600;">Book an Appointment</h1>
-            </div> -->
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="appoinment-box" style="background-color: #00b5ea;">
-                        <form action="#" class="pq-applyform" novalidate>
-                            <div class="pq-appointment custom-appointment-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Full Name*</label>
-                                        <input type="text" id="name" name="name"
-                                            class="form-control pq-bg-white name-field" placeholder="Enter Full Name"
-                                            required>
-                                        <!-- <label> <span class="pq-appointment-title">  </span> <span class="form-control-wrap your-country">
-                                                            <select name="your-country" class="form-select" aria-invalid="false">
-                                                            <option value="Gynaecology">Gynaecology</option>
-                                                            <option value="Cardiology">Cardiology</option>
-                                                            <option value="Orthopaedics">Orthopaedics</option>
-                                                            <option value="Medicine">Medicine</option>
-                                                         </select>
-                                                      </span> </label> -->
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Email Address*</label>
-                                        <input type="text" id="name" name="name"
-                                            class="form-control pq-bg-white name-field"
-                                            placeholder="Enter Email Address" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Phone Number*</label>
-                                        <input type="text" id="phone-number" name="Phone"
-                                            class="form-control pq-bg-white phone-number-field" aria-invalid="false"
-                                            placeholder="Phone" required>
-                                    </div>
-                                </div>
-                                <hr style="border:1px solid #ffffff; margin-bottom:30px">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Location* <span class="pq-appointment-title"> </span> <span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Hospital*<span class="pq-appointment-title"></span><span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select" style="font-size:13px !important">Select
-                                                    </option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Speciality* <span class="pq-appointment-title"> </span> <span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Doctor<span class="pq-appointment-title"
-                                                style="font-size:13px"></span><span
-                                                class="form-control-wrap your-country">
-                                                <select name="your-country" class="form-select" aria-invalid="false">
-                                                    <option value="select">Select</option>
-                                                    <option value="Cardiology">Cardiology</option>
-                                                    <option value="Orthopaedics">Orthopaedics</option>
-                                                    <option value="Medicine">Medicine</option>
-                                                </select>
-                                            </span> </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Preferred Date*</label>
-                                        <input type="date" value="" class="form-control pq-bg-white"
-                                            aria-invalid="false">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <label>Any notes for the doctor's office</label>
-                                        <textarea cols="40" id="message" rows="10" aria-invalid="false"
-                                            class="form-control pq-bg-white"
-                                            placeholder="Type Appintment Note"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12" style="display:flex">
-                                        <input type="checkbox" style="height:100%">
-                                        <label for="agree" style="font-size: 13px;margin-top:20px; margin-left: 10px;">I
-                                            understand that this is only an appointment request and will be scheduled
-                                            only after a confirmation call from SEHA helpdesk.</label>
-                                    </div>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="your_site_key" style="margin-top:30px"></div>
-                                <br />
-                                <div class="col-lg-12">
-                                    <a class="pq-button form-btn" role="button"
-                                        style="width:100%;background-color: #0a3a5a;" type="button"
-                                        class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <div class="pq-button-block" style="justify-content: center;">
-                                            <span class="pq-button-text me-0">SUBMIT</span>
-                                            <!-- Button trigger modal -->
 
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Confirmation
-                                                            </h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="card-content pt-2">
-                                                                <div class="text-center"><img
-                                                                        src="images/About-us/info-icon.jpg"
-                                                                        style="width:100px;height:100px"></div>
-                                                                <p class="text-dark fw-regular fs-5 text-center">Are you
-                                                                    sure you want to submit</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                                            <button type="button" class="btn btn-primary" type="submit"
-                                                                onclick="fireSweetAlert()"
-                                                                style="background-color:#0a3a5a !important;border-color: #0a3a5a !important;">Confirm</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+    <!--=================================
+         tab start-->
+    <section class="about custom_speciality">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column">
+                    <a href="specialty-detail.html">
+
+                        <div class="card">
+                            <div><img src="images/icons/ANESTHESIOLOGY.png" class="top-left-icon"></div>
+                            <div class="card-body p-0 d-flex align-items-center">
+                                <div class="card-content">
+                                    <h5 class="card-title card-speciality-title"><a class="title-tag" href="specialty-detail.html">ANESTHESIOLOGY</a></h5>
+                                    
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-xl-6 mt-5">
-                    <div class="appointment-right-content"
-                        style="display: flex;align-items: right;justify-content: center;">
-                        <div class="appointment-title-heading me-1" style="margin-right: 40px;">
-                            <h4 style="color: #00b5ea;font-size:30px !important;">Book in Advance Save Your Time</h4>
                         </div>
-                    </div>
-                    <div style="display: flex;align-items: right;justify-content: center;">
-                        <ul class="pq-list-check pq-text-dark mt-3 mb-4" style="width: 480px;">
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Request Appointment with any Doctor</span>
-                                <p class="lh-22 ps-3">Request appointments with any doctors in all specialities across
-                                    all seha hospitals.
-                                </p>
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Book for Family & Friends</span>
-                                <p class="lh-22 ps-3">You will be able to book a doctor for your near and dear ones.</p>
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="ion ion-checkmark-round"></i><span
-                                    style="font-size:24px !important">Guaranteed Booking Confirmation</span>
-                                <p class="lh-22 ps-3">Recieve a call from our helpdesk to confirm your appointments.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div class="appointment-img text-center"> <img src="images/appoinment.png" alt="" class="img-a img-fluid" style="opacity:0.5"></div> -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--=================================
-         appoinment-form end-->
-    <!--=================================
-         contact-healthcare start-->
-    <section class="contact-us pq-bg-img-1" style="margin-bottom:150px; background-color:#0a3a5a !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7">
-                    <h6 class="pq-title">A great place of medical hospital center &amp; health care</h6>
-                </div>
-                <div class="col-xl-5 d-xl-flex justify-content-xl-end align-items-center text-left mt-xl-0 mt-4">
-                    <a class="pq-button pq-button-flat" href="contact-us.html" style="background-color: #00b5ea;">
-                        <div class="pq-button-block"> <span class="pq-button-text">Contact Us</span> <i
-                                class="ion ion-plus-round"></i> </div>
                     </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column">
+                    <a href="specialty-detail.html">
+
+                        <div class="card">
+                            <div><img src="images/icons/DENTISTRY.png" class="top-left-icon"></div>
+                            <div class="card-body p-0 d-flex align-items-center">
+                                <div class="card-content">
+                                    <h5 class="card-title card-speciality-title"><a class="title-tag" href="specialty-detail.html">DENTISTRY</a></h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column">
+                    <a href="specialty-detail.html">
+
+                        <div class="card">
+                            <div>
+                                <img src="images/icons/DERMATOLOGY.png" class="top-left-icon"></div>
+                                <div class="card-body p-0 d-flex align-items-center ">
+                                    <div class="card-content ">
+                                        <h5 class="card-title card-speciality-title "><a class="title-tag " href=" specialty-detail.html">DERMATOLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/EMERGENCY MEDICINE.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title "><a class="title-tag " href=" specialty-detail.html">EMERGENCY MEDICINE</a></h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/FAMILY MEDICINE.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">FAMILY MEDICINE</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/LABORATORY MEDICINE.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">LABORATORY MEDICINE</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/MEDICINE.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">MEDICINE</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/NEUROLOGY.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">NEUROLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/NEUROSURGERY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">NEUROSURGERY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/OBSTETRICS & GYNECOLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">OBSTETRICS & GYNECOLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/OPHTHALMOLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">OPHTHALMOLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/ORTHOPEDICS.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">ORTHOPEDICS</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/OTOLARYNGOLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">OTOLARYNGOLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/PEDIATRICS.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">PEDIATRICS</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/PHYSICAL & REHABILITATION MEDICINE.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">PHYSICAL & REHABILITATION MEDICINE</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/PSYCHIATRY.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">PSYCHIATRY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/CLINICAL IMAGING.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">CLINICAL IMAGING</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/SURGERY.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">SURGERY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/UROLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">UROLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/icons/NEUROLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">NEPHROLOGY</a></h5>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--=================================
-         contact-healthcare end-->
-    <!--=================================
-      testimonial start -->
 
-    <!--=================================
-         our-client end-->
-    <!--=================================
-         our-blog start-->
-
-    <!--=================================
-         our-blog end-->
-    <!--=================================
-         footer start-->
+    <!-- =================================
+        Footer start
+   ============================== -->
     <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">
@@ -770,39 +935,28 @@
     </footer>
     <!--Footer End-->
     <!--Back To Top start-->
-    <div id="back-to-top">
-        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    <div id="back-to-top ">
+        <a class="topbtn " id="top " href="#top "> <i class="ion-ios-arrow-up "></i> </a>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--Back To Top End-->
     <!--jquery js-->
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js "></script>
     <!--bootstrap js-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
     <!--owl-carousal-->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js "></script>
     <!--progress-bar js-->
-    <script src="js/progressbar.js"></script>
+    <script src="js/progressbar.js "></script>
     <!--isotope js-->
-    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js "></script>
     <!--countTo js-->
-    <script src="js/jquery.countTo.min.js"></script>
+    <script src="js/jquery.countTo.min.js "></script>
     <!--Maginfic-Popup js-->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
     <!-- Animation JS -->
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js "></script>
     <!--custom js-->
-    <script src="js/custom.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function fireSweetAlert() {
-            Swal.fire(
-                'Thank You',
-                'Your information has been successfully submitted.',
-                'success'
-            )
-        }
-    </script>
+    <script src="js/custom.js "></script>
 
     <script>
         const searchBtn = document.querySelector('#pq-seacrh-btn');
