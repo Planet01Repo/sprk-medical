@@ -2,33 +2,34 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SEHA</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="images/FavIcon.jpg">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- Progressbar CSS -->
-    <link rel="stylesheet" href="css/progressbar.css">
-    <!-- Animation CSS -->
-    <link rel="stylesheet" href="css/animations.min.css">
-    <!-- Magnefic Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.min.css">
-    <!-- Icons CSS -->
-    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
-    <!--  Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--  Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <style>
-        :root {
+      <!-- Favicon Icon -->
+      <link rel="shortcut icon" href="images/FavIcon.jpg">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Magnefic Popup CSS -->
+   <link rel="stylesheet" href="css/magnific-popup.min.css">
+   <!-- Icons CSS -->
+   <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+   <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+   <link rel="stylesheet" href="css/ionicons.min.css">
+   <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+   <!--  Style CSS -->
+   <link rel="stylesheet" href="css/style.css">
+   <!--  Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+
+   <style>
+      h5 {
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 22px;
+}
+
+ :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -47,44 +48,33 @@
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
+            .main-banner-image {
+                  background-image: url('images/blog/breadcrumb.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  max-height: 400px;
+            }
 
-        .top-bar {
-            height: 50px;
-            padding: 0 2.1rem !important;
-            background: var(--theme-color-dark-blue);
-            color: white;
-        }
+            .main-heading {
+                  line-height: 4rem !important;
+            }
 
-        .top-bar li a {
-            color: white !important;
-            text-transform: capitalize !important;
-            font-size: 13px !important;
-        }
+            .backlink {
+                  font-size: 13px;
+                  color: var(--theme-color-light-blue);
+                  margin: 0 0 25px 0;
+                  display: inline-block;
+            }
 
-        .top-bar a i {
-            color: white;
-        }
+            p {
+                  margin: 0 0 10px;
+            }
 
-        .top-bar li i {
-            color: white !important;
-            font-size: 16px;
-        }
-
-        .bottom-nav {
-            padding: 0 2rem 0px 3rem !important;
-        }
-
-        .padding-none {
-            padding: 0px;
-        }
-
-        .pq-client-img,
-        .pq-footer-logo {
-            -webkit-filter: brightness(0) invert(100%);
-            filter: brightness(0) invert(100%);
-        }
-
-        .top-bar {
+            p {
+                  margin-top: 0;
+                  margin-bottom: 1rem;
+            }
+            .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
@@ -210,127 +200,20 @@
             width: 30px;
             padding-bottom: 2px;
         }
-
-        .custom_our_doctors {
-            padding: 0px 0px 100px 0px !important;
-        }
-
-        .custom_our_doctor_about {
-            padding: 50px 0px !important;
-        }
-
-        .content-section {
-            padding: 0px 0px 30px 0px !important;
-        }
-
-        .content-section p {
-            line-height: 1.6em;
-            text-align: justify;
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
-
-        .content-section h6 {
-            font-size: 35px !important;
-            line-height: 1.5em;
-        }
-
-        .row-height {
-            height: 100%;
-        }
-
-        .search {
-            position: relative;
-            box-shadow: 0 0 40px rgba(51, 51, 51, .1);
-        }
-
-        .search input {
-            height: 60px;
-            text-indent: 25px;
-            /* border: 2px solid #d6d4d4; */
-        }
-
-        .search input:focus {
-            box-shadow: none;
-            border: 1px solid #e7e7e7;
-        }
-
-        .search input:hover {
-            box-shadow: none;
-            border: 1px solid #e7e7e7;
-        }
-
-        .search .fa-search {
-            position: absolute;
-            top: 23px;
-            left: 16px;
-            color: #0a3a5a;
-        }
-
-        .search button:hover {
-            background: #236794 !important;
-        }
-
-        .search button {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            height: 50px;
-            width: 110px;
-            background: #0a3a5a;
-            border-color: #0a3a5a;
-        }
-
-        .custom_our_doctor_about a {
-            color: #00b5ea !important;
-            background-color: #f4f6f9 !important;
-        }
-
-        .custom_our_doctor_about a.active {
-            background-color: #00b5ea !important;
-            color: #fff !important;
-            border-bottom: 1px solid #00b5ea !important;
-        }
-
-        .custom_our_doctor_about a.active:after {
-            border-top-color: #00b5ea !important;
-        }
-
-        .custom-search-btn {
-            margin-top: 30px;
-            background-color: #00b5ea !important;
-            border-color: #00b5ea !important;
-        }
-
-        .custom-search-btn::placeholder {
-            color: #fff;
-            opacity: 1;
-            /* Firefox */
-        }
-
-        :-ms-input.custom-search-btn-placeholder {
-            /* Internet Explorer 10-11 */
-            color: #fff;
-        }
-
-        ::-ms-input.custom-search-btn-placeholder {
-            /* Microsoft Edge */
-            color: #fff;
-        }
-    </style>
+   </style>
 </head>
 
 <body>
-    <!--=================================
+   <!--=================================
          loading start-->
-    <div id="pq-loading">
-        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
-    </div>
-    <!--=================================
+   <div id="pq-loading">
+            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+      </div>
+   <!--=================================
          loading end-->
-    <!--=================================
+   <!--=================================
          header start-->
-    <header id="pq-header" class="pq-header-default ">
+   <header id="pq-header" class="pq-header-default ">
         <div class="pq-bottom-header pq-has-sticky">
             <div class="container-fluid padding-xaxis">
                 <div class="row">
@@ -450,187 +333,174 @@
             </div>
         </div>
     </header>
-    <!--=================================
+   <!--=================================
          header end-->
-    <!--=================================
+   <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h2>Our Doctors</h2>
-                        </div>
-                        <div class="pq-breadcrumb-container mt-2">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html"><i
-                                            class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">our doctors</li>
-                            </ol>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-lg-4">
-                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
-                </div>
+   <div class="pq-breadcrumb" style="background-image:url('images/');">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-12">
+               <nav aria-label="breadcrumb">
+                  <div class="pq-breadcrumb-title">
+                     <h1>News & Events</h1> </div>
+                  <div class="pq-breadcrumb-container mt-2">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li class="breadcrumb-item active">News & Events</li>
+                     </ol>
+                  </div>
+               </nav>
             </div>
-        </div>
-    </div>
-    <!--=================================
+            <div class="col-lg-4">
+               <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--=================================
          Banner end-->
+   <!--=================================
+         porfolio start-->
 
-    <!--=================================
-         tab start-->
-
-
-
-    <!--=================================    our-team start-->
-    <section class="our-team custom_our_doctors mt-5">
-        <div class="container">
-            <div class="row d-flex  pb-5">
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
-                    <label class="text-dark">Speciality</label>
-                    <select class="form-select">
-                        <option selected>Select Speciality</option>
-                        <option value="1">Naiden Smith</option>
-                        <option value="2">Danial Frankie</option>
-                        <option value="3">Jason Roy</option>
-                    </select>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <label class="text-dark">Gender</label>
-                    <select class="form-select">
-                        <option selected>Select Gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                    </select>
-                </div>
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
-                    <label class="text-dark">Keyword</label>
-                    <input type="text" id="phone-number" class="form-control phone-number-field mb-0"
-                        placeholder="Search Keyword" required>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-                    <a class="">
-                        <div class="pq-button-block ">
-                            <input type="text" class="form-control me-2 mb-0 custom-search-btn text-center"
-                                placeholder="Search" />
+        <section class="portfolio pq-pb-210">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="pq-grid-container">
+                     <div class="pq-filters b74eca6">
+                        <div class="filters pq-filter-button-group">
+                           <ul>
+                              <li class="active pq-filter-btn" data-filter="*">All</li>
+                              <li class="pq-filter-btn" data-filter=".30">Events</li>
+                              <li class="pq-filter-btn" data-filter=".36">In The News</li>
+                              <li class="pq-filter-btn" data-filter=".32">Press Release</li>
+                              <li class="pq-filter-btn" data-filter=".33">Blood Bank</li>
+                              <li class="pq-filter-btn" data-filter=".34">Uncategorized</li>
+                           </ul>
                         </div>
-                    </a>
-                </div>
+                     </div>
+                     <div class="pq-masonry " data-next_items="3" data-initial_items="6">
+                        <div class="grid-sizer pq-col-3"></div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-6 30 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"> <img src="images/Events/event1.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>November 2, 2022</span>
+                                 <h5><a href="home-visit.html">SEHA in the 2022 Corporate World Cup Championship</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-3 36 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"> <img src="images/intheNews/news1.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>March 22, 2023</span>
+                                 <h5><a href="home-visit.html">SEHA announces operational hours for Ramadan</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-3 33 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"> <img src="images/bloodbank/blood1.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>May 20, 2021</span>
+                                 <h5><a href="home-visit.html">SEHA introduces new blood donation centre</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-6 30  36  32  33  34 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"> <img src="images/press/press.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>December 8, 2021</span>
+                                 <h5><a href="home-visit.html">SEHA’s ADVANCED IN-WOMG LASER PROCEDURE GREATLY IMPROVES CHANCES OF SURVIVAL</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-3 30  36  33 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"> <img src="images/intheNews/news2.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>March 14, 2023</span>
+                                 <h5><a href="home-visit.html">Tawam Hospital Completes the Endoscopic Orbital Surgery</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-3 33  34 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"><img src="images/Uncategoried/uncat2.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>February 27, 2023</span>
+                                 <h5><a href="home-visit.html">SEHA, a PureHealth Asset Celebrates Notable Achievements in 2022</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-6 36  32  34 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"><img src="images/Uncategoried/uncat1.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>March 15, 2023</span>
+                                 <h5><a href="home-visit.html">SEHA and Zayed Higher Organization for People of Determination partner</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-3 32  33  34 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"> <img src="images/press/press.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>November 14, 2021</span>
+                                 <h5><a href="home-visit.html">TAWAM HOSPITAL TO VIRTUALLY HOST THE NINTH EMIRATES ONCOLOGY CONFERENCE</a></h5> </div>
+                           </div>
+                        </div>
+                        <div class="pq-masonry-item pq-filter-items  ipq-lg-3 30  36  33  34 ">
+                           <div class="pq-portfoliobox pq-style-1">
+                              <div class="pq-portfolio-img"><img src="images/bloodbank/blood2.jpg" class="img-fluid" alt="">
+                                 <a href="home-visit.html">
+                                    <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
+                                 </a>
+                              </div>
+                              <div class="pq-portfolio-info"> <span>May 18, 2021</span>
+                                 <h5><a href="home-visit.html">UAE: Novel ‘washed platelets’ treatment saves patient’s life</a></h5> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pq-btn-load-container text-center">
+                     <a id="showMore" class="pq-button" href="make-appoinment.html">
+                        <div class="pq-button-block"> <span class="pq-button-text">Load More</span> <i class="ion ion-plus-round"></i> </div>
+                     </a>
+                  </div>
+               </div>
             </div>
-            <div class="row justify-content-center ">
-
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <a href="doctor-detail.html">
-                        <div class="pq-team pq-team-style-1 pb-lg-5 ">
-                            <div class="pq-team-box pq-style-1">
-                                <div class="pq-team-img"> <img src="images/team/2.jpg" class="img-fluid"
-                                        alt="team-image">
-
-                                </div>
-                                <div class="pq-team-info">
-                                    <h5 class="pq-member-name">
-                                        <a href="hospital-detail.html">
-                                            Naidan Smith </a>
-                                    </h5> <span class="pq-team-designation">Pediatric Clinic</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xl-4 col-md-6  col-sm-12 mt-lg-0 mt-md-0 mt-4">
-                    <a href="doctor-detail.html">
-                        <div class="pq-team-box pq-style-1">
-                            <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
-
-                            </div>
-                            <div class="pq-team-info">
-                                <h5 class="pq-member-name">
-                                    <a href="hospital-detail.html">
-                                        Danial Frankie</a>
-                                </h5> <span class="pq-team-designation"> Doctor</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                    <a href="doctor-detail.html">
-                        <div class="pq-team-box pq-style-1">
-                            <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
-
-                            </div>
-                            <div class="pq-team-info">
-                                <h5 class="pq-member-name">
-                                    <a href="hospital-detail.html">
-                                        Jason Roy</a>
-                                </h5> <span class="pq-team-designation"> Neurology</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
-                    <a href="doctor-detail.html">
-                        <div class="pq-team-box pq-style-1">
-                            <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
-
-                            </div>
-                            <div class="pq-team-info">
-                                <h5 class="pq-member-name">
-                                    <a href="hospital-detail.html">
-                                        Jason Roy</a>
-                                </h5> <span class="pq-team-designation"> Gynecology</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-sm-12  mt-lg-0 mt-md-0 mt-4">
-                    <a href="doctor-detail.html">
-
-                        <div class="pq-team-box pq-style-1">
-                            <div class="pq-team-img"> <img src="images/team/1.jpg" class="img-fluid" alt="team-image">
-                            </div>
-                            <div class="pq-team-info">
-                                <h5 class="pq-member-name">
-                                    <a href="hospital-detail.html">
-                                        Naidan Smith</a>
-                                </h5> <span class="pq-team-designation"> Gynecology</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                    <a href="doctor-detail.html">
-                        <div class="pq-team-box pq-style-1">
-                            <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
-
-                            </div>
-                            <div class="pq-team-info">
-                                <h5 class="pq-member-name">
-                                    <a href="hospital-detail.html">
-                                        Rihana Roy</a>
-                                </h5> <span class="pq-team-designation"> Gynecology</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=================================
-               our-team end-->
-    <!--=================================
-         tab end-->
-    <!-- =================================
-        Footer start
+         </div>
+      </section>
+  
+  
+        <!--=================================
+         porfolio end
+     ================================= -->
+   <!-- =========================
+     Footer start
    ============================== -->
-    <footer id="pq-footer">
+   <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">
                 <div class="max-width-75">
@@ -760,32 +630,33 @@
             </div>
         </div>
     </footer>
-    <!--Footer End-->
-    <!--Back To Top start-->
-    <div id="back-to-top">
-        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
-    </div>
-    <!--Back To Top End-->
-    <!--jquery js-->
-    <script src="js/jquery.min.js"></script>
-    <!--bootstrap js-->
-    <script src="js/bootstrap.min.js"></script>
-    <!--owl-carousal-->
-    <script src="js/owl.carousel.min.js"></script>
-    <!--progress-bar js-->
-    <script src="js/progressbar.js"></script>
-    <!--isotope js-->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <!--countTo js-->
-    <script src="js/jquery.countTo.min.js"></script>
-    <!--Maginfic-Popup js-->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Animation JS -->
-    <script src="js/wow.min.js"></script>
-    <!--custom js-->
-    <script src="js/custom.js"></script>
-
-    <script>
+   <!--Footer End-->
+   <!--Back To Top start-->
+   <div id="back-to-top">
+      <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+   </div>
+   <!--Back To Top End-->
+   <!--jquery js-->
+   <script src="js/jquery.min.js"></script>
+   <!--bootstrap js-->
+   <script src="js/bootstrap.min.js"></script>
+   <!--owl-carousal-->
+   <script src="js/owl.carousel.min.js"></script>
+   <!--progress-bar js-->
+   <script src="js/progressbar.js"></script>
+   <!--isotope js-->
+   <script src="js/isotope.pkgd.min.js"></script>
+   <!--countTo js-->
+   <script src="js/jquery.countTo.min.js"></script>
+   <!--Maginfic-Popup js-->
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <!-- Animation JS -->
+   <script src="js/wow.min.js"></script>
+   <!--custom js-->
+   <script src="js/custom.js"></script>
+   
+   
+   <script>
         const searchBtn = document.querySelector('#pq-seacrh-btn');
         const searchBarContainer = document.querySelector('#search-bar-container');
         const closeBtn = document.querySelector('#close-search');
