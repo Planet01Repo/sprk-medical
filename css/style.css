@@ -61,30 +61,67 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 [ Fonts ]
 ==================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'Shubak_Regular';
+  src: url('/fonts/Shubbak-Regular.otf');
+}
+@font-face {
+  font-family: 'Shubak_Semibold';
+  src: url('/fonts/Shubbak-SemiBold.otf');
+}
+@font-face {
+  font-family: 'Shubak_Medium';
+  src: url('/fonts/Shubbak-Medium.otf');
+}
+@font-face {
+  font-family: 'Shubak_Light';
+  src: url('/fonts/Shubbak-Light.otf');
+}
+@font-face {
+  font-family: 'Shubak_ExtraLight';
+  src: url('/fonts/Shubbak-ExtraLight.otf');
+}
+@font-face {
+  font-family: 'Shubak_ExtraBold';
+  src: url('/fonts/Shubbak-ExtraBold.otf');
+}
+@font-face {
+  font-family: 'Shubak_Bold';
+  src: url('/fonts/Shubbak-Bold.otf');
+}
+@font-face {
+  font-family: 'Shubak_Black';
+  src: url('/fonts/Shubbak-Black.otf');
+}
 
 /*==================================================
 [ Moz Selection ]
 ==================================================*/
 :root {
-  --primary-color: #2490eb;
-  --primary-dark-color: #14457b;
+  --primary-color: #143757;
+  --primary-dark-color: #143757;
   --dark-color: #18100f;
   --secondary-color: #666666;
   --grey-color: #f4f6f9;
   --white-color: #ffffff;
   --body-fonts: "Montserrat", sans-serif;
   --title-fonts: "Quicksand", sans-serif;
+  --shubak-Regular: 'Shubak_Regular', sans-serif;
+  --shubak-Semibold: 'Shubak_Semibold', sans-serif;
+  --shubak-Medium: 'Shubak_Medium', sans-serif;
+  --shubak-Light: 'Shubak_Light', sans-serif;
+  --shubak-ExtraLight: 'Shubak_ExtraLight', sans-serif;
+  --shubak-Bold: 'Shubak_Bold', sans-serif;
+  --shubak-Black: 'Shubak_Black', sans-serif;
 
        /* primary colors */
-        --theme-color-dark-blue: #0a3a5a; 
-        --theme-color-green: #5dbca3;
-        --theme-color-light-green: #8bccbe;
-        --theme-color-light-green-bg: #8bccbe8c;
-        --theme-color-blue: #2544be;
-        --theme-color-blue-bg: #00b3ea4f;
+        --theme-color-dark-blue: #143757; 
+        --theme-color-blue: #124A71;
+        --theme-color-line-blue: #11A5E4;
+        --theme-color-blue-bg: #C4E7FB;
 
             /* secondary colors */
-        --theme-color-light-blue: #00b5ea;
+        --theme-color-light-blue: #C4E7FB;
         --theme-color-burgundy: #973359;
         --theme-color-peach: #de6f4e;
         --theme-color-yellow: #faae61;
@@ -120,7 +157,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 ==================================================*/
 body {
   background: var(--white-color);
-  font-family: var(--body-fonts);
+  font-family: var(--shubak-Regular);
   font-size: 1rem;
   font-style: normal;
   font-weight: normal;
@@ -135,7 +172,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-fonts);
+  font-family: var(--shubak-Bold);
   color: var(--dark-color);
   font-style: normal;
   text-transform: capitalize;
@@ -424,7 +461,7 @@ select.form-control {
   right: 30px;
   margin: 0px;
   color: var(--white-color);
-  background: var(--theme-color-light-blue);
+  background: var(--theme-color-line-blue);
   z-index: 999;
   font-size: 16px;
   width: 50px;
@@ -1874,7 +1911,7 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav li.current-menu-item a,
 header#pq-header .pq-bottom-header .navbar .navbar-nav li.current_page_item a,
 header#pq-header .pq-bottom-header .navbar .navbar-nav li:hover a,
 header#pq-header .pq-bottom-header .navbar .navbar-nav li.current-menu-ancestor a {
-  color: var(--theme-color-light-blue);
+  color: var(--theme-color-line-blue);
 }
 
 /*============ Sub Menu Bar ============*/
@@ -2743,7 +2780,7 @@ Breadcrumb
   font-size: 56px;
   line-height: 64px;
   margin-bottom: 15px;
-  color: var(--dark-color);
+  color: var(--theme-color-light-blue);
 }
 
 .pq-breadcrumb-title h2 {
@@ -3164,7 +3201,7 @@ Section Title
   font-size: 48px;
   line-height: 56px;
   z-index: 9;
-  color: var(--dark-color);
+  color: var(--theme-color-dark-blue);
   padding: 0;
   margin: 0 0;
   position: relative;
@@ -3203,7 +3240,7 @@ Section Title
   font-size: 48px;
   line-height: 56px;
   z-index: 9;
-  color: var(--dark-color);
+  color: var(--theme-color-dark-blue);
   padding: 0;
   margin: 0 0;
   position: relative;
@@ -4926,7 +4963,7 @@ Team
 }
 
 .pq-team-box.pq-style-1 .pq-team-info h5 a {
-  color: var(--dark-color);
+  color: var(--theme-color-dark-blue);
 }
 
 .pq-team-box.pq-style-1 .pq-team-info h5 a:hover {
@@ -8029,4 +8066,15 @@ Custom Css
 }
 .text-capitalize{
   text-transform: capitalize !important;
+}
+.pq-breadcrumb-title h2{
+  color: var(--theme-color-light-blue) !important;
+}
+h5.sub-head {
+  color: var(--theme-color-blue) !important;
+}
+p {
+  color: var(--theme-color-dark-blue) !important;
+  font-size:15px;
+  line-height:1.6em;
 }

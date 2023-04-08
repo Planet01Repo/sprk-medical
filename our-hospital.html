@@ -34,26 +34,6 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
     <style>
-         :root {
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
-        }
-        
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
@@ -211,16 +191,17 @@
         
         .seha-paragraph {
             font-size: 18px;
+            color: var(--theme-color-light-blue);
         }
         
         .custom-search-btn {
             margin-top: 30px;
-            background-color: #00b5ea !important;
-            border-color: #00b5ea !important;
+            background-color: var(--theme-color-light-blue) !important;
+            border-color: var(--theme-color-light-blue) !important;
         }
         
         .custom-search-btn::placeholder {
-            color: #fff;
+            color: var(--theme-color-dark-blue);
             opacity: 1;
             /* Firefox */
         }
@@ -281,7 +262,7 @@
             border-radius: 100%;
             display: block;
             /* background: linear-gradient(45deg, #00b5ea, #0a3a5a); */
-            background: #00b5ea;
+            background: var(--theme-color-line-blue);
             transition: all 265ms ease-out;
         }
         
@@ -296,8 +277,8 @@
         }
         
         .get-appoitment-right-btn {
-            background: #00b5ea !important;
-            border: 1px solid #00b5ea !important;
+            background: var(--theme-color-line-blue) !important;
+            border: 1px solid var(--theme-color-line-blue) !important;
             width: 100%;
             float: left;
             font-size: 16px;
@@ -320,7 +301,7 @@
         .email-info a,
         .get-direction a,
         h5.card-title {
-            color: #000;
+            color: var(--theme-color-dark-blue);
         }
         
         .get-appoitment-right-btn {
@@ -432,7 +413,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="pq-menu-contain" class="pq-menu-contain">
                                     <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item current-menu-item">
+                                        <li class="menu-item ">
                                             <a href="index.html">Home</a>
                                         </li>
 
@@ -441,7 +422,7 @@
                                         <li class="menu-item">
                                             <a href="about-us.html">About Us</a>
                                         </li>
-                                        <li class="menu-item ">
+                                        <li class="menu-item current-menu-item">
                                             <a href="our-hospital.html">Our Hospitals</a>
                                         </li>
                                         <li class="menu-item ">
@@ -475,14 +456,19 @@
         </div>
     </header>
     <!--==================header end==================-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+    <div class="pq-breadcrumb" style="background: linear-gradient(
+        90deg,
+        rgb(10 58 90),
+        rgb(10 58 90 / 12%)
+      ),
+      url(images/breadcrumb-hospitals.jpg);background-size: cover;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
                             <h1>Our Hospitals</h1>
-                            <h4 class="seha-paragraph">The largest healthcare network in the UAE with 13 high-end hospitals.
+                            <h4 class="seha-paragraph">The largest healthcare network in the UAE with 13 high-end hospitals
                             </h4>
                         </div>
                     </nav>
