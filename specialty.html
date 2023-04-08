@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SEHA</title>
-      <!-- Favicon Icon -->
-      <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
@@ -96,7 +96,7 @@
             line-height: 1.6em;
             margin-bottom: 20px !important;
             margin-top: 10px;
-            width: 930px;
+            /* width: 930px; */
             text-align: center;
             margin-right: auto;
             margin-left: auto;
@@ -147,8 +147,8 @@
         .title-tag:hover {
             color: #00b5ea !important;
         }
-
-        :root {
+        
+         :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -167,53 +167,55 @@
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-            .main-banner-image {
-                  background-image: url('images/blog/breadcrumb.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  max-height: 400px;
-            }
-
-            .main-heading {
-                  line-height: 4rem !important;
-            }
-
-            .backlink {
-                  font-size: 13px;
-                  color: var(--theme-color-light-blue);
-                  margin: 0 0 25px 0;
-                  display: inline-block;
-            }
-
-            p {
-                  margin: 0 0 10px;
-            }
-
-            p {
-                  margin-top: 0;
-                  margin-bottom: 1rem;
-            }
-            .top-bar {
+        
+        .main-banner-image {
+            background-image: url('images/blog/breadcrumb.jpg');
+            background-position: center;
+            background-size: cover;
+            max-height: 400px;
+        }
+        
+        .main-heading {
+            line-height: 4rem !important;
+        }
+        
+        .backlink {
+            font-size: 13px;
+            color: var(--theme-color-light-blue);
+            margin: 0 0 25px 0;
+            display: inline-block;
+        }
+        
+        p {
+            margin: 0 0 10px;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
+        
         .pq-menu-search-block #search-bar-container {
             display: none;
             position: fixed;
@@ -225,48 +227,45 @@
             z-index: 9999;
             opacity: 0;
         }
-
+        
         .pq-menu-search-block #search-bar-container.show {
             display: flex;
             align-items: center;
             justify-content: center;
             animation: fade-in 0.5s forwards;
         }
-
+        
         .pq-menu-search-block #search-bar-container.transition {
             animation: fade-out 0.5s forwards;
         }
-
+        
         @keyframes fade-in {
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
         }
-
+        
         @keyframes fade-out {
             from {
                 opacity: 1;
             }
-
             to {
                 opacity: 0;
             }
         }
-
+        
         @keyframes slide-up {
             from {
                 transform: translateX(100%);
             }
-
             to {
                 transform: translateX(0);
             }
         }
-
+        
         .pq-menu-search-block .search-bar {
             position: absolute;
             top: 50%;
@@ -279,21 +278,16 @@
             max-width: 600px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
-
-
-
+        
         @keyframes slide-down {
             from {
                 transform: translateX(0%);
             }
-
             to {
                 transform: translateX(100%);
             }
         }
-
-
+        
         .pq-menu-search-block #close-search {
             position: absolute;
             top: 0px;
@@ -301,23 +295,88 @@
             font-size: 20px;
             color: #333;
         }
-
+        
         .search-close {
             color: black !important;
         }
-
+        
         .max-width-75 {
             max-width: 75%;
             margin: 0 auto;
         }
-
+        
         .bg-color-dark-blue {
             background-color: var(--theme-color-dark-blue);
         }
-
+        
         img.header-img {
             width: 30px;
             padding-bottom: 2px;
+        }
+        
+        .search-box-container {
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            /* bottom: -20%; */
+            margin: 2rem auto;
+            z-index: 10;
+        }
+        
+        .row.search-box-div {
+            max-width: 75%;
+            margin: 0 auto;
+            background: white;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -10px rgba(0, 0, 0, .4);
+            position: relative;
+            bottom: 7rem;
+        }
+        
+        input.search-bar {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #969696;
+            padding-left: 3rem;
+            height: 65px;
+            font-weight: 500;
+            color: #6e6e6e;
+            transition: .5s;
+        }
+        
+        input.search-bar:focus {
+            border-bottom: 2px solid #00b5ea;
+        }
+        
+        .search-bar::placeholder {
+            font-size: 1.1rem;
+            color: #6e6e6e;
+            font-weight: 500;
+        }
+        
+        button.search-btn {
+            width: 100%;
+            height: 65px;
+            border: none;
+            background: #00b5ea;
+            color: white;
+            font-weight: 600;
+            transition: .3s;
+        }
+        
+        button.search-btn:hover {
+            background: var(--theme-color-dark-blue);
+        }
+        
+        i.fa.fa-search.search-icon {
+            position: absolute;
+            z-index: 2;
+            margin-top: 22px;
+            font-size: 1.3rem;
+        }
+        
+        .speciality-content {
+            padding-top: 130px;
         }
     </style>
 </head>
@@ -325,9 +384,9 @@
 <body>
     <!--=================================
          loading start-->
-     <div id="pq-loading">
-            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
-      </div>
+    <div id="pq-loading">
+        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+    </div>
     <!--=================================
          loading end-->
     <!--=================================
@@ -369,8 +428,7 @@
                                 <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
                                 <div id="search-bar-container">
                                     <div class="search-bar">
-                                        <a href="javascript:void(0);" id="close-search"> <i
-                                                class="fa fa-close search-close"></i> </a>
+                                        <a href="javascript:void(0);" id="close-search"> <i class="fa fa-close search-close"></i> </a>
                                         <form role="search" method="get" class="search-form" action=".html">
                                             <label>
                                                 <span class="screen-reader-text">Search for:</span>
@@ -441,9 +499,7 @@
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </nav>
@@ -461,36 +517,36 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
-                        <div class="container">
-                            <div class="row pb-5">
-                                <div class="col-12">
-                                    <h2 class="speciality_heading text-center">OUR SPECIALITY</h2>
-                                    <p class="speciality_para">At Healthpoint, we understand the importance of healthcare professionals working with one another across all clinical and support services to achieve the best possible results for our patients. This integrated healthcare
-                                        approach ensures that each patient receives well-rounded healthcare advice, whatever the requirement may be.</p>
-                                </div>
-                            </div>
-                            <div class="card search-card">
-                                <div class="card-body">
-                                    <div class="row row-height d-flex justify-content-center align-items-center">
-                                        <div class="col-md-12">
-                                            <div class="search">
-                                                <i class="fa fa-search"></i>
-                                                <input type="text" class="form-control" placeholder="Search for services">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="pq-breadcrumb-title">
+                            <h2>Our Specialities</h2>
                         </div>
                     </nav>
-                </div>
-                <div class="col-lg-4">
-                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- search box -->
+    <div class="search-box-container">
+        <div class="row search-box-div">
+            <div class="col-9">
+                <form action="">
+                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                    <input type="search" class="search-bar" name="" id="" placeholder="Keyword...">
+                </form>
+            </div>
+            <div class="col-3">
+                <button class="search-btn text-uppercase">search</button>
+            </div>
+        </div>
+    </div>
+    <!--search box End-->
+
+
+    <div class="speciality-content container">
+        <p class="speciality_para">At Healthpoint, we understand the importance of healthcare professionals working with one another across all clinical and support services to achieve the best possible results for our patients. This integrated healthcare approach ensures that
+            each patient receives well-rounded healthcare advice, whatever the requirement may be.</p>
+    </div>
+
     <!--=================================
          Banner end-->
 
@@ -506,12 +562,27 @@
                             <div><img src="images/Icons/ANESTHESIOLOGY.png" class="top-left-icon"></div>
                             <div class="card-body p-0 d-flex align-items-center">
                                 <div class="card-content">
-                                    <h5 class="card-title card-speciality-title"><a class="title-tag" href="specialty-detail.html">ANESTHESIOLOGY</a></h5>
-                                    
+                                    <h5 class="card-title card-speciality-title"><a class="title-tag" href="specialty-detail.html">Anesthesiology</a></h5>
+
                                 </div>
                             </div>
                         </div>
                     </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/CLINICAL-IMAGING.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Clinical Imaging</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column">
                     <a href="specialty-detail.html">
@@ -520,8 +591,8 @@
                             <div><img src="images/Icons/DENTISTRY.png" class="top-left-icon"></div>
                             <div class="card-body p-0 d-flex align-items-center">
                                 <div class="card-content">
-                                    <h5 class="card-title card-speciality-title"><a class="title-tag" href="specialty-detail.html">DENTISTRY</a></h5>
-                                    
+                                    <h5 class="card-title card-speciality-title"><a class="title-tag" href="specialty-detail.html">Dentistry</a></h5>
+
                                 </div>
                             </div>
                         </div>
@@ -533,13 +604,13 @@
                         <div class="card">
                             <div>
                                 <img src="images/Icons/DERMATOLOGY.png" class="top-left-icon"></div>
-                                <div class="card-body p-0 d-flex align-items-center ">
-                                    <div class="card-content ">
-                                        <h5 class="card-title card-speciality-title "><a class="title-tag " href=" specialty-detail.html">DERMATOLOGY</a></h5>
-                                        
-                                    </div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title "><a class="title-tag " href=" specialty-detail.html">Dermatology</a></h5>
+
                                 </div>
-                            </a>
+                            </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column">
@@ -549,8 +620,8 @@
                             <div><img src="images/Icons/EMERGENCY-MEDICINE.png" class="top-left-icon "></div>
                             <div class="card-body p-0 d-flex align-items-center ">
                                 <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title "><a class="title-tag " href=" specialty-detail.html">EMERGENCY MEDICINE</a></h5>
-                                    
+                                    <h5 class="card-title card-speciality-title "><a class="title-tag " href=" specialty-detail.html">Emergency Medicine</a></h5>
+
                                 </div>
                             </div>
                         </div>
@@ -564,11 +635,11 @@
                             <div class="card-body p-0 d-flex align-items-center ">
                                 <div class="card-content ">
                                     <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">FAMILY MEDICINE</a></h5>
-                                        
-                                    </div>
+                                        <a class="title-tag " href=" specialty-detail.html">Family Medicine</a></h5>
+
                                 </div>
-                            </a>
+                            </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
@@ -579,11 +650,11 @@
                             <div class="card-body p-0 d-flex align-items-center ">
                                 <div class="card-content ">
                                     <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">LABORATORY MEDICINE</a></h5>
-                                        
-                                    </div>
+                                        <a class="title-tag " href=" specialty-detail.html">Laboratory Medicine</a></h5>
+
                                 </div>
-                            </a>
+                            </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
@@ -594,191 +665,11 @@
                             <div class="card-body p-0 d-flex align-items-center ">
                                 <div class="card-content ">
                                     <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">MEDICINE</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
+                                        <a class="title-tag " href=" specialty-detail.html">Medicine</a></h5>
 
-                        <div class="card ">
-                            <div><img src="images/Icons/NEUROLOGY.png " class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">NEUROLOGY</a></h5>
-                                        
-                                    </div>
                                 </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/NEUROSURGERY.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">NEUROSURGERY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/OBSTETRICS-&-GYNECOLOGY.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">OBSTETRICS & GYNECOLOGY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/OPHTHALMOLOGY.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">OPHTHALMOLOGY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/ORTHOPEDICS.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">ORTHOPEDICS</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/OTOLARYNGOLOGY.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">OTOLARYNGOLOGY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/PEDIATRICS.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">PEDIATRICS</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/PHYSICAL-&-REHABILITATION MEDICINE.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">PHYSICAL & REHABILITATION MEDICINE</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/PSYCHIATRY.png " class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">PSYCHIATRY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/CLINICAL-IMAGING.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">CLINICAL IMAGING</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/SURGERY.png " class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">SURGERY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
-                    <a href="specialty-detail.html">
-
-                        <div class="card ">
-                            <div><img src="images/Icons/UROLOGY.png" class="top-left-icon "></div>
-                            <div class="card-body p-0 d-flex align-items-center ">
-                                <div class="card-content ">
-                                    <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">UROLOGY</a></h5>
-                                        
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
@@ -789,13 +680,180 @@
                             <div class="card-body p-0 d-flex align-items-center ">
                                 <div class="card-content ">
                                     <h5 class="card-title card-speciality-title ">
-                                        <a class="title-tag " href=" specialty-detail.html">NEPHROLOGY</a></h5>
-                                        
-                                    </div>
+                                        <a class="title-tag " href=" specialty-detail.html">Nephrology</a></h5>
+
                                 </div>
-                            </a>
+                            </div>
+                    </a>
                     </div>
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/NEUROLOGY.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Neurology</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/NEUROSURGERY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Neurosurgery</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/OBSTETRICS-&-GYNECOLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Obstetrics & Gynecology</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/OPHTHALMOLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Ophthalmology</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/ORTHOPEDICS.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Orthopedics</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/OTOLARYNGOLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Otolaryngology</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/PEDIATRICS.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Pediatrics</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/PHYSICAL-&-REHABILITATION MEDICINE.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Physical & Rehabilitation Medicine</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/PSYCHIATRY.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Psychiatry</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/SURGERY.png " class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Surgery</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 cards-column ">
+                    <a href="specialty-detail.html">
+
+                        <div class="card ">
+                            <div><img src="images/Icons/UROLOGY.png" class="top-left-icon "></div>
+                            <div class="card-body p-0 d-flex align-items-center ">
+                                <div class="card-content ">
+                                    <h5 class="card-title card-speciality-title ">
+                                        <a class="title-tag " href=" specialty-detail.html">Urology</a></h5>
+
+                                </div>
+                            </div>
+                    </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -812,8 +870,7 @@
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
-                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
                                             </div>
@@ -823,8 +880,7 @@
                                         <div class="pq-subscribe-from">
                                             <form id="form" class="form">
                                                 <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
-                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
                                                     <input class="" type="submit" value="Sign up">
                                                 </div>
                                             </form>
@@ -881,11 +937,9 @@
                                         <li><a href="corporate-social-responsibility.html">Corporate Social
                                                 Responsibility</a></li>
                                         <li><a href="transparency-charter.html">Transparency Charter</a></li>
-                                        <li><a
-                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
                                                 a complaint (TAMM)</a></li>
-                                        <li><a
-                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
                                                 & Contracts</a></li>
                                         <li><a href="fraud-alert.html">Recruitment Fraud Alert</a></li>
                                         <li><a href="https://portal.seha.ae/">Employee Services</a></li>
@@ -895,8 +949,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block">
-                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
-                                    alt="medicate-footer-logo">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                                 <p class="mb-1 fs-14">Abu Dhabi Health Services Co.
                                 </p>
                                 <i class="fas fa-map-marker"></i> <span class="fs-14">
@@ -963,17 +1016,17 @@
         const searchBarContainer = document.querySelector('#search-bar-container');
         const closeBtn = document.querySelector('#close-search');
 
-        searchBtn.addEventListener('click', function () {
+        searchBtn.addEventListener('click', function() {
             searchBarContainer.style.display = 'flex';
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.classList.add('show');
             }, 10); // adjust the time to match the duration of the animation
         });
 
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener('click', function() {
             searchBarContainer.classList.remove('show');
             searchBarContainer.classList.add('transition');
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.style.display = 'none';
                 searchBarContainer.classList.remove('transition');
             }, 500); // adjust the time to match the duration of the animation

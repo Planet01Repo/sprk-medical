@@ -8028,3 +8028,6 @@ Custom Css
   top: 120px;
   background: var(--grey-color);
 }
+.text-capitalize{
+  text-transform: capitalize !important;
+}
