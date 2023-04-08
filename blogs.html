@@ -2,36 +2,35 @@
 <html lang="en">
 
 <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>SEHA</title>
-      <!-- Favicon Icon -->
-      <link rel="shortcut icon" href="images/FavIcon.jpg">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- Magnefic Popup CSS -->
-      <link rel="stylesheet" href="css/magnific-popup.min.css">
-      <!-- Icons CSS -->
-      <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
-      <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
-      <link rel="stylesheet" href="css/ionicons.min.css">
-      <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
-      <!--  Style CSS -->
-      <link rel="stylesheet" href="css/style.css">
-      <!--  Responsive CSS -->
-      <link rel="stylesheet" href="css/responsive.css">
-      
-      <style>
-            .main-banner-image{
-                background-image: url('images/blog/breadcrumb.jpg');
-                background-position: center;
-                background-size: cover;
-                max-height: 400px;
-            }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SEHA</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/FavIcon.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 
-
-            :root {
+    <style>
+        .main-banner-image {
+            background-image: url('images/blog/breadcrumb.jpg');
+            background-position: center;
+            background-size: cover;
+            max-height: 400px;
+        }
+        
+         :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -50,64 +49,64 @@
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-
+        
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
+        
         .bottom-nav {
             padding: 0 2rem 0px 3rem !important;
         }
-
+        
         .padding-none {
             padding: 0px;
         }
-
+        
         .pq-client-img,
         .pq-footer-logo {
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-
+        
         .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
+        
         .pq-menu-search-block #search-bar-container {
             display: none;
             position: fixed;
@@ -119,48 +118,45 @@
             z-index: 9999;
             opacity: 0;
         }
-
+        
         .pq-menu-search-block #search-bar-container.show {
             display: flex;
             align-items: center;
             justify-content: center;
             animation: fade-in 0.5s forwards;
         }
-
+        
         .pq-menu-search-block #search-bar-container.transition {
             animation: fade-out 0.5s forwards;
         }
-
+        
         @keyframes fade-in {
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
         }
-
+        
         @keyframes fade-out {
             from {
                 opacity: 1;
             }
-
             to {
                 opacity: 0;
             }
         }
-
+        
         @keyframes slide-up {
             from {
                 transform: translateX(100%);
             }
-
             to {
                 transform: translateX(0);
             }
         }
-
+        
         .pq-menu-search-block .search-bar {
             position: absolute;
             top: 50%;
@@ -173,21 +169,16 @@
             max-width: 600px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
-
-
-
+        
         @keyframes slide-down {
             from {
                 transform: translateX(0%);
             }
-
             to {
                 transform: translateX(100%);
             }
         }
-
-
+        
         .pq-menu-search-block #close-search {
             position: absolute;
             top: 0px;
@@ -195,38 +186,70 @@
             font-size: 20px;
             color: #333;
         }
-
+        
         .search-close {
             color: black !important;
         }
-
+        
         .max-width-75 {
             max-width: 75%;
             margin: 0 auto;
         }
-
+        
         .bg-color-dark-blue {
             background-color: var(--theme-color-dark-blue);
         }
-
+        
         img.header-img {
             width: 30px;
             padding-bottom: 2px;
         }
-        </style>
+        
+        .blog_section h5 {
+            font-size: 18px !important;
+            line-height: 1.5em !important;
+            text-align: center;
+        }
+        
+        .blog_section p {
+            font-size: 14px;
+            line-height: 1.5em;
+            padding-top: 13px;
+            text-align: left !important;
+        }
+        
+        .blog_section a.pq-button {
+            padding: 5px 15px;
+        }
+        
+        .blog_section .blog-btn {
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            left: 0;
+        }
+        
+        .blog_section a.pq-button span {
+            font-size: 12px;
+        }
+        
+        .blog_section .pq-blog-post .pq-blog-contain {
+            height: 320px;
+        }
+    </style>
 </head>
 
 <body>
-      <!--=================================
+    <!--=================================
         loading start-->
-     <div id="pq-loading">
-            <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
-      </div>
-      <!--=================================
+    <div id="pq-loading">
+        <div id="pq-loading-center"> <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading"> </div>
+    </div>
+    <!--=================================
         loading end-->
-      <!--=================================
+    <!--=================================
         header start-->
-      <header id="pq-header" class="pq-header-default ">
+    <header id="pq-header" class="pq-header-default ">
         <div class="pq-bottom-header pq-has-sticky">
             <div class="container-fluid padding-xaxis">
                 <div class="row">
@@ -263,8 +286,7 @@
                                 <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
                                 <div id="search-bar-container">
                                     <div class="search-bar">
-                                        <a href="javascript:void(0);" id="close-search"> <i
-                                                class="fa fa-close search-close"></i> </a>
+                                        <a href="javascript:void(0);" id="close-search"> <i class="fa fa-close search-close"></i> </a>
                                         <form role="search" method="get" class="search-form" action=".html">
                                             <label>
                                                 <span class="screen-reader-text">Search for:</span>
@@ -335,9 +357,7 @@
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </nav>
@@ -346,295 +366,306 @@
             </div>
         </div>
     </header>
-      <!--=================================
+    <!--=================================
         header end-->
 
-            <section class="main-banner-image">
-                  <div class="container">
-                        <div class="row align-items-center">
-                              <div class="col-lg-12">
-                                 <nav aria-label="breadcrumb">
-                                    <div class="pq-breadcrumb-title">
-                                       <h2>PULSE OF SEHA</h2> </div>
-                                    <!-- <div class="pq-breadcrumb-container mt-2">
-                                       <ol class="breadcrumb">
-                                          <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                          
-                                       </ol>
-                                    </div> -->
-                                 </nav>
-                              </div>
-                             
-                           </div>
-                  </div>
-        
-            </section>
+    <section class="main-banner-image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h2>Blog</h2>
+                        </div>
+                    </nav>
+                </div>
 
-<!-- banner section -->
-            <section class="3-colume-grid pq-pb-210">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-lg-4">
-                           <div class="pq-blog pq-blog-col-1">
-                              <div class="row">
-                                 <div class="col-lg-12">
-                                    <div class="pq-blog-post">
-                                       <div class="pq-post-media"> <img src="images/blog/page1.jpg" class="img-fluid" alt="">
-                                          <div class="pq-post-date">
-                                             <a href="#"> <span>June 14, 2021</span></a>
-                                          </div>
-                                       </div>
-                                       <div class="pq-blog-contain">
-                                          <div class="pq-post-meta">
-                                             <ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section -->
+    <section class="3-colume-grid pq-pb-210 blog_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="pq-blog pq-blog-col-1">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="pq-blog-post">
+                                    <div class="pq-post-media"> <img src="images/blog/page1.jpg" class="img-fluid" alt="">
+                                        <div class="pq-post-date">
+                                            <a href="#"> <span>June 14, 2021</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain">
+                                        <div class="pq-post-meta">
+                                            <ul>
                                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                                 <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                                       2 Comments</a> </li>
-                                             </ul>
-                                          </div>
-                                          <h5 class="pq-blog-title"><a href="bloglink1.html">On World Blood Donor Day, a heartfelt plea to help save lives</a>
-                                             </h5>
-                                          <div class="pq-blog-info">
-                                             <p>The coronavirus pandemic has shed a remarkably strong spotlight on the practice of health care,... </p>
-                                          </div>
-                                          <a href="bloglink1.html" class="pq-button pq-button-flat">
-                                             <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                          </a>
-                                       </div>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title"><a href="bloglink1.html">On World Blood Donor Day, a heartfelt plea to help save lives</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p>The coronavirus pandemic has shed a remarkably strong spotlight on the practice of health care,... </p>
+                                        </div>
+                                        <div class="blog-btn text-center">
+                                            <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page2.jpg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>April 26, 2021</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page2.jpg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>April 26, 2021</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              1 Comment</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">How the UAE maintained public trust in health care during Covid-19</a>
-                                    </h5>
-                                 <div class="pq-blog-info">
-                                    <p>One year since the World Health Organisation declared Covid-19 a global pandemic, we find ourselves... </p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">How the UAE maintained public trust in health care during Covid-19</a>
+                            </h5>
+                            <div class="pq-blog-info">
+                                <p>One year since the World Health Organisation declared Covid-19 a global pandemic, we find ourselves... </p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page3.jpeg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>January 1, 2021</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page3.jpeg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>January 1, 2021</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              0 Comments</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">A robust healthcare system is key to a nation’s resilience</a>
-                                    </h5>
-                                 <div class="pq-blog-info">
-                                    <p>For over a year, Seha has been undergoing a transformation that will shape a modern, progressive healthcare network fit for the next 50 years, ...</p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">A robust healthcare system is key to a nation’s resilience</a>
+                            </h5>
+                            <div class="pq-blog-info">
+                                <p>For over a year, Seha has been undergoing a transformation that will shape a modern, progressive healthcare network fit for the next 50 years, ...</p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page4.jpg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>July 21, 2020</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page4.jpg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>July 21, 2020</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              0 Comments</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">Covid-19 has highlighted the need for transformation in our healthcare system</a>
-                                    </h5>
-                                 <div class="pq-blog-info">
-                                    <p>The global pandemic has affected almost every country in the world, reached almost every community and affected... </p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">Covid-19 has highlighted the need for transformation in our healthcare system</a>
+                            </h5>
+                            <div class="pq-blog-info">
+                                <p>The global pandemic has affected almost every country in the world, reached almost every community and affected... </p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page5.jpg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>May 23, 2020</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page5.jpg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>May 23, 2020</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              0 Comments</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">Coronavirus: Four lessons I’ve learned as a healthcare communications chief</a>
-                                    </h5>
-                                 <div class="pq-blog-info">
-                                    <p>In the healthcare sector, dealing with life and death situations is part of the job. Medical staff... </p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">Coronavirus: Four lessons I’ve learned as a healthcare communications chief</a>
+                            </h5>
+                            <div class="pq-blog-info">
+                                <p>In the healthcare sector, dealing with life and death situations is part of the job. Medical staff... </p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page6.jpg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>April 29, 2020</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page6.jpg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>April 29, 2020</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              0 Comments</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">On World Health Day, Let’s Celebrate The Healthcare Heroes</a>
-                                    </h5>
-                                 <div class="pq-blog-info">
-                                    <p>Like everyone around me, I am watching the news and seeing how our world is changing before our very eyes... </p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">On World Health Day, Let’s Celebrate The Healthcare Heroes</a>
+                            </h5>
+                            <div class="pq-blog-info">
+                                <p>Like everyone around me, I am watching the news and seeing how our world is changing before our very eyes... </p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page7.jpg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>April 29, 2020</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page7.jpg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>April 29, 2020</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              0 Comments</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">A Collective and Integrated Response</a>
-                                    </h5>
-                                 <div class="pq-blog-info">
-                                    <p>Coronavirus COVID-19 has become the biggest public health priority for governments all around the world...</p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">A Collective and Integrated Response</a>
+                            </h5>
+                            <div class="pq-blog-info">
+                                <p>Coronavirus COVID-19 has become the biggest public health priority for governments all around the world...</p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
 
 
-                        <div class="col-lg-4">
-                           <div class="pq-blog-post">
-                              <div class="pq-post-media"> <img src="images/blog/page8.jpg" class="img-fluid" alt="blogimage">
-                                 <div class="pq-post-date">
-                                    <a href="#"> <span>January 26, 2020</span></a>
-                                 </div>
-                              </div>
-                              <div class="pq-blog-contain">
-                                 <div class="pq-post-meta">
-                                    <ul>
-                                       <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                       <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
+                <div class="col-lg-4">
+                    <div class="pq-blog-post">
+                        <div class="pq-post-media"> <img src="images/blog/page8.jpg" class="img-fluid" alt="blogimage">
+                            <div class="pq-post-date">
+                                <a href="#"> <span>January 26, 2020</span></a>
+                            </div>
+                        </div>
+                        <div class="pq-blog-contain">
+                            <div class="pq-post-meta">
+                                <ul>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-comment"> <a href="#"><i class="fa fa-comments"></i>
                                              0 Comments</a> </li>
-                                    </ul>
-                                 </div>
-                                 <h5 class="pq-blog-title"><a href="bloglink1.html">Moving towards a world-class healthcare system that’s fit for the next 50 years</a></h5>
-                                 <div class="pq-blog-info">
-                                    <p>The healthcare sector is one of the most ...</p>
-                                 </div>
-                                 <a href="bloglink1.html" class="pq-button pq-button-flat">
+                                </ul>
+                            </div>
+                            <h5 class="pq-blog-title"><a href="bloglink1.html">Moving towards a world-class healthcare system that’s fit for the next 50 years</a></h5>
+                            <div class="pq-blog-info">
+                                <p>The healthcare sector is one of the most ...</p>
+                            </div>
+                            <div class="blog-btn text-center">
+                                <a href="bloglink1.html" class="pq-button pq-button-flat">
                                     <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                                 </a>
-                              </div>
-                           </div>
+                                </a>
+                            </div>
                         </div>
-
-                      
-                        <div class="col-lg-12">
-                           <div class="pq-pagination">
-                              <nav aria-label="Page navigation">
-                                 <ul class="page-numbers">
-                                    <li><a href="#" aria-current="page" class="page-numbers current">1</a></li>
-                                    <li><a class="page-numbers" href="#">2</a></li>
-                                    <li><a class="next page-numbers" href="#">Next page</a></li>
-                                 </ul>
-                              </nav>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-
-               <!-- blog section -->
-
-               
+                    </div>
+                </div>
 
 
+                <div class="col-lg-12">
+                    <div class="pq-pagination">
+                        <nav aria-label="Page navigation">
+                            <ul class="page-numbers">
+                                <li><a href="#" aria-current="page" class="page-numbers current">1</a></li>
+                                <li><a class="page-numbers" href="#">2</a></li>
+                                <li><a class="next page-numbers" href="#">Next page</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog section -->
 
 
-      <!--=================================
+
+
+
+
+    <!--=================================
         Footer start
       ============================== -->
-      <footer id="pq-footer">
+    <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">
                 <div class="max-width-75">
@@ -643,8 +674,7 @@
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
-                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
                                             </div>
@@ -654,8 +684,7 @@
                                         <div class="pq-subscribe-from">
                                             <form id="form" class="form">
                                                 <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
-                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
                                                     <input class="" type="submit" value="Sign up">
                                                 </div>
                                             </form>
@@ -712,11 +741,9 @@
                                         <li><a href="corporate-social-responsibility.html">Corporate Social
                                                 Responsibility</a></li>
                                         <li><a href="transparency-charter.html">Transparency Charter</a></li>
-                                        <li><a
-                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
                                                 a complaint (TAMM)</a></li>
-                                        <li><a
-                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
                                                 & Contracts</a></li>
                                         <li><a href="fraud-alert.html">Recruitment Fraud Alert</a></li>
                                         <li><a href="https://portal.seha.ae/">Employee Services</a></li>
@@ -726,8 +753,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block">
-                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
-                                    alt="medicate-footer-logo">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                                 <p class="mb-1 fs-14">Abu Dhabi Health Services Co.
                                 </p>
                                 <i class="fas fa-map-marker"></i> <span class="fs-14">
@@ -764,47 +790,47 @@
             </div>
         </div>
     </footer>
-      <!--Footer End-->
-      <!--Back To Top start-->
-      <div id="back-to-top">
-            <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
-      </div>
-      <!--Back To Top End-->
-      <!--jquery js-->
-      <script src="js/jquery.min.js"></script>
-      <!--bootstrap js-->
-      <script src="js/bootstrap.min.js"></script>
-      <!--owl-carousal-->
-      <script src="js/owl.carousel.min.js"></script>
-      <!--progress-bar js-->
-      <script src="js/progressbar.js"></script>
-      <!--isotope js-->
-      <script src="js/isotope.pkgd.min.js"></script>
-      <!--countTo js-->
-      <script src="js/jquery.countTo.min.js"></script>
-      <!--Maginfic-Popup js-->
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <!-- Animation JS -->
-      <script src="js/wow.min.js"></script>
-      <!--custom js-->
-      <script src="js/custom.js"></script>
+    <!--Footer End-->
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
 
-      <script>
+    <script>
         const searchBtn = document.querySelector('#pq-seacrh-btn');
         const searchBarContainer = document.querySelector('#search-bar-container');
         const closeBtn = document.querySelector('#close-search');
 
-        searchBtn.addEventListener('click', function () {
+        searchBtn.addEventListener('click', function() {
             searchBarContainer.style.display = 'flex';
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.classList.add('show');
             }, 10); // adjust the time to match the duration of the animation
         });
 
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener('click', function() {
             searchBarContainer.classList.remove('show');
             searchBarContainer.classList.add('transition');
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.style.display = 'none';
                 searchBarContainer.classList.remove('transition');
             }, 500); // adjust the time to match the duration of the animation

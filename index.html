@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <style>
-        :root {
+         :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -41,34 +41,31 @@
             --theme-color-light-green-bg: #8bccbe8c;
             --theme-color-blue: #2544be;
             --theme-color-blue-bg: #00b3ea4f;
-
-
             /* secondary colors */
             --theme-color-light-blue: #00b5ea;
             --theme-color-burgundy: #973359;
             --theme-color-peach: #de6f4e;
             --theme-color-yellow: #faae61;
-
             /* neutrals colors */
             --theme-color-dark-gray: #787878;
             --theme-color-medium-gray: #A8A8A8;
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-
+        
         .carousel {
             position: relative;
             width: 100%;
             overflow: hidden;
         }
-
+        
         .carousel-container {
             display: flex;
             width: 500%;
             height: 90vh;
             transition: transform 0.5s ease;
         }
-
+        
         .carousel-slide {
             flex: 1;
             display: flex;
@@ -77,21 +74,21 @@
             opacity: 0;
             transition: opacity 1.5s;
         }
-
+        
         .carousel-slide.active {
             opacity: 1;
         }
-
+        
         .carousel-slide img {
             max-width: 100%;
             max-height: 100%;
         }
-
+        
         .carousel-slide video {
             max-width: 100%;
             max-height: 100%;
         }
-
+        
         .carousel-prev,
         .carousel-next {
             position: absolute;
@@ -109,27 +106,27 @@
             cursor: pointer;
             transition: .2s;
         }
-
+        
         .carousel-prev:hover,
         .carousel-next:hover {
             /* border-radius: 50%; */
             background-color: rgba(216, 216, 216, 0.5);
         }
-
+        
         .carousel-prev {
             left: 10px;
             z-index: 3;
         }
-
+        
         .carousel-next {
             right: 10px;
             z-index: 3;
         }
-
+        
         .slide {
             position: relative;
         }
-
+        
         .slide:before {
             content: "";
             position: absolute;
@@ -141,8 +138,7 @@
             /* adjust opacity as needed */
             z-index: 1;
         }
-
-
+        
         .slide-text {
             position: absolute;
             top: 45%;
@@ -152,14 +148,13 @@
             color: #fff;
             z-index: 2;
         }
-
-
+        
         .slide-text h2 {
             font-size: 4rem;
             margin: 0;
             line-height: 70px;
         }
-
+        
         .slide-text p {
             font-size: 14px;
             font-weight: 500;
@@ -167,7 +162,7 @@
             margin-left: 10px;
             color: rgb(102, 102, 102);
         }
-
+        
         p.blue-text {
             background-color: var(--theme-color-blue-bg);
             font-size: 14px !important;
@@ -176,12 +171,12 @@
             width: 100%;
             padding: 3px 8px;
         }
-
+        
         .blue-text-div {
             width: fit-content;
             margin-bottom: 10px;
         }
-
+        
         .search-box-container {
             background: transparent;
             position: absolute;
@@ -190,7 +185,7 @@
             margin: 2rem auto;
             z-index: 10;
         }
-
+        
         .row.search-box-div {
             max-width: 75%;
             margin: 0 auto;
@@ -200,19 +195,18 @@
             position: relative;
             bottom: 14rem;
         }
-
-
+        
         section.about.pq-bg-grey.pq-dark-bg-side-right {
             margin-top: 0rem;
         }
-
+        
         i.fa.fa-search.search-icon {
             position: absolute;
             z-index: 2;
             margin-top: 22px;
             font-size: 1.3rem;
         }
-
+        
         input.search-bar {
             background: transparent;
             border: none;
@@ -223,17 +217,17 @@
             color: #6e6e6e;
             transition: .5s;
         }
-
+        
         input.search-bar:focus {
             border-bottom: 2px solid #00b5ea;
         }
-
+        
         .search-bar::placeholder {
             font-size: 1.1rem;
             color: #6e6e6e;
             font-weight: 500;
         }
-
+        
         button.search-btn {
             width: 100%;
             height: 65px;
@@ -243,15 +237,15 @@
             font-weight: 600;
             transition: .3s;
         }
-
+        
         button.search-btn:hover {
             background: var(--theme-color-dark-blue);
         }
-
+        
         .recommended-pills-section {
             display: contents;
         }
-
+        
         .search-pill {
             width: fit-content;
             padding: 6px 14px;
@@ -259,12 +253,12 @@
             border-radius: 2rem;
             transition: .3s;
         }
-
+        
         .search-pill:hover {
             background: var(--theme-color-light-blue);
             color: white;
         }
-
+        
         .recommended-pills-section a {
             font-size: 14px;
             font-weight: 600;
@@ -272,17 +266,16 @@
             color: #6e6e6e;
             margin: 6px 6px;
         }
-
+        
         video[poster] {
             object-fit: cover
         }
-
-
+        
         .patient-story-learn-more-btn {
             max-width: fit-content;
             margin: 0 auto;
         }
-
+        
         .owl-carousel .owl-nav button.owl-prev {
             border-radius: 3px;
             outline: none;
@@ -301,7 +294,7 @@
             color: var(--white-color);
             transition: all 0.5s ease-in-out;
         }
-
+        
         .owl-carousel .owl-nav button.owl-next {
             border-radius: 3px;
             outline: none;
@@ -321,13 +314,12 @@
             transition: all 0.5s ease-in-out;
             top: 40%;
         }
-
+        
         .owl-carousel .owl-nav button.owl-prev:hover,
         .owl-carousel .owl-nav button.owl-next:hover {
             background: var(--theme-color-light-blue);
         }
-
-
+        
         .owl-carousel-patient .owl-nav button.owl-prev {
             border-radius: 3px;
             outline: none;
@@ -346,7 +338,7 @@
             color: var(--white-color);
             transition: all 0.5s ease-in-out;
         }
-
+        
         .owl-carousel .owl-nav button.owl-next {
             border-radius: 3px;
             outline: none;
@@ -366,15 +358,14 @@
             transition: all 0.5s ease-in-out;
             top: 40%;
         }
-
+        
         .owl-carousel .owl-nav button.owl-prev:hover,
         .owl-carousel .owl-nav button.owl-next:hover {
             background: var(--white-color);
             color: var(--theme-color-light-blue);
             font-weight: bold;
         }
-
-
+        
         .service-image {
             width: 40px;
             height: 40px;
@@ -382,24 +373,23 @@
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-
+        
         .service-image-round {
             width: fit-content;
             padding: 0.8rem;
             background: var(--theme-color-light-blue);
             border-radius: 50%;
         }
-
+        
         .service-card:hover>.service-image-round {
             border: 2px solid white;
         }
-
+        
         .pq-services {
             margin-top: 160px;
             padding-bottom: 275px;
         }
-
-
+        
         .service-card {
             border: 2px solid #00b5ea;
             border-radius: 8px;
@@ -413,7 +403,7 @@
             transition: .2s;
             height: 230px;
         }
-
+        
         p.service-title.text-capitalize {
             padding-top: 1rem;
             line-height: 28px;
@@ -421,53 +411,53 @@
             font-weight: 600;
             color: #6e6e6e;
         }
-
+        
         .service-carousel {
             max-width: 75%;
             margin: 0 auto;
         }
-
+        
         .service-card:hover {
             background-image: url('rev/assets/service-bg-hover.png');
             background-color: var(--theme-color-light-blue);
         }
-
+        
         .service-card:hover>p.service-title.text-capitalize {
             color: white;
         }
-
+        
         .pq-client {
             margin-bottom: 200px;
         }
-
+        
         .container.partners-container {
             padding-bottom: 80px;
         }
-
+        
         .pq-client-img,
         .pq-footer-logo {
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-
+        
         .padding-xaxis {
             padding-left: 0%;
             padding-right: 0%;
         }
-
+        
         #wa_button {
             bottom: 25px;
             left: 10rem;
             position: fixed;
             z-index: 999;
         }
-
+        
         .img-circle {
             background-color: #25D366;
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
         }
-
+        
         .circlephone {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -491,7 +481,7 @@
             -o-transition: all .5s;
             transition: all 0.5s;
         }
-
+        
         .circle-fill {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -515,7 +505,7 @@
             -o-transition: all .5s;
             transition: all 0.5s;
         }
-
+        
         .img-circle {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -530,7 +520,7 @@
             border: 2px solid transparent;
             opacity: .9;
         }
-
+        
         .img-circleblock {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -546,73 +536,65 @@
             animation-iteration-count: infinite;
             -webkit-animation-iteration-count: infinite;
         }
-
+        
         .img-circle:hover {
             opacity: 1;
         }
-
+        
         @keyframes pulse {
             0% {
                 transform: scale(0.9);
                 opacity: 1;
             }
-
             50% {
                 transform: scale(1);
                 opacity: 1;
             }
-
             100% {
                 transform: scale(0.9);
                 opacity: 1;
             }
         }
-
+        
         @-webkit-keyframes pulse {
             0% {
                 -webkit-transform: scale(0.95);
                 opacity: 1;
             }
-
             50% {
                 -webkit-transform: scale(1);
                 opacity: 1;
             }
-
             100% {
                 -webkit-transform: scale(0.95);
                 opacity: 1;
             }
         }
-
+        
         @keyframes tossing {
             0% {
                 transform: rotate(-8deg);
             }
-
             50% {
                 transform: rotate(8deg);
             }
-
             100% {
                 transform: rotate(-8deg);
             }
         }
-
+        
         @-webkit-keyframes tossing {
             0% {
                 -webkit-transform: rotate(-8deg);
             }
-
             50% {
                 -webkit-transform: rotate(8deg);
             }
-
             100% {
                 -webkit-transform: rotate(-8deg);
             }
         }
-
+        
         @-moz-keyframes circle-anim {
             0% {
                 -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
@@ -621,7 +603,6 @@
                 -webkit-opacity: .1;
                 -o-opacity: .1;
             }
-
             30% {
                 -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .5;
@@ -629,7 +610,6 @@
                 -webkit-opacity: .5;
                 -o-opacity: .5;
             }
-
             100% {
                 -moz-transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .6;
@@ -638,155 +618,137 @@
                 -o-opacity: .1;
             }
         }
-
+        
         @-webkit-keyframes circle-anim {
             0% {
                 -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
                 -webkit-opacity: .1;
             }
-
             30% {
                 -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
                 -webkit-opacity: .5;
             }
-
             100% {
                 -webkit-transform: rotate(0deg) scale(1) skew(1deg);
                 -webkit-opacity: .1;
             }
         }
-
+        
         @-o-keyframes circle-anim {
             0% {
                 -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
                 -o-opacity: .1;
             }
-
             30% {
                 -o-transform: rotate(0deg) scale(0.7) skew(1deg);
                 -o-opacity: .5;
             }
-
             100% {
                 -o-transform: rotate(0deg) scale(1) skew(1deg);
                 -o-opacity: .1;
             }
         }
-
+        
         @keyframes circle-anim {
             0% {
                 transform: rotate(0deg) scale(0.5) skew(1deg);
                 opacity: .1;
             }
-
             30% {
                 transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .5;
             }
-
             100% {
                 transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .1;
             }
         }
-
+        
         @-moz-keyframes circle-fill-anim {
             0% {
                 -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
-
             50% {
                 -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
                 opacity: .2;
             }
-
             100% {
                 -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-
+        
         @-webkit-keyframes circle-fill-anim {
             0% {
                 -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
-
             50% {
                 -webkit-transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .2;
             }
-
             100% {
                 -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-
+        
         @-o-keyframes circle-fill-anim {
             0% {
                 -o-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
-
             50% {
                 -o-transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .2;
             }
-
             100% {
                 -o-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-
+        
         @keyframes circle-fill-anim {
             0% {
                 transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
-
             50% {
                 transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .2;
             }
-
             100% {
                 transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-
-
+        
         .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
         
-
         .pq-section {
             margin-top: 5rem;
         }
-
-
+        
         .pq-menu-search-block #search-bar-container {
             display: none;
             position: fixed;
@@ -798,46 +760,45 @@
             z-index: 9999;
             opacity: 0;
         }
-
+        
         .pq-menu-search-block #search-bar-container.show {
             display: flex;
             align-items: center;
             justify-content: center;
             animation: fade-in 0.5s forwards;
         }
+        
         .pq-menu-search-block #search-bar-container.transition {
             animation: fade-out 0.5s forwards;
         }
-
+        
         @keyframes fade-in {
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
         }
-         @keyframes fade-out {
+        
+        @keyframes fade-out {
             from {
                 opacity: 1;
             }
-
             to {
                 opacity: 0;
             }
         }
-
+        
         @keyframes slide-up {
             from {
                 transform: translateX(100%);
             }
-
             to {
                 transform: translateX(0);
             }
         }
-
+        
         .pq-menu-search-block .search-bar {
             position: absolute;
             top: 50%;
@@ -850,21 +811,16 @@
             max-width: 600px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
         
-
-
         @keyframes slide-down {
             from {
                 transform: translateX(0%);
             }
-
             to {
                 transform: translateX(100%);
             }
         }
-
-
+        
         .pq-menu-search-block #close-search {
             position: absolute;
             top: 0px;
@@ -872,26 +828,26 @@
             font-size: 20px;
             color: #333;
         }
-
+        
         .search-close {
             color: black !important;
         }
-
+        
         .max-width-75 {
             max-width: 75%;
             margin: 0 auto;
         }
-
+        
         .bg-color-dark-blue {
             background-color: var(--theme-color-dark-blue);
         }
-
+        
         img.header-img {
-    width: 30px;
-    padding-bottom: 2px;
-}
-
-span.ps-4.fw-bold.text-white {
+            width: 30px;
+            padding-bottom: 2px;
+        }
+        
+        span.ps-4.fw-bold.text-white {
             font-size: 13px;
         }
     </style>
@@ -907,7 +863,8 @@ span.ps-4.fw-bold.text-white {
     <!--loading End-->
 
     <!-- whatsapp floating icon start-->
-    <div><a href="https://api.whatsapp.com/send?phone=80050&amp;text=Hey." id="wa_button" target="_blank">
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=80050&amp;text=Hey." id="wa_button" target="_blank">
             <div class="circlephone" style="transform-origin: center;"></div>
             <div class="circle-fill" style="transform-origin: center;"></div>
             <div class="img-circle" style="transform-origin: center;">
@@ -956,8 +913,7 @@ span.ps-4.fw-bold.text-white {
                                 <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
                                 <div id="search-bar-container">
                                     <div class="search-bar">
-                                        <a href="javascript:void(0);" id="close-search"> <i
-                                                class="fa fa-close search-close"></i> </a>
+                                        <a href="javascript:void(0);" id="close-search"> <i class="fa fa-close search-close"></i> </a>
                                         <form role="search" method="get" class="search-form" action=".html">
                                             <label>
                                                 <span class="screen-reader-text">Search for:</span>
@@ -984,7 +940,7 @@ span.ps-4.fw-bold.text-white {
 
                 <div class="row">
                     <div class="container">
-                        
+
                     </div>
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light bottom-nav max-width-75">
@@ -1027,9 +983,7 @@ span.ps-4.fw-bold.text-white {
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </nav>
@@ -1058,9 +1012,7 @@ span.ps-4.fw-bold.text-white {
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
                         <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
-                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
                     </div>
                 </div>
 
@@ -1074,9 +1026,7 @@ span.ps-4.fw-bold.text-white {
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
                         <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
-                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
                     </div>
                 </div>
             </div>
@@ -1090,9 +1040,7 @@ span.ps-4.fw-bold.text-white {
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
                         <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
-                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
                     </div>
                 </div>
             </div>
@@ -1106,9 +1054,7 @@ span.ps-4.fw-bold.text-white {
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
                         <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
-                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
                     </div>
                 </div>
             </div>
@@ -1122,9 +1068,7 @@ span.ps-4.fw-bold.text-white {
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
                         <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
-                            dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
                     </div>
                 </div>
             </div>
@@ -1202,30 +1146,25 @@ span.ps-4.fw-bold.text-white {
                     <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">About
                             Us</span>
                         <h5 class="pq-section-title">An Integrated And Patient-Centric Company</h5>
-                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that
-                            are delivered by highly specialized healthcare professionals.&nbsp;</p>
+                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that are delivered by highly specialized healthcare professionals.&nbsp;</p>
                     </div>
 
                     <a class="pq-button pq-button-flat mt-4" href="about-us.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                class="ion ion-plus-round"></i> </div>
+                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
                     </a>
                 </div>
                 <div class="col-lg-6 col-md-12 col-xl-5 pe-lg-3 pq-img-none">
                     <img src="images/1.jpeg" class="img-fluid" alt="servicebox">
                 </div>
-                <div
-                    class="col-xl-2 col-lg-12 col-md-12 py-xl-0 py-5 align-self-center pq-form-counter pq-bg-primary-dark">
+                <div class="col-xl-2 col-lg-12 col-md-12 py-xl-0 py-5 align-self-center pq-form-counter pq-bg-primary-dark">
                     <div class="pq-counter pq-style-2">
                         <div class="pq-counter-contain">
                             <div class="pq-counter-info text-center">
                                 <div class="pq-counter-num-prefix">
-                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span
-                                        class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span class="pq-counter-prefix">+</span>
                                 </div>
                                 <div class="pq-counter-num-prefix pq-prefix-top">
-                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span
-                                        class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span class="pq-counter-prefix">+</span>
                                 </div>
                                 <p class="pq-counter-description">BEDS</p>
                             </div>
@@ -1235,12 +1174,10 @@ span.ps-4.fw-bold.text-white {
                         <div class="pq-counter-contain">
                             <div class="pq-counter-info text-center">
                                 <div class="pq-counter-num-prefix">
-                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span
-                                        class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span class="pq-counter-prefix">+</span>
                                 </div>
                                 <div class="pq-counter-num-prefix pq-prefix-top">
-                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span
-                                        class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span class="pq-counter-prefix">+</span>
                                 </div>
                                 <p class="pq-counter-description">CLINICS</p>
                             </div>
@@ -1250,12 +1187,10 @@ span.ps-4.fw-bold.text-white {
                         <div class="pq-counter-contain">
                             <div class="pq-counter-info text-center">
                                 <div class="pq-counter-num-prefix">
-                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span
-                                        class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span class="pq-counter-prefix">+</span>
                                 </div>
                                 <div class="pq-counter-num-prefix pq-prefix-top">
-                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span
-                                        class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span class="pq-counter-prefix">+</span>
                                 </div>
                                 <p class="pq-counter-description">HOSPITALS</p>
                             </div>
@@ -1287,14 +1222,10 @@ span.ps-4.fw-bold.text-white {
             <div class="row">
                 <div class="col-lg-12 pq-mb-130">
 
-                    <div class="owl-carousel owl-carousel-patient owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_num="3"
-                        data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
-                        data-loop="false" data-margin="30">
+                    <div class="owl-carousel owl-carousel-patient owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="false" data-margin="30">
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-21.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-21.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1307,9 +1238,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1322,9 +1251,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1337,9 +1264,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1352,9 +1277,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1367,9 +1290,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1382,9 +1303,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1397,9 +1316,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
-                                        src="videos/home/video.mp4" loop width="560" height="315"
-                                        poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1414,8 +1331,7 @@ span.ps-4.fw-bold.text-white {
 
                     <div class="patient-story-learn-more-btn">
                         <a class="pq-button pq-button-flat mt-4" href="about-us.html">
-                            <div class="pq-button-block"> <span class="pq-button-text">Learn More</span> <i
-                                    class="ion ion-plus-round"></i> </div>
+                            <div class="pq-button-block"> <span class="pq-button-text">Learn More</span> <i class="ion ion-plus-round"></i> </div>
                         </a>
                     </div>
                 </div>
@@ -1439,15 +1355,12 @@ span.ps-4.fw-bold.text-white {
             <div class="row">
                 <div class="col-lg-12 pq-mb-130">
 
-                    <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_lg="4"
-                        data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1"
-                        data-autoplay="true" data-loop="true" animateIn="true" data-margin="30">
+                    <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_lg="4" data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" animateIn="true" data-margin="30">
                         <div class="item">
 
                             <div class="service-card">
                                 <div class="service-image-round">
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/ANESTHESIOLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/ANESTHESIOLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1462,8 +1375,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/DERMATOLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/DERMATOLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1478,8 +1390,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/FAMILY-MEDICINE.png');">
+                                    <div class="service-image" style="background-image: url('images/services/FAMILY-MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1495,8 +1406,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/MEDICINE.png');">
+                                    <div class="service-image" style="background-image: url('images/services/MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1512,8 +1422,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/NEUROSURGERY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/NEUROSURGERY.png');">
                                     </div>
                                 </div>
 
@@ -1529,8 +1438,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/OPHTHALMOLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/OPHTHALMOLOGY.png');">
                                     </div>
                                 </div>
 
@@ -1545,8 +1453,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/OTOLARYNGOLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/OTOLARYNGOLOGY.png');">
                                     </div>
                                 </div>
 
@@ -1561,8 +1468,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/PHYSICAL-&-REHABILITATION-MEDICINE.png');">
+                                    <div class="service-image" style="background-image: url('images/services/PHYSICAL-&-REHABILITATION-MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1577,8 +1483,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/CLINICAL-IMAGING.png');">
+                                    <div class="service-image" style="background-image: url('images/services/CLINICAL-IMAGING.png');">
                                     </div>
                                 </div>
 
@@ -1593,8 +1498,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/UROLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/UROLOGY.png');">
                                     </div>
                                 </div>
 
@@ -1609,8 +1513,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/DENTISTRY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/DENTISTRY.png');">
                                     </div>
                                 </div>
 
@@ -1625,8 +1528,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/EMERGENCY-MEDICINE.png');">
+                                    <div class="service-image" style="background-image: url('images/services/EMERGENCY-MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1641,8 +1543,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/LABORATORY-MEDICINE.png');">
+                                    <div class="service-image" style="background-image: url('images/services/LABORATORY-MEDICINE.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1656,8 +1557,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/NEUROLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/NEUROLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1671,8 +1571,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/OBSTETRICS-&-GYNECOLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/OBSTETRICS-&-GYNECOLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1686,8 +1585,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/ORTHOPEDICS.png');">
+                                    <div class="service-image" style="background-image: url('images/services/ORTHOPEDICS.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1701,8 +1599,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/PEDIATRICS.png');">
+                                    <div class="service-image" style="background-image: url('images/services/PEDIATRICS.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1716,8 +1613,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/PSYCHIATRY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/PSYCHIATRY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1731,8 +1627,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/SURGERY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/SURGERY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1746,8 +1641,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image"
-                                        style="background-image: url('images/services/NEPHROLOGY.png');">
+                                    <div class="service-image" style="background-image: url('images/services/NEPHROLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1772,8 +1666,7 @@ span.ps-4.fw-bold.text-white {
                     <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">Our
                             Facilities</span>
                         <h5 class="pq-section-title">THE UAE’S LARGEST HEALTHCARE NETWORK</h5>
-                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that
-                            are delivered by highly specialized healthcare professionals.&nbsp;</p>
+                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that are delivered by highly specialized healthcare professionals.&nbsp;</p>
                     </div>
                 </div>
                 <div class="col-8">
@@ -1806,56 +1699,40 @@ span.ps-4.fw-bold.text-white {
         <div class="max-width-75 container partners-container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="5"
-                        data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
-                        data-loop="true" data-margin="30">
+                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="5" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" data-margin="30">
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/1.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/2.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/3.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/3.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/3.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/3.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/4.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/4.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/4.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/4.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/5.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/5.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/5.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/5.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/1.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img"
-                                        class="pq-client-img img-fluid"> <img src="images/client/2.png"
-                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                     </div>
@@ -1880,8 +1757,7 @@ span.ps-4.fw-bold.text-white {
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
-                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
                                             </div>
@@ -1891,8 +1767,7 @@ span.ps-4.fw-bold.text-white {
                                         <div class="pq-subscribe-from">
                                             <form id="form" class="form">
                                                 <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
-                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
                                                     <input class="" type="submit" value="Sign up">
                                                 </div>
                                             </form>
@@ -1949,11 +1824,9 @@ span.ps-4.fw-bold.text-white {
                                         <li><a href="corporate-social-responsibility.html">Corporate Social
                                                 Responsibility</a></li>
                                         <li><a href="transparency-charter.html">Transparency Charter</a></li>
-                                        <li><a
-                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
                                                 a complaint (TAMM)</a></li>
-                                        <li><a
-                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
                                                 & Contracts</a></li>
                                         <li><a href="fraud-alert.html">Recruitment Fraud Alert</a></li>
                                         <li><a href="https://portal.seha.ae/">Employee Services</a></li>
@@ -1963,8 +1836,7 @@ span.ps-4.fw-bold.text-white {
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block">
-                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
-                                    alt="medicate-footer-logo">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                                 <p class="mb-1 fs-14">Abu Dhabi Health Services Co.
                                 </p>
                                 <i class="fas fa-map-marker"></i> <span class="fs-14">
@@ -2033,8 +1905,8 @@ span.ps-4.fw-bold.text-white {
 
 
     <script>
-        jQuery(window).on('load', function (e) {
-            jQuery(".pq-applyform .form-btn").click(function () {
+        jQuery(window).on('load', function(e) {
+            jQuery(".pq-applyform .form-btn").click(function() {
                 var first_name = jQuery('#first-name').val();
                 var doctor_name = jQuery('#doctor-name').val();
                 var disease_name = jQuery('#disease-name').val();
@@ -2098,7 +1970,7 @@ span.ps-4.fw-bold.text-white {
                         data: {
                             'email': email
                         },
-                        success: function () {
+                        success: function() {
                             jQuery(
                                     "<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>"
                                 )
@@ -2162,13 +2034,13 @@ span.ps-4.fw-bold.text-white {
         });
 
 
-        $('.pq-portfoliobox.pq-style-1').hover(function () {
+        $('.pq-portfoliobox.pq-style-1').hover(function() {
             $(this).find('.video-hover')[0].play();
             $(this).find('.pq-portfolio-info').css({
                 opacity: 0,
                 bottom: '0px'
             });
-        }, function () {
+        }, function() {
             $(this).find('.video-hover')[0].load();
             $(this).find('.pq-portfolio-info').css({
                 opacity: 1,
@@ -2181,17 +2053,17 @@ span.ps-4.fw-bold.text-white {
         const searchBarContainer = document.querySelector('#search-bar-container');
         const closeBtn = document.querySelector('#close-search');
 
-        searchBtn.addEventListener('click', function () {
+        searchBtn.addEventListener('click', function() {
             searchBarContainer.style.display = 'flex';
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.classList.add('show');
             }, 10); // adjust the time to match the duration of the animation
         });
 
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener('click', function() {
             searchBarContainer.classList.remove('show');
             searchBarContainer.classList.add('transition');
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.style.display = 'none';
                 searchBarContainer.classList.remove('transition');
             }, 500); // adjust the time to match the duration of the animation
