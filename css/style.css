@@ -134,6 +134,9 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 
+
+
+
 ::-moz-selection {
   text-shadow: none;
   background: var(--primary-color);

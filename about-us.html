@@ -504,6 +504,173 @@
             font-size:16px;
             color: var(--theme-color-dark-blue) !important;
         }
+
+
+        /* header css */
+
+        .lang-btn {
+            color: var(--white-color);
+            font-family: var(--title-fonts);
+            font-weight: 600;
+            font-size: 18px;
+            padding-right: 1.2rem;
+        }
+
+        .lang-btn:hover {
+            color: var(--theme-color-line-blue);
+        }
+
+        .lang-btn-flex {
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        header#pq-header .pq-top-header .pq-header-contact ul {
+            height: 100%;
+        }
+
+        .pq-header-contact {
+            height: 100%;
+        }
+
+        section.gmap-sec.pq-bg-secondary {
+            background-color: #c4e7fb;
+        }
+
+        .search-form {
+            position: relative;
+            transition: all .6s;
+            width: 30px;
+            height: 30px;
+            background: white;
+            box-sizing: border-box;
+            border-radius: 25px;
+            border: 4px solid white;
+            padding: 5px;
+        }
+
+        .search-form input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            ;
+            height: 24.5px;
+            line-height: 30px;
+            outline: 0;
+            border: 0;
+            display: none;
+            font-size: 1em;
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+
+        .fa-search-form {
+            box-sizing: border-box;
+            padding: 10px;
+            width: 24px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            color: black !important;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all 1s;
+        }
+
+        .search-form:hover,
+        .search-form:valid {
+            width: 200px;
+            cursor: pointer;
+        }
+
+        .search-form:hover input,
+        .search-form:valid input {
+            display: block;
+        }
+
+        .search-form:hover .fa,
+        .search-form:valid .fa {
+            background: #07051a;
+            margin-top: -1px;
+            display: flex;
+            color: white !important;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .search-form a {
+            display: none;
+            position: absolute;
+            top: 70px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            width: 100%;
+        }
+
+
+        .fa-search-form {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px !important;
+            color: var(--theme-color-line-blue) !important;
+        }
+
+        /* clears the ‘X’ from Chrome */
+        .search-form input[type="search"]::-webkit-search-decoration,
+        .search-form input[type="search"]::-webkit-search-cancel-button,
+        .search-form input[type="search"]::-webkit-search-results-button,
+        .search-form input[type="search"]::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        header#pq-header.pq-header-style-2 .pq-top-header {
+            background: var(--theme-color-dark-blue);
+        }
+
+        .pq-button {
+            background: var(--theme-color-line-blue);
+            color: var(--white-color);
+        }
+
+        .pq-section.pq-style-1 .pq-section-sub-title {
+            color: var(--theme-color-line-blue);
+            background: var(--theme-color-blue-bg);
+        }
+
+        header#pq-header.pq-header-style-2 .pq-toggle-btn {
+    background: var(--theme-color-line-blue);
+}
+
+.pq-sidebar .pq-close-btn .pq-close {
+    background: var(--theme-color-line-blue);
+}
+
+header#pq-header.pq-header-style-2 .navbar-brand {
+            background-color: white;
+        }
+
+        span.ps-4.fw-bold.text-white {
+            font-size: 13px;
+        }
+
+        header#pq-header .pq-bottom-header .navbar .navbar-nav li i {
+            color: white !important;
+        }
+
+        header#pq-header .pq-bottom-header .navbar .navbar-nav li a {
+    color: var(--theme-color-dark-blue);
+}
+        /* header css */
     </style>
 </head>
 
@@ -517,117 +684,231 @@
          loading end-->
     <!--=================================
          header start-->
-    <header id="pq-header" class="pq-header-default ">
-        <div class="pq-bottom-header pq-has-sticky">
-            <div class="container-fluid padding-xaxis">
-                <div class="row">
-                    <div class="col-12 bg-color-dark-blue">
-                        <nav class="navbar navbar-expand-lg navbar-dark top-bar max-width-75 ">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div id="pq-menu-contain" class="pq-menu-contain">
-                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item">
-                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
-                                        </li>
-
-
-                                        <li class="menu-item">
-                                            <a href="#">Conferences</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="careers.html">Careers</a>
-                                        </li>
-
-
-                                        <li class="menu-item">
-                                            <a href="News&Events.html">Media Center</a>
-                                        </li>
-
-                                        <li class="menu-item">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <a href="tel:80050">80050</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pq-menu-search-block">
-                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
-                                <div id="search-bar-container">
-                                    <div class="search-bar">
-                                        <a href="javascript:void(0);" id="close-search"> <i class="fa fa-close search-close"></i> </a>
-                                        <form role="search" method="get" class="search-form" action=".html">
-                                            <label>
-                                                <span class="screen-reader-text">Search for:</span>
-                                                <input type="search" class="search-field" placeholder="Search …"
-                                                    value="" name="s">
-                                            </label>
-                                            <button type="submit" class="search-submit"><span
-                                                    class="screen-reader-text">Search</span></button>
-                                        </form>
+    <div class="pq-background-overlay"></div>
+    <div class="pq-sidebar">
+        <div class="pq-close-btn">
+            <a class="pq-close" href="javascript:void(0)">
+                <i class="ion-close-round"></i>
+            </a>
+        </div>
+        <div class="pq-sidebar-block mCustomScrollbar">
+            <div class="pq-sidebar-header">
+            </div>
+            <div class="pq-sidebar-content">
+            </div>
+            <div class="pq-sidebars">
+                <div class="pq-widget">
+                    <div class="wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                            <figure class="pq-block-image ">
+                                <img src="rev/assets/Services/Seha Logo.png" class="pq-slider-logo-img img-fluid">
+                            </figure>
+                            <h2>Get In Touch With Us</h2>
+                            <form class="pq-applyform mt-5" novalidate>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-name" id="second-name" class="second-name-field"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-email" id="e-mail" class="e-mail-field"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-doctor-name" id="doctor-name"
+                                            class="doctor-name-field" placeholder="Your Doctor Name" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-disease" id="disease-name"
+                                            class="disease-name-field" placeholder="Your Symptoms" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <a class="pq-button" id="form-btn">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text me-0">send message</span>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <a href="#">
-                                <span class="ps-4 fw-bold text-white">
-                                    AR <img class="header-img" src="rev/assets/saudi-arabia.png" alt=""> | EN <img class="header-img" src="rev/assets/united-kingdom.png" alt="">
-                                </span>
-                            </a>
-                        </nav>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="pq-sidebar-contact">
+                <ul class="pq-contact">
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        <span>
+                            Head office, Das Tower, 9th Floor,<br> Sultan Bin Zayed Street (32nd Street),<br> Abu Dhabi,
+                            United
+                            Arab Emirates​. </span>
+                    </li>
+                    <li>
+                        <a href="tel:+1800001658"><i class="fa fa-phone"></i>
+                            <span>Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i><span>sehaae@seha.itw-hosting.net
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pq-sidebar-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header id="pq-header" class="pq-header-style-2 pq-has-sticky ">
+        <div class="pq-header-diff-block">
+            <div class="row no-gutters">
+                <div class="col-lg-2 col-md-4">
+                    <a class="navbar-brand" href="index-v2.html">
+                        <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                    </a>
+                </div>
+                <div class="col-lg-10 col-md-8">
+                    <div class="pq-top-header">
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-md-10 col-sm-6 text-right">
+                                    <!-- <div class="col-md-6"> -->
+                                    <div class="pq-header-contact ">
+                                        <ul>
 
+                                            <li>
+                                                <a href="https://login.seha.ae/SEHAHome/NewHome.aspx"><span>Patient Portal</span></a>
+                                                <!-- <span>Patient Portal</span> -->
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.seha.ae/conference/"></i><span>Conferences</span></a>
+                                            </li>
 
-                <div class="row">
-                    <div class="container">
+                                            <li>
+                                                <a href="News&Events.html">
+                                                    </i><span>Media Center</span></a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <a href="#">80050</a>
+                                            </li>
+                                            <li>
 
-                    </div>
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-light bottom-nav max-width-75">
-                            <a class="navbar-brand" href="index.html">
-                                <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
-                            </a>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div id="pq-menu-contain" class="pq-menu-contain">
-                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item">
-                                            <a href="index.html">Home</a>
-                                        </li>
+                                                <form action="" class="search-form">
+                                                    <input type="search" required>
+                                                    <i class="fa fa-search fa-search-form"></i>
+                                                </form>
 
+                                            </li>
 
-
-                                        <li class="menu-item current-menu-item">
-                                            <a href="about-us.html">About Us</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="our-hospital.html">Our Hospitals</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="specialty.html">Our Specialties</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="our-doctors.html">Our Doctors</a>
-                                        </li>
-
-                                        <li class="menu-item">
-                                            <a href="#">Seha App</a>
-                                        </li>
-
-                                    </ul>
+                                        </ul>
+                                    </div>
+                                    <!-- </div> -->
                                 </div>
+
+                                <div class="col-2 text-end lang-btn-flex">
+                                    <a href="#" class="lang-btn">عربي</a>
+                                </div>
+
                             </div>
+                        </div>
+                    </div>
+                    <div class="pq-bottom-header">
+                        <div class="row no-gutters">
+                            <div class="col-lg-12">
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <div id="pq-menu-contain" class="pq-menu-contain">
+                                            <ul id="pq-main-menu" class="navbar-nav ms-auto">
 
-                            <a href="book-an-appointment.html" class="pq-button">
-                                <div class="pq-button-block">
-                                    <span class="pq-button-text text-uppercase">book an appointment</span>
-                                    <i class="ion ion-plus-round"></i>
-                                </div>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </nav>
+                                                </li>
+                                                <li class="menu-item ">
+
+                                                <li class="menu-item ">
+                                                    <a href="about-us.html">About Us</a>
+                                                </li>
+
+                                                <li class="menu-item ">
+                                                    <a href="https://www.mediclinic.ae/en/corporate/mymediclinic-24x7.html">SEHA App</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="our-hospital.html">Our Hospitals</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="specialty.html">Our Specialities</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="our-doctors.html">Our Doctors</a>
+                                                </li>
+                                                <li>
+
+
+                                                    <a href="book-an-appointment.html" class="pq-button">
+                                                        <div class="pq-button-block">
+                                                            <span class="pq-button-text">Book an Appointment</span>
+                                                            <i class="ion ion-plus-round"></i>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                </li>
+
+                                                <!-- <li class="menu-item ">
+                                                    <a href="#">Our Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="our-hospital.html">Our Hospitals</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="#">Our Specialities</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="our-doctors.html">Our Doctors</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li> -->
+                                                <!-- <li class="menu-item ">
+                                                    <a href="#">Opportunities</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="#">Conferences</a>
+                                                        </li>
+
+
+
+                                                    </ul>
+                                                </li> -->
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pq-header-info-box">
+                                        <div class="pq-menu-search-block">
+                                            <a href="javascript:void(0)" id="pq-seacrh-btn">
+
+                                        </div>
+                                        <div class="pq-toggle-btn">
+                                            <a href="javascript:void(0)" class="menu-toggle">Menu</a>
+                                        </div>
+                                    </div>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

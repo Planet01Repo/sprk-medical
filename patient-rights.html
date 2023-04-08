@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>SEHA</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="images/FavIcon.jpg" />
@@ -25,437 +23,675 @@
     <link rel="stylesheet" href="css/style.css" />
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
-  </head>
+</head>
 
-  <style>
+<style>
     p {
-      font-size: 15px !important;
-      line-height: 1.6em !important;
+        font-size: 15px !important;
+        line-height: 1.6em !important;
     }
+
     :root {
-      /* primary colors */
-      --theme-color-dark-blue: #0a3a5a;
-      --theme-color-green: #5dbca3;
-      --theme-color-light-green: #8bccbe;
-      --theme-color-light-green-bg: #8bccbe8c;
-      --theme-color-blue: #2544be;
-      --theme-color-blue-bg: #00b3ea4f;
-      /* secondary colors */
-      --theme-color-light-blue: #00b5ea;
-      --theme-color-burgundy: #973359;
-      --theme-color-peach: #de6f4e;
-      --theme-color-yellow: #faae61;
-      /* neutrals colors */
-      --theme-color-dark-gray: #787878;
-      --theme-color-medium-gray: #a8a8a8;
-      --theme-color-gray: #d2d2d2;
-      --theme-color-light-gray: #e6e6e6;
+        /* primary colors */
+        --theme-color-dark-blue: #0a3a5a;
+        --theme-color-green: #5dbca3;
+        --theme-color-light-green: #8bccbe;
+        --theme-color-light-green-bg: #8bccbe8c;
+        --theme-color-blue: #2544be;
+        --theme-color-blue-bg: #00b3ea4f;
+        /* secondary colors */
+        --theme-color-light-blue: #00b5ea;
+        --theme-color-burgundy: #973359;
+        --theme-color-peach: #de6f4e;
+        --theme-color-yellow: #faae61;
+        /* neutrals colors */
+        --theme-color-dark-gray: #787878;
+        --theme-color-medium-gray: #a8a8a8;
+        --theme-color-gray: #d2d2d2;
+        --theme-color-light-gray: #e6e6e6;
     }
 
     .top-bar {
-      height: 50px;
-      padding: 0 2.1rem !important;
-      background: var(--theme-color-dark-blue);
-      color: white;
+        height: 50px;
+        padding: 0 2.1rem !important;
+        background: var(--theme-color-dark-blue);
+        color: white;
     }
 
     .top-bar li a {
-      color: white !important;
-      text-transform: capitalize !important;
-      font-size: 13px !important;
+        color: white !important;
+        text-transform: capitalize !important;
+        font-size: 13px !important;
     }
 
     .top-bar a i {
-      color: white;
+        color: white;
     }
 
     .top-bar li i {
-      color: white !important;
-      font-size: 16px;
+        color: white !important;
+        font-size: 16px;
     }
 
     .bottom-nav {
-      padding: 0 2rem 0px 3rem !important;
+        padding: 0 2rem 0px 3rem !important;
     }
 
     .padding-none {
-      padding: 0px;
+        padding: 0px;
     }
 
     .pq-client-img,
     .pq-footer-logo {
-      -webkit-filter: brightness(0) invert(100%);
-      filter: brightness(0) invert(100%);
+        -webkit-filter: brightness(0) invert(100%);
+        filter: brightness(0) invert(100%);
     }
 
     .top-bar {
-      height: 50px;
-      background: var(--theme-color-dark-blue);
-      color: white;
+        height: 50px;
+        background: var(--theme-color-dark-blue);
+        color: white;
     }
 
     .top-bar li a {
-      color: white !important;
-      text-transform: capitalize !important;
-      font-size: 13px !important;
+        color: white !important;
+        text-transform: capitalize !important;
+        font-size: 13px !important;
     }
 
     .top-bar a i {
-      color: white;
+        color: white;
     }
 
     .top-bar li i {
-      color: white !important;
-      font-size: 16px;
+        color: white !important;
+        font-size: 16px;
     }
 
     .pq-menu-search-block #search-bar-container {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #0a3a5afa;
-      z-index: 9999;
-      opacity: 0;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a3a5afa;
+        z-index: 9999;
+        opacity: 0;
     }
 
     .pq-menu-search-block #search-bar-container.show {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: fade-in 0.5s forwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fade-in 0.5s forwards;
     }
 
     .pq-menu-search-block #search-bar-container.transition {
-      animation: fade-out 0.5s forwards;
+        animation: fade-out 0.5s forwards;
     }
 
     @keyframes fade-in {
-      from {
-        opacity: 0;
-      }
+        from {
+            opacity: 0;
+        }
 
-      to {
-        opacity: 1;
-      }
+        to {
+            opacity: 1;
+        }
     }
 
     @keyframes fade-out {
-      from {
-        opacity: 1;
-      }
+        from {
+            opacity: 1;
+        }
 
-      to {
-        opacity: 0;
-      }
+        to {
+            opacity: 0;
+        }
     }
 
     @keyframes slide-up {
-      from {
-        transform: translateX(100%);
-      }
+        from {
+            transform: translateX(100%);
+        }
 
-      to {
-        transform: translateX(0);
-      }
+        to {
+            transform: translateX(0);
+        }
     }
 
     .pq-menu-search-block .search-bar {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 50px 15px 20px 15px;
-      border-radius: 5px;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 50px 15px 20px 15px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     @keyframes slide-down {
-      from {
-        transform: translateX(0%);
-      }
+        from {
+            transform: translateX(0%);
+        }
 
-      to {
-        transform: translateX(100%);
-      }
+        to {
+            transform: translateX(100%);
+        }
     }
 
     .pq-menu-search-block #close-search {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      font-size: 20px;
-      color: #333;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 20px;
+        color: #333;
     }
 
     .search-close {
-      color: black !important;
+        color: black !important;
     }
 
     .max-width-75 {
-      max-width: 75%;
-      margin: 0 auto;
+        max-width: 75%;
+        margin: 0 auto;
     }
 
     .bg-color-dark-blue {
-      background-color: var(--theme-color-dark-blue);
+        background-color: var(--theme-color-dark-blue);
     }
 
     img.header-img {
-      width: 30px;
-      padding-bottom: 2px;
+        width: 30px;
+        padding-bottom: 2px;
     }
+
     .acc-title,
     .acc-title:focus,
     .accordion-button:not(.show) {
-      background: var(--primary-color);
-      border-radius: 3px;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-      border-radius: 0px !important;
-      color: white;
-      padding-left: 36px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+        background: var(--primary-color);
+        border-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-radius: 0px !important;
+        color: white;
+        padding-left: 36px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .acc-body {
-      padding-left: 2%;
-      border: 1px solid rgba(180, 166, 166, 0.514);
-      margin-top: -25px;
-      border-radius: 4px;
-      margin-bottom: 30px;
+        padding-left: 2%;
+        border: 1px solid rgba(180, 166, 166, 0.514);
+        margin-top: -25px;
+        border-radius: 4px;
+        margin-bottom: 30px;
     }
 
     :focus {
-      outline: 0 !important;
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        outline: 0 !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
     }
 
     .accordion-item {
-      border-left: none !important;
-      border-right: none !important;
-      border-top: none !important;
-      border-bottom: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
     }
 
     .acc-btn:focus {
-      color: white;
+        color: white;
     }
 
     .c-head {
-      text-align: left;
-      margin: 50px;
-      margin-left: 0px;
+        text-align: left;
+        margin: 50px;
+        margin-left: 0px;
     }
 
     .rights {
-      margin: 0;
-      padding: 0;
-      margin-top: 0rem;
-      margin-bottom: 150px;
+        margin: 0;
+        padding: 0;
+        margin-top: 0rem;
+        margin-bottom: 150px;
     }
 
     .acc-btn:not(.collapsed)::after {
-      color: white;
-      background-color: transparent !important;
-      background-image: url('images/patient-rights/arrow-n.ico');
+        color: white;
+        background-color: transparent !important;
+        background-image: url('images/patient-rights/arrow-n.ico');
     }
 
     .acc-btn::after {
-      background-image: url('images/patient-rights/arrow-n.ico');
-      font-weight: lighter;
+        background-image: url('images/patient-rights/arrow-n.ico');
+        font-weight: lighter;
     }
 
     .accordion-item li {
-      line-height: 1.6em;
+        line-height: 1.6em;
     }
-  </style>
 
-  <body>
+    /* header css */
+
+    .lang-btn {
+        color: var(--white-color);
+        font-family: var(--title-fonts);
+        font-weight: 600;
+        font-size: 18px;
+        padding-right: 1.2rem;
+    }
+
+    .lang-btn:hover {
+        color: var(--theme-color-line-blue);
+    }
+
+    .lang-btn-flex {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header#pq-header .pq-top-header .pq-header-contact ul {
+        height: 100%;
+    }
+
+    .pq-header-contact {
+        height: 100%;
+    }
+
+    section.gmap-sec.pq-bg-secondary {
+        background-color: #c4e7fb;
+    }
+
+    .search-form {
+        position: relative;
+        transition: all .6s;
+        width: 30px;
+        height: 30px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+    }
+
+    .search-form input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        ;
+        height: 24.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    .fa-search-form {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 24px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: black !important;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;
+    }
+
+    .search-form:hover,
+    .search-form:valid {
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .search-form:hover input,
+    .search-form:valid input {
+        display: block;
+    }
+
+    .search-form:hover .fa,
+    .search-form:valid .fa {
+        background: #07051a;
+        margin-top: -1px;
+        display: flex;
+        color: white !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .search-form a {
+        display: none;
+        position: absolute;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .fa-search-form {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px !important;
+        color: var(--theme-color-line-blue) !important;
+    }
+
+    /* clears the ‘X’ from Chrome */
+    .search-form input[type="search"]::-webkit-search-decoration,
+    .search-form input[type="search"]::-webkit-search-cancel-button,
+    .search-form input[type="search"]::-webkit-search-results-button,
+    .search-form input[type="search"]::-webkit-search-results-decoration {
+        display: none;
+    }
+
+    header#pq-header.pq-header-style-2 .pq-top-header {
+        background: var(--theme-color-dark-blue);
+    }
+
+    .pq-button {
+        background: var(--theme-color-line-blue);
+        color: var(--white-color);
+    }
+
+    .pq-section.pq-style-1 .pq-section-sub-title {
+        color: var(--theme-color-line-blue);
+        background: var(--theme-color-blue-bg);
+    }
+
+    header#pq-header.pq-header-style-2 .pq-toggle-btn {
+        background: var(--theme-color-line-blue);
+    }
+
+    .pq-sidebar .pq-close-btn .pq-close {
+        background: var(--theme-color-line-blue);
+    }
+
+    header#pq-header.pq-header-style-2 .navbar-brand {
+        background-color: white;
+    }
+
+    span.ps-4.fw-bold.text-white {
+        font-size: 13px;
+    }
+
+    header#pq-header .pq-bottom-header .navbar .navbar-nav li i {
+        color: white !important;
+    }
+
+    header#pq-header .pq-bottom-header .navbar .navbar-nav li a {
+        color: var(--theme-color-dark-blue);
+    }
+
+    /* header css */
+</style>
+
+<body>
     <!--=================================
          loading start-->
     <div id="pq-loading">
-      <div id="pq-loading-center">
-        <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading" />
-      </div>
+        <div id="pq-loading-center">
+            <img src="rev/assets/Seha-Logo.png" class="img-fluid" alt="loading" />
+        </div>
     </div>
     <!--=================================
          loading end-->
     <!--=================================
          header start-->
-    <header id="pq-header" class="pq-header-default">
-      <div class="pq-bottom-header pq-has-sticky">
-        <div class="container-fluid padding-xaxis">
-          <div class="row">
-            <div class="col-12 bg-color-dark-blue">
-              <nav
-                class="navbar navbar-expand-lg navbar-dark top-bar max-width-75"
-              >
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <div id="pq-menu-contain" class="pq-menu-contain">
-                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                      <li class="menu-item">
-                        <a href="https://login.seha.ae/SEHAHome/NewHome.aspx"
-                          >Patient Portal</a
-                        >
-                      </li>
-
-                      <li class="menu-item">
-                        <a href="#">Conferences</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="careers.html">Careers</a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a href="News&Events.html">Media Center</a>
-                      </li>
-
-                      <li class="menu-item">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a href="tel:80050">80050</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="pq-menu-search-block">
-                  <a href="javascript:void(0)" id="pq-seacrh-btn"
-                    ><i class="ti-search"></i
-                  ></a>
-                  <div id="search-bar-container">
-                    <div class="search-bar">
-                      <a href="javascript:void(0);" id="close-search">
-                        <i class="fa fa-close search-close"></i>
-                      </a>
-                      <form
-                        role="search"
-                        method="get"
-                        class="search-form"
-                        action=".html"
-                      >
-                        <label>
-                          <span class="screen-reader-text">Search for:</span>
-                          <input
-                            type="search"
-                            class="search-field"
-                            placeholder="Search …"
-                            value=""
-                            name="s"
-                          />
-                        </label>
-                        <button type="submit" class="search-submit">
-                          <span class="screen-reader-text">Search</span>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-
-                <a href="#">
-                  <span class="ps-4 fw-bold text-white">
-                    AR
-                    <img
-                      class="header-img"
-                      src="rev/assets/saudi-arabia.png"
-                      alt=""
-                    />
-                    | EN
-                    <img
-                      class="header-img"
-                      src="rev/assets/united-kingdom.png"
-                      alt=""
-                    />
-                  </span>
-                </a>
-              </nav>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="container"></div>
-            <div class="col-lg-12">
-              <nav
-                class="navbar navbar-expand-lg navbar-light bottom-nav max-width-75"
-              >
-                <a class="navbar-brand" href="index.html">
-                  <img
-                    class="img-fluid logo"
-                    src="rev/assets/Seha-Logo.png"
-                    alt="medicate"
-                  />
-                </a>
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <div id="pq-menu-contain" class="pq-menu-contain">
-                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                      <li class="menu-item current-menu-item">
-                        <a href="index.html">Home</a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a href="about-us.html">About Us</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="our-hospital.html">Our Hospitals</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="specialty.html">Our Specialties</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="our-doctors.html">Our Doctors</a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a href="#">Seha App</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <a href="book-an-appointment.html" class="pq-button">
-                  <div class="pq-button-block">
-                    <span class="pq-button-text text-uppercase"
-                      >book an appointment</span
-                    >
-                    <i class="ion ion-plus-round"></i>
-                  </div>
-                </a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i class="fas fa-bars"></i>
-                </button>
-              </nav>
-            </div>
-          </div>
+    <div class="pq-background-overlay"></div>
+    <div class="pq-sidebar">
+        <div class="pq-close-btn">
+            <a class="pq-close" href="javascript:void(0)">
+                <i class="ion-close-round"></i>
+            </a>
         </div>
-      </div>
+        <div class="pq-sidebar-block mCustomScrollbar">
+            <div class="pq-sidebar-header">
+            </div>
+            <div class="pq-sidebar-content">
+            </div>
+            <div class="pq-sidebars">
+                <div class="pq-widget">
+                    <div class="wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                            <figure class="pq-block-image ">
+                                <img src="rev/assets/Services/Seha Logo.png" class="pq-slider-logo-img img-fluid">
+                            </figure>
+                            <h2>Get In Touch With Us</h2>
+                            <form class="pq-applyform mt-5" novalidate>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-name" id="second-name" class="second-name-field"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-email" id="e-mail" class="e-mail-field"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-doctor-name" id="doctor-name"
+                                            class="doctor-name-field" placeholder="Your Doctor Name" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-disease" id="disease-name"
+                                            class="disease-name-field" placeholder="Your Symptoms" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <a class="pq-button" id="form-btn">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text me-0">send message</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-sidebar-contact">
+                <ul class="pq-contact">
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        <span>
+                            Head office, Das Tower, 9th Floor,<br> Sultan Bin Zayed Street (32nd Street),<br> Abu Dhabi,
+                            United
+                            Arab Emirates​. </span>
+                    </li>
+                    <li>
+                        <a href="tel:+1800001658"><i class="fa fa-phone"></i>
+                            <span>Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i><span>sehaae@seha.itw-hosting.net
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pq-sidebar-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header id="pq-header" class="pq-header-style-2 pq-has-sticky ">
+        <div class="pq-header-diff-block">
+            <div class="row no-gutters">
+                <div class="col-lg-2 col-md-4">
+                    <a class="navbar-brand" href="index-v2.html">
+                        <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                    </a>
+                </div>
+                <div class="col-lg-10 col-md-8">
+                    <div class="pq-top-header">
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-md-10 col-sm-6 text-right">
+                                    <!-- <div class="col-md-6"> -->
+                                    <div class="pq-header-contact ">
+                                        <ul>
+
+                                            <li>
+                                                <a href="#"><span>Patient Portal</span></a>
+                                                <!-- <span>Patient Portal</span> -->
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"></i><span>Conferences</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    </i><span>Media Center</span></a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <a href="#">80050</a>
+                                            </li>
+                                            <li>
+
+                                                <form action="" class="search-form">
+                                                    <input type="search" required>
+                                                    <i class="fa fa-search fa-search-form"></i>
+                                                </form>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+
+                                <div class="col-2 text-end lang-btn-flex">
+                                    <a href="#" class="lang-btn">عربي</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pq-bottom-header">
+                        <div class="row no-gutters">
+                            <div class="col-lg-12">
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <div id="pq-menu-contain" class="pq-menu-contain">
+                                            <ul id="pq-main-menu" class="navbar-nav ms-auto">
+
+                                                </li>
+                                                <li class="menu-item ">
+
+                                                <li class="menu-item ">
+                                                    <a href="#">About Us</a>
+                                                </li>
+
+                                                <li class="menu-item ">
+                                                    <a href="#">SEHA App</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="our-hospital.html">Our Hospitals</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="#">Our Specialities</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="our-doctors.html">Our Doctors</a>
+                                                </li>
+                                                <li>
+
+
+                                                    <a href="book-an-appointment.html" class="pq-button">
+                                                        <div class="pq-button-block">
+                                                            <span class="pq-button-text">Book an Appointment</span>
+                                                            <i class="ion ion-plus-round"></i>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                </li>
+
+                                                <!-- <li class="menu-item ">
+                                                    <a href="#">Our Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="our-hospital.html">Our Hospitals</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="#">Our Specialities</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="our-doctors.html">Our Doctors</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li> -->
+                                                <!-- <li class="menu-item ">
+                                                    <a href="#">Opportunities</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="#">Conferences</a>
+                                                        </li>
+
+
+
+                                                    </ul>
+                                                </li> -->
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pq-header-info-box">
+                                        <div class="pq-menu-search-block">
+                                            <a href="javascript:void(0)" id="pq-seacrh-btn">
+
+                                        </div>
+                                        <div class="pq-toggle-btn">
+                                            <a href="javascript:void(0)" class="menu-toggle">Menu</a>
+                                        </div>
+                                    </div>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!--=================================
          header end-->
     <!--=================================
          Banner start-->
-    <div
-      class="pq-breadcrumb"
-      style="
+    <div class="pq-breadcrumb" style="
         background: linear-gradient(
             90deg,
             rgb(255 255 255),
@@ -463,400 +699,350 @@
           ),
           url('images/breadcrumb-patients-rights.jpg');
         background-size: cover;
-      "
-    >
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <nav aria-label="breadcrumb">
-              <div class="pq-breadcrumb-title">
-                <h2>Patient Rights & responsibilities</h2>
-              </div>
-            </nav>
-          </div>
-          <div class="col-lg-4">
-            <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
-          </div>
+      ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h2>Patient Rights & responsibilities</h2>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!--=================================
          Banner end-->
     <!--=================================
          common-quaries start-->
     <section class="rights">
-      <div class="container">
-        <div class="row">
-          <div class="c-head">
-            <p
-              class="mb-0 text-center fw-bold"
-              style="color: var(--theme-color-dark-blue)"
-            >
-              Patient Rights and Responsibilities are crucial aspects of
-              healthcare that promote better communication, mutual respect, and
-              trust between patients and healthcare providers. As a patient, you
-              have the right to receive quality healthcare services that meet
-              your needs, preferences, and values. You also have the right to
-              participate in your care plan, access your medical records, and
-              privacy protection.
-            </p>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button acc-title acc-btn"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  As a patient you have the right to:
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body acc-body">
-                  <ol>
-                    <li>
-                      Receive information about the availability of care,
-                      services and how to access them appropriately.
-                    </li>
-                    <li>
-                      Receive protection if you are a vulnerable child, adult or
-                      elderly person including people of determination.
-                    </li>
-                    <li>
-                      Receive care regardless of race, creed, color, national
-                      origin, gender, age or disability.
-                    </li>
-                    <li>
-                      Have your personal dignity, privacy, culture, psychosocial
-                      and personal values, beliefs and preferences respected.
-                    </li>
-                    <li>Be in a clean and safe environment.</li>
-                    <li>
-                      Have your pain assessed and managed in a timely manner.
-                    </li>
-                    <li>
-                      Access spiritual care services available in our community.
-                    </li>
-                    <li>Access interpretation services.</li>
-                    <li>Be free from all forms of harassment or assault.</li>
-                    <li>
-                      Receive visitors, unless it would compromise your
-                      treatment.
-                    </li>
-                    <li>
-                      Be informed of your medical condition(s), treatment plan,
-                      anticipated outcomes in a way you or your family/
-                      caregiver can understand including:
-                      <ul>
-                        <li style="list-style-type: disc">
-                          Risks and benefits associated with treatment
-                        </li>
-                        <li style="list-style-type: disc">
-                          A plan for continuity of care following discharge
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Know the names/ titles of your healthcare providers.
-                    </li>
-                    <li>Request for a change of provider or second opinion.</li>
-                    <li>
-                      Request a medical report and access your medical record as
-                      permitted by law.
-                    </li>
-                    <li>Be informed about your financial responsibilities.</li>
-                    <li>
-                      Refuse, discontinue treatment or leave against doctor’s
-                      advice as permitted by law.
-                    </li>
-                    <li>
-                      Provide your written consent prior any video recordings or
-                      other images are taken.
-                    </li>
-                  </ol>
+        <div class="container">
+            <div class="row">
+                <div class="c-head">
+                    <p class="mb-0 text-center fw-bold" style="color: var(--theme-color-dark-blue)">
+                        Patient Rights and Responsibilities are crucial aspects of
+                        healthcare that promote better communication, mutual respect, and
+                        trust between patients and healthcare providers. As a patient, you
+                        have the right to receive quality healthcare services that meet
+                        your needs, preferences, and values. You also have the right to
+                        participate in your care plan, access your medical records, and
+                        privacy protection.
+                    </p>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button acc-btn"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  As a patient, it is your responsibility to:
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body acc-body">
-                  <ol>
-                    <li>
-                      Bring your insurance card and an identification card with
-                      you every visit.
-                    </li>
-                    <li>
-                      Keep scheduled appointments, arrive on time or let us know
-                      in advance if you would like to reschedule.
-                    </li>
-                    <li>
-                      Sign a general consent for treatment after having the
-                      scope and limits fully explained. Children under 18 years
-                      old should be accompanied by a consenting adult family
-                      member.
-                    </li>
-                    <li>
-                      Give us complete and accurate information about your
-                      health, including medical history and medications.
-                    </li>
-                    <li>
-                      Let us know if you don’t understand the information we
-                      give you about your condition or treatment.
-                    </li>
-                    <li>
-                      Inform us of changes in your condition or symptoms,
-                      including pain that you have.
-                    </li>
-                    <li>
-                      Follow regulations regarding patient/ visitor conduct, no
-                      smoking and visitation timings.
-                    </li>
-                    <li>
-                      Show respect and courtesy to staff and other patients.
-                    </li>
-                    <li>
-                      Take responsibility for the outcome(s) if you decide not
-                      to follow the healthcare provider instructions and/ or
-                      treatment plan and recommendations.
-                    </li>
-                    <li>
-                      Speak up and communicate your concerns to any employee as
-                      soon as possible.
-                    </li>
-                    <li>
-                      Pay your bills or make arrangements to meet the financial
-                      obligations arising from your care.
-                    </li>
-                    <li>
-                      Leave your valuables at home or entrust to Security
-                      Department.
-                    </li>
-                  </ol>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button acc-title acc-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                As a patient you have the right to:
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-body">
+                                <ol>
+                                    <li>
+                                        Receive information about the availability of care,
+                                        services and how to access them appropriately.
+                                    </li>
+                                    <li>
+                                        Receive protection if you are a vulnerable child, adult or
+                                        elderly person including people of determination.
+                                    </li>
+                                    <li>
+                                        Receive care regardless of race, creed, color, national
+                                        origin, gender, age or disability.
+                                    </li>
+                                    <li>
+                                        Have your personal dignity, privacy, culture, psychosocial
+                                        and personal values, beliefs and preferences respected.
+                                    </li>
+                                    <li>Be in a clean and safe environment.</li>
+                                    <li>
+                                        Have your pain assessed and managed in a timely manner.
+                                    </li>
+                                    <li>
+                                        Access spiritual care services available in our community.
+                                    </li>
+                                    <li>Access interpretation services.</li>
+                                    <li>Be free from all forms of harassment or assault.</li>
+                                    <li>
+                                        Receive visitors, unless it would compromise your
+                                        treatment.
+                                    </li>
+                                    <li>
+                                        Be informed of your medical condition(s), treatment plan,
+                                        anticipated outcomes in a way you or your family/
+                                        caregiver can understand including:
+                                        <ul>
+                                            <li style="list-style-type: disc">
+                                                Risks and benefits associated with treatment
+                                            </li>
+                                            <li style="list-style-type: disc">
+                                                A plan for continuity of care following discharge
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Know the names/ titles of your healthcare providers.
+                                    </li>
+                                    <li>Request for a change of provider or second opinion.</li>
+                                    <li>
+                                        Request a medical report and access your medical record as
+                                        permitted by law.
+                                    </li>
+                                    <li>Be informed about your financial responsibilities.</li>
+                                    <li>
+                                        Refuse, discontinue treatment or leave against doctor’s
+                                        advice as permitted by law.
+                                    </li>
+                                    <li>
+                                        Provide your written consent prior any video recordings or
+                                        other images are taken.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button acc-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                As a patient, it is your responsibility to:
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body acc-body">
+                                <ol>
+                                    <li>
+                                        Bring your insurance card and an identification card with
+                                        you every visit.
+                                    </li>
+                                    <li>
+                                        Keep scheduled appointments, arrive on time or let us know
+                                        in advance if you would like to reschedule.
+                                    </li>
+                                    <li>
+                                        Sign a general consent for treatment after having the
+                                        scope and limits fully explained. Children under 18 years
+                                        old should be accompanied by a consenting adult family
+                                        member.
+                                    </li>
+                                    <li>
+                                        Give us complete and accurate information about your
+                                        health, including medical history and medications.
+                                    </li>
+                                    <li>
+                                        Let us know if you don’t understand the information we
+                                        give you about your condition or treatment.
+                                    </li>
+                                    <li>
+                                        Inform us of changes in your condition or symptoms,
+                                        including pain that you have.
+                                    </li>
+                                    <li>
+                                        Follow regulations regarding patient/ visitor conduct, no
+                                        smoking and visitation timings.
+                                    </li>
+                                    <li>
+                                        Show respect and courtesy to staff and other patients.
+                                    </li>
+                                    <li>
+                                        Take responsibility for the outcome(s) if you decide not
+                                        to follow the healthcare provider instructions and/ or
+                                        treatment plan and recommendations.
+                                    </li>
+                                    <li>
+                                        Speak up and communicate your concerns to any employee as
+                                        soon as possible.
+                                    </li>
+                                    <li>
+                                        Pay your bills or make arrangements to meet the financial
+                                        obligations arising from your care.
+                                    </li>
+                                    <li>
+                                        Leave your valuables at home or entrust to Security
+                                        Department.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!--
           Footer start
    ==============================-->
     <footer id="pq-footer">
-      <div class="pq-footer-style-1">
-        <div class="pq-subscribe align-items-center">
-          <div class="max-width-75">
-            <div class="row align-items-center">
-              <div class="col-lg-12">
-                <div class="pq-subscribe-bg">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="pq-subscribe-block">
-                        <img
-                          src="images/Subscribe.png"
-                          class="pq-subscribe-img img-fluid"
-                          alt="medicate-subscribe-image"
-                        />
-                        <div class="pq-subscribe-details">
-                          <h5>Latest Updates Subscribe To Our Newsletter</h5>
+        <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="max-width-75">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block">
+                                            <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid"
+                                                alt="medicate-subscribe-image" />
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="" />
+                                                    <input class="" type="submit" value="Sign up" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="col-lg-7 align-self-center">
-                      <div class="pq-subscribe-from">
-                        <form id="form" class="form">
-                          <div class="form-fields">
-                            <input
-                              class="w-100 pq-bg-transparent"
-                              type="email"
-                              name="EMAIL"
-                              placeholder="Enter Your Email"
-                              required=""
-                            />
-                            <input class="" type="submit" value="Sign up" />
-                          </div>
-                        </form>
-                      </div>
+                </div>
+            </div>
+
+
+            <div class="pq-footer-top">
+                <div class="max-width-75">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">General</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                        <li><a href="News&Events.html">Media Center</a></li>
+                                        <li><a href="#">Patient Stories</a></li>
+                                        <li><a href="blogs.html">Blog</a></li>
+                                        <li><a href="faq.html">FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Resources</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="#">Patient Portal</a></li>
+                                        <li><a href="#">Hospitals</a></li>
+                                        <li><a href="#">Specialties</a></li>
+                                        <li><a href="#">Doctors</a></li>
+                                        <li><a href="#">Inernational Patients</a></li>
+                                        <li><a href="Insurance.html">Insurance Partners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Misc.</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li>
+                                            <a href="patient-rights.html">Patient Rights & Responsibilities</a>
+                                        </li>
+                                        <li>
+                                            <a href="corporate-social-responsibility.html">Corporate Social
+                                                Responsibility</a>
+                                        </li>
+                                        <li>
+                                            <a href="transparency-charter.html">Transparency Charter</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                                a complaint (TAMM)</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                                & Contracts</a>
+                                        </li>
+                                        <li>
+                                            <a href="fraud-alert.html">Recruitment Fraud Alert</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://portal.seha.ae/">Employee Services</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
+                                    alt="medicate-footer-logo" />
+                                <p class="mb-1 fs-14">Abu Dhabi Health Services Co.</p>
+                                <i class="fas fa-map-marker"></i>
+                                <span class="fs-14">
+                                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street
+                                    (32nd Street), Abu Dhabi, United Arab Emirates​.</span>
+
+                                <div class="pq-footer-social mt-2">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/SEHAHealth/"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/sehahealth/"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/sehahealth"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/company/sehahealth/"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/SEHAHealth"><i
+                                                    class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-
-
-        <div class="pq-footer-top">
-          <div class="max-width-75">
-            <div class="row">
-              <div class="col-xl-3 col-md-6">
-                <div class="pq-footer-block">
-                  <h4 class="footer-title">General</h4>
-                  <div class="menu-useful-links-container">
-                    <ul id="menu-useful-links" class="menu">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about-us.html">About Us</a></li>
-                      <li><a href="contact-us.html">Contact Us</a></li>
-                      <li><a href="careers.html">Careers</a></li>
-                      <li><a href="News&Events.html">Media Center</a></li>
-                      <li><a href="#">Patient Stories</a></li>
-                      <li><a href="blogs.html">Blog</a></li>
-                      <li><a href="faq.html">FAQ's</a></li>
-                    </ul>
-                  </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <span class="pq-copyright">
+                                ©️ Copyright 2023 SEHA – Abu Dhabi Health Services Co. All
+                                Rights Reserved.</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="pq-footer-block">
-                  <h4 class="footer-title">Resources</h4>
-                  <div class="menu-useful-links-container">
-                    <ul id="menu-useful-links" class="menu">
-                      <li><a href="#">Patient Portal</a></li>
-                      <li><a href="#">Hospitals</a></li>
-                      <li><a href="#">Specialties</a></li>
-                      <li><a href="#">Doctors</a></li>
-                      <li><a href="#">Inernational Patients</a></li>
-                      <li><a href="Insurance.html">Insurance Partners</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="pq-footer-block">
-                  <h4 class="footer-title">Misc.</h4>
-                  <div class="menu-useful-links-container">
-                    <ul id="menu-useful-links" class="menu">
-                      <li>
-                        <a href="patient-rights.html"
-                          >Patient Rights & Responsibilities</a
-                        >
-                      </li>
-                      <li>
-                        <a href="corporate-social-responsibility.html"
-                          >Corporate Social Responsibility</a
-                        >
-                      </li>
-                      <li>
-                        <a href="transparency-charter.html"
-                          >Transparency Charter</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs"
-                          >Submit a complaint (TAMM)</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx"
-                          >Tenders & Contracts</a
-                        >
-                      </li>
-                      <li>
-                        <a href="fraud-alert.html">Recruitment Fraud Alert</a>
-                      </li>
-                      <li>
-                        <a href="https://portal.seha.ae/">Employee Services</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="pq-footer-block">
-                  <img
-                    src="rev/assets/Seha-Logo.png"
-                    class="pq-footer-logo img-fluid"
-                    alt="medicate-footer-logo"
-                  />
-                  <p class="mb-1 fs-14">Abu Dhabi Health Services Co.</p>
-                  <i class="fas fa-map-marker"></i>
-                  <span class="fs-14">
-                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street
-                    (32nd Street), Abu Dhabi, United Arab Emirates​.</span
-                  >
-
-                  <div class="pq-footer-social mt-2">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com/SEHAHealth/"
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/sehahealth/"
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://twitter.com/sehahealth"
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/company/sehahealth/"
-                          ><i class="fab fa-linkedin"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.youtube.com/SEHAHealth"
-                          ><i class="fab fa-youtube"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="pq-copyright-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <span class="pq-copyright">
-                  ©️ Copyright 2023 SEHA – Abu Dhabi Health Services Co. All
-                  Rights Reserved.</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </footer>
     <!--Footer End-->
     <!--Back To Top start-->
     <div id="back-to-top">
-      <a class="topbtn" id="top" href="#top">
-        <i class="ion-ios-arrow-up"></i>
-      </a>
+        <a class="topbtn" id="top" href="#top">
+            <i class="ion-ios-arrow-up"></i>
+        </a>
     </div>
     <!--Back To Top End-->
     <!--jquery js-->
@@ -878,25 +1064,26 @@
     <!--custom js-->
     <script src="js/custom.js"></script>
     <script>
-      const searchBtn = document.querySelector('#pq-seacrh-btn')
-      const searchBarContainer = document.querySelector('#search-bar-container')
-      const closeBtn = document.querySelector('#close-search')
+        const searchBtn = document.querySelector('#pq-seacrh-btn')
+        const searchBarContainer = document.querySelector('#search-bar-container')
+        const closeBtn = document.querySelector('#close-search')
 
-      searchBtn.addEventListener('click', function () {
-        searchBarContainer.style.display = 'flex'
-        setTimeout(function () {
-          searchBarContainer.classList.add('show')
-        }, 10) // adjust the time to match the duration of the animation
-      })
+        searchBtn.addEventListener('click', function () {
+            searchBarContainer.style.display = 'flex'
+            setTimeout(function () {
+                searchBarContainer.classList.add('show')
+            }, 10) // adjust the time to match the duration of the animation
+        })
 
-      closeBtn.addEventListener('click', function () {
-        searchBarContainer.classList.remove('show')
-        searchBarContainer.classList.add('transition')
-        setTimeout(function () {
-          searchBarContainer.style.display = 'none'
-          searchBarContainer.classList.remove('transition')
-        }, 500) // adjust the time to match the duration of the animation
-      })
+        closeBtn.addEventListener('click', function () {
+            searchBarContainer.classList.remove('show')
+            searchBarContainer.classList.add('transition')
+            setTimeout(function () {
+                searchBarContainer.style.display = 'none'
+                searchBarContainer.classList.remove('transition')
+            }, 500) // adjust the time to match the duration of the animation
+        })
     </script>
-  </body>
+</body>
+
 </html>
