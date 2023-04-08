@@ -28,7 +28,7 @@
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <style>
-        :root {
+         :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -47,64 +47,64 @@
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-
+        
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
+        
         .bottom-nav {
             padding: 0 2rem 0px 3rem !important;
         }
-
+        
         .padding-none {
             padding: 0px;
         }
-
+        
         .pq-client-img,
         .pq-footer-logo {
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-
+        
         .top-bar {
             height: 50px;
             background: var(--theme-color-dark-blue);
             color: white;
         }
-
+        
         .top-bar li a {
             color: white !important;
             text-transform: capitalize !important;
             font-size: 13px !important;
         }
-
+        
         .top-bar a i {
             color: white;
         }
-
+        
         .top-bar li i {
             color: white !important;
             font-size: 16px;
         }
-
+        
         .pq-menu-search-block #search-bar-container {
             display: none;
             position: fixed;
@@ -116,48 +116,45 @@
             z-index: 9999;
             opacity: 0;
         }
-
+        
         .pq-menu-search-block #search-bar-container.show {
             display: flex;
             align-items: center;
             justify-content: center;
             animation: fade-in 0.5s forwards;
         }
-
+        
         .pq-menu-search-block #search-bar-container.transition {
             animation: fade-out 0.5s forwards;
         }
-
+        
         @keyframes fade-in {
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
         }
-
+        
         @keyframes fade-out {
             from {
                 opacity: 1;
             }
-
             to {
                 opacity: 0;
             }
         }
-
+        
         @keyframes slide-up {
             from {
                 transform: translateX(100%);
             }
-
             to {
                 transform: translateX(0);
             }
         }
-
+        
         .pq-menu-search-block .search-bar {
             position: absolute;
             top: 50%;
@@ -170,21 +167,16 @@
             max-width: 600px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
-
-
-
+        
         @keyframes slide-down {
             from {
                 transform: translateX(0%);
             }
-
             to {
                 transform: translateX(100%);
             }
         }
-
-
+        
         .pq-menu-search-block #close-search {
             position: absolute;
             top: 0px;
@@ -192,85 +184,85 @@
             font-size: 20px;
             color: #333;
         }
-
+        
         .search-close {
             color: black !important;
         }
-
+        
         .max-width-75 {
             max-width: 75%;
             margin: 0 auto;
         }
-
+        
         .bg-color-dark-blue {
             background-color: var(--theme-color-dark-blue);
         }
-
+        
         img.header-img {
             width: 30px;
             padding-bottom: 2px;
         }
-
+        
         .custom_our_doctors {
             padding: 0px 0px 100px 0px !important;
         }
-
+        
         .custom_our_doctor_about {
             padding: 50px 0px !important;
         }
-
+        
         .content-section {
             padding: 0px 0px 30px 0px !important;
         }
-
+        
         .content-section p {
             line-height: 1.6em;
             text-align: justify;
             font-size: 15px;
             margin-bottom: 10px;
         }
-
+        
         .content-section h6 {
             font-size: 35px !important;
             line-height: 1.5em;
         }
-
+        
         .row-height {
             height: 100%;
         }
-
+        
         .search {
             position: relative;
             box-shadow: 0 0 40px rgba(51, 51, 51, .1);
         }
-
+        
         .search input {
             height: 60px;
             text-indent: 25px;
             /* border: 2px solid #d6d4d4; */
         }
-
+        
         .search input:focus {
             box-shadow: none;
             border: 1px solid #e7e7e7;
         }
-
+        
         .search input:hover {
             box-shadow: none;
             border: 1px solid #e7e7e7;
         }
-
+        
         .search .fa-search {
             position: absolute;
             top: 23px;
             left: 16px;
             color: #0a3a5a;
         }
-
+        
         .search button:hover {
             background: #236794 !important;
         }
-
+        
         .search button {
             position: absolute;
             top: 5px;
@@ -280,40 +272,40 @@
             background: #0a3a5a;
             border-color: #0a3a5a;
         }
-
+        
         .custom_our_doctor_about a {
             color: #00b5ea !important;
             background-color: #f4f6f9 !important;
         }
-
+        
         .custom_our_doctor_about a.active {
             background-color: #00b5ea !important;
             color: #fff !important;
             border-bottom: 1px solid #00b5ea !important;
         }
-
+        
         .custom_our_doctor_about a.active:after {
             border-top-color: #00b5ea !important;
         }
-
+        
         .custom-search-btn {
             margin-top: 30px;
             background-color: #00b5ea !important;
             border-color: #00b5ea !important;
         }
-
+        
         .custom-search-btn::placeholder {
             color: #fff;
             opacity: 1;
             /* Firefox */
         }
-
-        :-ms-input.custom-search-btn-placeholder {
+        
+         :-ms-input.custom-search-btn-placeholder {
             /* Internet Explorer 10-11 */
             color: #fff;
         }
-
-        ::-ms-input.custom-search-btn-placeholder {
+        
+         ::-ms-input.custom-search-btn-placeholder {
             /* Microsoft Edge */
             color: #fff;
         }
@@ -367,8 +359,7 @@
                                 <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
                                 <div id="search-bar-container">
                                     <div class="search-bar">
-                                        <a href="javascript:void(0);" id="close-search"> <i
-                                                class="fa fa-close search-close"></i> </a>
+                                        <a href="javascript:void(0);" id="close-search"> <i class="fa fa-close search-close"></i> </a>
                                         <form role="search" method="get" class="search-form" action=".html">
                                             <label>
                                                 <span class="screen-reader-text">Search for:</span>
@@ -439,9 +430,7 @@
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </nav>
@@ -461,13 +450,6 @@
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
                             <h2>Our Doctors</h2>
-                        </div>
-                        <div class="pq-breadcrumb-container mt-2">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html"><i
-                                            class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">our doctors</li>
-                            </ol>
                         </div>
                     </nav>
                 </div>
@@ -508,14 +490,12 @@
                 </div>
                 <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
                     <label class="text-dark">Keyword</label>
-                    <input type="text" id="phone-number" class="form-control phone-number-field mb-0"
-                        placeholder="Search Keyword" required>
+                    <input type="text" id="phone-number" class="form-control phone-number-field mb-0" placeholder="Search Keyword" required>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                     <a class="">
                         <div class="pq-button-block ">
-                            <input type="text" class="form-control me-2 mb-0 custom-search-btn text-center"
-                                placeholder="Search" />
+                            <input type="text" class="form-control me-2 mb-0 custom-search-btn text-center" placeholder="Search" />
                         </div>
                     </a>
                 </div>
@@ -526,8 +506,7 @@
                     <a href="doctor-detail.html">
                         <div class="pq-team pq-team-style-1 pb-lg-5 ">
                             <div class="pq-team-box pq-style-1">
-                                <div class="pq-team-img"> <img src="images/team/2.jpg" class="img-fluid"
-                                        alt="team-image">
+                                <div class="pq-team-img"> <img src="images/team/2.jpg" class="img-fluid" alt="team-image">
 
                                 </div>
                                 <div class="pq-team-info">
@@ -639,8 +618,7 @@
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
-                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
                                             </div>
@@ -650,8 +628,7 @@
                                         <div class="pq-subscribe-from">
                                             <form id="form" class="form">
                                                 <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
-                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
                                                     <input class="" type="submit" value="Sign up">
                                                 </div>
                                             </form>
@@ -708,11 +685,9 @@
                                         <li><a href="corporate-social-responsibility.html">Corporate Social
                                                 Responsibility</a></li>
                                         <li><a href="transparency-charter.html">Transparency Charter</a></li>
-                                        <li><a
-                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
                                                 a complaint (TAMM)</a></li>
-                                        <li><a
-                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
                                                 & Contracts</a></li>
                                         <li><a href="fraud-alert.html">Recruitment Fraud Alert</a></li>
                                         <li><a href="https://portal.seha.ae/">Employee Services</a></li>
@@ -722,8 +697,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block">
-                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
-                                    alt="medicate-footer-logo">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                                 <p class="mb-1 fs-14">Abu Dhabi Health Services Co.
                                 </p>
                                 <i class="fas fa-map-marker"></i> <span class="fs-14">
@@ -790,17 +764,17 @@
         const searchBarContainer = document.querySelector('#search-bar-container');
         const closeBtn = document.querySelector('#close-search');
 
-        searchBtn.addEventListener('click', function () {
+        searchBtn.addEventListener('click', function() {
             searchBarContainer.style.display = 'flex';
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.classList.add('show');
             }, 10); // adjust the time to match the duration of the animation
         });
 
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener('click', function() {
             searchBarContainer.classList.remove('show');
             searchBarContainer.classList.add('transition');
-            setTimeout(function () {
+            setTimeout(function() {
                 searchBarContainer.style.display = 'none';
                 searchBarContainer.classList.remove('transition');
             }, 500); // adjust the time to match the duration of the animation
