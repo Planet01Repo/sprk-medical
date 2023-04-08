@@ -252,7 +252,7 @@
         }
 
         .accordion-button:not(.show) {
-            color: black;
+            color: var(--theme-color-dark-blue);
             background-color: var(--theme-color-light-gray);
             padding-left: 50px;
             font-weight: 600;
@@ -378,7 +378,7 @@
 
         button.owl-prev,
         button.owl-next {
-            background: var(--theme-color-light-blue) !important;
+            background: var(--theme-color-blue) !important;
         }
 
         i.ion-ios-arrow-back,
@@ -389,29 +389,6 @@
 
         .owl-nav {
             padding-left: 3rem;
-        }
-
-        :root {
-
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
         }
 
 
@@ -815,7 +792,7 @@
         <div class="pq-header-diff-block">
             <div class="row no-gutters">
                 <div class="col-lg-2 col-md-4">
-                    <a class="navbar-brand" href="index-v2.html">
+                    <a class="navbar-brand" href="index.html">
                         <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
                     </a>
                 </div>
@@ -829,16 +806,16 @@
                                         <ul>
 
                                             <li>
-                                                <a href="#"><span>Patient Portal</span></a>
+                                                <a href="https://login.seha.ae/SEHAHome/NewHome.aspx"><span>Patient Portal</span></a>
                                                 <!-- <span>Patient Portal</span> -->
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#"></i><span>Conferences</span></a>
+                                                <a href="https://www.seha.ae/conference/"></i><span>Conferences</span></a>
                                             </li>
 
                                             <li>
-                                                <a href="#">
+                                                <a href="News&Events.html">
                                                     </i><span>Media Center</span></a>
                                             </li>
                                             <li>
@@ -878,17 +855,17 @@
                                                 <li class="menu-item ">
 
                                                 <li class="menu-item ">
-                                                    <a href="#">About Us</a>
+                                                    <a href="about-us.html">About Us</a>
                                                 </li>
 
                                                 <li class="menu-item ">
-                                                    <a href="#">SEHA App</a>
+                                                    <a href="https://www.mediclinic.ae/en/corporate/mymediclinic-24x7.html">SEHA App</a>
                                                 </li>
                                                 <li class="menu-item ">
                                                     <a href="our-hospital.html">Our Hospitals</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="#">Our Specialities</a>
+                                                    <a href="specialty.html">Our Specialities</a>
                                                 </li>
                                                 <li class="menu-item ">
                                                     <a href="our-doctors.html">Our Doctors</a>
@@ -964,29 +941,24 @@
          header end-->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h2>Insurance Partners</h2>
-                        </div>
-                        <div class="pq-breadcrumb-container mt-2">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html"><i
-                                            class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Insurance</li>
-                            </ol>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-lg-4">
-                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+         <div class="pq-breadcrumb" style="background: linear-gradient(
+            90deg,
+            rgb(10 58 90),
+            rgb(10 58 90 / 12%)
+          ),
+          url(images/breadcrumb-about-us.png);background-size: cover;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav aria-label="breadcrumb">
+                            <div class="pq-breadcrumb-title">
+                                <h2>Insurance Partners</h2>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <!--=================================
          Banner end-->
 
@@ -1259,7 +1231,7 @@
                     aria-labelledby="pills-general-tab" tabindex="0">
                     <div class="accordion acc" id="accordionExample">
                         <div class="accordion-item acc-i">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                            <h2 class="accordion-header" 
                                 id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -1274,7 +1246,7 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                            <h2 class="accordion-header" 
                                 id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -1293,7 +1265,7 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                            <h2 class="accordion-header" 
                                 id="headingthree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
@@ -1308,7 +1280,7 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                            <h2 class="accordion-header" 
                                 id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -1324,7 +1296,7 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                            <h2 class="accordion-header" 
                                 id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -1342,7 +1314,7 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                            <h2 class="accordion-header" 
                                 id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -1371,7 +1343,7 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item acc-item">
                             <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ""
-                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     What is SEHA?
@@ -1388,7 +1360,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     When and why was SEHA created?
@@ -1408,7 +1380,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     What is the difference between Department of Health (DoH) Abu Dhabi and SEHA?
@@ -1425,7 +1397,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     How does SEHA deliver on the UAE government’s vision for the country’s healthcare
@@ -1451,7 +1423,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     How many hospitals and clinics are there within your network?
@@ -1472,7 +1444,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     Are SEHA hospitals only for the UAE nationals?
@@ -1499,7 +1471,7 @@
 
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     What complex care does SEHA provide?
@@ -1517,7 +1489,7 @@
                             </div>
                         </div>
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     What specialties does SEHA provide?
@@ -1537,7 +1509,7 @@
                             </div>
                         </div>
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Which insurance works at your hospitals?
@@ -1553,7 +1525,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     Does SEHA accept patients from outside Abu Dhabi and elsewhere in the world?
@@ -1570,7 +1542,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     Can I use Thiqa card in all SEHA’s facilities?
@@ -1588,7 +1560,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     Which hospitals and facilities are part of SEHA?
@@ -1767,7 +1739,7 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item acc-item">
                             <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ""
-                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     How can I make a complaint?
@@ -1785,7 +1757,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Can my complaint be anonymous?
@@ -1806,7 +1778,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Will SEHA provide a full detailed investigation and feedback on the concerns raised?
@@ -1833,7 +1805,7 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item acc-item">
                             <h2 class="accordion-header  style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ""
-                                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                                >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     Where is SEHA company located?
@@ -1854,7 +1826,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     What are SEHA’s office hours for direct/phone contact?
@@ -1872,7 +1844,7 @@
                         </div>
 
                         <div class="accordion-item acc-item">
-                            <h2 class="accordion-header" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <h2 class="accordion-header" >
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     What if I have a question that is not covered here? </button>

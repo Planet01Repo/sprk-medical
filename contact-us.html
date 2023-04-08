@@ -30,26 +30,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="load-more-button.js"></script>
     <style>
-        :root {
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
-        }
-
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
@@ -214,8 +194,8 @@
         }
 
         .c-head {
-            background-color: var(--theme-color-light-blue);
-            color: white;
+            background-color: var(--theme-color-blue);
+            color: var(--theme-color-light-blue);
             text-align: left;
             padding-left: 20px;
             margin-top: 20px;
@@ -254,6 +234,7 @@
 
         .box-c .pq-fancy-box-title {
             padding: 0px;
+            color: var(--theme-color-blue);
         }
 
         .box-c .pq-fancybox-description {
@@ -271,7 +252,7 @@
         }
 
         #loadMore a {
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
             border-radius: 3px;
             color: white;
             display: inline-block;
@@ -297,6 +278,7 @@
             font-size: 38px;
             text-align: center;
             margin-bottom: 30px;
+            color: var(--theme-color-dark-blue);
         }
 
         .fcf-form-group .fcf-input-group .fcf-form-control {
@@ -310,7 +292,7 @@
         }
 
         [type="submit"] {
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
         }
 
 
@@ -578,7 +560,7 @@
         <div class="pq-header-diff-block">
             <div class="row no-gutters">
                 <div class="col-lg-2 col-md-4">
-                    <a class="navbar-brand" href="index-v2.html">
+                    <a class="navbar-brand" href="index.html">
                         <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
                     </a>
                 </div>
@@ -592,16 +574,16 @@
                                         <ul>
 
                                             <li>
-                                                <a href="#"><span>Patient Portal</span></a>
+                                                <a href="https://login.seha.ae/SEHAHome/NewHome.aspx"><span>Patient Portal</span></a>
                                                 <!-- <span>Patient Portal</span> -->
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#"></i><span>Conferences</span></a>
+                                                <a href="https://www.seha.ae/conference/"></i><span>Conferences</span></a>
                                             </li>
 
                                             <li>
-                                                <a href="#">
+                                                <a href="News&Events.html">
                                                     </i><span>Media Center</span></a>
                                             </li>
                                             <li>
@@ -637,68 +619,68 @@
                                         <div id="pq-menu-contain" class="pq-menu-contain">
                                             <ul id="pq-main-menu" class="navbar-nav ms-auto">
 
-                                                </li>
-                                                <li class="menu-item ">
+                                            </li>
+                                            <li class="menu-item ">
 
-                                                <li class="menu-item ">
-                                                    <a href="#">About Us</a>
-                                                </li>
+                                            <li class="menu-item ">
+                                                <a href="about-us.html">About Us</a>
+                                            </li>
 
-                                                <li class="menu-item ">
-                                                    <a href="#">SEHA App</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-hospital.html">Our Hospitals</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="#">Our Specialities</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-doctors.html">Our Doctors</a>
-                                                </li>
-                                                <li>
-
-
-                                                    <a href="book-an-appointment.html" class="pq-button">
-                                                        <div class="pq-button-block">
-                                                            <span class="pq-button-text">Book an Appointment</span>
-                                                            <i class="ion ion-plus-round"></i>
-                                                        </div>
-                                                    </a>
-                                                </li>
+                                            <li class="menu-item ">
+                                                <a href="https://www.mediclinic.ae/en/corporate/mymediclinic-24x7.html">SEHA App</a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="our-hospital.html">Our Hospitals</a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="specialty.html">Our Specialities</a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="our-doctors.html">Our Doctors</a>
+                                            </li>
+                                            <li>
 
 
-                                                </li>
-
-                                                <!-- <li class="menu-item ">
-                                                    <a href="#">Our Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="our-hospital.html">Our Hospitals</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="#">Our Specialities</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="our-doctors.html">Our Doctors</a>
-                                                        </li>
-
-                                                    </ul>
-                                                </li> -->
-                                                <!-- <li class="menu-item ">
-                                                    <a href="#">Opportunities</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="#">Conferences</a>
-                                                        </li>
+                                                <a href="book-an-appointment.html" class="pq-button">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Book an Appointment</span>
+                                                        <i class="ion ion-plus-round"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
 
 
+                                            </li>
 
-                                                    </ul>
-                                                </li> -->
+                                            <!-- <li class="menu-item ">
+                                                <a href="#">Our Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item ">
+                                                        <a href="our-hospital.html">Our Hospitals</a>
+                                                    </li>
+                                                    <li class="menu-item ">
+                                                        <a href="#">Our Specialities</a>
+                                                    </li>
+                                                    <li class="menu-item ">
+                                                        <a href="our-doctors.html">Our Doctors</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li class="menu-item ">
+                                                <a href="#">Opportunities</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item ">
+                                                        <a href="#">Conferences</a>
+                                                    </li>
 
 
-                                            </ul>
+
+                                                </ul>
+                                            </li> -->
+
+
+                                        </ul>
                                         </div>
                                     </div>
                                     <div class="pq-header-info-box">
@@ -727,7 +709,12 @@
          header end-->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+    <div class="pq-breadcrumb" style="background: linear-gradient(
+        90deg,
+        rgb(10 58 90),
+        rgb(10 58 90 / 12%)
+      ),
+      url(images/breadcrumb.jpg);background-size: cover;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
