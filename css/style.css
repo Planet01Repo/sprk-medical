@@ -2077,7 +2077,7 @@ header#pq-header.pq-header-default .pq-btn-container {
 }
 
 header#pq-header.pq-header-default .pq-button {
-  background: var(--theme-color-light-blue);
+  background: var(--theme-color-line-blue);
   margin-left: 30px;
 }
 
@@ -2862,7 +2862,7 @@ Footer Subscribe
 }
 
 .pq-subscribe-bg {
-  background: var(--theme-color-light-blue);
+  background: var(--theme-color-line-blue);
   color: var(--white-color);
   padding: 45px;
   border-radius: 3px;
@@ -2999,11 +2999,11 @@ footer#pq-footer .pq-footer-style-1 .pq-footer-social ul li {
 
 footer#pq-footer .pq-footer-style-1 ul.menu li a:hover,
 footer#pq-footer .pq-footer-style-1 .pq-service li a:hover {
-  color: var(--primary-color);
+  color: var(--theme-color-line-blue);
 }
 
 footer#pq-footer .pq-footer-style-1 ul li a:hover {
-  color: var(--primary-color);
+  color: var(--theme-color-line-blue);
 }
 
 footer#pq-footer .pq-footer-style-1 ul.menu li a,
@@ -3225,7 +3225,7 @@ Section Title
     line-height: 22px;
     position: relative;
     text-transform: uppercase;
-    color: var(--theme-color-light-blue);
+    color: var(--theme-color-blue);
     background: var(--theme-color-blue-bg);
     padding: 8px 12px;
     margin: 0 0 10px;
@@ -5005,7 +5005,7 @@ Team
 }
 
 .single-team .pq-social-icon li i {
-  color: var(--dark-color);
+  color: var(--theme-color-dark-blue);
 }
 
 .experience-container {
@@ -7412,14 +7412,14 @@ Custom Css
 .pq-icon-box-3 .pq-icon-box-icon-3 i {
   font-size: 30px;
   margin-right: 18px;
-  color: var(--dark-color);
+  color: var(--theme-color-dark-blue);
 }
 
 .pq-icon-box-3 .pq-icon-box-content-3 .pq-icon-box-title-3 {
   font-size: 18px;
   line-height: 26px;
   font-style: normal;
-  color: #777777;
+  color: var(--theme-color-blue);
 }
 
 /*home 3 */

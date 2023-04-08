@@ -28,25 +28,6 @@
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <style>
-         :root {
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
-        }
         
         .top-bar {
             height: 50px;
@@ -274,24 +255,24 @@
         }
         
         .custom_our_doctor_about a {
-            color: #00b5ea !important;
+            color: var(--theme-color-line-blue) !important;
             background-color: #f4f6f9 !important;
         }
         
         .custom_our_doctor_about a.active {
-            background-color: #00b5ea !important;
+            background-color: var(--theme-color-line-blue) !important;
             color: #fff !important;
-            border-bottom: 1px solid #00b5ea !important;
+            border-bottom: 1px solid var(--theme-color-line-blue) !important;
         }
         
         .custom_our_doctor_about a.active:after {
-            border-top-color: #00b5ea !important;
+            border-top-color: var(--theme-color-line-blue) !important;
         }
         
         .custom-search-btn {
             margin-top: 30px;
-            background-color: #00b5ea !important;
-            border-color: #00b5ea !important;
+            background-color: var(--theme-color-line-blue) !important;
+            border-color: var(--theme-color-line-blue) !important;
         }
         
         .custom-search-btn::placeholder {
@@ -343,6 +324,9 @@
         
         .doc_title {
             font-weight: 700 !important;
+        }
+        h3.pq-section-title.pb-3.doc_title {
+            color: var(--theme-color-dark-blue);
         }
     </style>
 </head>
@@ -478,7 +462,12 @@
          header end-->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+    <div class="pq-breadcrumb" style="background: linear-gradient(
+        90deg,
+        rgb(10 58 90),
+        rgb(10 58 90 / 12%)
+      ),
+      url('images/breadcrumb.jpg');background-size: cover;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">

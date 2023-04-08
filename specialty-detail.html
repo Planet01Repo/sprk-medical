@@ -67,7 +67,7 @@
         .detail-content h3 {
             font-size: 22px;
             font-weight: 700;
-            color: #0a3a5a;
+            color: var(--theme-color-blue);
         }
         
         .detail-content p {
@@ -85,14 +85,14 @@
         
         .speciality_doctors .form-select:focus,
         .speciality_doctors .form-control:focus {
-            border-color: #00b5ea !important;
-            box-shadow: 0 0 0 0.12rem #00b5ea !important;
+            border-color: var(--theme-color-line-blue) !important;
+            box-shadow: 0 0 0 0.12rem var(--theme-color-line-blue) !important;
         }
         
         .custom-search-btn {
             margin-top: 30px;
-            background-color: #00b5ea !important;
-            border-color: #00b5ea !important;
+            background-color: var(--theme-color-line-blue) !important;
+            border-color: var(--theme-color-line-blue) !important;
         }
         
         .custom-search-btn::placeholder {
@@ -109,26 +109,6 @@
          ::-ms-input.custom-search-btn-placeholder {
             /* Microsoft Edge */
             color: #fff;
-        }
-        
-         :root {
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
         }
         
         .main-banner-image {
@@ -428,7 +408,12 @@
          header end-->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/banner-image.jpg');">
+    <div class="pq-breadcrumb" style="background: linear-gradient(
+        90deg,
+        rgb(10 58 90),
+        rgb(10 58 90 / 12%)
+      ),
+      url('images/banner-image.jpg');background-size: cover;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
