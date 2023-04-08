@@ -112,7 +112,7 @@ Design and Developed by: PeacefulQode
       if (jQuery('header').hasClass('pq-has-sticky')) {
          jQuery(window).scroll(function () {
             var scrollTop = jQuery(window).scrollTop();
-            if (scrollTop > 300) {
+            if (scrollTop > 100) {
                jQuery('header').addClass('pq-header-sticky animated fadeInDown animate__faster');
             } else {
                jQuery('header').removeClass('pq-header-sticky animated fadeInDown animate__faster');

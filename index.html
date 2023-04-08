@@ -12,6 +12,8 @@
     <!-- LOADING FONTS AND ICONS -->
     <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
     <!-- Owl Carousel CSS -->
@@ -33,7 +35,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <style>
-         :root {
+        :root {
             /* primary colors */
             --theme-color-dark-blue: #0a3a5a;
             --theme-color-green: #5dbca3;
@@ -41,105 +43,52 @@
             --theme-color-light-green-bg: #8bccbe8c;
             --theme-color-blue: #2544be;
             --theme-color-blue-bg: #00b3ea4f;
+
+
             /* secondary colors */
             --theme-color-light-blue: #00b5ea;
             --theme-color-burgundy: #973359;
             --theme-color-peach: #de6f4e;
             --theme-color-yellow: #faae61;
+
             /* neutrals colors */
             --theme-color-dark-gray: #787878;
             --theme-color-medium-gray: #A8A8A8;
             --theme-color-gray: #D2D2D2;
             --theme-color-light-gray: #E6E6E6;
         }
-        
-        .carousel {
+
+        #banner-carousel .carousel {
             position: relative;
             width: 100%;
             overflow: hidden;
         }
-        
-        .carousel-container {
+
+        #banner-carousel .carousel-container {
             display: flex;
             width: 500%;
             height: 90vh;
             transition: transform 0.5s ease;
         }
-        
-        .carousel-slide {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 1.5s;
-        }
-        
-        .carousel-slide.active {
-            opacity: 1;
-        }
-        
-        .carousel-slide img {
+
+
+
+        #banner-carousel .carousel-slide img {
             max-width: 100%;
             max-height: 100%;
         }
-        
-        .carousel-slide video {
+
+        #banner-carousel .carousel-slide video {
             max-width: 100%;
             max-height: 100%;
         }
-        
-        .carousel-prev,
-        .carousel-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            /* border-radius: 50%; */
-            background-color: rgb(255 255 255 / 50%);
-            color: #6e6e6e;
-            border: none;
-            font-size: 24px;
-            text-align: center;
-            line-height: 50px;
-            cursor: pointer;
-            transition: .2s;
-        }
-        
-        .carousel-prev:hover,
-        .carousel-next:hover {
-            /* border-radius: 50%; */
-            background-color: rgba(216, 216, 216, 0.5);
-        }
-        
-        .carousel-prev {
-            left: 10px;
-            z-index: 3;
-        }
-        
-        .carousel-next {
-            right: 10px;
-            z-index: 3;
-        }
-        
-        .slide {
+
+
+        #banner-carousel .slide {
             position: relative;
         }
-        
-        .slide:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.1) 60%);
-            /* adjust opacity as needed */
-            z-index: 1;
-        }
-        
-        .slide-text {
+
+        #banner-carousel .slide-text {
             position: absolute;
             top: 45%;
             left: 65%;
@@ -148,35 +97,24 @@
             color: #fff;
             z-index: 2;
         }
-        
-        .slide-text h2 {
+
+
+        #banner-carousel .slide-text h2 {
             font-size: 4rem;
             margin: 0;
             line-height: 70px;
         }
-        
-        .slide-text p {
+
+        #banner-carousel .slide-text p {
             font-size: 14px;
             font-weight: 500;
             margin-top: 10px;
             margin-left: 10px;
             color: rgb(102, 102, 102);
         }
-        
-        p.blue-text {
-            background-color: var(--theme-color-blue-bg);
-            font-size: 14px !important;
-            color: var(--theme-color-light-blue);
-            font-weight: 600;
-            width: 100%;
-            padding: 3px 8px;
-        }
-        
-        .blue-text-div {
-            width: fit-content;
-            margin-bottom: 10px;
-        }
-        
+
+
+
         .search-box-container {
             background: transparent;
             position: absolute;
@@ -185,7 +123,7 @@
             margin: 2rem auto;
             z-index: 10;
         }
-        
+
         .row.search-box-div {
             max-width: 75%;
             margin: 0 auto;
@@ -193,20 +131,21 @@
             padding: 2.5rem;
             box-shadow: 0 10px 25px -10px rgba(0, 0, 0, .4);
             position: relative;
-            bottom: 14rem;
+            bottom: 5rem;
         }
-        
+
+
         section.about.pq-bg-grey.pq-dark-bg-side-right {
             margin-top: 0rem;
         }
-        
+
         i.fa.fa-search.search-icon {
             position: absolute;
             z-index: 2;
             margin-top: 22px;
             font-size: 1.3rem;
         }
-        
+
         input.search-bar {
             background: transparent;
             border: none;
@@ -217,17 +156,17 @@
             color: #6e6e6e;
             transition: .5s;
         }
-        
+
         input.search-bar:focus {
             border-bottom: 2px solid #00b5ea;
         }
-        
+
         .search-bar::placeholder {
             font-size: 1.1rem;
             color: #6e6e6e;
             font-weight: 500;
         }
-        
+
         button.search-btn {
             width: 100%;
             height: 65px;
@@ -237,15 +176,15 @@
             font-weight: 600;
             transition: .3s;
         }
-        
+
         button.search-btn:hover {
             background: var(--theme-color-dark-blue);
         }
-        
+
         .recommended-pills-section {
             display: contents;
         }
-        
+
         .search-pill {
             width: fit-content;
             padding: 6px 14px;
@@ -253,12 +192,12 @@
             border-radius: 2rem;
             transition: .3s;
         }
-        
+
         .search-pill:hover {
             background: var(--theme-color-light-blue);
             color: white;
         }
-        
+
         .recommended-pills-section a {
             font-size: 14px;
             font-weight: 600;
@@ -266,16 +205,17 @@
             color: #6e6e6e;
             margin: 6px 6px;
         }
-        
+
         video[poster] {
             object-fit: cover
         }
-        
+
+
         .patient-story-learn-more-btn {
             max-width: fit-content;
             margin: 0 auto;
         }
-        
+
         .owl-carousel .owl-nav button.owl-prev {
             border-radius: 3px;
             outline: none;
@@ -294,7 +234,7 @@
             color: var(--white-color);
             transition: all 0.5s ease-in-out;
         }
-        
+
         .owl-carousel .owl-nav button.owl-next {
             border-radius: 3px;
             outline: none;
@@ -314,12 +254,13 @@
             transition: all 0.5s ease-in-out;
             top: 40%;
         }
-        
+
         .owl-carousel .owl-nav button.owl-prev:hover,
         .owl-carousel .owl-nav button.owl-next:hover {
             background: var(--theme-color-light-blue);
         }
-        
+
+
         .owl-carousel-patient .owl-nav button.owl-prev {
             border-radius: 3px;
             outline: none;
@@ -338,7 +279,7 @@
             color: var(--white-color);
             transition: all 0.5s ease-in-out;
         }
-        
+
         .owl-carousel .owl-nav button.owl-next {
             border-radius: 3px;
             outline: none;
@@ -358,14 +299,15 @@
             transition: all 0.5s ease-in-out;
             top: 40%;
         }
-        
+
         .owl-carousel .owl-nav button.owl-prev:hover,
         .owl-carousel .owl-nav button.owl-next:hover {
             background: var(--white-color);
             color: var(--theme-color-light-blue);
             font-weight: bold;
         }
-        
+
+
         .service-image {
             width: 40px;
             height: 40px;
@@ -373,23 +315,24 @@
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-        
+
         .service-image-round {
             width: fit-content;
             padding: 0.8rem;
             background: var(--theme-color-light-blue);
             border-radius: 50%;
         }
-        
+
         .service-card:hover>.service-image-round {
             border: 2px solid white;
         }
-        
+
         .pq-services {
             margin-top: 160px;
-            padding-bottom: 275px;
+            padding-bottom: 200px;
         }
-        
+
+
         .service-card {
             border: 2px solid #00b5ea;
             border-radius: 8px;
@@ -403,7 +346,7 @@
             transition: .2s;
             height: 230px;
         }
-        
+
         p.service-title.text-capitalize {
             padding-top: 1rem;
             line-height: 28px;
@@ -411,53 +354,53 @@
             font-weight: 600;
             color: #6e6e6e;
         }
-        
+
         .service-carousel {
             max-width: 75%;
             margin: 0 auto;
         }
-        
+
         .service-card:hover {
             background-image: url('rev/assets/service-bg-hover.png');
             background-color: var(--theme-color-light-blue);
         }
-        
+
         .service-card:hover>p.service-title.text-capitalize {
             color: white;
         }
-        
+
         .pq-client {
             margin-bottom: 200px;
         }
-        
+
         .container.partners-container {
             padding-bottom: 80px;
         }
-        
+
         .pq-client-img,
         .pq-footer-logo {
             -webkit-filter: brightness(0) invert(100%);
             filter: brightness(0) invert(100%);
         }
-        
+
         .padding-xaxis {
             padding-left: 0%;
             padding-right: 0%;
         }
-        
+
         #wa_button {
             bottom: 25px;
             left: 10rem;
             position: fixed;
             z-index: 999;
         }
-        
+
         .img-circle {
             background-color: #25D366;
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
         }
-        
+
         .circlephone {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -481,7 +424,7 @@
             -o-transition: all .5s;
             transition: all 0.5s;
         }
-        
+
         .circle-fill {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -505,7 +448,7 @@
             -o-transition: all .5s;
             transition: all 0.5s;
         }
-        
+
         .img-circle {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -520,7 +463,7 @@
             border: 2px solid transparent;
             opacity: .9;
         }
-        
+
         .img-circleblock {
             box-sizing: content-box;
             -webkit-box-sizing: content-box;
@@ -536,65 +479,73 @@
             animation-iteration-count: infinite;
             -webkit-animation-iteration-count: infinite;
         }
-        
+
         .img-circle:hover {
             opacity: 1;
         }
-        
+
         @keyframes pulse {
             0% {
                 transform: scale(0.9);
                 opacity: 1;
             }
+
             50% {
                 transform: scale(1);
                 opacity: 1;
             }
+
             100% {
                 transform: scale(0.9);
                 opacity: 1;
             }
         }
-        
+
         @-webkit-keyframes pulse {
             0% {
                 -webkit-transform: scale(0.95);
                 opacity: 1;
             }
+
             50% {
                 -webkit-transform: scale(1);
                 opacity: 1;
             }
+
             100% {
                 -webkit-transform: scale(0.95);
                 opacity: 1;
             }
         }
-        
+
         @keyframes tossing {
             0% {
                 transform: rotate(-8deg);
             }
+
             50% {
                 transform: rotate(8deg);
             }
+
             100% {
                 transform: rotate(-8deg);
             }
         }
-        
+
         @-webkit-keyframes tossing {
             0% {
                 -webkit-transform: rotate(-8deg);
             }
+
             50% {
                 -webkit-transform: rotate(8deg);
             }
+
             100% {
                 -webkit-transform: rotate(-8deg);
             }
         }
-        
+
         @-moz-keyframes circle-anim {
             0% {
                 -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
@@ -603,6 +554,7 @@
                 -webkit-opacity: .1;
                 -o-opacity: .1;
             }
+
             30% {
                 -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .5;
@@ -610,6 +562,7 @@
                 -webkit-opacity: .5;
                 -o-opacity: .5;
             }
+
             100% {
                 -moz-transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .6;
@@ -618,237 +571,425 @@
                 -o-opacity: .1;
             }
         }
-        
+
         @-webkit-keyframes circle-anim {
             0% {
                 -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
                 -webkit-opacity: .1;
             }
+
             30% {
                 -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
                 -webkit-opacity: .5;
             }
+
             100% {
                 -webkit-transform: rotate(0deg) scale(1) skew(1deg);
                 -webkit-opacity: .1;
             }
         }
-        
+
         @-o-keyframes circle-anim {
             0% {
                 -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
                 -o-opacity: .1;
             }
+
             30% {
                 -o-transform: rotate(0deg) scale(0.7) skew(1deg);
                 -o-opacity: .5;
             }
+
             100% {
                 -o-transform: rotate(0deg) scale(1) skew(1deg);
                 -o-opacity: .1;
             }
         }
-        
+
         @keyframes circle-anim {
             0% {
                 transform: rotate(0deg) scale(0.5) skew(1deg);
                 opacity: .1;
             }
+
             30% {
                 transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .5;
             }
+
             100% {
                 transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .1;
             }
         }
-        
+
         @-moz-keyframes circle-fill-anim {
             0% {
                 -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
+
             50% {
                 -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
                 opacity: .2;
             }
+
             100% {
                 -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-        
+
         @-webkit-keyframes circle-fill-anim {
             0% {
                 -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
+
             50% {
                 -webkit-transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .2;
             }
+
             100% {
                 -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-        
+
         @-o-keyframes circle-fill-anim {
             0% {
                 -o-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
+
             50% {
                 -o-transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .2;
             }
+
             100% {
                 -o-transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-        
+
         @keyframes circle-fill-anim {
             0% {
                 transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
+
             50% {
                 transform: rotate(0deg) scale(1) skew(1deg);
                 opacity: .2;
             }
+
             100% {
                 transform: rotate(0deg) scale(0.7) skew(1deg);
                 opacity: .2;
             }
         }
-        
-        .top-bar {
-            height: 50px;
-            background: var(--theme-color-dark-blue);
-            color: white;
+
+
+        header#pq-header.pq-header-style-2 .navbar-brand {
+            background-color: white;
         }
-        
-        .top-bar li a {
+
+        span.ps-4.fw-bold.text-white {
+            font-size: 13px;
+        }
+
+        header#pq-header .pq-bottom-header .navbar .navbar-nav li i {
             color: white !important;
-            text-transform: capitalize !important;
-            font-size: 13px !important;
         }
-        
-        .top-bar a i {
-            color: white;
-        }
-        
-        .top-bar li i {
-            color: white !important;
-            font-size: 16px;
-        }
-        
-        .pq-section {
-            margin-top: 5rem;
-        }
-        
-        .pq-menu-search-block #search-bar-container {
-            display: none;
+
+        .whatsapp-float {
             position: fixed;
-            top: 0;
-            left: 0;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        #banner-carousel .slide-text {
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-160%, -50%);
+            text-align: left;
+            color: #fff;
+            z-index: 2;
+        }
+
+        #banner-carousel .blue-text-div {
+            animation-name: float-in;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+
+        #banner-carousel .header-h2-div {
+            animation-name: float-in;
+            animation-duration: 1.9s;
+            animation-timing-function: ease-in-out;
+        }
+
+        #banner-carousel .header-p-div {
+            animation-name: float-in;
+            animation-duration: 2.4s;
+            animation-timing-function: ease-in-out;
+        }
+
+        #banner-carousel p.carousel-slide-desc {
+            color: white;
+        }
+
+        #banner-carousel h2.carousel-slide-title {
+            color: white;
+        }
+
+        #banner-carousel p.blue-text {
+            background-color: #D3E9FB;
+            font-size: 14px !important;
+            color: var(--theme-color-light-blue);
+            font-weight: 600;
             width: 100%;
-            height: 100%;
-            background: #0a3a5afa;
-            z-index: 9999;
-            opacity: 0;
+            padding: 3px 8px;
         }
-        
-        .pq-menu-search-block #search-bar-container.show {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: fade-in 0.5s forwards;
+
+        #banner-carousel .blue-text-div {
+            width: fit-content;
+            margin-bottom: 10px;
         }
-        
-        .pq-menu-search-block #search-bar-container.transition {
-            animation: fade-out 0.5s forwards;
+
+
+        .blue-text-div {
+            animation-name: float-in;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
         }
-        
-        @keyframes fade-in {
-            from {
+
+        .blue-text-div.active {
+            animation-name: float-in;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+
+        .header-h2-div {
+            animation-name: float-in;
+            animation-duration: 1.9s;
+            animation-timing-function: ease-in-out;
+        }
+
+        .header-h2-div.active {
+            animation-name: float-in;
+            animation-duration: 1.9s;
+            animation-timing-function: ease-in-out;
+        }
+
+        .header-p-div {
+            animation-name: float-in;
+            animation-duration: 2.4s;
+            animation-timing-function: ease-in-out;
+        }
+
+        .header-p-div.active {
+            animation-name: float-in;
+            animation-duration: 2.4s;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes float-in {
+            0% {
                 opacity: 0;
+                transform: translateY(-100%);
             }
-            to {
+
+            100% {
                 opacity: 1;
-            }
-        }
-        
-        @keyframes fade-out {
-            from {
-                opacity: 1;
-            }
-            to {
-                opacity: 0;
-            }
-        }
-        
-        @keyframes slide-up {
-            from {
-                transform: translateX(100%);
-            }
-            to {
                 transform: translateX(0);
             }
         }
-        
-        .pq-menu-search-block .search-bar {
+
+        .video-slider-btn.left-side {
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 50px 15px 20px 15px;
-            border-radius: 5px;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            left: 0%;
+            transform: translate(0%, -50%);
+            -ms-transform: translate(-0%, -50%);
         }
-        
-        @keyframes slide-down {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(100%);
-            }
-        }
-        
-        .pq-menu-search-block #close-search {
+
+        .video-slider-btn.right-side {
             position: absolute;
-            top: 0px;
-            right: 0px;
-            font-size: 20px;
-            color: #333;
+            top: 50%;
+            right: 0%;
+            transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
         }
-        
-        .search-close {
-            color: black !important;
+
+        .video-slider-btn {
+            border: none;
+            display: inline-block;
+            color: #dee2e6;
+            height: auto;
+            width: 100px;
+            font-size: 50px;
+            /* padding: 10px; */
+            background-color: rgba(0, 0, 0, 0.15) !important;
+            /* vertical-align: middle; */
+            overflow: hidden;
+            text-decoration: none;
+            background-color: transparent;
+            /* text-align: center; */
+            cursor: pointer;
+            white-space: nowrap;
+            z-index: 99999;
+            opacity: 1;
+            transition: all 350ms ease-in-out 0s;
         }
-        
+
         .max-width-75 {
             max-width: 75%;
             margin: 0 auto;
         }
-        
-        .bg-color-dark-blue {
-            background-color: var(--theme-color-dark-blue);
+
+        div#banner-carousel {
+            z-index: 2;
         }
-        
-        img.header-img {
+
+        .container.pt-200 {
+            padding-top: 200px;
+        }
+
+        .lang-btn {
+            color: var(--white-color);
+            font-family: var(--title-fonts);
+            font-weight: 600;
+            font-size: 18px;
+            padding-right: 1.2rem;
+        }
+
+        .lang-btn:hover {
+            color: var(--theme-color-light-blue);
+        }
+
+        .lang-btn-flex {
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        header#pq-header .pq-top-header .pq-header-contact ul {
+            height: 100%;
+        }
+
+        .pq-header-contact {
+            height: 100%;
+        }
+
+        section.gmap-sec.pq-bg-secondary {
+            background-color: #c4e7fb;
+        }
+
+        .search-form {
+            position: relative;
+            transition: all .6s;
             width: 30px;
-            padding-bottom: 2px;
+            height: 30px;
+            background: white;
+            box-sizing: border-box;
+            border-radius: 25px;
+            border: 4px solid white;
+            padding: 5px;
         }
-        
-        span.ps-4.fw-bold.text-white {
-            font-size: 13px;
+
+        .search-form input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            ;
+            height: 24.5px;
+            line-height: 30px;
+            outline: 0;
+            border: 0;
+            display: none;
+            font-size: 1em;
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+
+        .fa-search-form {
+            box-sizing: border-box;
+            padding: 10px;
+            width: 24px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            color: black !important;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all 1s;
+        }
+
+        .search-form:hover,
+        .search-form:valid {
+            width: 200px;
+            cursor: pointer;
+        }
+
+        .search-form:hover input,
+        .search-form:valid input {
+            display: block;
+        }
+
+        .search-form:hover .fa,
+        .search-form:valid .fa {
+            background: #07051a;
+            margin-top: -1px;
+            display: flex;
+            color: white !important;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .search-form a {
+            display: none;
+            position: absolute;
+            top: 70px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            width: 100%;
+        }
+
+
+        .fa-search-form {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px !important;
+        }
+
+        /* clears the ‘X’ from Chrome */
+        .search-form input[type="search"]::-webkit-search-decoration,
+        .search-form input[type="search"]::-webkit-search-cancel-button,
+        .search-form input[type="search"]::-webkit-search-results-button,
+        .search-form input[type="search"]::-webkit-search-results-decoration {
+            display: none;
         }
     </style>
 </head>
@@ -863,8 +1004,7 @@
     <!--loading End-->
 
     <!-- whatsapp floating icon start-->
-    <div>
-        <a href="https://api.whatsapp.com/send?phone=80050&amp;text=Hey." id="wa_button" target="_blank">
+    <div><a href="https://api.whatsapp.com/send?phone=80050&amp;text=Hey." id="wa_button" target="_blank">
             <div class="circlephone" style="transform-origin: center;"></div>
             <div class="circle-fill" style="transform-origin: center;"></div>
             <div class="img-circle" style="transform-origin: center;">
@@ -876,207 +1016,366 @@
 
     <!--=================================
       header start-->
-    <header id="pq-header" class="pq-header-default ">
-        <div class="pq-bottom-header pq-has-sticky">
-            <div class="container-fluid padding-xaxis">
-                <div class="row">
-                    <div class="col-12 bg-color-dark-blue">
-                        <nav class="navbar navbar-expand-lg navbar-dark top-bar max-width-75 ">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div id="pq-menu-contain" class="pq-menu-contain">
-                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item">
-                                            <a href="https://login.seha.ae/SEHAHome/NewHome.aspx">Patient Portal</a>
-                                        </li>
 
-
-                                        <li class="menu-item">
-                                            <a href="#">Conferences</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="careers.html">Careers</a>
-                                        </li>
-
-
-                                        <li class="menu-item">
-                                            <a href="News&Events.html">Media Center</a>
-                                        </li>
-
-                                        <li class="menu-item">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <a href="tel:80050">80050</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="pq-menu-search-block">
-                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
-                                <div id="search-bar-container">
-                                    <div class="search-bar">
-                                        <a href="javascript:void(0);" id="close-search"> <i class="fa fa-close search-close"></i> </a>
-                                        <form role="search" method="get" class="search-form" action=".html">
-                                            <label>
-                                                <span class="screen-reader-text">Search for:</span>
-                                                <input type="search" class="search-field" placeholder="Search …"
-                                                    value="" name="s">
-                                            </label>
-                                            <button type="submit" class="search-submit"><span
-                                                    class="screen-reader-text">Search</span></button>
-                                        </form>
+    <div class="pq-background-overlay"></div>
+    <div class="pq-sidebar">
+        <div class="pq-close-btn">
+            <a class="pq-close" href="javascript:void(0)">
+                <i class="ion-close-round"></i>
+            </a>
+        </div>
+        <div class="pq-sidebar-block mCustomScrollbar">
+            <div class="pq-sidebar-header">
+            </div>
+            <div class="pq-sidebar-content">
+            </div>
+            <div class="pq-sidebars">
+                <div class="pq-widget">
+                    <div class="wp-block-group">
+                        <div class="wp-block-group__inner-container">
+                            <figure class="pq-block-image ">
+                                <img src="rev/assets/Services/Seha Logo.png" class="pq-slider-logo-img img-fluid">
+                            </figure>
+                            <h2>Get In Touch With Us</h2>
+                            <form class="pq-applyform mt-5" novalidate>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-name" id="second-name" class="second-name-field"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-email" id="e-mail" class="e-mail-field"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-doctor-name" id="doctor-name"
+                                            class="doctor-name-field" placeholder="Your Doctor Name" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="your-disease" id="disease-name"
+                                            class="disease-name-field" placeholder="Your Symptoms" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <a class="pq-button" id="form-btn">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text me-0">send message</span>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <a href="#">
-                                <span class="ps-4 fw-bold text-white">
-                                    AR <img class="header-img" src="rev/assets/saudi-arabia.png" alt=""> | EN <img class="header-img" src="rev/assets/united-kingdom.png" alt="">
-                                </span>
-                            </a>
-                        </nav>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="pq-sidebar-contact">
+                <ul class="pq-contact">
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        <span>
+                            Head office, Das Tower, 9th Floor,<br> Sultan Bin Zayed Street (32nd Street),<br> Abu Dhabi, United
+                            Arab Emirates​. </span>
+                    </li>
+                    <li>
+                        <a href="tel:+1800001658"><i class="fa fa-phone"></i>
+                            <span>Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i><span>sehaae@seha.itw-hosting.net
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pq-sidebar-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header id="pq-header" class="pq-header-style-2 pq-has-sticky ">
+        <div class="pq-header-diff-block">
+            <div class="row no-gutters">
+                <div class="col-lg-2 col-md-4">
+                    <a class="navbar-brand" href="index-v2.html">
+                        <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
+                    </a>
+                </div>
+                <div class="col-lg-10 col-md-8">
+                    <div class="pq-top-header">
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-md-10 col-sm-6 text-right">
+                                    <!-- <div class="col-md-6"> -->
+                                    <div class="pq-header-contact ">
+                                        <ul>
 
+                                            <li>
+                                                <a href="#"><span>Patient Portal</span></a>
+                                                <!-- <span>Patient Portal</span> -->
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"></i><span>Conferences</span></a>
+                                            </li>
 
-                <div class="row">
-                    <div class="container">
+                                            <li>
+                                                <a href="#">
+                                                    </i><span>Media Center</span></a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <a href="#">80050</a>
+                                            </li>
+                                            <li>
 
-                    </div>
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-light bottom-nav max-width-75">
-                            <a class="navbar-brand" href="index.html">
-                                <img class="img-fluid logo" src="rev/assets/Seha-Logo.png" alt="medicate">
-                            </a>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div id="pq-menu-contain" class="pq-menu-contain">
-                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item current-menu-item">
-                                            <a href="index.html">Home</a>
-                                        </li>
+                                                <form action="" class="search-form">
+                                                    <input type="search" required>
+                                                    <i class="fa fa-search fa-search-form"></i>
+                                                </form>
 
+                                            </li>
 
-
-                                        <li class="menu-item">
-                                            <a href="about-us.html">About Us</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="our-hospital.html">Our Hospitals</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="specialty.html">Our Specialties</a>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="our-doctors.html">Our Doctors</a>
-                                        </li>
-
-                                        <li class="menu-item">
-                                            <a href="#">Seha App</a>
-                                        </li>
-
-                                    </ul>
+                                        </ul>
+                                    </div>
+                                    <!-- </div> -->
                                 </div>
+
+                                <div class="col-2 text-end lang-btn-flex">
+                                    <a href="#" class="lang-btn">عربي</a>
+                                </div>
+
                             </div>
+                        </div>
+                    </div>
+                    <div class="pq-bottom-header">
+                        <div class="row no-gutters">
+                            <div class="col-lg-12">
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <div id="pq-menu-contain" class="pq-menu-contain">
+                                            <ul id="pq-main-menu" class="navbar-nav ms-auto">
 
-                            <a href="book-an-appointment.html" class="pq-button">
-                                <div class="pq-button-block">
-                                    <span class="pq-button-text text-uppercase">book an appointment</span>
-                                    <i class="ion ion-plus-round"></i>
-                                </div>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </nav>
+                                                </li>
+                                                <li class="menu-item ">
+
+                                                <li class="menu-item ">
+                                                    <a href="#">About Us</a>
+                                                </li>
+
+                                                <li class="menu-item ">
+                                                    <a href="#">SEHA App</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="our-hospital.html">Our Hospitals</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="#">Our Specialities</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="our-doctors.html">Our Doctors</a>
+                                                </li>
+                                                <li>
+
+
+                                                    <a href="#" class="pq-button">
+                                                        <div class="pq-button-block">
+                                                            <span class="pq-button-text">Book an Appointment</span>
+                                                            <i class="ion ion-plus-round"></i>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+
+                                                </li>
+
+                                                <!-- <li class="menu-item ">
+                                                    <a href="#">Our Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="our-hospital.html">Our Hospitals</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="#">Our Specialities</a>
+                                                        </li>
+                                                        <li class="menu-item ">
+                                                            <a href="our-doctors.html">Our Doctors</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li> -->
+                                                <!-- <li class="menu-item ">
+                                                    <a href="#">Opportunities</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item ">
+                                                            <a href="#">Conferences</a>
+                                                        </li>
+
+
+
+                                                    </ul>
+                                                </li> -->
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pq-header-info-box">
+                                        <div class="pq-menu-search-block">
+                                            <a href="javascript:void(0)" id="pq-seacrh-btn">
+
+                                        </div>
+                                        <div class="pq-toggle-btn">
+                                            <a href="javascript:void(0)" class="menu-toggle">Menu</a>
+                                        </div>
+                                    </div>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!--==============
-         Header end 
-         =================-->
+    <!-- Header end  -->
 
     <!-- START Home 1 REVOLUTION SLIDER 6.5.19 
 
   ================================= -->
     <p class="rs-p-wp-fix"></p>
-    <div class="carousel">
-        <div class="carousel-container">
-            <div class="carousel-slide">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+        class="whatsapp-float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div class="carousel" id="banner-carousel">
+        <div class="carousel-container " id="carouselExampleControls">
+            <div class="carousel-slide active">
                 <div class="slide">
                     <video autoplay loop muted>
-                        <source src="videos/home/video.mp4" type="video/mp4">
+                        <source src="rev/assets/videos/Seha-video.mp4" type="video/mp4">
                     </video>
-                    <div class="slide-text">
+                    <!-- <img src="rev/assets/1-6.jpg" alt="hi"> -->
+                    <div class="slide-text active">
                         <div class="blue-text-div">
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
-                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
-                    </div>
-                </div>
+                        <div class="header-h2-div">
 
-            </div>
-
-            <div class="carousel-slide">
-                <div class="slide">
-                    <img src="rev/assets/malaffi.jpg" alt="">
-                    <div class="slide-text">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                            <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
                         </div>
-                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
-                    </div>
-                </div>
-            </div>
+                        <div class="header-p-div">
 
-            <div class="carousel-slide">
-                <div class="slide">
-                    <img src="rev/assets/Map.png" alt="">
+                            <div class="header-p-div">
 
-                    <div class="slide-text">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                                <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat
+                                    fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                            </div>
                         </div>
-                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+
                     </div>
                 </div>
             </div>
 
             <div class="carousel-slide">
                 <div class="slide">
-                    <img src="rev/assets/telecommunication.jpg" alt="">
-
+                    <img src="rev/assets/Banner/Malaffi.jpg" alt="hi">
                     <div class="slide-text">
                         <div class="blue-text-div">
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
-                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <div class="header-h2-div">
+
+                            <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        </div>
+                        <div class="header-p-div">
+
+                            <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                                dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
             <div class="carousel-slide">
                 <div class="slide">
-                    <img src="rev/assets/History.jpg" alt="">
-
+                    <img src="rev/assets/Banner/map.jpg" alt="hi">
                     <div class="slide-text">
                         <div class="blue-text-div">
                             <p class="blue-text text-uppercase text-sm">passion for caring</p>
                         </div>
-                        <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
-                        <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        <div class="header-h2-div">
+
+                            <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        </div>
+                        <div class="header-p-div">
+
+                            <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                                dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <div class="carousel-slide ">
+                <div class="slide">
+                    <img src="rev/assets/Banner/Telemedicine.jpg" alt="hi">
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <div class="header-h2-div">
 
+                            <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        </div>
+                        <div class="header-p-div">
 
+                            <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                                dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-slide">
+                <div class="slide">
+                    <img src="rev/assets/Banner/History.jpg" alt="hi">
+                    <div class="slide-text">
+                        <div class="blue-text-div">
+                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
+                        </div>
+                        <div class="header-h2-div">
+
+                            <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
+                        </div>
+                        <div class="header-p-div">
+
+                            <p class="carousel-slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Aspernatur pariatur earum ipsum, facilis dignissimos officiis! Recusandae placeat fugiat
+                                dolor adipisci, alias minus fugit labore sed vitae id, optio eaque cum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <button class="carousel-prev"><i class="fas fa-angle-left fa-xs"></i></button>
-        <button class="carousel-next"><i class="fas fa-angle-right fa-xs"></i></button>
+
+        <button class="video-slider-btn round left-side" onclick="prevSlide()">&#8249;</button>
+        <button class="video-slider-btn round right-side" onclick="nextSlide()">&#8250;</button>
     </div>
 
 
@@ -1112,27 +1411,16 @@
 
                 <a href="">
                     <div class="search-pill">
-                        hospital & clinics
+                        Hospitals
                     </div>
                 </a>
 
                 <a href="">
                     <div class="search-pill">
-                        online pharmacy service
+                        Specialties
                     </div>
                 </a>
 
-                <a href="">
-                    <div class="search-pill">
-                        special offers
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="search-pill">
-                        online pharmacy service
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -1140,31 +1428,36 @@
 
     <!--Section about start-->
     <section class="about pq-bg-grey pq-dark-bg-side-right">
-        <div class="container">
+        <div class="container pt-200">
             <div class="row ">
                 <div class="col-lg-6 col-md-12 col-xl-5 pb-lg-0 pb-5">
                     <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">About
                             Us</span>
                         <h5 class="pq-section-title">An Integrated And Patient-Centric Company</h5>
-                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that are delivered by highly specialized healthcare professionals.&nbsp;</p>
+                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that
+                            are delivered by highly specialized healthcare professionals.&nbsp;</p>
                     </div>
 
                     <a class="pq-button pq-button-flat mt-4" href="about-us.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
+                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                class="ion ion-plus-round"></i> </div>
                     </a>
                 </div>
                 <div class="col-lg-6 col-md-12 col-xl-5 pe-lg-3 pq-img-none">
                     <img src="images/1.jpeg" class="img-fluid" alt="servicebox">
                 </div>
-                <div class="col-xl-2 col-lg-12 col-md-12 py-xl-0 py-5 align-self-center pq-form-counter pq-bg-primary-dark">
+                <div
+                    class="col-xl-2 col-lg-12 col-md-12 py-xl-0 py-5 align-self-center pq-form-counter pq-bg-primary-dark">
                     <div class="pq-counter pq-style-2">
                         <div class="pq-counter-contain">
                             <div class="pq-counter-info text-center">
                                 <div class="pq-counter-num-prefix">
-                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span
+                                        class="pq-counter-prefix">+</span>
                                 </div>
                                 <div class="pq-counter-num-prefix pq-prefix-top">
-                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="3000" data-speed="3000">3000</h5> <span
+                                        class="pq-counter-prefix">+</span>
                                 </div>
                                 <p class="pq-counter-description">BEDS</p>
                             </div>
@@ -1174,10 +1467,12 @@
                         <div class="pq-counter-contain">
                             <div class="pq-counter-info text-center">
                                 <div class="pq-counter-num-prefix">
-                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span
+                                        class="pq-counter-prefix">+</span>
                                 </div>
                                 <div class="pq-counter-num-prefix pq-prefix-top">
-                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="46" data-speed="3000">46</h5> <span
+                                        class="pq-counter-prefix">+</span>
                                 </div>
                                 <p class="pq-counter-description">CLINICS</p>
                             </div>
@@ -1187,10 +1482,12 @@
                         <div class="pq-counter-contain">
                             <div class="pq-counter-info text-center">
                                 <div class="pq-counter-num-prefix">
-                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span
+                                        class="pq-counter-prefix">+</span>
                                 </div>
                                 <div class="pq-counter-num-prefix pq-prefix-top">
-                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span class="pq-counter-prefix">+</span>
+                                    <h5 class="timer" data-to="14" data-speed="3000">14</h5> <span
+                                        class="pq-counter-prefix">+</span>
                                 </div>
                                 <p class="pq-counter-description">HOSPITALS</p>
                             </div>
@@ -1222,10 +1519,14 @@
             <div class="row">
                 <div class="col-lg-12 pq-mb-130">
 
-                    <div class="owl-carousel owl-carousel-patient owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="false" data-margin="30">
+                    <div class="owl-carousel owl-carousel-patient owl-loaded owl-drag" data-dots="false" data-nav="true"
+                        data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1"
+                        data-autoplay="true" data-loop="false" data-margin="30">
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-21.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-21.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1238,7 +1539,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1251,7 +1554,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1264,7 +1569,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1277,7 +1584,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1290,7 +1599,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1303,7 +1614,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1316,7 +1629,9 @@
                         </div>
                         <div class="item">
                             <div class="pq-portfoliobox pq-style-1">
-                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover" src="videos/home/video.mp4" loop width="560" height="315" poster="rev/assets/1-5.jpg" muted=true></video>
+                                <div class="pq-portfolio-img" style="--aspect-ratio: 3/4;"> <video class="video-hover"
+                                        src="videos/home/video.mp4" loop width="560" height="315"
+                                        poster="rev/assets/1-5.jpg" muted=true></video>
                                     <a href="home-visit.html">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
@@ -1331,7 +1646,8 @@
 
                     <div class="patient-story-learn-more-btn">
                         <a class="pq-button pq-button-flat mt-4" href="about-us.html">
-                            <div class="pq-button-block"> <span class="pq-button-text">Learn More</span> <i class="ion ion-plus-round"></i> </div>
+                            <div class="pq-button-block"> <span class="pq-button-text">Learn More</span> <i
+                                    class="ion ion-plus-round"></i> </div>
                         </a>
                     </div>
                 </div>
@@ -1355,12 +1671,15 @@
             <div class="row">
                 <div class="col-lg-12 pq-mb-130">
 
-                    <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_lg="4" data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" animateIn="true" data-margin="30">
+                    <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="true" data-desk_lg="4"
+                        data-desk_num="3" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1"
+                        data-autoplay="true" data-loop="true" animateIn="true" data-margin="30">
                         <div class="item">
 
                             <div class="service-card">
                                 <div class="service-image-round">
-                                    <div class="service-image" style="background-image: url('images/services/ANESTHESIOLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/ANESTHESIOLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1375,7 +1694,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/DERMATOLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/DERMATOLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1390,7 +1710,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/FAMILY-MEDICINE.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/FAMILY-MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1406,7 +1727,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/MEDICINE.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1422,7 +1744,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/NEUROSURGERY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/NEUROSURGERY.png');">
                                     </div>
                                 </div>
 
@@ -1438,7 +1761,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/OPHTHALMOLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/OPHTHALMOLOGY.png');">
                                     </div>
                                 </div>
 
@@ -1453,7 +1777,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/OTOLARYNGOLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/OTOLARYNGOLOGY.png');">
                                     </div>
                                 </div>
 
@@ -1468,7 +1793,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/PHYSICAL-&-REHABILITATION-MEDICINE.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/PHYSICAL-&-REHABILITATION-MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1483,7 +1809,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/CLINICAL-IMAGING.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/CLINICAL-IMAGING.png');">
                                     </div>
                                 </div>
 
@@ -1498,7 +1825,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/UROLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/UROLOGY.png');">
                                     </div>
                                 </div>
 
@@ -1513,7 +1841,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/DENTISTRY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/DENTISTRY.png');">
                                     </div>
                                 </div>
 
@@ -1528,7 +1857,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/EMERGENCY-MEDICINE.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/EMERGENCY-MEDICINE.png');">
                                     </div>
                                 </div>
 
@@ -1543,7 +1873,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/LABORATORY-MEDICINE.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/LABORATORY-MEDICINE.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1557,7 +1888,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/NEUROLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/NEUROLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1571,7 +1903,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/OBSTETRICS-&-GYNECOLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/OBSTETRICS-&-GYNECOLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1585,7 +1918,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/ORTHOPEDICS.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/ORTHOPEDICS.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1599,7 +1933,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/PEDIATRICS.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/PEDIATRICS.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1613,7 +1948,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/PSYCHIATRY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/PSYCHIATRY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1627,7 +1963,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/SURGERY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/SURGERY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1641,7 +1978,8 @@
                             <div class="service-card">
                                 <div class="service-image-round">
 
-                                    <div class="service-image" style="background-image: url('images/services/NEPHROLOGY.png');">
+                                    <div class="service-image"
+                                        style="background-image: url('images/services/NEPHROLOGY.png');">
                                     </div>
                                 </div>
                                 <p class="service-title text-capitalize">
@@ -1662,16 +2000,18 @@
     <section class="gmap-sec pq-bg-secondary">
         <div class="max-width-75">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 d-flex align-items-center">
                     <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">Our
-                            Facilities</span>
+                            Hospitals</span>
                         <h5 class="pq-section-title">THE UAE’S LARGEST HEALTHCARE NETWORK</h5>
-                        <p class="pq-section-description">SEHA offers many world-class services and sub-specialties that are delivered by highly specialized healthcare professionals.&nbsp;</p>
+                        <p class="pq-section-description lh-22 text-justify">SEHA offers many world-class services and
+                            sub-specialties that
+                            are delivered by highly specialized healthcare professionals.&nbsp;</p>
                     </div>
                 </div>
                 <div class="col-8">
                     <div class="gmap-img">
-                        <img src="rev/assets/gMap.png" alt="">
+                        <img src="rev/assets/SEHA-Map-2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -1699,40 +2039,56 @@
         <div class="max-width-75 container partners-container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="5" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" data-margin="30">
+                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="5"
+                        data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
+                        data-loop="true" data-margin="30">
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/1.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/2.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/3.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/3.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/3.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/3.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/4.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/4.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/4.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/4.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/5.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/5.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/5.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/5.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/1.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/1.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/1.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="pq-clientbox pq-style-1">
-                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-img img-fluid"> <img src="images/client/2.png" alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
+                                <a href="#"> <img src="images/client/2.png" alt="pq-client-img"
+                                        class="pq-client-img img-fluid"> <img src="images/client/2.png"
+                                        alt="pq-client-img" class="pq-client-hover-img img-fluid"> </a>
                             </div>
                         </div>
                     </div>
@@ -1757,7 +2113,8 @@
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
                                             </div>
@@ -1767,7 +2124,8 @@
                                         <div class="pq-subscribe-from">
                                             <form id="form" class="form">
                                                 <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
                                                     <input class="" type="submit" value="Sign up">
                                                 </div>
                                             </form>
@@ -1824,9 +2182,11 @@
                                         <li><a href="corporate-social-responsibility.html">Corporate Social
                                                 Responsibility</a></li>
                                         <li><a href="transparency-charter.html">Transparency Charter</a></li>
-                                        <li><a href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
+                                        <li><a
+                                                href="https://www.tamm.abudhabi/login?redirectUrl=https://www.tamm.abudhabi/en/mylocker/TalkToUs">Submit
                                                 a complaint (TAMM)</a></li>
-                                        <li><a href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
+                                        <li><a
+                                                href="https://legacy.seha.ae/English/BusinessServices/Pages/AllTenders.aspx">Tenders
                                                 & Contracts</a></li>
                                         <li><a href="fraud-alert.html">Recruitment Fraud Alert</a></li>
                                         <li><a href="https://portal.seha.ae/">Employee Services</a></li>
@@ -1836,12 +2196,13 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block">
-                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                                <img src="rev/assets/Seha-Logo.png" class="pq-footer-logo img-fluid"
+                                    alt="medicate-footer-logo">
                                 <p class="mb-1 fs-14">Abu Dhabi Health Services Co.
                                 </p>
                                 <i class="fas fa-map-marker"></i> <span class="fs-14">
-                                    Head office, Das Tower, 9th Floor, Sultan Bin Zayed Street (32nd
-                                    Street), Abu Dhabi, United Arab Emirates​.</span>
+                                    Head office, Das Tower, 9th Floor,</br> Sultan Bin Zayed Street (32nd
+                                    Street),</br> Abu Dhabi, United Arab Emirates​.</span>
 
 
                                 <div class="pq-footer-social mt-2">
@@ -1902,11 +2263,69 @@
     <script src="js/rev-custom.js"></script>
     <!--custom js-->
     <script src="js/custom.js"></script>
+    <script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.left-side');
+        const nextBtn = document.querySelector('.right-side');
+        const slideWidth = slides[0].clientWidth;
+        let currentPosition = 0;
+
+        prevBtn.addEventListener('click', () => {
+            currentPosition += slideWidth;
+            if (currentPosition > 0) {
+                currentPosition = -slideWidth * (slides.length - 1);
+            }
+            carouselContainer.style.transform = `translateX(${currentPosition}px)`;
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentPosition -= slideWidth;
+            if (currentPosition < -slideWidth * (slides.length - 1)) {
+                currentPosition = 0;
+            }
+            carouselContainer.style.transform = `translateX(${currentPosition}px)`;
+        });
+    </script>
 
 
     <script>
-        jQuery(window).on('load', function(e) {
-            jQuery(".pq-applyform .form-btn").click(function() {
+        function nextSlide() {
+            // Get the current slide
+            const currentSlide = document.querySelector('.carousel-slide.active');
+
+            // Remove the active class from the current slide
+            currentSlide.classList.remove('active');
+
+            // Get the next slide
+            let nextSlide = currentSlide.nextElementSibling;
+
+            // If there is no next slide, go back to the first slide
+            if (!nextSlide) {
+                nextSlide = document.querySelector('.carousel-slide:first-child');
+            }
+
+            // Add the active class to the next slide
+            nextSlide.classList.add('active');
+
+            // Reload the animation by cloning the element
+            const clone = currentSlide.cloneNode(true);
+            currentSlide.parentNode.replaceChild(clone, currentSlide);
+        }
+    </script>
+    <script>
+        let currentItem = document.querySelector('.active');
+        currentItem.classList.remove('active');
+        let nextItem = currentItem.nextElementSibling;
+        nextItem.classList.add('active');
+        nextItem.classList.add('animate');
+        currentItem.addEventListener('animationend', () => {
+            currentItem.classList.remove('animate');
+        });
+    </script>
+    <script>
+        jQuery(window).on('load', function (e) {
+            jQuery(".pq-applyform .form-btn").click(function () {
                 var first_name = jQuery('#first-name').val();
                 var doctor_name = jQuery('#doctor-name').val();
                 var disease_name = jQuery('#disease-name').val();
@@ -1970,7 +2389,7 @@
                         data: {
                             'email': email
                         },
-                        success: function() {
+                        success: function () {
                             jQuery(
                                     "<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>"
                                 )
@@ -1983,91 +2402,35 @@
     </script>
 
     <script>
-        const carousel = document.querySelector('.carousel');
-        const carouselContainer = carousel.querySelector('.carousel-container');
-        const carouselSlides = carousel.querySelectorAll('.carousel-slide');
-        const prevButton = carousel.querySelector('.carousel-prev');
-        const nextButton = carousel.querySelector('.carousel-next');
-
-        let currentSlide = 0;
-        const slideWidth = carouselSlides[0].offsetWidth;
-
-        carouselSlides.forEach((slide, index) => {
-            if (index === 0) {
-                slide.classList.add('active');
-            } else {
-                slide.classList.remove('active');
-            }
-        });
-
-        function moveCarousel() {
-            carouselSlides.forEach((slide, index) => {
-                if (index === currentSlide) {
-                    slide.classList.add('active');
-                } else {
-                    slide.classList.remove('active');
-
-                }
-            });
-            carouselContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-        }
-
-        prevButton.addEventListener('click', () => {
-            currentSlide--;
-            if (currentSlide < 0) {
-                currentSlide = carouselSlides.length - 1;
-            }
-            moveCarousel();
-        });
-
-        nextButton.addEventListener('click', () => {
-            currentSlide++;
-            if (currentSlide >= carouselSlides.length) {
-                currentSlide = 0;
-            }
-            moveCarousel();
-        });
-
         $('.pq-portfolio-info').css({
             opacity: 1,
             bottom: '30px'
         });
 
 
-        $('.pq-portfoliobox.pq-style-1').hover(function() {
+        $('.pq-portfoliobox.pq-style-1').hover(function () {
             $(this).find('.video-hover')[0].play();
             $(this).find('.pq-portfolio-info').css({
                 opacity: 0,
                 bottom: '0px'
             });
-        }, function() {
+        }, function () {
             $(this).find('.video-hover')[0].load();
             $(this).find('.pq-portfolio-info').css({
                 opacity: 1,
                 bottom: '30px'
             });
         });
+    </script>
 
+    <script>
+        const clearInput = () => {
+            const input = document.getElementsByTagName("input")[0];
+            input.value = "";
+        }
 
-        const searchBtn = document.querySelector('#pq-seacrh-btn');
-        const searchBarContainer = document.querySelector('#search-bar-container');
-        const closeBtn = document.querySelector('#close-search');
-
-        searchBtn.addEventListener('click', function() {
-            searchBarContainer.style.display = 'flex';
-            setTimeout(function() {
-                searchBarContainer.classList.add('show');
-            }, 10); // adjust the time to match the duration of the animation
-        });
-
-        closeBtn.addEventListener('click', function() {
-            searchBarContainer.classList.remove('show');
-            searchBarContainer.classList.add('transition');
-            setTimeout(function() {
-                searchBarContainer.style.display = 'none';
-                searchBarContainer.classList.remove('transition');
-            }, 500); // adjust the time to match the duration of the animation
-        });
+        const clearBtn = document.getElementById("clear-btn");
+        clearBtn.addEventListener("click", clearInput);
     </script>
 </body>
 

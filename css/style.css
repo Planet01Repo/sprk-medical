@@ -2216,9 +2216,9 @@ header#pq-header.pq-header-style-2.pq-header-sticky {
   width: 100%;
 }
 
-header#pq-header.pq-header-style-2.pq-header-sticky .pq-top-header {
+/* header#pq-header.pq-header-style-2.pq-header-sticky .pq-top-header {
   display: none;
-}
+} */
 
 header#pq-header.pq-header-style-2.pq-header-sticky .navbar-brand {
   line-height: 2.44444;
@@ -2240,7 +2240,7 @@ header#pq-header.pq-header-style-2.pq-header-sticky .pq-toggle-btn {
 header#pq-header.pq-header-style-2 .pq-toggle-btn {
   line-height: 75px;
   padding: 22px 25px;
-  background: var(--primary-color);
+  background: var(--theme-color-light-blue);
   color: #fff;
   cursor: pointer;
 }
@@ -2635,7 +2635,7 @@ Sidebar Menu
 .pq-sidebar .pq-close-btn .pq-close {
   position: absolute;
   left: -45px;
-  background: var(--primary-color);
+  background: var(--theme-color-light-blue);
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -2735,7 +2735,7 @@ Sidebar Menu
 }
 
 .pq-sidebar-social ul li a:hover {
-  background: var(--primary-color);
+  background: var(--theme-color-light-blue);
 }
 
 .pq-sidebar .pq-widget {
@@ -3741,15 +3741,16 @@ Counter
 }
 
 .pq-counter.pq-style-2 .pq-counter-info p {
-  font-family: var(--title-fonts);
-  margin-bottom: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--white-color);
-  font-weight: 600;
-  margin-top: 5px;
+    font-family: var(--title-fonts);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    text-align: center !important;
+    line-height: 22px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 /* home from counter */
