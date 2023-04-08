@@ -334,7 +334,7 @@ input, textarea,
 input.form-control {
   background: var(--grey-color);
   border: 1px solid var(--grey-color);
-  color: var(--dark-color);
+  color: var(--theme-color-dark-blue);
   margin-bottom: 30px;
   width: 100%;
   float: left;
@@ -8081,4 +8081,14 @@ p {
   color: var(--theme-color-dark-blue) !important;
   font-size:15px;
   line-height:1.6em;
+}
+.form-select:focus{
+  border-color: var(--theme-color-dark-blue) !important;
+  box-shadow: none !important;
+}
+.h1-color{
+  color: var(--theme-color-blue) !important;
+}
+.list-group-item{
+  color: var(--theme-color-dark-blue) !important;
 }
