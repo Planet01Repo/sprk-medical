@@ -324,26 +324,6 @@
             transition: background .2s;
         }
         
-         :root {
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
-        }
-        
         .top-bar {
             height: 50px;
             padding: 0 2.1rem !important;
@@ -506,6 +486,24 @@
         .title-heading h1 {
             color: var(--theme-color-dark-blue) !important;
         }
+        h2.timeline-description-year {
+            color: var(--theme-color-light-blue) !important;
+        }
+        h5.pq-member-name{
+            color: var(--theme-color-dark-blue) !important;
+        }
+        .pq-member-designation{
+            font-size:16px; 
+            color: var(--theme-color-line-blue) !important;
+        }
+        .award-card-title{
+            font-size: 18px !important;
+            color: var(--theme-color-dark-blue) !important;
+        }
+        .award-card-sub-title{
+            font-size:16px;
+            color: var(--theme-color-dark-blue) !important;
+        }
     </style>
 </head>
 
@@ -593,13 +591,13 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="pq-menu-contain" class="pq-menu-contain">
                                     <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item current-menu-item">
+                                        <li class="menu-item">
                                             <a href="index.html">Home</a>
                                         </li>
 
 
 
-                                        <li class="menu-item">
+                                        <li class="menu-item current-menu-item">
                                             <a href="about-us.html">About Us</a>
                                         </li>
                                         <li class="menu-item ">
@@ -639,7 +637,12 @@
          header end-->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+    <div class="pq-breadcrumb" style="background: linear-gradient(
+        90deg,
+        rgb(10 58 90),
+        rgb(10 58 90 / 12%)
+      ),
+      url(images/breadcrumb-about-us.png);background-size: cover;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -667,18 +670,18 @@
                                 <h1>Who we are</h1>
                             </div>
                             <div class="first-content">
-                                <h5>THE LARGEST HEALTHCARE NETWORK IN THE UAE</h5>
+                                <h5 class="sub-head">THE LARGEST HEALTHCARE NETWORK IN THE UAE</h5>
                                 <p style="font-size:15px; margin-bottom: 10px !important;">Abu Dhabi Healthcare Company (SEHA) is the largest and most comprehensive healthcare network in the UAE and was established by Emiri Decree No. 10 of 2007.</p>
                             </div>
                             <div class="second-content">
-                                <h5>WORLD-CLASS HEALTHCARE SERVICES</h5>
+                                <h5 class="sub-head">WORLD-CLASS HEALTHCARE SERVICES</h5>
                                 <p style="font-size:15px ;margin-bottom: 10px !important;">The company owns and operates all the public hospitals and clinics of the Emirate of Abu Dhabi and was set-up to provide UAE residents and citizens with integrated and outstanding healthcare services following the highest
                                     international quality and safety standards. SEHA is a key player in Abu Dhabi’s wider healthcare sector reform and is responsible for public healthcare centers and hospitals as it aims to make the public healthcare
                                     delivery comparable to the finest healthcare systems in the world. SEHA is part of ADQ, one of the region’s largest holding companies with a diverse portfolio of major enterprises spanning key sectors of Abu Dhabi’s
                                     non-oil economy.</p>
                             </div>
                             <div class="third-content">
-                                <h5>CUTTING-EDGE TECHNOLOGY</h5>
+                                <h5 class="sub-head">CUTTING-EDGE TECHNOLOGY</h5>
                                 <p style="font-size:15px;margin-bottom: 10px !important;">SEHA is committed to delivering world-class healthcare services using the most advanced diagnostics and systems. By partnering with global leaders in healthcare, SEHA continues to enhance the experience of patients in Abu
                                     Dhabi. Current partners include Mayo Clinic. These partnerships have significantly contributed to SEHA’s growth and development in knowledge transfer, education, promoting healthcare excellence, and achieving goals
                                     with competitive advantage.</p>
@@ -701,12 +704,12 @@
          about-us end-->
 
 
-    <section class="history-section" style="background:#0a3a5a !important; padding-top: 0; ">
+    <section class="history-section" style="background:var(--theme-color-dark-blue) !important; padding-top: 0; ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12">
                     <div class="pq-section pq-style-1 text-center pt-5">
-                        <h1 class="pt-5" style="font-size:55px; padding-bottom: 20px; color:#fff">History</h1>
+                        <h1 class="pt-5" style="font-size:55px; padding-bottom: 20px; color:var(--theme-color-light-blue);">History</h1>
                         <p class="history-main-para lh-22">With a legacy stretching as far back as 1975, SEHA Healthcare has been chalking out distinct strategies that reflect its continuing leadership in the market.</p>
                     </div>
                 </div>
@@ -718,9 +721,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline2.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2015
+                                    <h2 class="timeline-description-year">2015
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -729,9 +732,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline3.jpeg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2016
+                                    <h2 class="timeline-description-year">2016
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -740,9 +743,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline4.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2017
+                                    <h2 class="timeline-description-year">2017
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -751,9 +754,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline5.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2018
+                                    <h2 class="timeline-description-year">2018
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -762,9 +765,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline6.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2019
+                                    <h2 class="timeline-description-year">2019
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -773,9 +776,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline2.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2020
+                                    <h2 class="timeline-description-year">2020
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -784,9 +787,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline5.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2021
+                                    <h2 class="timeline-description-year">2021
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -795,9 +798,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline4.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2022
+                                    <h2 class="timeline-description-year">2022
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -806,9 +809,9 @@
                             <div class="timeline-block">
                                 <div class="timeline-image"> <img src="images/About-us/timeline6.jpg" alt=""></div>
                                 <div class="timeline-description">
-                                    <h2 class="timeline-description-year" style="color:#fff">2023
+                                    <h2 class="timeline-description-year">2023
                                         <h2>
-                                            <p class="timline-description-system" style="color:#fff;font-size: 14px; line-height: 1.5rem;margin-left: 40px; margin-top: 10px;">
+                                            <p class="timline-description-system text-white" style="margin-left: 40px; margin-top: 10px;">
                                                 SEHA became the first company from Abu Dhabi to list on the London Stock Exchange in 2012 and is now part of the premium FTSE 100 Index, a share index of 100 companies with the highest market capitalisation.</p>
                                 </div>
                             </div>
@@ -894,7 +897,7 @@
                                 </div>
                                 <div class="pq-team-info custom-team-info">
                                     <h5 class="pq-member-name" style="font-size:22px;">Saeed Jaber Al Kuwaiti</h5>
-                                    <h6 style="font-size:16px; color: #0a3a5a;">Group Chief Executive Officer</h6>
+                                    <h6 class="pq-member-designation">Group Chief Executive Officer</h6>
                                     <div class="para-wrapper">
                                         <p style="font-size: 13px;line-height: 1.4rem;text-align: center;">With over 24 years of experience, Saeed Al Kuwaiti brings a rich legacy in healthcare and financial management to his new role. His previous positions include working as Chief Executive Officer at Tawam Hospital
                                             and Al Mafraq Hospital, part of SEHA’s network, where he was responsible for many of the network’s successes and achievements. Notably, over the last decade Mr. Al Kuwaiti has played a significant part in enhancing
@@ -917,7 +920,7 @@
                                 </div>
                                 <div class="pq-team-info custom-team-info ">
                                     <h5 class="pq-member-name " style="font-size:22px; ">Dr. Anwar Sallam</h5>
-                                    <h6 style="font-size:16px;color: #0a3a5a; ">Group Chief Medical Officer</h6>
+                                    <h6 class="pq-member-designation">Group Chief Medical Officer</h6>
                                     <div class="para-wrapper ">
                                         <p style="font-size: 13px;line-height: 1.4rem;text-align: center; ">Part of the SEHA network since 2012, Dr. Anwar Sallam now serves as Group Chief Medical Officer, where he oversees the effective management across facilities, ensuring that patients receive the highest standard
                                             of care. As part of his role, Dr. Anwar promotes a culture of safety and quality, collaborates with other healthcare partners for the effective implementation of policies, operational effectiveness, and contributes
@@ -940,7 +943,7 @@
                                 </div>
                                 <div class="pq-team-info custom-team-info ">
                                     <h5 class="pq-member-name " style="font-size:22px; ">Saif Daoud Al Siksek</h5>
-                                    <h6 style="font-size:16px;color: #0a3a5a; ">Group Chief Information Officer</h6>
+                                    <h6 class="pq-member-designation">Group Chief Information Officer</h6>
                                     <div class="para-wrapper ">
                                         <p style="font-size: 13px;line-height: 1.4rem;text-align: center; ">Saif is an experienced management professional with a record of fast-track, performance-based progression, and outstanding strategic planning and project management qualifications. He is accomplished and deeply
                                             skilled in planning, infrastructure, and technology management, with over a decade of interaction with C-Suite management. During his career at SEHA, he has accumulated several notable achievements, including
@@ -977,36 +980,36 @@
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
                             <div class=""><img src="images/About-us/cer1.jpg" class="img-fluid" alt="Images"></div>
-                            <h5 class="text-center pt-3" style="font-size: 18px !important; ">Gold Stevie Award</h5>
-                            <h6 class="text-center" style="font-size:16px">2016</h6>
+                            <h5 class="text-center pt-3 award-card-title">Gold Stevie Award</h5>
+                            <h6 class="text-center award-card-sub-title">2016</h6>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
                             <div class=""><img src="images/About-us/cer2.jpg" class="img-fluid" alt="Images"></div>
-                            <h5 class="text-center pt-3" style="font-size: 18px !important;">Gold Stevie Award</h5>
-                            <h6 class="text-center" style="font-size:16px">2016</h6>
+                            <h5 class="text-center pt-3 award-card-title">Gold Stevie Award</h5>
+                            <h6 class="text-center award-card-sub-title">2016</h6>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
                             <div class=""><img src="images/About-us/cer3.jpg" class="img-fluid" alt="Images"></div>
-                            <h5 class="text-center pt-3" style="font-size: 18px !important;">Gold Stevie Award</h5>
-                            <h6 class="text-center" style="font-size:16px">2016</h6>
+                            <h5 class="text-center pt-3 award-card-title">Gold Stevie Award</h5>
+                            <h6 class="text-center award-card-sub-title">2016</h6>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
                             <div class=""><img src="images/About-us/Service-Olympian-Award.jpg" class="img-fluid" alt="Images"></div>
-                            <h5 class="text-center pt-3" style="font-size: 18px !important;">Gold Stevie Award</h5>
-                            <h6 class="text-center" style="font-size:16px">2016</h6>
+                            <h5 class="text-center pt-3 award-card-title">Gold Stevie Award</h5>
+                            <h6 class="text-center award-card-sub-title">2016</h6>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-2">
                         <div class="award-card">
                             <div class=""><img src="images/About-us/Service-Olympian-Award.jpg" class="img-fluid" alt="Images"></div>
-                            <h5 class="text-center pt-3" style="font-size: 18px !important;">Gold Stevie Award</h5>
-                            <h6 class="text-center" style="font-size:16px">2016</h6>
+                            <h5 class="text-center pt-3 award-card-title">Gold Stevie Award</h5>
+                            <h6 class="text-center award-card-sub-title">2016</h6>
                         </div>
                     </div>
                 </div>
