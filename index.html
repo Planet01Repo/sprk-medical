@@ -35,29 +35,6 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <style>
-        :root {
-            /* primary colors */
-            --theme-color-dark-blue: #0a3a5a;
-            --theme-color-green: #5dbca3;
-            --theme-color-light-green: #8bccbe;
-            --theme-color-light-green-bg: #8bccbe8c;
-            --theme-color-blue: #2544be;
-            --theme-color-blue-bg: #00b3ea4f;
-
-
-            /* secondary colors */
-            --theme-color-light-blue: #00b5ea;
-            --theme-color-burgundy: #973359;
-            --theme-color-peach: #de6f4e;
-            --theme-color-yellow: #faae61;
-
-            /* neutrals colors */
-            --theme-color-dark-gray: #787878;
-            --theme-color-medium-gray: #A8A8A8;
-            --theme-color-gray: #D2D2D2;
-            --theme-color-light-gray: #E6E6E6;
-        }
-
         #banner-carousel .carousel {
             position: relative;
             width: 100%;
@@ -194,7 +171,7 @@
         }
 
         .search-pill:hover {
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
             color: white;
         }
 
@@ -257,7 +234,7 @@
 
         .owl-carousel .owl-nav button.owl-prev:hover,
         .owl-carousel .owl-nav button.owl-next:hover {
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
         }
 
 
@@ -275,7 +252,7 @@
             line-height: 1;
             padding: 20px 25px !important;
             margin: 0 10px;
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
             color: var(--white-color);
             transition: all 0.5s ease-in-out;
         }
@@ -294,7 +271,7 @@
             right: 0;
             padding: 20px 25px !important;
             margin: 0 10px;
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
             color: var(--white-color);
             transition: all 0.5s ease-in-out;
             top: 40%;
@@ -303,7 +280,7 @@
         .owl-carousel .owl-nav button.owl-prev:hover,
         .owl-carousel .owl-nav button.owl-next:hover {
             background: var(--white-color);
-            color: var(--theme-color-light-blue);
+            color: var(--theme-color-line-blue);
             font-weight: bold;
         }
 
@@ -319,7 +296,7 @@
         .service-image-round {
             width: fit-content;
             padding: 0.8rem;
-            background: var(--theme-color-light-blue);
+            background: var(--theme-color-line-blue);
             border-radius: 50%;
         }
 
@@ -362,7 +339,7 @@
 
         .service-card:hover {
             background-image: url('rev/assets/service-bg-hover.png');
-            background-color: var(--theme-color-light-blue);
+            background-color: var(--theme-color-line-blue);
         }
 
         .service-card:hover>p.service-title.text-capitalize {
@@ -758,7 +735,7 @@
         #banner-carousel p.blue-text {
             background-color: #D3E9FB;
             font-size: 14px !important;
-            color: var(--theme-color-light-blue);
+            color: var(--theme-color-line-blue);
             font-weight: 600;
             width: 100%;
             padding: 3px 8px;
@@ -868,6 +845,8 @@
             padding-top: 200px;
         }
 
+        /* header css */
+
         .lang-btn {
             color: var(--white-color);
             font-family: var(--title-fonts);
@@ -877,7 +856,7 @@
         }
 
         .lang-btn:hover {
-            color: var(--theme-color-light-blue);
+            color: var(--theme-color-line-blue);
         }
 
         .lang-btn-flex {
@@ -982,6 +961,7 @@
             justify-content: center;
             align-items: center;
             margin-right: 0px !important;
+            color: var(--theme-color-line-blue) !important;
         }
 
         /* clears the ‘X’ from Chrome */
@@ -991,6 +971,51 @@
         .search-form input[type="search"]::-webkit-search-results-decoration {
             display: none;
         }
+
+        header#pq-header.pq-header-style-2 .pq-top-header {
+            background: var(--theme-color-dark-blue);
+        }
+
+        .pq-button {
+            background: var(--theme-color-line-blue);
+            color: var(--white-color);
+        }
+
+        .pq-section.pq-style-1 .pq-section-sub-title {
+            color: var(--theme-color-line-blue);
+            background: var(--theme-color-blue-bg);
+        }
+
+        header#pq-header.pq-header-style-2 .pq-toggle-btn {
+    background: var(--theme-color-line-blue);
+}
+
+.pq-sidebar .pq-close-btn .pq-close {
+    background: var(--theme-color-line-blue);
+}
+        /* header css */
+
+
+
+        .pq-section-sub-title {
+            letter-spacing: 0.04em;
+            font-family: var(--title-fonts);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            position: relative;
+            text-transform: uppercase;
+            color: var(--theme-color-line-blue);
+            background: var(--theme-color-blue-bg);
+            padding: 8px 12px;
+            margin: 0 0 10px;
+            display: inline-block;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        
     </style>
 </head>
 
@@ -1003,16 +1028,7 @@
     </div>
     <!--loading End-->
 
-    <!-- whatsapp floating icon start-->
-    <div><a href="https://api.whatsapp.com/send?phone=80050&amp;text=Hey." id="wa_button" target="_blank">
-            <div class="circlephone" style="transform-origin: center;"></div>
-            <div class="circle-fill" style="transform-origin: center;"></div>
-            <div class="img-circle" style="transform-origin: center;">
-                <div class="img-circleblock" style="transform-origin: center;"></div>
-            </div>
-        </a>
-    </div>
-    <!-- whatsapp floating icon end-->
+    
 
     <!--=================================
       header start-->
@@ -1073,7 +1089,8 @@
                     <li>
                         <i class="fa fa-map-marker"></i>
                         <span>
-                            Head office, Das Tower, 9th Floor,<br> Sultan Bin Zayed Street (32nd Street),<br> Abu Dhabi, United
+                            Head office, Das Tower, 9th Floor,<br> Sultan Bin Zayed Street (32nd Street),<br> Abu Dhabi,
+                            United
                             Arab Emirates​. </span>
                     </li>
                     <li>
@@ -1267,9 +1284,7 @@
                     </video>
                     <!-- <img src="rev/assets/1-6.jpg" alt="hi"> -->
                     <div class="slide-text active">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
-                        </div>
+                        <span class="pq-section-sub-title">Passion For Caring</span>
                         <div class="header-h2-div">
 
                             <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
@@ -1292,9 +1307,8 @@
                 <div class="slide">
                     <img src="rev/assets/Banner/Malaffi.jpg" alt="hi">
                     <div class="slide-text">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
-                        </div>
+                        <span class="pq-section-sub-title">Passion For Caring</span>
+
                         <div class="header-h2-div">
 
                             <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
@@ -1313,9 +1327,8 @@
                 <div class="slide">
                     <img src="rev/assets/Banner/map.jpg" alt="hi">
                     <div class="slide-text">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
-                        </div>
+                        <span class="pq-section-sub-title">Passion For Caring</span>
+
                         <div class="header-h2-div">
 
                             <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
@@ -1334,9 +1347,8 @@
                 <div class="slide">
                     <img src="rev/assets/Banner/Telemedicine.jpg" alt="hi">
                     <div class="slide-text">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
-                        </div>
+                        <span class="pq-section-sub-title">Passion For Caring</span>
+
                         <div class="header-h2-div">
 
                             <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
@@ -1355,9 +1367,8 @@
                 <div class="slide">
                     <img src="rev/assets/Banner/History.jpg" alt="hi">
                     <div class="slide-text">
-                        <div class="blue-text-div">
-                            <p class="blue-text text-uppercase text-sm">passion for caring</p>
-                        </div>
+                        <span class="pq-section-sub-title">Passion For Caring</span>
+
                         <div class="header-h2-div">
 
                             <h2 class="carousel-slide-title">Genuine Commitment To Your Health</h2>
